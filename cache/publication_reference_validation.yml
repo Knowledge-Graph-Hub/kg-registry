@@ -1177,6 +1177,15 @@ entries:
     source_path: resource/cam-kp/cam-kp.md
     status: valid
     warnings: []
+  resource/cameo/cameo.md#publication[0]#DOI:10.4324/9780203885130-25:
+    checked_at: '2026-11-12T20:24:40Z'
+    errors: []
+    fingerprint: dcd83eb9214b5a3160f254ce14d191cb4c1533b3b42698195fdd9ad65b983512
+    publication_index: 0
+    reference_id: DOI:10.4324/9780203885130-25
+    source_path: resource/cameo/cameo.md
+    status: valid
+    warnings: []
   resource/camera/camera.md#publication[0]#DOI:10.6084/m9.figshare.34809921.v1:
     checked_at: '2026-10-28T14:43:47Z'
     errors: []
