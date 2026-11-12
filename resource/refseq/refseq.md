@@ -2609,6 +2609,35 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: pubmed
   product_url: https://ftp.ncbi.nlm.nih.gov/
+- category: Product
+  description: Stockholm-format multiple sequence alignments of structured RNA and
+    ssDNA motifs, organized in one subdirectory per publication, with consensus secondary
+    structure (including pseudoknots) and, for riboswitch variants, annotation of
+    the key ligand-binding nucleotides. Sequence names use RefSeq or environmental
+    metagenomic accessions.
+  format: stockholm
+  id: zwd.alignments
+  name: Zasha Weinberg Data Repository Sequence Alignments
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  product_url: https://bitbucket.org/zashaw/zashaweinbergdata/src/master/
+- category: MappingProduct
+  description: Tab-delimited mapping of the sequence accessions used in the ZWD alignments
+    to NCBI Taxonomy IDs, with -1 where the accession is not in RefSeq.
+  format: tsv
+  id: zwd.seqid-taxid
+  name: ZWD Sequence Accession to NCBI Taxonomy Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: zwd
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  product_url: https://bitbucket.org/zashaw/zashaweinbergdata/raw/master/sto-seqid-taxid.tab
 publications:
 - authors:
   - Nuala A. O'Leary

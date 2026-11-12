@@ -11494,4 +11494,13 @@ entries:
     source_path: resource/zp/zp.md
     status: valid
     warnings: []
+  resource/zwd/zwd.md#publication[0]#DOI:10.1093/nar/gkx699:
+    checked_at: '2026-11-12T20:24:42Z'
+    errors: []
+    fingerprint: 17289a3cb7f446d0731b0b7fc956ad690d5ba208ba00746a6b092e3f3320042e
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkx699
+    source_path: resource/zwd/zwd.md
+    status: valid
+    warnings: []
 version: 1
