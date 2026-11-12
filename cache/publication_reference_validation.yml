@@ -6841,6 +6841,15 @@ entries:
     source_path: resource/ncit/ncit.md
     status: valid
     warnings: []
+  resource/ncrnadrug/ncrnadrug.md#publication[0]#DOI:10.1093/nar/gkad1042:
+    checked_at: '2026-11-12T19:20:27Z'
+    errors: []
+    fingerprint: c7cc7c26ab62b1e43aa6baac3f9691394187499282220b2951a48e2ab3a18ff2
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkad1042
+    source_path: resource/ncrnadrug/ncrnadrug.md
+    status: valid
+    warnings: []
   resource/ncro/ncro.md#publication[0]#PMID:27152146:
     checked_at: '2026-08-06T18:18:17Z'
     errors: []
