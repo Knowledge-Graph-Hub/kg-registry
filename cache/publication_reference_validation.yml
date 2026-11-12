@@ -10592,12 +10592,30 @@ entries:
     source_path: resource/terminologia-anatomica/terminologia-anatomica.md
     status: valid
     warnings: []
+  resource/tfacts/tfacts.md#publication[0]#DOI:10.1093/nar/gkq149:
+    checked_at: '2026-11-12T20:24:44Z'
+    errors: []
+    fingerprint: 3b8458a889a6dbd78c9ff3d7a31ba8f6a4fd283a96ca7a68d6424a5fb20da6ae
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkq149
+    source_path: resource/tfacts/tfacts.md
+    status: valid
+    warnings: []
   resource/tfacts/tfacts.md#publication[0]#PMID:20215436:
     checked_at: '2026-08-06T18:19:11Z'
     errors: []
     fingerprint: 6df72d6cadafc70d51ad27e7a825e9629eacd13af21995cbba0c9c4722c0c979
     publication_index: 0
     reference_id: PMID:20215436
+    source_path: resource/tfacts/tfacts.md
+    status: valid
+    warnings: []
+  resource/tfacts/tfacts.md#publication[1]#DOI:10.1371/journal.pone.0039666:
+    checked_at: '2026-11-12T20:24:45Z'
+    errors: []
+    fingerprint: aa688c35767e830d826526424153abaf58d5581201db0f84f06f5557348d5191
+    publication_index: 1
+    reference_id: DOI:10.1371/journal.pone.0039666
     source_path: resource/tfacts/tfacts.md
     status: valid
     warnings: []
