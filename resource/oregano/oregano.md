@@ -21,7 +21,7 @@ layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
     license (custom) among its sources: ctd, umls. Not accounted for, no known license:
-    cmaup, npass.'
+    npass.'
   id: https://ctdbase.org/about/legal.jsp
   inferred_from:
   - ctd
@@ -30,7 +30,6 @@ license:
   restrictiveness: custom
   status: inferred
   unresolved_sources:
-  - cmaup
   - npass
 name: OREGANO
 products:

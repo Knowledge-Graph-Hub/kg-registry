@@ -1814,11 +1814,29 @@ entries:
     source_path: resource/cmap/cmap.md
     status: valid
     warnings: []
+  resource/cmaup/cmaup.md#publication[0]#DOI:10.1093/nar/gkad921:
+    checked_at: '2026-11-12T20:25:32Z'
+    errors: []
+    fingerprint: f8e313a518af0d5a2347c7610b7e57fa2fec425c27f1de7cd14113d7a0a510f1
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkad921
+    source_path: resource/cmaup/cmaup.md
+    status: valid
+    warnings: []
   resource/cmaup/cmaup.md#publication[0]#DOI:10.1093/nar/gky965:
     checked_at: '2026-06-22T16:25:52Z'
     errors: []
     fingerprint: 1ee5494951b91c97fe0eb174efb438362a74886aed4a5b0ecee3953f41bc79f0
     publication_index: 0
+    reference_id: DOI:10.1093/nar/gky965
+    source_path: resource/cmaup/cmaup.md
+    status: valid
+    warnings: []
+  resource/cmaup/cmaup.md#publication[1]#DOI:10.1093/nar/gky965:
+    checked_at: '2026-11-12T20:16:43Z'
+    errors: []
+    fingerprint: 36f6b2ea92ce122afb1d11e6a6abab9267cf651322079c08ff11a53eac80f412
+    publication_index: 1
     reference_id: DOI:10.1093/nar/gky965
     source_path: resource/cmaup/cmaup.md
     status: valid
