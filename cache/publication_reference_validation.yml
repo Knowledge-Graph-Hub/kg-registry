@@ -9269,6 +9269,15 @@ entries:
     source_path: resource/reprotox-kg/reprotox-kg.md
     status: valid
     warnings: []
+  resource/revel/revel.md#publication[0]#DOI:10.1016/j.ajhg.2016.08.016:
+    checked_at: '2026-11-12T19:20:21Z'
+    errors: []
+    fingerprint: afe3eb207fb69434b469e101bb9ac2dafd51561bd507b20d1b0d47010357e603
+    publication_index: 0
+    reference_id: DOI:10.1016/j.ajhg.2016.08.016
+    source_path: resource/revel/revel.md
+    status: valid
+    warnings: []
   resource/rfam/rfam.md#publication[0]#DOI:10.1093/nar/gkae1023:
     checked_at: '2026-06-22T16:28:56Z'
     errors: []
