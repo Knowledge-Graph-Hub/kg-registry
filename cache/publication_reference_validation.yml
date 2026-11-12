@@ -9939,6 +9939,15 @@ entries:
     source_path: resource/spd/spd.md
     status: valid
     warnings: []
+  resource/spliceai/spliceai.md#publication[0]#DOI:10.1016/j.cell.2018.12.015:
+    checked_at: '2026-11-12T19:20:20Z'
+    errors: []
+    fingerprint: bbaff69079262eedd18a5b4c7c73995219daf94534968fdf9151ff0727d79bff
+    publication_index: 0
+    reference_id: DOI:10.1016/j.cell.2018.12.015
+    source_path: resource/spliceai/spliceai.md
+    status: valid
+    warnings: []
   resource/spoke-okn/spoke-okn.md#publication[0]#DOI:10.1093/bioinformatics/btad080:
     checked_at: '2026-08-06T18:19:04Z'
     errors: []
