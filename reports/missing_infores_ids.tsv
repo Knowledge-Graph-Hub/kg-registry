@@ -93,7 +93,7 @@ bugsigdb	BugSigDB	DataSource	https://bugsigdb.org/	resource/bugsigdb/bugsigdb.md
 bv-brc	Bacterial and Viral Bioinformatics Resource Center	DataSource	https://www.bv-brc.org/	resource/bv-brc/bv-brc.md
 cabi-isc	CABI Invasive Species Compendium	DataSource	https://www.cabidigitallibrary.org/product/qi	resource/cabi-isc/cabi-isc.md
 cadd	CADD	DataSource	https://cadd.gs.washington.edu/	resource/cadd/cadd.md
-cameo	Cameo	DataSource		resource/cameo/cameo.md
+cameo	Conflict and Mediation Event Observations (CAMEO)	DataModel	https://parusanalytics.com/eventdata/data.dir/cameo.html	resource/cameo/cameo.md
 camera	CAMERA (Collection of Alternative Methods for Regulatory Application)	Aggregator	https://camera.od.nih.gov/	resource/camera/camera.md
 campbell-biology	Campbell Biology	DataSource	https://openlibrary.org/isbn/9780134093413	resource/campbell-biology/campbell-biology.md
 cancer-genome-interpreter	Cancer Genome Interpreter	DataSource	https://www.cancergenomeinterpreter.org/	resource/cancer-genome-interpreter/cancer-genome-interpreter.md
@@ -109,6 +109,7 @@ ccre	ENCODE cCRE Registry (SCREEN)	DataSource	https://screen.encodeproject.org/	
 cdao	Comparative Data Analysis Ontology	Ontology	https://github.com/evoinfo/cdao	resource/cdao/cdao.md
 cdc-places	CDC PLACES	DataSource	https://www.cdc.gov/places/	resource/cdc-places/cdc-places.md
 cdc-svi	CDC/ATSDR Social Vulnerability Index	DataSource	https://www.atsdr.cdc.gov/place-health/php/svi/	resource/cdc-svi/cdc-svi.md
+cdcdb	Continuous Drug Combination Database	DataSource	https://icc.ise.bgu.ac.il/medical_ai/CDCDB/	resource/cdcdb/cdcdb.md
 cdd	Conserved Domain Database	DataSource	https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml	resource/cdd/cdd.md
 cdiscvocab	CDISC Controlled Terminology	Aggregator	https://www.cdisc.org/standards/terminology/controlled-terminology	resource/cdiscvocab/cdiscvocab.md
 cdno	Compositional Dietary Nutrition Ontology	Ontology	https://cdno.info/	resource/cdno/cdno.md
@@ -414,6 +415,7 @@ iao	Information Artifact Ontology	Ontology	https://github.com/information-artifa
 ibkh	integrative Biomedical Knowledge Hub	KnowledgeGraph	https://pubmed.ncbi.nlm.nih.gov/37020958/	resource/ibkh/ibkh.md
 icd11	ICD-11	DataSource	https://icd.who.int/en	resource/icd11/icd11.md
 iceo	Integrative and Conjugative Element Ontology	Ontology	https://github.com/ontoice/ICEO	resource/iceo/iceo.md
+icews	Integrated Crisis Early Warning System (ICEWS)	DataSource	https://dataverse.harvard.edu/dataverse/icews	resource/icews/icews.md
 icgc	ICGC	DataSource	https://www.icgc-argo.org/	resource/icgc/icgc.md
 ich-m5	ICH M5 controlled vocabularies	DataModel	https://www.ema.europa.eu/en/scientific-guidelines/ich-m5-data-elements-standards-drug-dictionaries	resource/ich-m5/ich-m5.md
 ickg	Immune Cell Knowledge Graph	KnowledgeGraph	https://kchen-lab.github.io/immune-knowledgegraph.github.io/	resource/ickg/ickg.md
@@ -436,6 +438,7 @@ impc	International Mouse Phenotyping Consortium	DataSource	https://www.mousephen
 imr	Molecule role (INOH Protein name/family name ontology)	Ontology	http://www.inoh.org	resource/imr/imr.md
 inchikey	InChIKey	DataModel	https://www.inchi-trust.org/	resource/inchikey/inchikey.md
 indra	INDRA	Aggregator	https://www.indra.bio/	resource/indra/indra.md
+infernal	Infernal	DataSource	http://eddylab.org/infernal/	resource/infernal/infernal.md
 inoh	INOH	DataSource	http://www.inoh.org/	resource/inoh/inoh.md
 inparanoid	InParanoid	DataSource	https://inparanoidb.sbc.su.se/	resource/inparanoid/inparanoid.md
 insight	INSIGHT	KnowledgeGraph	https://insight-project.org/	resource/insight/insight.md
@@ -577,6 +580,7 @@ nde	NIAID Data Ecosystem KG	KnowledgeGraph	https://data.niaid.nih.gov/	resource/
 neo	Noctua Entity Ontology	Resource	https://github.com/geneontology/neo/	resource/neo/neo.md
 netpath	NetPath	DataSource	http://www.netpath.org/	resource/netpath/netpath.md
 nextprot	neXtProt	DataSource	https://www.nextprot.org/	resource/nextprot/nextprot.md
+nfiregulomedb	NFIregulomeDB	DataSource	http://nfiregulome.ccr.buffalo.edu/	resource/nfiregulomedb/nfiregulomedb.md
 ngbo	Next Generation Biobanking Ontology	Ontology	https://github.com/Dalalghamdi/NGBO	resource/ngbo/ngbo.md
 ngdc	National Genomics Data Center	Aggregator	https://ngdc.cncb.ac.cn/	resource/ngdc/ngdc.md
 nhanes	NHANES (National Health and Nutrition Examination Survey)	DataSource	https://www.cdc.gov/nchs/nhanes/	resource/nhanes/nhanes.md
@@ -584,6 +588,7 @@ nhpid	Natural Health Products Ingredients Database	DataSource	https://webprod.hc
 nhpn	National Highway Planning Network	DataSource	https://www.fhwa.dot.gov/planning/processes/tools/nhpn/	resource/nhpn/nhpn.md
 nibrs	National Incident-Based Reporting System	DataSource	https://cde.ucr.cjis.gov/	resource/nibrs/nibrs.md
 nice	NICE (NIH Integrated Chemical Environment)	DataSource	https://ice.ntp.niehs.nih.gov/	resource/nice/nice.md
+nif-ontology	NIF Standard Ontology	Ontology	https://github.com/SciCrunch/NIF-Ontology	resource/nif-ontology/nif-ontology.md
 nif_cell	NIF Cell	Ontology	http://neuinfo.org/	resource/nif_cell/nif_cell.md
 nif_dysfunction	NIF Dysfunction	Ontology	http://neuinfo.org/	resource/nif_dysfunction/nif_dysfunction.md
 nif_grossanatomy	NIF Gross Anatomy	Ontology	http://neuinfo.org/	resource/nif_grossanatomy/nif_grossanatomy.md
@@ -686,6 +691,7 @@ papyrus	Papyrus	DataSource	https://github.com/OlivierBeq/Papyrus-scripts	resourc
 pathbank	PathBank	DataSource	https://pathbank.org/	resource/pathbank/pathbank.md
 pavs-kg	PAVS Knowledge Graph	KnowledgeGraph	https://pavs.phenomebrowser.net/	resource/pavs-kg/pavs-kg.md
 paxdb	PaxDb	DataSource	https://pax-db.org/	resource/paxdb/paxdb.md
+pazar	PAZAR	DataSource	http://www.pazar.info/	resource/pazar/pazar.md
 pbpko	Physiologically-Based Pharmacokinetic Ontology	Ontology	https://github.com/InSilicoVida-Research-Lab/pbpko	resource/pbpko/pbpko.md
 pcl	Provisional Cell Ontology	Ontology	https://github.com/obophenotype/provisional_cell_ontology	resource/pcl/pcl.md
 pco	Population and Community Ontology	Ontology	https://github.com/PopulationAndCommunityOntology/pco	resource/pco/pco.md
@@ -890,6 +896,8 @@ translator	NCATS Translator Graph Releases	Aggregator	https://kgx-storage.rtx.ai
 treatkb	TreatKB	DataSource	http://nlp.case.edu/public/data/treatKB/	resource/treatkb/treatkb.md
 tred	Transcriptional Regulatory Element Database	DataSource	https://rulai.cshl.edu/TRED/	resource/tred/tred.md
 treefam	TreeFam	DataSource	http://www.treefam.org/	resource/treefam/treefam.md
+trnascan-se	tRNAscan-SE	DataSource	https://trna.ucsc.edu/tRNAscan-SE/	resource/trnascan-se/trnascan-se.md
+trrd	Transcription Regulatory Regions Database	DataSource	https://wwwmgs.bionet.nsc.ru/mgs/gnw/trrd/	resource/trrd/trrd.md
 trrust	TRRUST	DataSource	https://www.grnpedia.org/trrust/	resource/trrust/trrust.md
 tsar	TSAR (Tracking System for Alternative methods towards Regulatory acceptance)	DataSource	https://tsar.jrc.ec.europa.eu/	resource/tsar/tsar.md
 tto	Teleost taxonomy ontology	Ontology	https://github.com/phenoscape/teleost-taxonomy-ontology	resource/tto/tto.md

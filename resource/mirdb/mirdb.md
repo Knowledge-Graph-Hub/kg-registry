@@ -52,8 +52,8 @@ products:
   warnings: []
 - category: Product
   description: miRDB version 6.0 (June 2019) predicted miRNA targets for human, mouse,
-    rat, dog and chicken, generated with MirTarget V4 using miRNA sequences from
-    miRBase 22, as a gzipped tab-delimited text file.
+    rat, dog and chicken, generated with MirTarget V4 using miRNA sequences from miRBase
+    22, as a gzipped tab-delimited text file.
   format: txt
   id: mirdb.predicted-targets-v6
   name: miRDB v6.0 Predicted Targets File
@@ -64,6 +64,7 @@ products:
     source: mirbase
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  product_file_size: 59483982
   product_url: https://mirdb.org/download/miRDB_v6.0_prediction_result.txt.gz
 - category: GraphicalInterface
   description: Custom target prediction tool that runs MirTarget on a user-submitted

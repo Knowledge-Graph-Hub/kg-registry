@@ -1485,12 +1485,12 @@ products:
   - standard: biolink
     version: 4.2.1
   compression: gzip
-  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported
-    as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across
-    node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection
-    of the full graph for human-centric biomedical use. Sources without compatible redistribution
-    terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense
-    variant-prediction layers). Published on Zenodo.
+  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph,
+    exported as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed
+    across node and edge files in both TSV and JSON Lines, plus a manifest). A practical
+    projection of the full graph for human-centric biomedical use. Sources without
+    compatible redistribution terms are excluded (full OMIM data, CTD, PanelApp, miRDB,
+    and the SpliceAI and AlphaMissense variant-prediction layers). Published on Zenodo.
   edge_count: 150949120
   format: kgx
   id: biobtree.graph.human-subgraph
@@ -3846,6 +3846,7 @@ products:
     source: refseq
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
+  product_file_size: 311756
   product_url: https://bitbucket.org/zashaw/zashaweinbergdata/raw/master/sto-seqid-taxid.tab
 publications:
 - authors:

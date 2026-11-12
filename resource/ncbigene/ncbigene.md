@@ -2332,8 +2332,6 @@ products:
   warnings:
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 502 error
     when accessing file'
 - category: ProgrammingInterface
@@ -3078,8 +3076,6 @@ products:
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -4456,8 +4452,6 @@ products:
   warnings:
   - Site did not respond (connection timed out) when checked on 2026-10-19; the last
     Internet Archive snapshot is from 2022-08-17.
-  - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
     to URL'
 - category: GraphicalInterface
@@ -5335,6 +5329,7 @@ products:
     source: mirbase
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  product_file_size: 59483982
   product_url: https://mirdb.org/download/miRDB_v6.0_prediction_result.txt.gz
 publications:
 - authors:

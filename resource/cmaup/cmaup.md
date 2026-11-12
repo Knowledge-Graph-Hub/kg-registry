@@ -23,9 +23,9 @@ description: CMAUP (Collective Molecular Activities of Useful Plants) is a datab
   against molecular targets, and through those targets to Gene Ontology terms, KEGG
   pathways and human diseases. Version 2.0 (2024 update) covers 60,222 ingredients,
   7,865 plants, 758 targets and 1,399 diseases, and adds oral bioavailability predictions,
-  plant targets overlapping disease differentially expressed genes, clinical trial associations
-  and plant-disease associations. All data are freely downloadable as tab-separated
-  files.
+  plant targets overlapping disease differentially expressed genes, clinical trial
+  associations and plant-disease associations. All data are freely downloadable as
+  tab-separated files.
 domains:
 - biomedical
 - drug discovery
@@ -58,8 +58,9 @@ products:
     source: cmaup
   product_url: https://bidd.group/CMAUP/download.html
 - category: Product
-  description: Tab-separated file of experimentally derived quantitative activity values for
-    each ingredient-target pair in CMAUP v2.0, with references for each activity.
+  description: Tab-separated file of experimentally derived quantitative activity
+    values for each ingredient-target pair in CMAUP v2.0, with references for each
+    activity.
   format: tsv
   id: cmaup.download.ingredient-target-activities
   name: CMAUP v2.0 Ingredient-Target Activity Associations
@@ -68,8 +69,8 @@ products:
     source: cmaup
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Ingredient_Target_Associations_ActivityValues_References.txt
 - category: Product
-  description: Tab-separated file of CMAUP v2.0 plant ingredients with potent activity, with
-    ChEMBL and PubChem identifiers, physicochemical properties, InChI, InChIKey
+  description: Tab-separated file of CMAUP v2.0 plant ingredients with potent activity,
+    with ChEMBL and PubChem identifiers, physicochemical properties, InChI, InChIKey
     and SMILES.
   format: tsv
   id: cmaup.download.ingredients-active
@@ -79,9 +80,9 @@ products:
     source: cmaup
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Ingredients_onlyActive.txt
 - category: Product
-  description: Tab-separated file of all CMAUP v2.0 plant ingredients with names, ChEMBL and
-    PubChem identifiers, ADMETlab-calculated physicochemical properties, InChI,
-    InChIKey and SMILES.
+  description: Tab-separated file of all CMAUP v2.0 plant ingredients with names,
+    ChEMBL and PubChem identifiers, ADMETlab-calculated physicochemical properties,
+    InChI, InChIKey and SMILES.
   format: tsv
   id: cmaup.download.ingredients-all
   name: CMAUP v2.0 All Ingredients
@@ -90,9 +91,9 @@ products:
     source: cmaup
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Ingredients_All.txt
 - category: Product
-  description: Tab-separated file of human oral bioavailability indicators for all CMAUP v2.0
-    ingredients, calculated with RDKit and evaluated using SwissADME criteria and
-    the HobPre predictor.
+  description: Tab-separated file of human oral bioavailability indicators for all
+    CMAUP v2.0 ingredients, calculated with RDKit and evaluated using SwissADME criteria
+    and the HobPre predictor.
   format: tsv
   id: cmaup.download.oral-bioavailability
   name: CMAUP v2.0 Ingredient Human Oral Bioavailability
@@ -101,8 +102,8 @@ products:
     source: cmaup
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Human_Oral_Bioavailability_information_of_Ingredients_All.txt
 - category: Product
-  description: Tab-separated file of clinical investigations of individual plants or plant
-    ingredients, with ClinicalTrials.gov registry numbers, titles and trial
+  description: Tab-separated file of clinical investigations of individual plants
+    or plant ingredients, with ClinicalTrials.gov registry numbers, titles and trial
     phases.
   format: tsv
   id: cmaup.download.plant-clinical-trials
@@ -114,8 +115,8 @@ products:
     source: clinicaltrialsgov
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Plant_Clinical_Trials_Associations.txt
 - category: Product
-  description: Tab-separated file of associations between plants and human diseases at four
-    levels of evidence (therapeutic target, reversion of disease transcriptomic
+  description: Tab-separated file of associations between plants and human diseases
+    at four levels of evidence (therapeutic target, reversion of disease transcriptomic
     change, clinical trials of plants, and clinical trials of plant ingredients).
   format: tsv
   id: cmaup.download.plant-disease-associations
@@ -125,8 +126,8 @@ products:
     source: cmaup
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Plant_Human_Disease_Associations.txt
 - category: Product
-  description: Tab-separated file of plant-ingredient pairs in CMAUP v2.0, limited to active
-    ingredients.
+  description: Tab-separated file of plant-ingredient pairs in CMAUP v2.0, limited
+    to active ingredients.
   format: tsv
   id: cmaup.download.plant-ingredient-active
   name: CMAUP v2.0 Plant-Active Ingredient Associations
@@ -145,8 +146,7 @@ products:
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Plant_Ingredient_Associations_allIngredients.txt
 - category: Product
   description: Tab-separated file of molecular targets of plants that overlap with
-    differentially expressed genes identified by transcriptomic analysis of 74
-    diseases.
+    differentially expressed genes identified by transcriptomic analysis of 74 diseases.
   format: tsv
   id: cmaup.download.plant-targets-degs
   name: CMAUP v2.0 Plant Targets Overlapping Disease DEGs
@@ -175,8 +175,8 @@ products:
     source: cmaup
   product_url: https://bidd.group/CMAUP/downloadFiles/Download_Readme.txt
 - category: Product
-  description: Tab-separated file of CMAUP v2.0 molecular targets with gene symbols, protein
-    names, UniProt, ChEMBL and TTD identifiers, and protein classes.
+  description: Tab-separated file of CMAUP v2.0 molecular targets with gene symbols,
+    protein names, UniProt, ChEMBL and TTD identifiers, and protein classes.
   format: tsv
   id: cmaup.download.targets
   name: CMAUP v2.0 Targets
@@ -185,9 +185,9 @@ products:
     source: cmaup
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Targets.txt
 - category: Product
-  description: RAR archive (about 152 MB) with index, sample metadata and DESeq2 results for
-    disease-versus-control transcriptomic comparisons of 74 diseases, using
-    RNA-seq data from sources including ARCHS4 and TCGA.
+  description: RAR archive (about 152 MB) with index, sample metadata and DESeq2 results
+    for disease-versus-control transcriptomic comparisons of 74 diseases, using RNA-seq
+    data from sources including ARCHS4 and TCGA.
   format: mixed
   id: cmaup.download.transcriptomic-profiles
   name: CMAUP v2.0 Transcriptomic Profiling of 74 Diseases
@@ -198,11 +198,12 @@ products:
     source: archs4
   - relation_type: prov:hadPrimarySource
     source: tcga
+  product_file_size: 159129856
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Transcriptomic_profiling_of_74_diseases.rar
 - category: GraphicalInterface
-  description: Web interface for searching and browsing CMAUP plants by usage class, target
-    protein, Gene Ontology term, KEGG pathway, disease, geographic location and
-    chemical ingredient, with activity values and source references.
+  description: Web interface for searching and browsing CMAUP plants by usage class,
+    target protein, Gene Ontology term, KEGG pathway, disease, geographic location
+    and chemical ingredient, with activity values and source references.
   format: http
   id: cmaup.portal
   name: CMAUP Web Portal

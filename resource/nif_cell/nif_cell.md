@@ -1,38 +1,38 @@
 ---
-id: nif_cell
-name: NIF Cell
-description: Neuronal cell types
 activity_status: inactive
-homepage_url: http://neuinfo.org/
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: smtifahim@gmail.com
+  label: Fahim Imam
+  orcid: 0000-0003-4752-543X
 creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-09-23T00:00:00Z'
+description: Neuronal cell types
 domains:
 - anatomy and development
 - biological systems
 - cell biology
 - neuroscience
-contacts:
-- category: Individual
-  label: Fahim Imam
-  orcid: 0000-0003-4752-543X
-  contact_details:
-  - contact_type: email
-    value: smtifahim@gmail.com
+homepage_url: http://neuinfo.org/
+id: nif_cell
+last_modified_date: '2026-09-23T00:00:00Z'
+layout: resource_detail
+name: NIF Cell
 products:
 - category: OntologyProduct
   description: NIF Cell ontology in Turtle format (SciCrunch NIF-Ontology repository)
   format: ttl
   id: nif_cell.ttl
   name: NIF Cell (Turtle)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: nif_cell
   product_file_size: 246672
   product_url: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/master/ttl/NIF-Cell.ttl
-  original_source:
-  - source: nif_cell
-    relation_type: prov:hadPrimarySource
 - category: OntologyProduct
   description: Main NIFSTD ontology file in Turtle format from the master branch,
     which imports the NIF module files (cell, gross anatomy, dysfunction, function,
@@ -52,6 +52,7 @@ products:
     source: nif_dysfunction
   - relation_type: prov:hadPrimarySource
     source: nif_grossanatomy
+  product_file_size: 1077
   product_url: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/master/ttl/nif.ttl
 publications: []
 use_instead:

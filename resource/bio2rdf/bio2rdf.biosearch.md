@@ -12,7 +12,7 @@ product_url: https://biosemantics.org/biosearch
 warnings:
 - File was not able to be retrieved when checked on 2026-03-30_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2026-11-10_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-11-12_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-07-10_ Error connecting to
   URL_ HTTPSConnectionPool(host='biosemantics.org', port=443)_ Max retries exceeded

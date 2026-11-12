@@ -44,8 +44,8 @@ name: Infernal
 products:
 - category: ProcessProduct
   description: Infernal source code repository on GitHub, used for Infernal development.
-    Building from the repository also requires the HMMER and Easel repositories
-    from EddyRivasLab. Release tags up to infernal-1.1.5 are kept in the repository.
+    Building from the repository also requires the HMMER and Easel repositories from
+    EddyRivasLab. Release tags up to infernal-1.1.5 are kept in the repository.
   format: mixed
   id: infernal.software
   latest_version: 1.1.5
@@ -124,6 +124,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: infernal
+  product_file_size: 4410
   product_url: http://eddylab.org/infernal/RELEASE-1.1.5.md
 - category: Product
   compression: gzip

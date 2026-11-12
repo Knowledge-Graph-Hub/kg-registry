@@ -1975,6 +1975,7 @@ products:
     source: mirbase
   - relation_type: prov:hadPrimarySource
     source: ncbigene
+  product_file_size: 59483982
   product_url: https://mirdb.org/download/miRDB_v6.0_prediction_result.txt.gz
 - category: GraphicalInterface
   description: FuncMir, a browsable collection of functional human and mouse precursor

@@ -11,7 +11,7 @@ product_url: http://purl.obolibrary.org/obo/oio.owl
 warnings:
 - OIO is deprecated and retained for legacy compatibility; use OMO for current ontology
   metadata.
-- File was not able to be retrieved when checked on 2026-11-10_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-11-12_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2026-10-21_ Timeout connecting
   to URL

@@ -95,7 +95,6 @@ bv-brc,active,PASS
 cabi-isc,active,PASS
 cacao,active,PASS
 cadd,active,PASS
-cameo,active,PASS
 camera,active,PASS
 campbell-biology,active,PASS
 cancer-genome-interpreter,active,PASS
@@ -485,6 +484,7 @@ imodulondb,active,PASS
 impc,active,PASS
 inchikey,active,PASS
 indra,active,PASS
+infernal,active,PASS
 innatedb,active,PASS
 ino,active,PASS
 inparanoid,active,PASS
@@ -656,6 +656,7 @@ nhpid,active,PASS
 nhpn,active,PASS
 nibrs,active,PASS
 nice,active,PASS
+nif-ontology,active,PASS
 nifc,active,PASS
 nih-era,active,PASS
 nihreporter,active,PASS
@@ -986,6 +987,7 @@ trans,active,PASS
 translator,active,PASS
 treatkb,active,PASS
 treefam,active,PASS
+trnascan-se,active,PASS
 trrust,active,PASS
 try,active,PASS
 tsar,active,PASS
@@ -1072,7 +1074,9 @@ biocarta,inactive,PASS
 biomarkerkg,inactive,PASS
 bootstrep,inactive,PASS
 cam-kp,inactive,PASS
+cameo,inactive,PASS
 caro,inactive,PASS
+cdcdb,inactive,PASS
 ceph,inactive,PASS
 chembank,inactive,PASS
 chemid,inactive,PASS
@@ -1118,6 +1122,7 @@ hpidb,unresponsive,PASS
 hprd,inactive,PASS
 htridb,unresponsive,PASS
 human-proteome-map,orphaned,PASS
+icews,inactive,PASS
 ich-m5,inactive,PASS
 idomal,inactive,PASS
 iev,inactive,PASS
@@ -1148,6 +1153,7 @@ modencode,orphaned,PASS
 motifmap,inactive,PASS
 mps-db,inactive,PASS
 netpath,orphaned,PASS
+nfiregulomedb,inactive,PASS
 nif_cell,inactive,PASS
 nif_dysfunction,inactive,PASS
 nif_grossanatomy,inactive,PASS
@@ -1164,6 +1170,7 @@ oreganno,inactive,PASS
 owlsim,inactive,PASS
 pao,inactive,PASS
 patric,inactive,PASS
+pazar,inactive,PASS
 pd_st,inactive,PASS
 pdumdv,inactive,PASS
 pgdso,inactive,PASS
@@ -1204,6 +1211,7 @@ tfacts,inactive,PASS
 tgma,inactive,PASS
 tmrnawebsite,inactive,PASS
 tred,inactive,PASS
+trrd,inactive,PASS
 upa,inactive,PASS
 vario,orphaned,PASS
 vectology,inactive,PASS

@@ -63,6 +63,8 @@ products:
     source: cameo
   warnings:
   - ICEWS was discontinued on 11 April 2023; no further event data will be added.
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 202 error
+    when accessing file'
 - category: Product
   description: ICEWS dictionaries of named actors and generic agents, with their aliases
     and time-dependent affiliations to other actors, countries and sectors, plus the
@@ -74,6 +76,9 @@ products:
   - relation_type: prov:hadPrimarySource
     source: icews
   product_url: https://doi.org/10.7910/DVN/28118
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 202 error
+    when accessing file'
 - category: Product
   description: ICEWS event aggregations, time series (typically monthly) built from
     the coded event data by filtering events (for example by country or sector affiliation)
@@ -89,6 +94,9 @@ products:
   secondary_source:
   - relation_type: prov:used
     source: cameo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 202 error
+    when accessing file'
 - category: Product
   description: ICEWS Events of Interest Ground Truth Data Set, recording for each
     country and month (2001 to May 2014) whether macro-level Events of Interest such

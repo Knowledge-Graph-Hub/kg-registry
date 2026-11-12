@@ -1968,12 +1968,12 @@ products:
   - standard: biolink
     version: 4.2.1
   compression: gzip
-  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported
-    as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across
-    node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection
-    of the full graph for human-centric biomedical use. Sources without compatible redistribution
-    terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense
-    variant-prediction layers). Published on Zenodo.
+  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph,
+    exported as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed
+    across node and edge files in both TSV and JSON Lines, plus a manifest). A practical
+    projection of the full graph for human-centric biomedical use. Sources without
+    compatible redistribution terms are excluded (full OMIM data, CTD, PanelApp, miRDB,
+    and the SpliceAI and AlphaMissense variant-prediction layers). Published on Zenodo.
   edge_count: 150949120
   format: kgx
   id: biobtree.graph.human-subgraph
@@ -2234,12 +2234,13 @@ products:
   product_url: https://mygene.info/v3/api
 - category: Product
   compression: zip
-  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
-    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
-    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
-    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
-    upstream scores that are free for academic use. Free for academic and non-commercial users
-    after registration with an institutional email; download links are issued on request.
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB),
+    a ZIP of gzipped, tab-delimited per-chromosome variant tables, the gene table,
+    column descriptions and the search_dbNSFP Java program. Variant tables are also
+    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38)
+    for Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
+    use. Free for academic and non-commercial users after registration with an institutional
+    email; download links are issued on request.
   format: tsv
   id: dbnsfp.academic
   license:
@@ -2304,10 +2305,10 @@ products:
   product_url: https://www.dbnsfp.org/download
 - category: Product
   compression: zip
-  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
-    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
-    and RGC Million Exome data, whose authors require separate commercial licenses. Available
-    to subscribers under a paid license from Genos Bioinformatics.
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same
+    format as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2,
+    PrimateAI and RGC Million Exome data, whose authors require separate commercial
+    licenses. Available to subscribers under a paid license from Genos Bioinformatics.
   format: tsv
   id: dbnsfp.commercial
   license:
@@ -2637,6 +2638,7 @@ products:
     source: refseq
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
+  product_file_size: 311756
   product_url: https://bitbucket.org/zashaw/zashaweinbergdata/raw/master/sto-seqid-taxid.tab
 publications:
 - authors:

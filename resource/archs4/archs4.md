@@ -380,8 +380,6 @@ products:
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
     when accessing file'
 - category: Product
@@ -858,6 +856,7 @@ products:
     source: archs4
   - relation_type: prov:hadPrimarySource
     source: tcga
+  product_file_size: 159129856
   product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Transcriptomic_profiling_of_74_diseases.rar
 publications:
 - authors:

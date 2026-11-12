@@ -114,6 +114,9 @@ kgr:aact a schema1:Aggregator ;
         kgr:aact.pipe_delimited,
         kgr:aact.playground,
         kgr:aact.schema,
+        kgr:cdcdb.csv,
+        kgr:cdcdb.figshare,
+        kgr:cdcdb.sqlite,
         kgr:clinicaltrialsgov.aact,
         kgr:klocd.portal,
         kgr:multiomics-kp.graph,
@@ -995,6 +998,7 @@ kgr:archs4 a schema1:DataSource ;
         kgr:chea-kg.graph,
         kgr:chea-kg.libraries,
         kgr:chea.libraries,
+        kgr:cmaup.download.transcriptomic-profiles,
         kgr:drugmonizome.libraries,
         kgr:enrichr-kg.graph,
         kgr:enrichr.libraries,
@@ -2306,9 +2310,11 @@ kgr:biomarkerkg a schema1:KnowledgeGraph ;
     dcterms:created "2025-05-04T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "BiomarkerKB KG (BKG) has been merged into the BiomarkerKB resource (id `biomarker`) to avoid confusion between the knowledgebase and its knowledge-graph representation, which have near-identical names. Use `biomarker` instead; the BKG explorer, node and edge datasets, and OKN/FRINK SPARQL and Triple Pattern Fragments endpoints are now listed there as products." ;
     dcterms:identifier "biomarkerkg" ;
-    dcterms:modified "2026-07-15T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:name "BiomarkerKB KG" ;
     doap:repository <https://github.com/MaayanLab/BiomarkerKG> ;
+    skos:altLabel "BKG",
+        "Biomarker-KG" ;
     skos:inScheme "biological systems",
         "biomedical" ;
     adms:status "Inactive" ;
@@ -3016,16 +3022,31 @@ kgr:cam-kp a schema1:KnowledgeGraph ;
     foaf:homepage <https://automat.renci.org/#/cam-kp> ;
     foaf:maker kgr:renci .
 
-kgr:cameo a schema1:DataSource ;
-    rdfs:label "Cameo" ;
+kgr:cameo a schema1:DataModel ;
+    rdfs:label "Conflict and Mediation Event Observations (CAMEO)" ;
     dcterms:created "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Stub Resource page for cameo. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:description "CAMEO (Conflict and Mediation Event Observations) is an event and actor coding scheme for political event data, developed from 2000 by Deborah Gerner, Philip Schrodt and Omur Yilmaz in the Kansas and later Penn State Event Data Projects as a successor to the WEIS framework. Its verb codebook arranges events in a hierarchy of 20 top-level categories (from making a public statement through cooperation, demands, protest and coercion to assault, fight and unconventional mass violence), with sub-categories tuned for the study of mediation and finer distinctions in the use of force. Its actor codebook gives hierarchical codes for states, sub-state roles, international organizations, and religious (CAMEORCS) and ethnic groups. CAMEO is the event taxonomy used by machine-coded event datasets such as GDELT and ICEWS." ;
+    dcterms:hasVersion "1.1b3" ;
     dcterms:identifier "cameo" ;
-    dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:gdelt.raw-data ;
-    schema1:name "Cameo" ;
-    skos:inScheme "stub" ;
-    adms:status "Active" .
+    dcterms:isReferencedBy <doi:10.4324/9780203885130-25> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/3.0/> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:cameo.codebook,
+        kgr:cameo.codebook-0.9b6,
+        kgr:cameo.ethnic-groups,
+        kgr:cameo.event-codes,
+        kgr:cameo.goldstein-scale,
+        kgr:gdelt.raw-data,
+        kgr:icews.cameo-annotation-guidelines,
+        kgr:icews.coded-event-data,
+        kgr:icews.event-aggregations ;
+    schema1:name "Conflict and Mediation Event Observations (CAMEO)" ;
+    skos:altLabel "CAMEO",
+        "CAMEO Event and Actor Codebook",
+        "Conflict and Mediation Event Observations" ;
+    skos:inScheme "other" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://parusanalytics.com/eventdata/data.dir/cameo.html> .
 
 kgr:camera a schema1:Aggregator ;
     rdfs:label "CAMERA (Collection of Alternative Methods for Regulatory Application)" ;
@@ -3394,6 +3415,31 @@ kgr:cdc-svi a schema1:DataSource ;
         "social determinants of health" ;
     adms:status "Active" ;
     foaf:homepage <https://www.atsdr.cdc.gov/place-health/php/svi/> .
+
+kgr:cdcdb a schema1:DataSource ;
+    rdfs:label "Continuous Drug Combination Database" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "CDCDB (Continuous Drug Combination Database) is an automatically curated and continuously updated database of drug combinations, developed at Ben-Gurion University of the Negev as a successor to the static DCDB (last released in 2014). It collects combinations of two or more drugs from clinical trial design groups in ClinicalTrials.gov (via the AACT database), approved combination products in the FDA Orange Book, and drug patents from Clarivate Integrity, using named entity recognition against UMLS to separate drugs from free-text intervention names and mapping each drug to DrugBank and PubChem identifiers. The 2022 publication reported 40,795 drug combinations, of which 17,107 are unique combinations of 4,129 individual drugs, along with trial conditions, MeSH terms and references, Orange Book product and patent details, and patent metadata. New versions were built weekly and offered as CSV and SQLite downloads, intended for training and evaluating drug synergy prediction models; the most recent version on the website is dated 18 June 2024." ;
+    dcterms:hasVersion "18.06.2024" ;
+    dcterms:identifier "cdcdb" ;
+    dcterms:isReferencedBy <doi:10.1038/s41597-022-01360-z> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:cdcdb.code,
+        kgr:cdcdb.csv,
+        kgr:cdcdb.figshare,
+        kgr:cdcdb.portal,
+        kgr:cdcdb.sqlite ;
+    schema1:name "Continuous Drug Combination Database" ;
+    doap:repository <https://github.com/Omer-N/CDCDB> ;
+    skos:altLabel "C-DCDB",
+        "CDCDB" ;
+    skos:inScheme "clinical",
+        "clinical trials",
+        "drug discovery",
+        "pharmacology" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://icc.ise.bgu.ac.il/medical_ai/CDCDB/> .
 
 kgr:cdd a schema1:DataSource ;
     rdfs:label "Conserved Domain Database" ;
@@ -4755,11 +4801,16 @@ kgr:clinicaltrialsgov a schema1:DataSource ;
         kgr:acukg.rdf,
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:cdcdb.csv,
+        kgr:cdcdb.figshare,
+        kgr:cdcdb.sqlite,
         kgr:clinicaltrialsgov.aact,
         kgr:clinicaltrialsgov.api,
         kgr:clinicaltrialsgov.docs,
         kgr:clinicaltrialsgov.downloads,
         kgr:clinicaltrialsgov.search,
+        kgr:cmaup.download.plant-clinical-trials,
+        kgr:dcdb.plain_text_dump,
         kgr:disgenet.data,
         kgr:ecrin-mdr.api,
         kgr:ecrin-mdr.portal,
@@ -5041,13 +5092,31 @@ kgr:cmap a schema1:DataSource ;
 kgr:cmaup a schema1:DataSource ;
     rdfs:label "CMAUP" ;
     dcterms:created "2026-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "CMAUP is a database of collective molecular activities of useful plants, linking plant ingredients to targets, phenotypes, diseases, pathways, and traditional uses to support natural product and medicinal plant research." ;
+    dcterms:description "CMAUP (Collective Molecular Activities of Useful Plants) is a database of plants and their chemical ingredients linked to experimentally measured activities against molecular targets, and through those targets to Gene Ontology terms, KEGG pathways and human diseases. Version 2.0 (2024 update) covers 60,222 ingredients, 7,865 plants, 758 targets and 1,399 diseases, and adds oral bioavailability predictions, plant targets overlapping disease differentially expressed genes, clinical trial associations and plant-disease associations. All data are freely downloadable as tab-separated files." ;
+    dcterms:hasVersion "2.0" ;
     dcterms:identifier "cmaup" ;
-    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gky965> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:cmaup.publication,
+    dcterms:isReferencedBy <doi:10.1093/nar/gkad921>,
+        <doi:10.1093/nar/gky965> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:cmaup.download-page,
+        kgr:cmaup.download.ingredient-target-activities,
+        kgr:cmaup.download.ingredients-active,
+        kgr:cmaup.download.ingredients-all,
+        kgr:cmaup.download.oral-bioavailability,
+        kgr:cmaup.download.plant-clinical-trials,
+        kgr:cmaup.download.plant-disease-associations,
+        kgr:cmaup.download.plant-ingredient-active,
+        kgr:cmaup.download.plant-ingredient-all,
+        kgr:cmaup.download.plant-targets-degs,
+        kgr:cmaup.download.plants,
+        kgr:cmaup.download.readme,
+        kgr:cmaup.download.targets,
+        kgr:cmaup.download.transcriptomic-profiles,
+        kgr:cmaup.portal,
+        kgr:cmaup.publication,
         kgr:oregano.graph ;
     schema1:name "CMAUP" ;
+    skos:altLabel "Collective Molecular Activities of Useful Plants" ;
     skos:inScheme "biomedical",
         "chemistry and biochemistry",
         "drug discovery",
@@ -6613,15 +6682,21 @@ kgr:dcat a schema1:DataModel ;
 kgr:dcdb a schema1:DataSource ;
     rdfs:label "Drug Combination Database" ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "DCDB (Drug Combination Database) was a curated database of drug combinations and their components, developed at Zhejiang University. It catalogued combinations along with their individual drugs, molecular targets, mechanisms, and therapeutic indications to support pharmacology and drug discovery research. The resource served as an upstream source for downstream pharmacological knowledge graphs such as PharmDB. The original host site no longer serves the database and the project is now defunct." ;
+    dcterms:description "DCDB (Drug Combination Database) was a curated database of drug combinations developed at the College of Life Sciences, Zhejiang University. For each combination it recorded the components, indications, combined activity, possible pharmacodynamic and pharmacokinetic interactions between components, and development status; for each component drug, its chemical, pharmacological and pharmaceutical properties and known molecular targets. Version 1.0 (2009) held 499 combinations involving 485 drugs; version 2.0 (2014) held 1363 combinations (including 237 unsuccessful ones) with 904 components, curated from ClinicalTrials.gov, the FDA Orange Book and PubMed, with component and target annotation from DrugBank, KEGG, PubChem, TTD and UniProt. Data were offered as tab-delimited text and Oracle dumps. DCDB was not updated after 2014, and the original host no longer serves the database or its downloads." ;
+    dcterms:hasVersion "2.0" ;
     dcterms:identifier "dcdb" ;
-    dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/20031966/> ;
-    dcterms:modified "2026-09-08T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:dcdb.publication,
+    dcterms:isReferencedBy <doi:10.1093/bioinformatics/btp697>,
+        <doi:10.1093/database/bau124> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:dcdb.plain_text_dump,
+        kgr:dcdb.portal,
+        kgr:dcdb.publication,
         kgr:pharmdb.graph ;
     schema1:name "Drug Combination Database" ;
+    skos:altLabel "DCDB" ;
     skos:inScheme "clinical",
         "drug discovery",
+        "drug interactions",
         "pharmacology" ;
     adms:status "Inactive" ;
     foaf:homepage <http://www.cls.zju.edu.cn/dcdb/> .
@@ -7621,8 +7696,12 @@ kgr:drugbank a schema1:DataSource ;
         kgr:bioteque.embeddings,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:cardiokg.neo4j,
+        kgr:cdcdb.csv,
+        kgr:cdcdb.figshare,
+        kgr:cdcdb.sqlite,
         kgr:clinicalkg.graph,
         kgr:date.archive,
+        kgr:dcdb.plain_text_dump,
         kgr:drkg.graph,
         kgr:drugbank.academic,
         kgr:drugbank.clinical.api,
@@ -10226,7 +10305,11 @@ kgr:fda-orange-book a schema1:DataSource ;
     dcterms:identifier "fda-orange-book" ;
     dcterms:license <https://www.usa.gov/government-works> ;
     dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:fda-orange-book.data-files,
+    schema1:hasPart kgr:cdcdb.csv,
+        kgr:cdcdb.figshare,
+        kgr:cdcdb.sqlite,
+        kgr:dcdb.plain_text_dump,
+        kgr:fda-orange-book.data-files,
         kgr:fda-orange-book.preface,
         kgr:fda-orange-book.search,
         kgr:medi.orangebook,
@@ -10897,7 +10980,9 @@ kgr:gdelt a schema1:KnowledgeGraph ;
     dcterms:identifier "gdelt" ;
     dcterms:license <https://www.gdeltproject.org/about.html#termsofuse> ;
     dcterms:modified "2026-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:gdelt.bigquery,
+    schema1:hasPart kgr:cameo.event-codes,
+        kgr:cameo.goldstein-scale,
+        kgr:gdelt.bigquery,
         kgr:gdelt.doc-api,
         kgr:gdelt.documentation,
         kgr:gdelt.raw-data ;
@@ -12924,10 +13009,12 @@ kgr:gtrnadb a schema1:DataSource ;
     rdfs:label "GtRNAdb" ;
     dcterms:created "2009-01-05T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "The Genomic tRNA Database (GtRNAdb) is a comprehensive repository of transfer RNA (tRNA) gene predictions identified by tRNAscan-SE in complete and draft genomes across all domains of life. The database contains over 431,000 tRNA gene predictions from 4,867 genomes (609 eukaryotes, 220 archaea, and 4,038 bacteria) as of Data Release 22 (September 2024). GtRNAdb provides detailed annotations including tRNA sequences, predicted secondary structures, isotype-specific scoring, genomic context via UCSC Genome Browser integration, and functional data such as RNA modifications from MODOMICS, tRNA fragment expression profiles, genomic variants from dbSNP, epigenetic information from ENCODE, and evolutionary conservation across species. The database enables comparative analysis through search capabilities by phylogenetic domain, species, amino acid isotypes, anticodons, tRNA scores, structural features, and sequence similarity via BLAST." ;
+    dcterms:hasVersion "Data Release 22 (September 2024)" ;
     dcterms:identifier "gtrnadb" ;
-    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkn787>,
-        <https://doi.org/10.1093/nar/gkv1309> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkab688>,
+        <doi:10.1093/nar/gkn787>,
+        <doi:10.1093/nar/gkv1309> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:2>,
         <NCBITaxon:2157>,
         <NCBITaxon:2759> ;
@@ -12937,13 +13024,17 @@ kgr:gtrnadb a schema1:DataSource ;
         kgr:gtrnadb.browse,
         kgr:gtrnadb.docs,
         kgr:gtrnadb.faq,
+        kgr:gtrnadb.hg38_trnascan_results,
         kgr:gtrnadb.portal,
         kgr:gtrnadb.sifter,
+        kgr:gtrnadb.trap_predictions,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
+    schema1:identifier "RRID:SCR_006939" ;
     schema1:name "GtRNAdb" ;
+    skos:altLabel "Genomic tRNA Database" ;
     skos:inScheme "genomics",
         "non-coding RNA" ;
     adms:status "Active" ;
@@ -14620,6 +14711,28 @@ kgr:iceo a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/ontoice/ICEO> .
 
+kgr:icews a schema1:DataSource ;
+    rdfs:label "Integrated Crisis Early Warning System (ICEWS)" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "ICEWS (Integrated Crisis Early Warning System) is a body of machine-coded political event data, begun as a DARPA program and later produced by Lockheed Martin and Leidos. Each event records a cooperative or hostile interaction between socio-political actors (individuals, groups, sectors and nation states) as a triple of source actor, event type and target actor, with the event type drawn from the CAMEO event taxonomy. Events were extracted automatically from news articles by the BBN ACCENT event coder, together with geographic and temporal metadata, and cover 1995 to April 2023. The data were released on Harvard Dataverse as coded event files, actor/agent/sector dictionaries, monthly event aggregations and an Events of Interest ground truth data set; source story text and URLs are not provided because of licensing restrictions. ICEWS was discontinued on 11 April 2023 and succeeded by POLECAT (POLitical Event Classification, Attributes, and Types), a new, related dataset coded with the PLOVER ontology rather than CAMEO." ;
+    dcterms:hasVersion "37" ;
+    dcterms:identifier "icews" ;
+    dcterms:isReferencedBy <doi:10.1111/j.1468-2486.2009.00914.x> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:icews.cameo-annotation-guidelines,
+        kgr:icews.coded-event-data,
+        kgr:icews.dataverse,
+        kgr:icews.dictionaries,
+        kgr:icews.event-aggregations,
+        kgr:icews.ground-truth,
+        kgr:icews.readme ;
+    schema1:name "Integrated Crisis Early Warning System (ICEWS)" ;
+    skos:altLabel "ICEWS",
+        "Integrated Crisis Early Warning System" ;
+    skos:inScheme "other" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://dataverse.harvard.edu/dataverse/icews> .
+
 kgr:icgc a schema1:DataSource ;
     rdfs:label "ICGC" ;
     dcterms:created "2026-06-03T00:00:00+00:00"^^xsd:dateTime ;
@@ -15183,6 +15296,36 @@ kgr:indra a schema1:Aggregator ;
         "systems biology" ;
     adms:status "Active" ;
     foaf:homepage <https://www.indra.bio/> .
+
+kgr:infernal a schema1:DataSource ;
+    rdfs:label "Infernal" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Infernal (\"INFERence of RNA ALignment\") is software from the Eddy/Rivas lab for searching DNA sequence databases for RNA structure and sequence similarities. It implements covariance models (CMs), a special case of profile stochastic context-free grammars that score a combination of sequence consensus and RNA secondary structure consensus, so it can find structural RNA homologs that conserve secondary structure more than primary sequence. cmbuild builds a CM from a structure-annotated multiple sequence alignment, cmsearch and cmscan search sequence databases with CMs, cmalign aligns sequences to a CM, and cmcalibrate calibrates E-values. Infernal 1.1 added an HMM filter pipeline that made searches about 100-fold faster than version 1.0. Infernal is the software engine underlying the Rfam database of RNA families and the covariance model search engine of tRNAscan-SE 2.0. It uses the HMMER package and the Easel library, and is distributed as open source under the BSD three-clause license." ;
+    dcterms:hasVersion "1.1.5" ;
+    dcterms:identifier "infernal" ;
+    dcterms:isReferencedBy <doi:10.1093/bioinformatics/btp157>,
+        <doi:10.1093/bioinformatics/btt509> ;
+    dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:infernal.bioconda,
+        kgr:infernal.linux-binaries,
+        kgr:infernal.release-notes,
+        kgr:infernal.rmark3-benchmark,
+        kgr:infernal.software,
+        kgr:infernal.source-tarball,
+        kgr:infernal.userguide,
+        kgr:rfam.cm-models,
+        kgr:trnascan-se.software ;
+    schema1:identifier "RRID:SCR_011809" ;
+    schema1:name "Infernal" ;
+    doap:repository <https://github.com/EddyRivasLab/infernal> ;
+    skos:altLabel "INFERence of RNA ALignment" ;
+    skos:inScheme "genomics",
+        "information technology",
+        "non-coding RNA",
+        "software" ;
+    adms:status "Active" ;
+    foaf:homepage <http://eddylab.org/infernal/> .
 
 kgr:innatedb a schema1:DataSource ;
     rdfs:label "InnateDB" ;
@@ -15767,6 +15910,7 @@ kgr:jaspar a schema1:DataSource ;
         kgr:jaspar.docs,
         kgr:jaspar.matrices,
         kgr:jaspar.web,
+        kgr:pazar.tf_target_downloads,
         kgr:tflink.binding-sites.human,
         kgr:tflink.binding-sites.human.fasta,
         kgr:tflink.binding-sites.human.gff3,
@@ -15894,6 +16038,7 @@ kgr:kegg a schema1:DataSource ;
         kgr:ctd.pathways,
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
+        kgr:dcdb.plain_text_dump,
         kgr:drugmonizome.libraries,
         kgr:enrichr-kg.graph,
         kgr:enrichr.libraries,
@@ -16215,7 +16360,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-11-12T19:45:40+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-12T21:57:10+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -18459,6 +18604,9 @@ kgr:mirbase a schema1:Aggregator ;
         kgr:mirbase.readme,
         kgr:mirbase.rno-gff3,
         kgr:mirbase.tissue-search,
+        kgr:mirdb.funcmir,
+        kgr:mirdb.predicted-targets,
+        kgr:mirdb.predicted-targets-v6,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
         kgr:ncrnadrug.drug-resistance-curated,
@@ -18500,17 +18648,29 @@ kgr:mirdb a schema1:DataSource ;
     rdfs:label "miRDB" ;
     dcterms:created "2026-06-15T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "miRDB is an online database for microRNA (miRNA) target prediction and functional annotations. Targets are predicted by MirTarget, a computational tool trained on thousands of miRNA-target interactions from high-throughput sequencing experiments. The database covers millions of predicted targets regulated by thousands of miRNAs across human, mouse, rat, dog, and chicken, and supports target prediction by miRNA, by gene, and for user-provided custom sequences." ;
+    dcterms:hasVersion "6.0" ;
     dcterms:identifier "mirdb" ;
-    dcterms:isReferencedBy <doi:10.1093/nar/gkz757> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gku1104>,
+        <doi:10.1093/nar/gkz757>,
+        <doi:10.1186/s13059-019-1629-z> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:10116>,
+        <NCBITaxon:9031>,
+        <NCBITaxon:9606>,
+        <NCBITaxon:9615> ;
     schema1:hasPart kgr:biobtree.api,
+        kgr:mirdb.custom-prediction,
+        kgr:mirdb.funcmir,
         kgr:mirdb.predicted-targets,
+        kgr:mirdb.predicted-targets-v6,
         kgr:mirdb.search,
         kgr:msigdb.downloads.human,
         kgr:msigdb.downloads.mouse,
         kgr:spoke.graph ;
     schema1:identifier "RRID:SCR_010848" ;
     schema1:name "miRDB" ;
+    skos:altLabel "MicroRNA Target Prediction Database" ;
     skos:inScheme "genomics",
         "non-coding RNA" ;
     adms:status "Active" ;
@@ -19871,6 +20031,8 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:kg-covid-19.graph,
         kgr:linked-discoveries.site,
         kgr:microbiomekg.api,
+        kgr:mirdb.predicted-targets,
+        kgr:mirdb.predicted-targets-v6,
         kgr:mygene.api,
         kgr:ncatsgardkg.graph,
         kgr:ncbi.ftp,
@@ -20039,7 +20201,8 @@ kgr:ncbitaxon a schema1:Ontology ;
         kgr:uberon.uberon-basic.obo,
         kgr:vbo.json,
         kgr:vbo.obo,
-        kgr:vbo.owl ;
+        kgr:vbo.owl,
+        kgr:zwd.seqid-taxid ;
     schema1:identifier "ncbi-taxon" ;
     schema1:name "NCBI organismal classification" ;
     doap:repository <https://github.com/obophenotype/ncbitaxon> ;
@@ -20337,6 +20500,30 @@ kgr:nextprot a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://www.nextprot.org/> .
 
+kgr:nfiregulomedb a schema1:DataSource ;
+    rdfs:label "NFIregulomeDB" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "NFIregulomeDB (the NFI-Regulome Database) is a literature-curated database of the promoter and enhancer regions of genes regulated by the Nuclear Factor I (NFI) family of transcription factors. Each control region is annotated with transcription and translation start sites, NFI binding sites and the sites of other known or unknown transcription factors, placed on the gene sequence obtained from the UCSC Genome Browser. Genes can be searched by transcription factor family, gene, tissue of expression or disease, and the relative locations and numbers of binding sites across sets of genes can be displayed and compared. The database covers human, mouse and rat genes and was built by the Gronostajski lab at the University at Buffalo (State University of New York); its data were also contributed to ORegAnno and appear as a project in PAZAR. The original site at nfiregulome.ccr.buffalo.edu no longer responds and survives only as Internet Archive Wayback Machine snapshots." ;
+    dcterms:identifier "nfiregulomedb" ;
+    dcterms:isReferencedBy <doi:10.1186/2043-9113-1-4> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:10116>,
+        <NCBITaxon:9606> ;
+    schema1:hasPart kgr:nfiregulomedb.about,
+        kgr:nfiregulomedb.portal,
+        kgr:nfiregulomedb.publication,
+        kgr:pazar.tf_target_downloads,
+        kgr:tfacts.catalogues ;
+    schema1:name "NFIregulomeDB" ;
+    skos:altLabel "NFI Regulome",
+        "NFI-Regulome Database",
+        "NFIRegulomeDB" ;
+    skos:inScheme "gene regulation",
+        "genomics" ;
+    adms:status "Inactive" ;
+    foaf:homepage <http://nfiregulome.ccr.buffalo.edu/> .
+
 kgr:ngbo a schema1:Ontology ;
     rdfs:label "Next Generation Biobanking Ontology" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
@@ -20485,13 +20672,44 @@ kgr:nice a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://ice.ntp.niehs.nih.gov/> .
 
+kgr:nif-ontology a schema1:Ontology ;
+    rdfs:label "NIF Standard Ontology" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The NIF Standard Ontology (NIFSTD) is a collection of modular ontologies developed for the Neuroscience Information Framework (NIF) that provides terms and concepts for neuroscience and biology, including neurons, brain regions, subcellular components, molecules, dysfunctions, investigation techniques and resources. It is maintained by SciCrunch in the NIF-Ontology GitHub repository as Turtle files, with nif.ttl importing the NIF modules and bridge files to external ontologies such as Uberon, ChEBI, the Disease Ontology, the Gene Ontology and an NCBITaxon slim. New terms can be requested through the issue tracker or InterLex. The ontology is licensed under CC BY 4.0 and the repository also hosts the release artifacts of the SPARC Connectivity Knowledge Base of the Autonomic Nervous System (SCKAN)." ;
+    dcterms:hasVersion "3.1 - January 15, 2018" ;
+    dcterms:identifier "nif-ontology" ;
+    dcterms:isReferencedBy <doi:10.1007/s12021-008-9032-z>,
+        <doi:10.3389/fgene.2012.00111> ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:nif-ontology.docs,
+        kgr:nif-ontology.nif-dev.ttl,
+        kgr:nif-ontology.nif.ttl,
+        kgr:nif-ontology.repository,
+        kgr:sckan.data_release ;
+    schema1:identifier "RRID:SCR_005414" ;
+    schema1:name "NIF Standard Ontology" ;
+    doap:repository <https://github.com/SciCrunch/NIF-Ontology> ;
+    skos:altLabel "NIF Ontology",
+        "NIF Standard",
+        "NIF-Ontology",
+        "NIFSTD",
+        "Neuroscience Information Framework Standard Ontology" ;
+    skos:inScheme "anatomy and development",
+        "biological systems",
+        "cell biology",
+        "neuroscience" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/SciCrunch/NIF-Ontology> .
+
 kgr:nif_cell a schema1:Ontology ;
     rdfs:label "NIF Cell" ;
     dcterms:created "2025-09-29T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Neuronal cell types" ;
     dcterms:identifier "nif_cell" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:nif_cell.ttl ;
+    schema1:hasPart kgr:nif-ontology.nif.ttl,
+        kgr:nif_cell.ttl ;
     schema1:name "NIF Cell" ;
     skos:inScheme "anatomy and development",
         "biological systems",
@@ -20506,7 +20724,8 @@ kgr:nif_dysfunction a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "nif_dysfunction" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:nif_dysfunction.ttl ;
+    schema1:hasPart kgr:nif-ontology.nif.ttl,
+        kgr:nif_dysfunction.ttl ;
     schema1:name "NIF Dysfunction" ;
     skos:inScheme "biomedical",
         "neuroscience" ;
@@ -20519,7 +20738,8 @@ kgr:nif_grossanatomy a schema1:Ontology ;
     dcterms:description "Description unavailable." ;
     dcterms:identifier "nif_grossanatomy" ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:nif_grossanatomy.ttl ;
+    schema1:hasPart kgr:nif-ontology.nif.ttl,
+        kgr:nif_grossanatomy.ttl ;
     schema1:name "NIF Gross Anatomy" ;
     skos:inScheme "anatomy and development",
         "neuroscience" ;
@@ -21004,6 +21224,7 @@ kgr:npo a schema1:Ontology ;
     dcterms:isReferencedBy <PMID:35267146> ;
     dcterms:modified "2026-08-06T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:npo.kg-bioportal,
+        kgr:sckan.data_release,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
     schema1:name "Neuron Phenotype Ontology" ;
@@ -23029,6 +23250,7 @@ kgr:oreganno a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dorothea.graph,
         kgr:oreganno.ucsc,
+        kgr:pazar.tf_target_downloads,
         kgr:tflink.binding-sites.human,
         kgr:tflink.binding-sites.human.fasta,
         kgr:tflink.binding-sites.human.gff3,
@@ -23862,6 +24084,27 @@ kgr:paxdb a schema1:DataSource ;
     skos:inScheme "proteomics" ;
     adms:status "Active" ;
     foaf:homepage <https://pax-db.org/> .
+
+kgr:pazar a schema1:DataSource ;
+    rdfs:label "PAZAR" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "PAZAR is an open-access, open-source software framework and database for the collection and dissemination of cis-regulatory sequence annotation, including experimentally characterized and predicted transcription factor binding sites, regulatory sequences and transcription factor to target gene relationships. It works as an \"information mall\" of independently curated \"boutique\" projects whose curators own and release their data, with contributed collections such as ORegAnno, JASPAR CORE and NFIRegulome alongside many ChIP-chip and ChIP-seq derived datasets. PAZAR was developed by the Wasserman lab at the Centre for Molecular Medicine and Therapeutics (University of British Columbia) and offered weekly tab-delimited TF-target gene dumps, GFF and XML exports, ChIP-seq peak files and a Perl API. The pazar.info site stopped serving the database around 2019 and the domain was later parked; the site survives only as Internet Archive Wayback Machine snapshots, and the source code remains on SourceForge." ;
+    dcterms:identifier "pazar" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkn783>,
+        <doi:10.1186/gb-2007-8-10-r207> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:pazar.api_docs,
+        kgr:pazar.portal,
+        kgr:pazar.sourceforge,
+        kgr:pazar.tf_target_downloads,
+        kgr:pazar.xml_downloads,
+        kgr:tfacts.catalogues ;
+    schema1:name "PAZAR" ;
+    skos:altLabel "PAZAR database" ;
+    skos:inScheme "gene regulation",
+        "genomics" ;
+    adms:status "Inactive" ;
+    foaf:homepage <http://www.pazar.info/> .
 
 kgr:pbpko a schema1:Ontology ;
     rdfs:label "Physiologically-Based Pharmacokinetic Ontology" ;
@@ -26126,13 +26369,18 @@ kgr:psygenet a schema1:DataSource ;
     dcterms:hasVersion "2.0" ;
     dcterms:identifier "psygenet" ;
     dcterms:isReferencedBy <doi:10.1093/bioinformatics/btv301>,
-        <doi:10.1093/bioinformatics/btx506> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+        <doi:10.1093/bioinformatics/btx506>,
+        <doi:10.1093/database/bax043> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:disgenet.data,
+        kgr:psygenet.corpus,
         kgr:psygenet.genedisease,
         kgr:psygenet.psygenet2r ;
+    schema1:identifier "RRID:SCR_014406" ;
     schema1:name "PsyGeNET" ;
+    skos:altLabel "Psychiatric disorders Gene association NETwork" ;
     skos:inScheme "biomedical",
         "genomics",
         "mental disorders",
@@ -26183,9 +26431,13 @@ kgr:pubchem a schema1:DataSource ;
         kgr:biobtree.graph.human-subgraph,
         kgr:biomarker.bkg.edges.compound,
         kgr:biomarker.bkg.nodes.compound,
+        kgr:cdcdb.csv,
+        kgr:cdcdb.figshare,
+        kgr:cdcdb.sqlite,
         kgr:chemid.pubchem-guide,
         kgr:chemid.pubchem-source,
         kgr:comptox-dashboard.portal,
+        kgr:dcdb.plain_text_dump,
         kgr:drugmonizome.libraries,
         kgr:drugshot.drugrif,
         kgr:dsstoxdb.downloads,
@@ -26290,6 +26542,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:camera.explore,
         kgr:dbptm.downloads,
         kgr:dbsno.downloads,
+        kgr:dcdb.plain_text_dump,
         kgr:drugshot.autorif,
         kgr:drugshot.autorif-cooccurrence,
         kgr:drugshot.drugrif,
@@ -26367,6 +26620,8 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:pharos.portal,
         kgr:pharos.tcrd.download,
         kgr:phosphoelm.dataset,
+        kgr:psygenet.corpus,
+        kgr:psygenet.genedisease,
         kgr:pubmed-knowledge-graph.website,
         kgr:pubmed.advanced.search,
         kgr:pubmed.baseline,
@@ -27100,7 +27355,9 @@ kgr:refseq a schema1:DataSource ;
         kgr:string.protein.links.full,
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
-        kgr:string.protein.physical.links.full ;
+        kgr:string.protein.physical.links.full,
+        kgr:zwd.alignments,
+        kgr:zwd.seqid-taxid ;
     schema1:identifier "RRID:SCR_022748" ;
     schema1:name "RefSeq" ;
     doap:repository <https://ftp.ncbi.nlm.nih.gov/refseq/> ;
@@ -27364,7 +27621,7 @@ kgr:rfam a schema1:DataSource ;
     dcterms:isReferencedBy <doi:10.1093/nar/gkae1023>,
         <https://doi.org/10.1093/nar/gkaa1047> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:rfam.api,
         kgr:rfam.cm-models,
@@ -28148,16 +28405,26 @@ kgr:sckan a schema1:DataSource ;
     rdfs:label "SCKAN" ;
     dcterms:created "2025-09-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "SCKAN (SPARC Connectivity Knowledge base of the Autonomic Nervous system) is a curated knowledge base representing neural circuit connectivity in the autonomic nervous system, derived from SPARC data, anatomical expert interviews, and scientific literature. It supports reasoning and querying of central and peripheral nervous system-end organ circuitry, including detailed ApiNATOMY models for organs such as bladder, heart, colon, stomach, spleen, pancreas, and airways." ;
+    dcterms:hasVersion "2026-02-11" ;
     dcterms:identifier "sckan" ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.3389/fninf.2025.1541184> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cfde-ddkg.sparc,
         kgr:sckan.apinatomy,
+        kgr:sckan.curation-manual,
         kgr:sckan.data_release,
         kgr:sckan.docs,
+        kgr:sckan.explorer,
+        kgr:sckan.query-examples,
         kgr:sckan.query_interface,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
+    schema1:identifier "RRID:SCR_026088" ;
     schema1:name "SCKAN" ;
+    doap:repository <https://github.com/SciCrunch/sparc-curation> ;
+    skos:altLabel "SPARC Connectivity Knowledge base of the Autonomic Nervous System",
+        "SPARC Connectivity Knowledgebase of the Autonomic Nervous System" ;
     skos:inScheme "anatomy and development",
         "neuroscience" ;
     adms:status "Active" ;
@@ -29325,6 +29592,7 @@ kgr:sparc a schema1:DataSource ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:cfde-ddkg.sparc,
         kgr:digcfdekg.graph,
+        kgr:sckan.data_release,
         kgr:sparc.data,
         kgr:sparc.portal ;
     schema1:identifier "RRID:SCR_017041" ;
@@ -30355,6 +30623,7 @@ kgr:tcga a schema1:DataSource ;
         kgr:chea-kg.graph,
         kgr:chea-kg.libraries,
         kgr:chea.libraries,
+        kgr:cmaup.download.transcriptomic-profiles,
         kgr:connections-hypothesis-kp.graph,
         kgr:drbioright.portal,
         kgr:harmonizome.downloads,
@@ -30521,12 +30790,19 @@ kgr:text-mining-kp a schema1:KnowledgeGraph ;
 kgr:tfacts a schema1:DataSource ;
     rdfs:label "TFactS" ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "TFactS is a catalogue of literature-curated, signed transcription factor to target gene regulatory interactions, where each interaction records whether a transcription factor up-regulates or down-regulates its target. By comparing these curated \"regulons\" against differentially expressed genes, TFactS infers the activation or repression state of transcription factors from gene expression (microarray) data. It served as a foundational upstream source for the DoRothEA regulon collection. The original web service at tfacts.org is no longer operational and the domain has been re-registered for unrelated content." ;
+    dcterms:description "TFactS is a catalogue of literature-curated, signed transcription factor to target gene regulatory interactions, where each interaction records whether a transcription factor up-regulates or down-regulates its target. By comparing these curated \"regulons\" against differentially expressed genes, TFactS infers the activation or repression state of transcription factors from gene expression (microarray) data. The catalogue was compiled from the literature and from PAZAR, NFIregulomeDB, TRED and TRRD, and is offered as a sign-less version and a sign-sensitive version (version 2, 2012). TFactS was developed at the de Duve Institute (Université catholique de Louvain) and served as a foundational upstream source for the DoRothEA regulon collection. The original web service at tfacts.org is no longer operational and the domain now redirects to unrelated content; the site and catalogue file survive as Internet Archive Wayback Machine snapshots." ;
     dcterms:identifier "tfacts" ;
-    dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/20215436/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkq149>,
+        <doi:10.1371/journal.pone.0039666> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:10116>,
+        <NCBITaxon:9606> ;
     schema1:hasPart kgr:dorothea.graph,
-        kgr:tfacts.publication ;
+        kgr:tfacts.catalogues,
+        kgr:tfacts.publication,
+        kgr:tfacts.tfactsr,
+        kgr:tfacts.wayback ;
     schema1:name "TFactS" ;
     skos:inScheme "gene regulation",
         "genomics",
@@ -31037,11 +31313,16 @@ kgr:treatkb a schema1:DataSource ;
 kgr:tred a schema1:DataSource ;
     rdfs:label "Transcriptional Regulatory Element Database" ;
     dcterms:created "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "TRED (Transcriptional Regulatory Element Database) was a curated database of cis-regulatory elements, with an emphasis on transcription factor (TF) binding sites, TF-promoter regulatory interactions, and promoter annotations for human, mouse, and rat genes. It combined computational promoter prediction with literature-based manual curation of regulatory interactions, and was originally developed and hosted at Cold Spring Harbor Laboratory. TRED served as an upstream primary source for downstream regulatory network resources such as DoRothEA. The resource is now legacy and effectively superseded; its original hosting sites are no longer serving content, and it was dropped from some downstream tools due to licensing constraints." ;
+    dcterms:description "TRED (Transcriptional Regulatory Element Database) was a curated database of cis-regulatory elements, with an emphasis on transcription factor (TF) binding sites, TF-promoter regulatory interactions, and promoter annotations for human, mouse, and rat genes. Known promoters were extracted from GenBank, EPD and DBTSS and combined with FirstEF promoter prediction, mRNA/EST evidence and cross-species comparison, with quality levels assigned to each promoter; TF binding motifs and target genes were hand-curated, focusing on 36 cancer-related TF families. The web site also offered TF target gene and motif searches, gene regulatory networks, ortholog search and sequence analysis tools. TRED was developed in the Michael Zhang lab at Cold Spring Harbor Laboratory. TRED served as an upstream primary source for downstream regulatory network resources such as DoRothEA. The resource is now legacy and effectively superseded; its original hosting sites are no longer serving content, and it was dropped from some downstream tools due to licensing constraints." ;
     dcterms:identifier "tred" ;
-    dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/17202159/> ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gki004>,
+        <doi:10.1093/nar/gkl1041> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:10116>,
+        <NCBITaxon:9606> ;
     schema1:hasPart kgr:dorothea.graph,
+        kgr:tfacts.catalogues,
         kgr:tflink.binding-sites.human,
         kgr:tflink.binding-sites.human.fasta,
         kgr:tflink.binding-sites.human.gff3,
@@ -31055,9 +31336,11 @@ kgr:tred a schema1:DataSource ;
         kgr:tflink.interactions.worm,
         kgr:tflink.interactions.yeast,
         kgr:tflink.interactions.zebrafish,
-        kgr:tred.docs ;
+        kgr:tred.docs,
+        kgr:tred.wayback ;
     schema1:identifier "RRID:SCR_005661" ;
     schema1:name "Transcriptional Regulatory Element Database" ;
+    skos:altLabel "TRED" ;
     skos:inScheme "gene regulation",
         "genomics",
         "systems biology" ;
@@ -31084,6 +31367,57 @@ kgr:treefam a schema1:DataSource ;
         "organisms" ;
     adms:status "Active" ;
     foaf:homepage <http://www.treefam.org/> .
+
+kgr:trnascan-se a schema1:DataSource ;
+    rdfs:label "tRNAscan-SE" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "tRNAscan-SE is a program from the Lowe Lab at the University of California Santa Cruz that predicts transfer RNA (tRNA) genes in DNA or RNA sequences supplied in FASTA format. It pioneered the large-scale use of covariance models for tRNA annotation; version 2.0 uses Infernal 1.1 as its covariance model search engine, with models trained on tRNAs from the three domains of life, isotype-specific models for functional classification, and filters for pseudogenes and tRNA-derived SINEs. Output is available as a tabular report, secondary structure file, FASTA, BED, GTF and GFF3. The software is distributed under GPL-3.0 on GitHub and bioconda, and an online search server runs tRNAscan-SE 2.0 on queries of under 1 million nucleotides. tRNAscan-SE produces the tRNA gene predictions in the Genomic tRNA Database (GtRNAdb)." ;
+    dcterms:hasVersion "2.0.13" ;
+    dcterms:identifier "trnascan-se" ;
+    dcterms:isReferencedBy <doi:10.1007/978-1-4939-9173-0_1>,
+        <doi:10.1093/nar/25.5.955>,
+        <doi:10.1093/nar/gkab688>,
+        <doi:10.1093/nar/gkw413> ;
+    dcterms:license <https://www.gnu.org/licenses/gpl-3.0.html> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:gtrnadb.archives,
+        kgr:gtrnadb.hg38_trnascan_results,
+        kgr:trnascan-se.bioconda,
+        kgr:trnascan-se.change-log,
+        kgr:trnascan-se.help,
+        kgr:trnascan-se.software,
+        kgr:trnascan-se.source-tarball,
+        kgr:trnascan-se.web-server ;
+    schema1:identifier "RRID:SCR_008637" ;
+    schema1:name "tRNAscan-SE" ;
+    doap:repository <https://github.com/UCSC-LoweLab/tRNAscan-SE> ;
+    skos:inScheme "genomics",
+        "non-coding RNA" ;
+    adms:status "Active" ;
+    foaf:homepage <https://trna.ucsc.edu/tRNAscan-SE/> .
+
+kgr:trrd a schema1:DataSource ;
+    rdfs:label "Transcription Regulatory Regions Database" ;
+    dcterms:created "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "The Transcription Regulatory Regions Database (TRRD) is a manually curated database of the structure and function of transcription regulatory regions of eukaryotic genes, developed at the Institute of Cytology and Genetics, Siberian Branch of the Russian Academy of Sciences (Novosibirsk). Each entry corresponds to a gene and records only experimentally confirmed data, annotated from the scientific literature, on promoters, enhancers, silencers and locus control regions, transcription factor binding sites, the transcription factors that bind them, and gene expression patterns. The data are split into linked libraries (TRRDGENES, TRRDUNITS, TRRDSITES, TRRDFACTORS, TRRDEXP, TRRDLCR, TRRDBIB and, from release 7.0, TRRDSTARTS) that are queried through a Sequence Retrieval System (SRS) server. The last announced release is TRRD 7.0 (September 2005); the SRS libraries were last indexed in November 2015. The website and SRS server still respond but the database is no longer updated. TRRD is one of the curated sources of transcription factor to target gene interactions compiled into TFactS." ;
+    dcterms:hasVersion "7.0" ;
+    dcterms:identifier "trrd" ;
+    dcterms:isReferencedBy <doi:10.1093/nar/27.1.303>,
+        <doi:10.1093/nar/28.1.298>,
+        <doi:10.1093/nar/30.1.312> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:2759> ;
+    schema1:hasPart kgr:tfacts.catalogues,
+        kgr:trrd.portal,
+        kgr:trrd.schema,
+        kgr:trrd.srs ;
+    schema1:identifier "RRID:SCR_005723" ;
+    schema1:name "Transcription Regulatory Regions Database" ;
+    skos:altLabel "TRRD" ;
+    skos:inScheme "gene regulation",
+        "genomics" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://wwwmgs.bionet.nsc.ru/mgs/gnw/trrd/> .
 
 kgr:trrust a schema1:DataSource ;
     rdfs:label "TRRUST" ;
@@ -31167,7 +31501,8 @@ kgr:ttd a schema1:Aggregator ;
     dcterms:license <https://idrblab.org/ttd/> ;
     dcterms:modified "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:genecards.web.interface,
+    schema1:hasPart kgr:dcdb.plain_text_dump,
+        kgr:genecards.web.interface,
         kgr:kg-covid-19.graph,
         kgr:medkg.site,
         kgr:multiomics-kp.graph,
@@ -31494,7 +31829,9 @@ kgr:ucsc a schema1:DataSource ;
         kgr:gencode.docs,
         kgr:genecards.web.interface,
         kgr:gpn-star.ucsc-hub,
+        kgr:gtrnadb.hg38_trnascan_results,
         kgr:mygene.api,
+        kgr:nfiregulomedb.portal,
         kgr:togows.ucsc-api,
         kgr:ucsc.api,
         kgr:ucsc.browser,
@@ -31567,6 +31904,8 @@ kgr:umls a schema1:Aggregator ;
     schema1:hasPart kgr:babel.compendia,
         kgr:bioportal.api,
         kgr:bioportal.portal,
+        kgr:cdcdb.csv,
+        kgr:cdcdb.sqlite,
         kgr:cfde-ddkg.downloads,
         kgr:cfde-ddkg.portal,
         kgr:eram.downloads,
@@ -31806,6 +32145,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:dbnsfp.commercial,
         kgr:dbptm.downloads,
         kgr:dbsno.downloads,
+        kgr:dcdb.plain_text_dump,
         kgr:disgenet.data,
         kgr:disprot.downloads,
         kgr:drugmechdb.graph,
@@ -33330,16 +33670,22 @@ kgr:zp a schema1:Ontology ;
 kgr:zwd a schema1:DataSource ;
     rdfs:label "Zasha Weinberg Data" ;
     dcterms:created "2025-10-29T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The Zasha Weinberg Data repository is a collection of RNA sequence and structure data, including information about regulatory RNA elements, riboswitches, and non-coding RNAs. This data source contributes to the RNAcentral aggregator and focuses on structured RNA data from computational and comparative genomics analyses." ;
+    dcterms:description "Zasha Weinberg Data (ZWD) is a git-based collection of multiple sequence alignments of structured non-coding RNAs (and some ssDNA) from comparative genomics work by Zasha Weinberg and colleagues, including candidate structured RNAs, riboswitch classes and their variants, self-cleaving ribozymes and other conserved RNA motifs, mostly from bacteria and metagenomes. Each subdirectory holds the Stockholm-format alignments from one publication, with a secondary-structure consensus line in Rfam conventions. Most alignments were submitted to Rfam, and ZWD is an RNAcentral expert database." ;
     dcterms:identifier "zwd" ;
-    dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkx699> ;
+    dcterms:modified "2026-11-12T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db,
-        kgr:zwd.alignments ;
+        kgr:zwd.alignments,
+        kgr:zwd.seqid-taxid ;
     schema1:name "Zasha Weinberg Data" ;
+    doap:repository <https://bitbucket.org/zashaw/zashaweinbergdata> ;
+    skos:altLabel "ZWD",
+        "ZashaWeinbergData" ;
     skos:inScheme "genomics",
+        "microbiology",
         "non-coding RNA" ;
     adms:status "Active" ;
     foaf:homepage <https://bitbucket.org/zashaw/zashaweinbergdata/src/master/> .
@@ -35060,6 +35406,21 @@ kgr:cam-kp.sparql a schema1:ProgrammingInterface ;
     dcterms:description "SPARQL endpoint for complex semantic queries on the RDF triplestore containing causal activity models, ontologies, and integrated biomedical knowledge" ;
     schema1:url <https://stars-app.renci.org/cam/sparql> .
 
+kgr:cameo.codebook a schema1:DataModelProduct ;
+    rdfs:label "CAMEO Event and Actor Codebook (version 1.1b3)" ;
+    dcterms:description "CAMEO Event and Actor Codebook, version 1.1b3 (March 2012), the most recent version, covering the verb (event) codebook, actor codebook, the CAMEORCS religious coding scheme for about 1,500 religions, and the ethnic group taxonomy of about 650 codes." ;
+    schema1:url <https://parusanalytics.com/eventdata/cameo.dir/CAMEO.Manual.1.1b3.pdf> .
+
+kgr:cameo.codebook-0.9b6 a schema1:DataModelProduct ;
+    rdfs:label "CAMEO Codebook (version 0.9b6)" ;
+    dcterms:description "CAMEO codebook version 0.9b6 (July 2009), the version used in the CAMEO-based ICEWS research." ;
+    schema1:url <https://parusanalytics.com/eventdata/cameo.dir/CAMEO.09b6.pdf> .
+
+kgr:cameo.ethnic-groups a schema1:DataModelProduct ;
+    rdfs:label "CAMEO Ethnic Group Coding Framework" ;
+    dcterms:description "Documentation and an Excel file detailing the CAMEO ethnic group coding framework." ;
+    schema1:url <https://parusanalytics.com/eventdata/cameo.dir/CAMEO.Ethnic.Groups.zip> .
+
 kgr:camera.user-guide a schema1:DocumentationProduct ;
     rdfs:label "CAMERA User Guide" ;
     dcterms:description "CAMERA user guide, with help and FAQs for using the database and interface." ;
@@ -35219,6 +35580,16 @@ kgr:cdc-svi.map a schema1:GraphicalInterface ;
     rdfs:label "SVI Interactive Map" ;
     dcterms:description "Web-based interactive map for exploring SVI scores and underlying census variables by census tract and county." ;
     schema1:url <https://www.atsdr.cdc.gov/place-health/php/svi/svi-interactive-map.html> .
+
+kgr:cdcdb.code a schema1:ProcessProduct ;
+    rdfs:label "CDCDB Generation Code" ;
+    dcterms:description "Source code used to generate CDCDB from its source databases." ;
+    schema1:url <https://github.com/Omer-N/CDCDB> .
+
+kgr:cdcdb.portal a schema1:GraphicalInterface ;
+    rdfs:label "CDCDB Website" ;
+    dcterms:description "CDCDB website, with a preview table of all drug combinations, documentation of how the database is built, and downloads of the latest and past weekly versions." ;
+    schema1:url <https://icc.ise.bgu.ac.il/medical_ai/CDCDB/> .
 
 kgr:cdd.cdsearch a schema1:GraphicalInterface ;
     rdfs:label "CD-Search" ;
@@ -36038,10 +36409,75 @@ kgr:cm4ai_talent_kg.web_interface a schema1:GraphicalInterface ;
     dcterms:description "Web-based interface for browsing and exploring the CM4AI Talent Knowledge Graph" ;
     schema1:url <https://cm4aikg.vercel.app/> .
 
+kgr:cmaup.download-page a schema1:Product ;
+    rdfs:label "CMAUP Download Page" ;
+    dcterms:description "Download page listing all CMAUP v2.0 and v1.0 bulk data files as tab-separated plain-text files." ;
+    schema1:url <https://bidd.group/CMAUP/download.html> .
+
+kgr:cmaup.download.ingredient-target-activities a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Ingredient-Target Activity Associations" ;
+    dcterms:description "Tab-separated file of experimentally derived quantitative activity values for each ingredient-target pair in CMAUP v2.0, with references for each activity." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Ingredient_Target_Associations_ActivityValues_References.txt> .
+
+kgr:cmaup.download.ingredients-active a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Active Ingredients" ;
+    dcterms:description "Tab-separated file of CMAUP v2.0 plant ingredients with potent activity, with ChEMBL and PubChem identifiers, physicochemical properties, InChI, InChIKey and SMILES." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Ingredients_onlyActive.txt> .
+
+kgr:cmaup.download.ingredients-all a schema1:Product ;
+    rdfs:label "CMAUP v2.0 All Ingredients" ;
+    dcterms:description "Tab-separated file of all CMAUP v2.0 plant ingredients with names, ChEMBL and PubChem identifiers, ADMETlab-calculated physicochemical properties, InChI, InChIKey and SMILES." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Ingredients_All.txt> .
+
+kgr:cmaup.download.oral-bioavailability a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Ingredient Human Oral Bioavailability" ;
+    dcterms:description "Tab-separated file of human oral bioavailability indicators for all CMAUP v2.0 ingredients, calculated with RDKit and evaluated using SwissADME criteria and the HobPre predictor." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Human_Oral_Bioavailability_information_of_Ingredients_All.txt> .
+
+kgr:cmaup.download.plant-disease-associations a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Plant-Human Disease Associations" ;
+    dcterms:description "Tab-separated file of associations between plants and human diseases at four levels of evidence (therapeutic target, reversion of disease transcriptomic change, clinical trials of plants, and clinical trials of plant ingredients)." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Plant_Human_Disease_Associations.txt> .
+
+kgr:cmaup.download.plant-ingredient-active a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Plant-Active Ingredient Associations" ;
+    dcterms:description "Tab-separated file of plant-ingredient pairs in CMAUP v2.0, limited to active ingredients." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Plant_Ingredient_Associations_onlyActiveIngredients.txt> .
+
+kgr:cmaup.download.plant-ingredient-all a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Plant-Ingredient Associations" ;
+    dcterms:description "Tab-separated file of all plant-ingredient pairs in CMAUP v2.0." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Plant_Ingredient_Associations_allIngredients.txt> .
+
+kgr:cmaup.download.plant-targets-degs a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Plant Targets Overlapping Disease DEGs" ;
+    dcterms:description "Tab-separated file of molecular targets of plants that overlap with differentially expressed genes identified by transcriptomic analysis of 74 diseases." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Plant_molecular_targets_overlapping_with_DEGs.txt> .
+
+kgr:cmaup.download.plants a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Plants" ;
+    dcterms:description "Tab-separated file of CMAUP v2.0 plants with Latin names and NCBI Taxonomy identifiers and names at species, genus and family level." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Plants.txt> .
+
+kgr:cmaup.download.readme a schema1:DocumentationProduct ;
+    rdfs:label "CMAUP v2.0 Download Readme" ;
+    dcterms:description "Plain-text readme describing the data columns of each CMAUP v2.0 download file." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/Download_Readme.txt> .
+
+kgr:cmaup.download.targets a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Targets" ;
+    dcterms:description "Tab-separated file of CMAUP v2.0 molecular targets with gene symbols, protein names, UniProt, ChEMBL and TTD identifiers, and protein classes." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Targets.txt> .
+
+kgr:cmaup.portal a schema1:GraphicalInterface ;
+    rdfs:label "CMAUP Web Portal" ;
+    dcterms:description "Web interface for searching and browsing CMAUP plants by usage class, target protein, Gene Ontology term, KEGG pathway, disease, geographic location and chemical ingredient, with activity values and source references." ;
+    schema1:url <https://bidd.group/CMAUP/> .
+
 kgr:cmaup.publication a schema1:DocumentationProduct ;
     rdfs:label "CMAUP Database Publication" ;
     dcterms:description "Nucleic Acids Research database article describing CMAUP, its data model, and its coverage of useful plants, ingredients, targets, pathways, and phenotypes." ;
-    schema1:url <https://academic.oup.com/nar/article/47/D1/D1118/5144144> .
+    schema1:url <https://doi.org/10.1093/nar/gky965> .
 
 kgr:cmf.owl a schema1:OntologyProduct ;
     rdfs:label "CranioMaxilloFacial ontology OWL edition" ;
@@ -37086,6 +37522,11 @@ kgr:dcat.ttl a schema1:DataModelProduct ;
     rdfs:label "DCAT Turtle Vocabulary" ;
     dcterms:description "Turtle serialization of the W3C Data Catalog Vocabulary namespace." ;
     schema1:url <https://www.w3.org/ns/dcat.ttl> .
+
+kgr:dcdb.portal a schema1:GraphicalInterface ;
+    rdfs:label "DCDB Web Interface" ;
+    dcterms:description "Former DCDB web interface supporting browsing and query by individual drug, drug combination, usage and drug target, with wildcard text search." ;
+    schema1:url <http://www.cls.zju.edu.cn/dcdb/> .
 
 kgr:dcdb.publication a schema1:DocumentationProduct ;
     rdfs:label "DCDB Publication" ;
@@ -40567,11 +41008,6 @@ kgr:gtrd.track_hub a schema1:Product ;
     dcterms:description "UCSC-format track hub with GTRD bigBed and bigWig tracks for hg38, mm10, rn6, danRer11, dm6, ce11, sacCer3, S. pombe, and TAIR10 genome assemblies, viewable in the UCSC and Ensembl genome browsers." ;
     schema1:url <http://gtrd.biouml.org:8888/downloads/current/gtrdHub/hub.txt> .
 
-kgr:gtrnadb.archives a schema1:Product ;
-    rdfs:label "Previous Releases Archive" ;
-    dcterms:description "Archive of previous GtRNAdb data releases with change logs" ;
-    schema1:url <https://gtrnadb.org/archives.html> .
-
 kgr:gtrnadb.blast a schema1:GraphicalInterface ;
     rdfs:label "Search by Sequence (BLAST)" ;
     dcterms:description "BLAST search interface for sequence similarity searches against all tRNAs in the database" ;
@@ -40601,6 +41037,11 @@ kgr:gtrnadb.sifter a schema1:GraphicalInterface ;
     rdfs:label "tRNA Sifter" ;
     dcterms:description "Search tRNAs by species, amino acid isotype, anticodon, intron count, tRNA score, and structural features" ;
     schema1:url <https://gtrnadb.org/search.html> .
+
+kgr:gtrnadb.trap_predictions a schema1:GraphicalInterface ;
+    rdfs:label "tRAP tRNA Gene Activity Predictions" ;
+    dcterms:description "tRNA gene activity predictions for 29 placental mammals, including human and mouse, made with the tRAP (tRNA gene Activity Predictor) pipeline, with per-species result pages sorted by tRNA name or by isotype and activity." ;
+    schema1:url <https://gtrnadb.org/tRAP/> .
 
 kgr:gutmdisorder.literature_associations a schema1:Product ;
     rdfs:label "gutMDisorder v2.0 literature associations" ;
@@ -41462,6 +41903,26 @@ kgr:iceo.owl a schema1:OntologyProduct ;
     dcterms:description "Integrative and Conjugative Element Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/iceo.owl> .
 
+kgr:icews.dataverse a schema1:GraphicalInterface ;
+    rdfs:label "ICEWS Dataverse" ;
+    dcterms:description "The ICEWS collection on Harvard Dataverse, gathering the coded event data, dictionaries, event aggregations and ground truth data set releases." ;
+    schema1:url <https://dataverse.harvard.edu/dataverse/icews> .
+
+kgr:icews.dictionaries a schema1:Product ;
+    rdfs:label "ICEWS Dictionaries" ;
+    dcterms:description "ICEWS dictionaries of named actors and generic agents, with their aliases and time-dependent affiliations to other actors, countries and sectors, plus the sector list (tab-delimited and CSV files with read-me documentation)." ;
+    schema1:url <https://doi.org/10.7910/DVN/28118> .
+
+kgr:icews.ground-truth a schema1:Product ;
+    rdfs:label "ICEWS Events of Interest Ground Truth Data Set" ;
+    dcterms:description "ICEWS Events of Interest Ground Truth Data Set, recording for each country and month (2001 to May 2014) whether macro-level Events of Interest such as domestic political crisis, rebellion, insurgency, ethnic/religious violence and international crisis occurred. No longer supported." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/2686391> .
+
+kgr:icews.readme a schema1:DocumentationProduct ;
+    rdfs:label "ICEWS Coded Event Data Read Me" ;
+    dcterms:description "Read-me document for the ICEWS Coded Event Data, describing the file layout and fields of the event records." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/2548466> .
+
 kgr:icgc.downloads a schema1:Product ;
     rdfs:label "ICGC 25K Data Downloads" ;
     dcterms:description "Controlled-access cancer genomics data downloads, including the ICGC 25K release and PCAWG data, obtained through the ICGC DACO application process and Score download client." ;
@@ -41761,6 +42222,42 @@ kgr:indra.python a schema1:ProcessProduct ;
     rdfs:label "INDRA Python Library" ;
     dcterms:description "Python library for automated model assembly from mechanistic knowledge" ;
     schema1:url <https://github.com/sorgerlab/indra> .
+
+kgr:infernal.bioconda a schema1:ProcessProduct ;
+    rdfs:label "Infernal Bioconda Package" ;
+    dcterms:description "Infernal packaged for the conda package manager in the bioconda channel. Infernal is also packaged for Debian (infernal, infernal-doc) and Homebrew (brewsci/bio)." ;
+    schema1:url <https://anaconda.org/bioconda/infernal> .
+
+kgr:infernal.linux-binaries a schema1:ProcessProduct ;
+    rdfs:label "Infernal Linux/Intel Binaries" ;
+    dcterms:description "Infernal 1.1.5 source distribution with precompiled Linux/Intel binaries. Equivalent archives with binaries for macOS on Apple Silicon and macOS on Intel are linked from the Infernal homepage." ;
+    schema1:url <http://eddylab.org/infernal/infernal-1.1.5-linux-intel-gcc.tar.gz> .
+
+kgr:infernal.release-notes a schema1:DocumentationProduct ;
+    rdfs:label "Infernal 1.1.5 Release Notes" ;
+    dcterms:description "Release notes for Infernal 1.1.5, listing the changes from 1.1.4." ;
+    schema1:url <http://eddylab.org/infernal/RELEASE-1.1.5.md> .
+
+kgr:infernal.rmark3-benchmark a schema1:Product ;
+    rdfs:label "Infernal 1.1 RMARK3 Benchmark" ;
+    dcterms:description "Files for reproducing the internal RMARK3 benchmark of RNA homology search reported in the Infernal 1.1 Bioinformatics publication." ;
+    schema1:url <http://eddylab.org/infernal/i1.1-benchmark-rmark3.tar.gz> .
+
+kgr:infernal.software a schema1:ProcessProduct ;
+    rdfs:label "Infernal Software Repository" ;
+    dcterms:description "Infernal source code repository on GitHub, used for Infernal development. Building from the repository also requires the HMMER and Easel repositories from EddyRivasLab. Release tags up to infernal-1.1.5 are kept in the repository." ;
+    schema1:identifier "RRID:SCR_011809" ;
+    schema1:url <https://github.com/EddyRivasLab/infernal> .
+
+kgr:infernal.source-tarball a schema1:ProcessProduct ;
+    rdfs:label "Infernal Source Code Archive" ;
+    dcterms:description "Infernal 1.1.5 (7 Sep 2023) source code distribution, a gzipped tar archive that includes the bundled HMMER and Easel sources. Older releases from 0.1 onward are linked from the Infernal homepage." ;
+    schema1:url <http://eddylab.org/infernal/infernal-1.1.5.tar.gz> .
+
+kgr:infernal.userguide a schema1:DocumentationProduct ;
+    rdfs:label "Infernal User's Guide" ;
+    dcterms:description "Infernal User's Guide (PDF, 119 pages), with installation instructions, a tutorial, descriptions of the search pipeline, file formats and manual pages for each program." ;
+    schema1:url <http://eddylab.org/infernal/Userguide.pdf> .
 
 kgr:inhs a "Organization" ;
     rdfs:label "Illinois Natural History Survey" .
@@ -43641,10 +44138,10 @@ kgr:mirbase.tissue-search a schema1:GraphicalInterface ;
     dcterms:description "Search interface for finding microRNAs by tissue expression patterns" ;
     schema1:url <https://www.mirbase.org/> .
 
-kgr:mirdb.predicted-targets a schema1:Product ;
-    rdfs:label "miRDB Predicted Targets" ;
-    dcterms:description "Compressed plain-text file of all predicted miRNA targets generated with the MirTarget prediction tool, covering the miRNAs and genes in the current miRDB release." ;
-    schema1:url <https://mirdb.org/download.html> .
+kgr:mirdb.custom-prediction a schema1:GraphicalInterface ;
+    rdfs:label "miRDB Custom Prediction" ;
+    dcterms:description "Custom target prediction tool that runs MirTarget on a user-submitted miRNA sequence or mRNA target sequence for human, mouse, rat, dog or chicken." ;
+    schema1:url <https://mirdb.org/custom.html> .
 
 kgr:mirdb.search a schema1:GraphicalInterface ;
     rdfs:label "miRDB Search Interface" ;
@@ -44656,6 +45153,16 @@ kgr:netpath.pathways a schema1:Product ;
     dcterms:description "Manually curated human signal transduction pathway data, available in BioPAX, PSI-MI, and SBML community standard formats." ;
     schema1:url <http://www.netpath.org/> .
 
+kgr:nfiregulomedb.about a schema1:DocumentationProduct ;
+    rdfs:label "NFIRegulomeDB About page (Wayback Machine archive)" ;
+    dcterms:description "Archived NFIRegulomeDB About page describing the purpose, annotation system and analysis functions of the database, with links to a downloadable public version of the database source, a user guide, and the NFIRegulomeDB dataset in ORegAnno (OREGDS00015)." ;
+    schema1:url <https://web.archive.org/web/20151009100812/http://nfiregulome.ccr.buffalo.edu/about.php> .
+
+kgr:nfiregulomedb.publication a schema1:DocumentationProduct ;
+    rdfs:label "NFI-Regulome Database publication (Journal of Clinical Bioinformatics, 2011)" ;
+    dcterms:description "Peer-reviewed publication describing the NFI-Regulome database, its data model and its tools for annotating and comparing the control regions of NFI-regulated genes. Serves as the authoritative reference now that the website is defunct." ;
+    schema1:url <https://doi.org/10.1186/2043-9113-1-4> .
+
 kgr:ngbo.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "NGBO KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Next Generation Biobanking Ontology (NGBO), produced by KG-Bioportal from the BioPortal submission. The archive contains NGBO_nodes.tsv and NGBO_edges.tsv." ;
@@ -44760,6 +45267,21 @@ kgr:nice.tools a schema1:GraphicalInterface ;
     rdfs:label "NICE Tools" ;
     dcterms:description "NICE computational tools and workflows, including in vitro to in vivo extrapolation (IVIVE), a dose-response Curve Surfer, and physiologically based pharmacokinetic (PBPK) modeling, for applying NICE data to chemical safety evaluation." ;
     schema1:url <https://ice.ntp.niehs.nih.gov/Tools> .
+
+kgr:nif-ontology.docs a schema1:DocumentationProduct ;
+    rdfs:label "NIF-Ontology Documentation" ;
+    dcterms:description "Documentation for developing and using NIFSTD, covering development setup (including loading in Protege), editing processes, the import chain, external sources, neurons and brain regions." ;
+    schema1:url <https://github.com/SciCrunch/NIF-Ontology/tree/master/docs> .
+
+kgr:nif-ontology.nif-dev.ttl a schema1:OntologyProduct ;
+    rdfs:label "NIFSTD (nif.ttl, dev branch)" ;
+    dcterms:description "NIFSTD ontology file in Turtle format from the dev branch, which carries the latest developments ahead of master." ;
+    schema1:url <https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/dev/ttl/nif.ttl> .
+
+kgr:nif-ontology.repository a schema1:OntologyProduct ;
+    rdfs:label "NIF-Ontology GitHub Repository" ;
+    dcterms:description "NIF-Ontology GitHub repository holding the NIFSTD Turtle files (ttl/ directory, with bridge, external, generated and utility subdirectories), documentation, and an issue tracker for new term requests. Workflows that ingest external content are maintained separately in the pyontutils repository." ;
+    schema1:url <https://github.com/SciCrunch/NIF-Ontology> .
 
 kgr:nif_cell.ttl a schema1:OntologyProduct ;
     rdfs:label "NIF Cell (Turtle)" ;
@@ -46601,6 +47123,26 @@ kgr:paxdb.site a schema1:GraphicalInterface ;
     dcterms:description "Web interface for browsing and searching protein abundance data across organisms." ;
     schema1:url <https://pax-db.org/> .
 
+kgr:pazar.api_docs a schema1:DocumentationProduct ;
+    rdfs:label "PAZAR API documentation (Wayback Machine archive)" ;
+    dcterms:description "Archived documentation for the PAZAR Perl API (release 0.01, December 2011), with modules for projects, genes, transcripts, regulatory sequences, transcription factors and their targets, and example scripts for retrieving TF-target information." ;
+    schema1:url <https://web.archive.org/web/20130209063359/http://www.pazar.info:80/apidocs/> .
+
+kgr:pazar.portal a schema1:GraphicalInterface ;
+    rdfs:label "PAZAR web portal (Wayback Machine archive)" ;
+    dcterms:description "Archived snapshot of the PAZAR web portal in the Internet Archive Wayback Machine, preserved because pazar.info is defunct. The portal supported searching by transcription factor, target gene or regulatory sequence (by Ensembl, Entrez Gene, RefSeq, Swiss-Prot or PAZAR identifiers) across public boutique projects." ;
+    schema1:url <https://web.archive.org/web/20170930132649/http://www.pazar.info/> .
+
+kgr:pazar.sourceforge a schema1:ProcessProduct ;
+    rdfs:label "PAZAR SourceForge project" ;
+    dcterms:description "PAZAR open-source project on SourceForge, hosting the source code repository, file releases, mailing list and discussion forums for the PAZAR framework (last updated 2015)." ;
+    schema1:url <https://sourceforge.net/projects/pazar/> .
+
+kgr:pazar.xml_downloads a schema1:Product ;
+    rdfs:label "PAZAR XML downloads (Wayback Machine archive)" ;
+    dcterms:description "Per-project exports of PAZAR public data in the PAZAR XML exchange format, as listed on an archived snapshot of the PAZAR XML downloads page. GFF exports were offered on a parallel page." ;
+    schema1:url <https://web.archive.org/web/20160701080813/http://www.pazar.info/cgi-bin/downloads_xml.pl> .
+
 kgr:pbpko.kg-bioportal a schema1:GraphProduct ;
     rdfs:label "PBPKO KGX graph (KG-Bioportal)" ;
     dcterms:description "KGX TSV transform of Physiologically-Based Pharmacokinetic ontology (PBPKO), produced by KG-Bioportal from the BioPortal submission. The archive contains PBPKO_nodes.tsv and PBPKO_edges.tsv." ;
@@ -47796,7 +48338,7 @@ kgr:pso.kg-bioportal a schema1:GraphProduct ;
 kgr:psygenet.psygenet2r a schema1:ProcessProduct ;
     rdfs:label "psygenet2r R Package" ;
     dcterms:description "R/Bioconductor package for querying PsyGeNET and performing comorbidity studies with PsyGeNET data" ;
-    schema1:url <https://bioconductor.org/packages/release/bioc/manuals/psygenet2r/man/psygenet2r.pdf> .
+    schema1:url <https://bioconductor.org/packages/3.20/bioc/html/psygenet2r.html> .
 
 kgr:ptmd.downloads a schema1:Product ;
     rdfs:label "PTMD Download Page" ;
@@ -48300,11 +48842,6 @@ kgr:rfam.api a schema1:ProgrammingInterface ;
     dcterms:description "REST API for programmatic access to Rfam data" ;
     schema1:url <https://docs.rfam.org/en/latest/api.html> .
 
-kgr:rfam.cm-models a schema1:Product ;
-    rdfs:label "Rfam Covariance Models" ;
-    dcterms:description "Covariance models for all RNA families in CM format" ;
-    schema1:url <https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.cm.gz> .
-
 kgr:rfam.docs a schema1:DocumentationProduct ;
     rdfs:label "Rfam Documentation" ;
     dcterms:description "Comprehensive documentation for Rfam database and tools" ;
@@ -48708,15 +49245,26 @@ kgr:sckan.apinatomy a schema1:Product ;
     dcterms:description "Detailed ApiNATOMY models of neural circuits for organs including bladder, heart, colon, stomach, spleen, pancreas, and airways. Models are available in open-physiology repositories." ;
     schema1:url <https://github.com/open-physiology/apinatomy-models> .
 
-kgr:sckan.data_release a schema1:Product ;
-    rdfs:label "SCKAN Data Release" ;
-    dcterms:description "Latest SCKAN data release, including curated knowledge and models, available via Zenodo." ;
-    schema1:url <https://doi.org/10.5281/zenodo.5337441> .
+kgr:sckan.curation-manual a schema1:DocumentationProduct ;
+    rdfs:label "SCKAN Curation Manual" ;
+    dcterms:description "SCKAN Curation Manual describing how neural connectivity knowledge is curated into SCKAN." ;
+    schema1:url <https://doi.org/10.5281/zenodo.14774195> .
 
 kgr:sckan.docs a schema1:DocumentationProduct ;
     rdfs:label "SCKAN Documentation and Tutorials" ;
     dcterms:description "Documentation, setup instructions, tutorials, and example queries for using and exploring SCKAN." ;
     schema1:url <https://github.com/SciCrunch/sparc-curation/tree/master/docs/sckan> .
+
+kgr:sckan.explorer a schema1:GraphicalInterface ;
+    rdfs:label "SCKAN Explorer" ;
+    dcterms:description "SCKAN Explorer, a query interface designed for SCKAN knowledge curators to check and verify connections without writing SPARQL, searchable by origin, destination, via location, phenotype, named model, neuron ID, species and target organ." ;
+    schema1:identifier "RRID:SCR_026080" ;
+    schema1:url <https://services.scicrunch.io/sckan/explorer/> .
+
+kgr:sckan.query-examples a schema1:DocumentationProduct ;
+    rdfs:label "SCKAN Example Queries" ;
+    dcterms:description "Example SPARQL queries and Jupyter notebooks for SCKAN, including the code and results for the competency queries described in the SCKAN paper." ;
+    schema1:url <https://github.com/SciCrunch/sckan-query-examples> .
 
 kgr:sckan.query_interface a schema1:GraphicalInterface ;
     rdfs:label "SCKAN Query Interface (Docker)" ;
@@ -50342,6 +50890,16 @@ kgr:tfacts.publication a schema1:DocumentationProduct ;
     dcterms:description "Peer-reviewed publication describing the TFactS method and the curated catalogue of signed transcription factor to target gene interactions. The original tfacts.org web server is defunct, so the paper serves as the authoritative reference for the resource." ;
     schema1:url <https://doi.org/10.1093/nar/gkq149> .
 
+kgr:tfacts.tfactsr a schema1:ProcessProduct ;
+    rdfs:label "TFactSR R package" ;
+    dcterms:description "TFactSR, a third-party R package on CRAN (by Atsushi Fukushima, GPL-3) that reimplements the TFactS enrichment approach and can import the original TFactS catalogue file as well as user-defined catalogues." ;
+    schema1:url <https://cran.r-project.org/package=TFactSR> .
+
+kgr:tfacts.wayback a schema1:GraphicalInterface ;
+    rdfs:label "TFactS web tool (Wayback Machine archive)" ;
+    dcterms:description "Archived snapshot of the former TFactS web tool (version 2) in the Internet Archive Wayback Machine, preserved because the original site is defunct. The tool accepted lists of up- and down-regulated genes (simple or batch mode) and returned regulated, activated and repressed transcription factors." ;
+    schema1:url <https://web.archive.org/web/20221022054813/http://www.tfacts.org/TFactS-new/TFactS-v2/> .
+
 kgr:tflink.browse a schema1:GraphicalInterface ;
     rdfs:label "TFLink Browse" ;
     dcterms:description "Web interface for browsing and searching TF-target interactions by organism, gene name, UniProt ID, NCBI Gene ID, role (TF or target), and evidence scale, with an entry page for each gene." ;
@@ -50550,6 +51108,11 @@ kgr:tred.docs a schema1:DocumentationProduct ;
     dcterms:description "Reference publication describing TRED's curated transcription factor binding sites, TF-promoter regulatory interactions, and promoter annotations. The original web database is no longer available, so the publication serves as the primary documentation of record." ;
     schema1:url <https://doi.org/10.1093/nar/gkl1041> .
 
+kgr:tred.wayback a schema1:GraphicalInterface ;
+    rdfs:label "TRED web portal (Wayback Machine archive)" ;
+    dcterms:description "Archived snapshot of the former TRED web portal (rulai.cshl.edu) in the Internet Archive Wayback Machine, preserved because the original site now redirects elsewhere. The portal offered database statistics and browsing, promoter retrieval, TF target gene and TF motif searches, gene regulatory networks, ortholog search and sequence analysis tools." ;
+    schema1:url <https://web.archive.org/web/20220901081356/http://rulai.cshl.edu/cgi-bin/TRED/tred.cgi?process=home> .
+
 kgr:treefam.downloads a schema1:Product ;
     rdfs:label "TreeFam Downloads" ;
     dcterms:description "Bulk downloads of gene trees, alignments, and family annotations." ;
@@ -50559,6 +51122,48 @@ kgr:treefam.site a schema1:GraphicalInterface ;
     rdfs:label "TreeFam Website" ;
     dcterms:description "Web interface for browsing and searching gene families and their phylogenetic trees." ;
     schema1:url <http://www.treefam.org/> .
+
+kgr:trnascan-se.bioconda a schema1:ProcessProduct ;
+    rdfs:label "tRNAscan-SE Bioconda Package" ;
+    dcterms:description "tRNAscan-SE packaged for the conda package manager in the bioconda channel." ;
+    schema1:url <https://anaconda.org/bioconda/trnascan-se> .
+
+kgr:trnascan-se.change-log a schema1:DocumentationProduct ;
+    rdfs:label "tRNAscan-SE Change Log" ;
+    dcterms:description "Change log listing the fixes and features added in each tRNAscan-SE 2.0 release." ;
+    schema1:url <https://trna.ucsc.edu/tRNAscan-SE/change_log.txt> .
+
+kgr:trnascan-se.help a schema1:DocumentationProduct ;
+    rdfs:label "tRNAscan-SE Search Server Help" ;
+    dcterms:description "Help page for the tRNAscan-SE search server, describing search modes, query sequence input, search options and result display." ;
+    schema1:url <https://trna.ucsc.edu/tRNAscan-SE/help.html> .
+
+kgr:trnascan-se.source-tarball a schema1:ProcessProduct ;
+    rdfs:label "tRNAscan-SE Source Code Archive" ;
+    dcterms:description "tRNAscan-SE 2.0.12 source distribution (gzipped tar archive) linked from the tRNAscan-SE search server download section." ;
+    schema1:url <https://trna.ucsc.edu/software/trnascan-se-2.0.12.tar.gz> .
+
+kgr:trnascan-se.web-server a schema1:GraphicalInterface ;
+    rdfs:label "tRNAscan-SE Search Server" ;
+    dcterms:description "tRNAscan-SE On-line search server running tRNAscan-SE 2.0. Users paste or upload sequences (under 1 million nucleotides total), choose a sequence source model (general, eukaryotic, bacterial, archaeal or mitochondrial) and search mode, and receive tRNA predictions with secondary structures, optionally in BED format or by e-mail." ;
+    schema1:identifier "RRID:SCR_008637" ;
+    schema1:url <https://trna.ucsc.edu/tRNAscan-SE/> .
+
+kgr:trrd.portal a schema1:GraphicalInterface ;
+    rdfs:label "TRRD Website" ;
+    dcterms:description "TRRD website, with general information, the user's guide, database schema, search instructions, release history, statistics and links to the SRS query interface and the TRRD Viewer. The pages describe release 7.0 (September 2005) and have not been updated since." ;
+    schema1:identifier "RRID:SCR_005723" ;
+    schema1:url <https://wwwmgs.bionet.nsc.ru/mgs/gnw/trrd/> .
+
+kgr:trrd.schema a schema1:DocumentationProduct ;
+    rdfs:label "TRRD Database Schema" ;
+    dcterms:description "Description of the TRRD database schema, explaining the hierarchical organisation of gene, regulatory region, binding site, factor, expression and bibliography records." ;
+    schema1:url <https://wwwmgs.bionet.nsc.ru/mgs/gnw/trrd/db_schema.shtml> .
+
+kgr:trrd.srs a schema1:GraphicalInterface ;
+    rdfs:label "TRRD SRS Query Interface" ;
+    dcterms:description "Sequence Retrieval System (SRS 6) server at the Institute of Cytology and Genetics hosting the TRRD libraries. When checked on 2026-11-12 the libraries held TRRDGENES4 (2344 gene entries), TRRDUNITS4 (3490 regulatory regions), TRRDSITES4 (10135 transcription factor binding sites), TRRDFACTORS4 (9087 transcription factor entries), TRRDEXP4 (14407 expression patterns), TRRDBIB4 (7609 publications), TRRDLCR (14 locus control regions) and TRRDSTARTS (709 transcription start sites), all indexed 03-Nov-2015. Gene entries link to Entrez Gene and TRANSFAC." ;
+    schema1:url <http://srs6.bionet.nsc.ru/srs6bin/cgi-bin/wgetz?-page+LibInfo+-lib+TRRDGENES4> .
 
 kgr:trrust.human.tsv a schema1:Product ;
     rdfs:label "TRRUST Human Interactions (TSV)" ;
@@ -51821,11 +52426,6 @@ kgr:zirc.est-catalog a schema1:GraphicalInterface ;
     dcterms:description "Web catalog of zebrafish ESTs and cDNA clones available from ZIRC." ;
     schema1:url <https://zebrafish.org/est/estAll.php> .
 
-kgr:zwd.alignments a schema1:Product ;
-    rdfs:label "Zasha Weinberg Data Repository Sequence Alignments" ;
-    dcterms:description "Multiple sequence alignments for RNA and ssDNA sequences" ;
-    schema1:url <https://bitbucket.org/zashaw/zashaweinbergdata/src/master/> .
-
 kgr:aact.database a schema1:Product ;
     rdfs:label "AACT Cloud Database" ;
     dcterms:description "Cloud-based PostgreSQL database with daily refreshed clinical trial data, accessible via standard PostgreSQL clients" ;
@@ -52211,6 +52811,16 @@ kgr:cam-kp.reactome-cams a schema1:Product ;
     rdfs:label "Reactome Pathway CAMs" ;
     dcterms:description "Causal Activity Model graphs automatically generated from Reactome pathways using the Pathways2GO tool, translating pathway reactions to causal relationships" .
 
+kgr:cameo.event-codes a schema1:DataModelProduct ;
+    rdfs:label "CAMEO Event Codes Lookup (GDELT)" ;
+    dcterms:description "Tab-delimited lookup table of CAMEO event codes and their descriptions (root, base and sub-category codes), as distributed by the GDELT Project for decoding its Event Database." ;
+    schema1:url <https://www.gdeltproject.org/data/lookups/CAMEO.eventcodes.txt> .
+
+kgr:cameo.goldstein-scale a schema1:DataModelProduct ;
+    rdfs:label "CAMEO Goldstein Scale Lookup (GDELT)" ;
+    dcterms:description "Tab-delimited lookup table assigning a Goldstein scale conflict-cooperation score to each CAMEO event code, as distributed by the GDELT Project." ;
+    schema1:url <https://www.gdeltproject.org/data/lookups/CAMEO.goldsteinscale.txt> .
+
 kgr:cardiokg.data a schema1:Product ;
     rdfs:label "CardioKG supporting data tables" ;
     dcterms:description "CardioKG supporting data tables for anatomy and cardiac magnetic resonance anatomy mappings. The GitHub repository is no longer available; these files are inside the archived Zenodo snapshot." ;
@@ -52430,6 +53040,11 @@ kgr:cmap.query_app a schema1:GraphicalInterface ;
     rdfs:label "CLUE Query App" ;
     dcterms:description "Query app enabling users to search CMap database with custom gene expression signatures to find perturbagens with similar or opposing transcriptional effects" ;
     schema1:url <https://clue.io/query> .
+
+kgr:cmaup.download.plant-clinical-trials a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Plant Clinical Trial Associations" ;
+    dcterms:description "Tab-separated file of clinical investigations of individual plants or plant ingredients, with ClinicalTrials.gov registry numbers, titles and trial phases." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Plant_Clinical_Trials_Associations.txt> .
 
 kgr:connections-hypothesis-kp.smartapi a schema1:DocumentationProduct ;
     rdfs:label "Connections Hypothesis KP SmartAPI Entry" ;
@@ -52828,6 +53443,11 @@ kgr:gtex.dbgap-data a schema1:Product ;
     dcterms:description "Individual-level genotype and phenotype data available through dbGaP" ;
     schema1:url <https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424> .
 
+kgr:gtrnadb.archives a schema1:Product ;
+    rdfs:label "Previous Releases Archive" ;
+    dcterms:description "Archive of previous GtRNAdb data releases with change logs" ;
+    schema1:url <https://gtrnadb.org/archives.html> .
+
 kgr:gtrx.api a schema1:ProgrammingInterface ;
     rdfs:label "gTRx API" ;
     dcterms:description "BioThings API for querying Genome-to-Treatment association records through `/query`, `/metadata`, and related BioThings endpoints" ;
@@ -52898,6 +53518,21 @@ kgr:humancyc.portal a schema1:GraphicalInterface ;
     rdfs:label "HumanCyc Web Portal" ;
     dcterms:description "Web interface for browsing and searching human metabolic pathways, genes, enzymes, reactions, and compounds within the BioCyc Pathway Tools environment." ;
     schema1:url <https://humancyc.org/> .
+
+kgr:icews.cameo-annotation-guidelines a schema1:DocumentationProduct ;
+    rdfs:label "ICEWS Expanded CAMEO Annotation Guidelines" ;
+    dcterms:description "ICEWS Expanded CAMEO Annotation Guidelines, the document describing how ICEWS applies and extends the CAMEO event categories when coding events." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/2531993> .
+
+kgr:icews.coded-event-data a schema1:Product ;
+    rdfs:label "ICEWS Coded Event Data" ;
+    dcterms:description "ICEWS Coded Event Data (version 37, May 2023), tab-delimited files of machine-coded events (source actor, CAMEO event type, target actor, intensity, date and location), as yearly files for 1995-2022 and weekly files for January to April 2023, with read-me and coding documentation. Most files are zipped; some yearly files are plain tab-delimited text." ;
+    schema1:url <https://doi.org/10.7910/DVN/28075> .
+
+kgr:icews.event-aggregations a schema1:Product ;
+    rdfs:label "ICEWS Event Aggregations" ;
+    dcterms:description "ICEWS event aggregations, time series (typically monthly) built from the coded event data by filtering events (for example by country or sector affiliation) and aggregating them (for example by count or average intensity), distributed as compressed archives and CSV files. No longer supported." ;
+    schema1:url <https://doi.org/10.7910/DVN/28117> .
 
 kgr:ickg.graph-data a schema1:GraphProduct ;
     rdfs:label "ICKG graph data" ;
@@ -53169,6 +53804,11 @@ kgr:mfmo.owl a schema1:OntologyProduct ;
     dcterms:description "Mammalian Feeding Muscle Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/mfmo.owl> .
 
+kgr:mirdb.funcmir a schema1:GraphicalInterface ;
+    rdfs:label "miRDB FuncMir Collection" ;
+    dcterms:description "FuncMir, a browsable collection of functional human and mouse precursor and mature miRNAs with links to their predicted targets." ;
+    schema1:url <https://mirdb.org/FuncMir.html> .
+
 kgr:mrbase.api a schema1:ProgrammingInterface ;
     rdfs:label "MR-Base REST API" ;
     dcterms:description "RESTful API providing programmatic access to harmonized GWAS summary statistics, LD proxy lookup, instruments, and MR result generation, now served by the OpenGWAS API (successor to the retired api.mrbase.org endpoint)" ;
@@ -53293,6 +53933,11 @@ kgr:nextprot.sparql a schema1:ProgrammingInterface ;
     rdfs:label "neXtProt SPARQL Endpoint" ;
     dcterms:description "neXtProt SPARQL endpoint for querying RDF representations of human protein knowledge." ;
     schema1:url <https://sparql.nextprot.org/> .
+
+kgr:nfiregulomedb.portal a schema1:GraphicalInterface ;
+    rdfs:label "NFIRegulomeDB web interface (Wayback Machine archive)" ;
+    dcterms:description "Archived snapshot of the NFIRegulomeDB gene search interface in the Internet Archive Wayback Machine, preserved because the original site is defunct. The interface found genes regulated by selected transcription factor families or retrieved annotated control regions by gene name." ;
+    schema1:url <https://web.archive.org/web/20150321060046/http://nfiregulome.ccr.buffalo.edu/basicquery1.0.php> .
 
 kgr:nih-era.reporting-docs a schema1:DocumentationProduct ;
     rdfs:label "eRA Reporting and Analytics Modules" ;
@@ -55666,6 +56311,11 @@ kgr:pso.owl a schema1:OntologyProduct ;
     dcterms:description "Plant Stress Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/pso.owl> .
 
+kgr:psygenet.corpus a schema1:Product ;
+    rdfs:label "PsyGeNET Corpus" ;
+    dcterms:description "PsyGeNET corpus of expert-annotated sentences from MEDLINE abstracts describing gene-psychiatric disorder associations, with gene, UMLS disease concept, PubMed ID and association type, distributed as a tar archive with a readme." ;
+    schema1:url <https://web.archive.org/web/20220128194746/http://www.psygenet.org/ds/PsyGeNET/results/psygenetCorpus.tar> .
+
 kgr:ptmd.phosphorylation_pda a schema1:Product ;
     rdfs:label "PTMD Phosphorylation PTM-Disease Associations" ;
     dcterms:description "PTMD 2.0 PTM-disease association subset for phosphorylation modification events" ;
@@ -55750,6 +56400,11 @@ kgr:retriever.api a schema1:ProgrammingInterface ;
     rdfs:label "Retriever TRAPI API" ;
     dcterms:description "Production TRAPI 1.6 Knowledge Provider endpoint (/query, /asyncquery, /meta_knowledge_graph)." ;
     schema1:url <https://retriever.transltr.io/> .
+
+kgr:rfam.cm-models a schema1:Product ;
+    rdfs:label "Rfam Covariance Models" ;
+    dcterms:description "Covariance models for all RNA families in CM format" ;
+    schema1:url <https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.cm.gz> .
 
 kgr:ribocentre.search a schema1:GraphicalInterface ;
     rdfs:label "Sequence Search" ;
@@ -56047,6 +56702,11 @@ kgr:toxvaldb.main a schema1:ProcessProduct ;
     dcterms:description "R package of scripts that transform staged source data into the normalized main ToxValDB format, including loaders for ToxRefDB data." ;
     schema1:url <https://github.com/USEPA/toxvaldbmain> .
 
+kgr:trnascan-se.software a schema1:ProcessProduct ;
+    rdfs:label "tRNAscan-SE Software" ;
+    dcterms:description "tRNAscan-SE source code repository on GitHub, containing the tRNAscan-SE Perl program, the tRNA covariance models, and the bundled COVE 2.4.4, tRNAscan 1.4 and EufindtRNA 1.0 programs used in legacy search mode. Requires Perl 5 and Infernal 1.1. Tagged releases are published on GitHub (latest v2.0.13, July 2026), and the package is also available from bioconda as trnascan-se." ;
+    schema1:url <https://github.com/UCSC-LoweLab/tRNAscan-SE> .
+
 kgr:ttd.kegg-pathways a schema1:Product ;
     rdfs:label "Target KEGG Pathways" ;
     dcterms:description "KEGG pathway data for all targets" ;
@@ -56141,6 +56801,11 @@ kgr:zirc.fish-catalog a schema1:GraphicalInterface ;
     rdfs:label "ZIRC Zebrafish Lines Catalog" ;
     dcterms:description "Searchable web catalog of wild-type, mutant and transgenic zebrafish lines held at ZIRC, with genotype, allele, construct, affected gene, phenotype and availability, linked to the corresponding ZFIN records." ;
     schema1:url <https://zebrafish.org/fish/lineAll.php> .
+
+kgr:zwd.alignments a schema1:Product ;
+    rdfs:label "Zasha Weinberg Data Repository Sequence Alignments" ;
+    dcterms:description "Stockholm-format multiple sequence alignments of structured RNA and ssDNA motifs, organized in one subdirectory per publication, with consensus secondary structure (including pseudoknots) and, for riboswitch variants, annotation of the key ligand-binding nucleotides. Sequence names use RefSeq or environmental metagenomic accessions." ;
+    schema1:url <https://bitbucket.org/zashaw/zashaweinbergdata/src/master/> .
 
 kgr:amyco.annotations a schema1:Product ;
     rdfs:label "AmyCo Curated Annotations" ;
@@ -56344,6 +57009,11 @@ kgr:clinpgx.portal a schema1:GraphicalInterface ;
     rdfs:label "ClinPGx Portal" ;
     dcterms:description "ClinPGx web portal for browsing genes, variants, drugs, clinical annotations, drug labels, pathways and CPIC guidelines, integrating PharmGKB and CPIC content" ;
     schema1:url <https://www.clinpgx.org/> .
+
+kgr:cmaup.download.transcriptomic-profiles a schema1:Product ;
+    rdfs:label "CMAUP v2.0 Transcriptomic Profiling of 74 Diseases" ;
+    dcterms:description "RAR archive (about 152 MB) with index, sample metadata and DESeq2 results for disease-versus-control transcriptomic comparisons of 74 diseases, using RNA-seq data from sources including ARCHS4 and TCGA." ;
+    schema1:url <https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Transcriptomic_profiling_of_74_diseases.rar> .
 
 kgr:cngbdb.portal a schema1:GraphicalInterface ;
     rdfs:label "CNGBdb Portal" ;
@@ -56590,6 +57260,11 @@ kgr:gtrd.target_genes a schema1:Product ;
     dcterms:description "Per-species lists of transcription factor target genes and transcripts, one file per TF (named by UniProt ID), where a gene is a target if its promoter or gene body region contains a GTRD meta-cluster for that TF. Genes and transcripts are identified by Ensembl IDs." ;
     schema1:url <http://gtrd.biouml.org:8888/downloads/current/intervals/target_genes/> .
 
+kgr:gtrnadb.hg38_trnascan_results a schema1:Product ;
+    rdfs:label "GtRNAdb Human (hg38) tRNAscan-SE Results" ;
+    dcterms:description "Per-genome tRNAscan-SE result archive for the human GRCh38/hg38 assembly, downloaded from the genome's GtRNAdb page. It contains detailed and high-confidence tRNAscan-SE output (.out) and secondary structure (.ss) files, a BED file of tRNA gene coordinates, FASTA files of genomic, mature and filtered tRNA sequences, and a tRNA name map. Equivalent archives are linked from each genome page in GtRNAdb." ;
+    schema1:url <https://gtrnadb.org/genomes/eukaryota/Hsapi38/hg38-tRNAs.tar.gz> .
+
 kgr:hydrologykg.graph a schema1:GraphProduct ;
     rdfs:label "SAWGraph Hydrology Knowledge Graph" ;
     dcterms:description "The SAWGraph Hydrology knowledge graph, describing surface water bodies (lakes, rivers, wetlands), the flowlines that connect them, and groundwater features (aquifers, wells, springs) together with their locations. Surface water bodies and flowlines are modeled from USGS NHDPlus data (NHDWaterbody and NHDFlowline); groundwater features are drawn primarily from individual state geological surveys (for example, the Maine Geological Survey). The RDF (Turtle) graph is served through the SAWGraph Hydrology KG SPARQL and Triple Pattern Fragments endpoints." ;
@@ -56669,6 +57344,16 @@ kgr:mgmlink.code a schema1:ProcessProduct ;
     rdfs:label "MGMLink code" ;
     dcterms:description "Code for generating MGMLink" ;
     schema1:url <https://github.com/bsantan/MGMLink> .
+
+kgr:mirdb.predicted-targets a schema1:Product ;
+    rdfs:label "miRDB Predicted Targets" ;
+    dcterms:description "Compressed plain-text file of all predicted miRNA targets generated with the MirTarget prediction tool, covering the miRNAs and genes in the current miRDB release." ;
+    schema1:url <https://mirdb.org/download.html> .
+
+kgr:mirdb.predicted-targets-v6 a schema1:Product ;
+    rdfs:label "miRDB v6.0 Predicted Targets File" ;
+    dcterms:description "miRDB version 6.0 (June 2019) predicted miRNA targets for human, mouse, rat, dog and chicken, generated with MirTarget V4 using miRNA sequences from miRBase 22, as a gzipped tab-delimited text file." ;
+    schema1:url <https://mirdb.org/download/miRDB_v6.0_prediction_result.txt.gz> .
 
 kgr:monarchinitiative a schema1:Aggregator,
         "Organization" ;
@@ -56953,11 +57638,6 @@ kgr:prsatlas.results_5e08 a schema1:Product ;
     rdfs:label "PRS Atlas Results P less than 5e-08" ;
     dcterms:description "PRS Atlas results using the P less than 5e-08 polygenic risk score threshold, archived by Dryad" ;
     schema1:url <https://datadryad.org/downloads/file_stream/83030> .
-
-kgr:psygenet.genedisease a schema1:Product ;
-    rdfs:label "PsyGeNET Gene-Disease Associations" ;
-    dcterms:description "Gene-disease associations for psychiatric disorders; the PsyGeNET 2.0 homepage reports 3,771 associations between 1,549 genes and 117 psychiatric disease concepts." ;
-    schema1:url <https://www.psygenet.org/> .
 
 kgr:redu.dashboard a schema1:GraphicalInterface ;
     rdfs:label "Pan-ReDU Dashboard" ;
@@ -57245,6 +57925,11 @@ kgr:ubkg.api a schema1:ProgrammingInterface ;
 
 kgr:wikimedia a "Organization" ;
     rdfs:label "Wikimedia Foundation" .
+
+kgr:zwd.seqid-taxid a schema1:MappingProduct ;
+    rdfs:label "ZWD Sequence Accession to NCBI Taxonomy Mapping" ;
+    dcterms:description "Tab-delimited mapping of the sequence accessions used in the ZWD alignments to NCBI Taxonomy IDs, with -1 where the accession is not in RefSeq." ;
+    schema1:url <https://bitbucket.org/zashaw/zashaweinbergdata/raw/master/sto-seqid-taxid.tab> .
 
 kgr:aeolus.standardized_data a schema1:Product ;
     rdfs:label "AEOLUS Standardized FAERS Data" ;
@@ -57646,6 +58331,11 @@ kgr:myaura.graph a schema1:GraphProduct ;
     dcterms:description "Multilayer epilepsy knowledge graph generated by the myAURA data processing workflow from biomedical, clinical, literature, and patient-centered data sources." ;
     schema1:url <https://github.com/cns-iu/myaura> .
 
+kgr:nif-ontology.nif.ttl a schema1:OntologyProduct ;
+    rdfs:label "NIFSTD (nif.ttl, master branch)" ;
+    dcterms:description "Main NIFSTD ontology file in Turtle format from the master branch, which imports the NIF module files (cell, gross anatomy, dysfunction, function, investigation, molecule, quality, subcellular and neuron bridge modules) and bridge files to Uberon, ChEBI, the Disease Ontology, the Gene Ontology and an NCBITaxon slim. Also resolvable at http://ontology.neuinfo.org/NIF/ttl/nif.ttl." ;
+    schema1:url <https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/master/ttl/nif.ttl> .
+
 kgr:nihreporter.linktables a schema1:Product ;
     rdfs:label "NIH-Funded Publications Link Tables" ;
     dcterms:description "Database of publication link tables for NIH-funded research projects" ;
@@ -57675,6 +58365,11 @@ kgr:pathwhiz.pathways a schema1:GraphicalInterface ;
     rdfs:label "PathWhiz Pathway Library" ;
     dcterms:description "Public library of pathway diagrams that can be browsed, viewed, and used as templates for creating new pathways" ;
     schema1:url <https://pathbank.org/pathwhiz/pathways> .
+
+kgr:pazar.tf_target_downloads a schema1:Product ;
+    rdfs:label "PAZAR TF - target gene file downloads (Wayback Machine archive)" ;
+    dcterms:description "Weekly tab-delimited TF - target gene dumps for each public PAZAR project (one CSV file per project, plus a combined tftargets.zip archive), as listed on an archived snapshot of the PAZAR downloads page. Projects include data contributed from ORegAnno, JASPAR and NFIRegulome." ;
+    schema1:url <https://web.archive.org/web/20170929231049/http://www.pazar.info/cgi-bin/downloads_csv.pl> .
 
 kgr:pharmacodb.api a schema1:ProgrammingInterface ;
     rdfs:label "PharmacoDB API" ;
@@ -57706,6 +58401,11 @@ kgr:predict.supporting-information a schema1:Product ;
     dcterms:description "Supporting information for the PREDICT study, including supplementary tables and data supporting the drug-disease association gold standard and prediction analyses." ;
     schema1:url <https://pmc.ncbi.nlm.nih.gov/articles/PMC3159979/> .
 
+kgr:psygenet.genedisease a schema1:Product ;
+    rdfs:label "PsyGeNET Gene-Disease Associations" ;
+    dcterms:description "Gene-disease associations for psychiatric disorders as a gzipped tar archive of a tab-delimited file (psygenet_v02.txt) with gene, UMLS disease concept, psychiatric disorder class, supporting abstract counts, source and score; the PsyGeNET 2.0 homepage reports 3,771 associations between 1,549 genes and 117 psychiatric disease concepts." ;
+    schema1:url <https://web.archive.org/web/20230105023523/http://www.psygenet.org/ds/PsyGeNET/results/all_GeneDiseaseAssociations.tar.gz> .
+
 kgr:ptmd.total_pda a schema1:Product ;
     rdfs:label "PTMD Total PTM-Disease Associations" ;
     dcterms:description "Complete PTMD 2.0 PTM-disease association download in tab-delimited format" ;
@@ -57730,6 +58430,11 @@ kgr:saprot.models a schema1:Product ;
     rdfs:label "SaProt Models" ;
     dcterms:description "Trained SaProt model checkpoint (650M parameters) pre-trained on about 40 million AlphaFold2 structures, loadable with Hugging Face Transformers. Other released checkpoints include SaProt_35M_AF2, SaProt_650M_PDB, SaProt_1.3B_AF2 and SaProt_1.3B_AFDB_OMG_NCBI in the same organization." ;
     schema1:url <https://huggingface.co/westlake-repl/SaProt_650M_AF2> .
+
+kgr:sckan.data_release a schema1:Product ;
+    rdfs:label "SCKAN Data Release" ;
+    dcterms:description "Latest SCKAN data release on Zenodo (concept DOI, resolving to the newest version), containing the raw data inputs with the Blazegraph journal file, the SciGraph database, and a Docker data image bundling both with server configuration files." ;
+    schema1:url <https://doi.org/10.5281/zenodo.5337441> .
 
 kgr:semra.raw-mappings a schema1:MappingProduct ;
     rdfs:label "SeMRA Raw Semantic Mappings Database" ;
@@ -58175,6 +58880,11 @@ kgr:suppkg.source-data a schema1:ProcessProduct ;
     dcterms:description "Source data directory used for SuppKG in the SemRep_DS repository." ;
     schema1:url <https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG> .
 
+kgr:tfacts.catalogues a schema1:Product ;
+    rdfs:label "TFactS Catalogues (version 2, Wayback Machine archive)" ;
+    dcterms:description "TFactS catalogues (version 2) as a legacy Excel workbook, recovered from an Internet Archive Wayback Machine snapshot of tfacts.org. The workbook has a sign-less sheet of about 6,800 transcription factor to target gene pairs, with references, species and accessions, and a sign-sensitive sheet of about 3,250 pairs annotated as up- or down-regulation with PubMed references. Sources include TRED and PubMed literature." ;
+    schema1:url <https://web.archive.org/web/20220617202237/https://www.tfacts.org/TFactS-new/TFactS-v2/tfacts/data/Catalogues.xls> .
+
 kgr:translator.ctkp.graph a schema1:GraphProduct ;
     rdfs:label "Translator CTKP KGX Graph" ;
     dcterms:description "KGX JSONL graph package for CTKP distributed via the NCATS Translator release site (release 2026_03_27; build ctkp_3.1.37_a99268cc_2025sep1_4.3.6; source version 3.1.37; Biolink 4.3.6; Node Normalizer 2025sep1)." ;
@@ -58189,6 +58899,11 @@ kgr:biogrid.identifiers a schema1:MappingProduct ;
     rdfs:label "BIOGRID-IDENTIFIERS-LATEST.tab.zip" ;
     dcterms:description "A single delimited text file format containing a list of mappings between different identifiers stored in BioGRID and the identifiers used in downloads." ;
     schema1:url <https://downloads.thebiogrid.org/File/BioGRID/Latest-Release/BIOGRID-IDENTIFIERS-LATEST.tab.zip> .
+
+kgr:cdcdb.figshare a schema1:Product ;
+    rdfs:label "CDCDB Figshare Collection (12 April 2022)" ;
+    dcterms:description "Figshare collection accompanying the Scientific Data paper, with the CSV and SQLite versions of CDCDB from 12 April 2022, the database schema, a description and a read-me file, released under CC0." ;
+    schema1:url <https://doi.org/10.6084/m9.figshare.c.5375228.v1> .
 
 kgr:cdno.obo a schema1:OntologyProduct ;
     rdfs:label "cdno.obo" ;
@@ -58385,6 +59100,16 @@ kgr:aopwiki-rdf.ttl a schema1:GraphProduct ;
     rdfs:label "AOP-Wiki RDF Turtle Dataset" ;
     dcterms:description "The AOP-Wiki RDF dataset in RDF/Turtle, covering AOPs, key events, key event relationships, biological events, stressors and chemicals converted from the AOP-Wiki XML export, together with the gene mappings (HGNC approved symbols resolved to Ensembl, NCBI Gene, UniProt and Protein Ontology identifiers via BridgeDb) and the chemical and protein cross-reference enrichments. Distributed as Turtle files in the data/ directory of the conversion repository (AOPWikiRDF.ttl, AOPWikiRDF-Genes.ttl, AOPWikiRDF-Enriched.ttl); all of them are loaded together into the SPARQL endpoint and are meant to be used as one dataset. Regenerated weekly." ;
     schema1:url <https://github.com/marvinm2/AOPWikiRDF/tree/master/data> .
+
+kgr:cdcdb.csv a schema1:Product ;
+    rdfs:label "CDCDB CSV Tables" ;
+    dcterms:description "Latest CDCDB release (version of 18 June 2024) as CSV tables covering clinical trial design groups, studies, conditions, MeSH terms and references, FDA Orange Book combination products and patents, patent drug, metadata and IPC tables, and the all-combinations table with DrugBank and PubChem identifiers." ;
+    schema1:url <https://icc.ise.bgu.ac.il/medical_ai/api/version/18.06.2024.zip> .
+
+kgr:cdcdb.sqlite a schema1:Product ;
+    rdfs:label "CDCDB SQLite Database" ;
+    dcterms:description "Latest CDCDB release (version of 18 June 2024) as a SQLite database holding the same tables as the CSV release." ;
+    schema1:url <https://icc.ise.bgu.ac.il/medical_ai/api/version/18.06.2024.sqlite.zip> .
 
 kgr:cellminer.cellminercdb a schema1:GraphicalInterface ;
     rdfs:label "CellMinerCDB" ;
@@ -58841,6 +59566,11 @@ kgr:chea-kg.libraries a schema1:Product ;
     rdfs:label "ChEA-KG Library Downloads" ;
     dcterms:description "Download catalog for ChEA3 transcription factor target libraries, benchmark datasets, and additional supporting libraries" ;
     schema1:url <https://maayanlab.cloud/chea3/index.html#content4-13> .
+
+kgr:dcdb.plain_text_dump a schema1:Product ;
+    rdfs:label "DCDB 2.0 Plain Text Dump" ;
+    dcterms:description "DCDB 2.0 data as tab-delimited plain text files (drug combinations, components, targets and their interactions), formerly offered on the DCDB download page alongside an Oracle 11.2 dump." ;
+    schema1:url <http://www.cls.zju.edu.cn/dcdb/downloadfile/DCDB2_plaintxt.zip> .
 
 kgr:dorothea.graph a schema1:GraphProduct ;
     rdfs:label "DoRothEA Regulon Graph" ;

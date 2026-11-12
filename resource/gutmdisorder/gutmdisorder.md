@@ -48,11 +48,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries exceeded
-    with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx (Caused by
-    NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80): Failed
-    to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
-    to URL'
+    with url: /gutMDisorder/public/res/2.0-literature-associations.xlsx (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'',
+    port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
     to URL'
 - category: Product
@@ -68,11 +65,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2026-10-28: Error connecting
     to URL: HTTPConnectionPool(host=''bio-annotation.cn'', port=80): Max retries exceeded
-    with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx (Caused by
-    NewConnectionError("HTTPConnection(host=''bio-annotation.cn'', port=80): Failed
-    to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-11-10: Timeout connecting
-    to URL'
+    with url: /gutMDisorder/public/res/2.0-raw%20data-associations.xlsx (Caused by NewConnectionError("HTTPConnection(host=''bio-annotation.cn'',
+    port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'
   - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
     to URL'
 - category: ProgrammingInterface

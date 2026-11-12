@@ -14,7 +14,7 @@ warnings:
   URL_ HTTPConnectionPool(host='bio-annotation.cn', port=80)_ Max retries exceeded
   with url_ /gutMDisorder/public/res/2.0-literature-associations.xlsx (Caused by NewConnectionError("HTTPConnection(host='bio-annotation.cn',
   port=80)_ Failed to establish a new connection_ [Errno 111] Connection refused"))
-- File was not able to be retrieved when checked on 2026-11-10_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-11-12_ Timeout connecting
   to URL
 layout: product_detail
 ---

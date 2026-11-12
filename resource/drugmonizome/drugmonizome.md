@@ -124,10 +124,8 @@ products:
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error when
+    accessing file'
 - category: GraphicalInterface
   description: Drugmonizome-ML Appyter, a Jupyter-notebook-based web app that builds
     customized machine learning pipelines from selected Drugmonizome drug set libraries

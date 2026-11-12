@@ -39,7 +39,7 @@ warnings:
   offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all kg-covid-19
   artifacts (current and dated) and the kg-hub-public-data S3 objects return HTTP
   403. No replacement public download URL is available.
-- File was not able to be retrieved when checked on 2026-11-10_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2026-11-12_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

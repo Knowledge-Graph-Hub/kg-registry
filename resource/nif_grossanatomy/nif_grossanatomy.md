@@ -1,25 +1,25 @@
 ---
-id: nif_grossanatomy
-name: NIF Gross Anatomy
-description: Description unavailable.
 activity_status: inactive
-homepage_url: http://neuinfo.org/
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-creation_date: '2025-09-29T00:00:00Z'
-last_modified_date: '2026-09-23T00:00:00Z'
-domains:
-- anatomy and development
-- neuroscience
 contacts:
 - category: Individual
-  label: Fahim Imam
-  orcid: 0000-0003-4752-543X
   contact_details:
   - contact_type: email
     value: smtifahim@gmail.com
+  label: Fahim Imam
+  orcid: 0000-0003-4752-543X
+creation_date: '2025-09-29T00:00:00Z'
+description: Description unavailable.
+domains:
+- anatomy and development
+- neuroscience
+homepage_url: http://neuinfo.org/
+id: nif_grossanatomy
+last_modified_date: '2026-09-23T00:00:00Z'
+layout: resource_detail
+name: NIF Gross Anatomy
 products:
 - category: OntologyProduct
   description: Turtle (TTL) release of the NIF-GrossAnatomy ontology, preserved in
@@ -52,6 +52,7 @@ products:
     source: nif_dysfunction
   - relation_type: prov:hadPrimarySource
     source: nif_grossanatomy
+  product_file_size: 1077
   product_url: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/master/ttl/nif.ttl
 publications: []
 use_instead:

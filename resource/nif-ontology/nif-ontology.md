@@ -53,6 +53,7 @@ products:
     source: nif_dysfunction
   - relation_type: prov:hadPrimarySource
     source: nif_grossanatomy
+  product_file_size: 1077
   product_url: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/master/ttl/nif.ttl
 - category: OntologyProduct
   description: NIFSTD ontology file in Turtle format from the dev branch, which carries
@@ -63,6 +64,7 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: nif-ontology
+  product_file_size: 1088
   product_url: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/dev/ttl/nif.ttl
 - category: OntologyProduct
   description: NIF-Ontology GitHub repository holding the NIFSTD Turtle files (ttl/

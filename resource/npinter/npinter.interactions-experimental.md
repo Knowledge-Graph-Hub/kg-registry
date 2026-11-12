@@ -14,6 +14,7 @@ original_source:
   source: pubmed
 - relation_type: prov:hadPrimarySource
   source: gene-expression-omnibus
+product_file_size: 704301
 product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.expr.txt.gz
 layout: product_detail
 ---

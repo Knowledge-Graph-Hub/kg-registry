@@ -10,6 +10,7 @@ name: NPInter v5.0 Computationally Predicted Interactions
 original_source:
 - relation_type: prov:hadPrimarySource
   source: npinter
+product_file_size: 42613351
 product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.comp.txt.gz
 layout: product_detail
 ---

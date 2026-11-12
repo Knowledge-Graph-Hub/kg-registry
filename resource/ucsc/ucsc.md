@@ -407,12 +407,13 @@ products:
   product_url: https://mygene.info/v3/api
 - category: Product
   compression: zip
-  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB), a ZIP of
-    gzipped, tab-delimited per-chromosome variant tables, the gene table, column descriptions
-    and the search_dbNSFP Java program. Variant tables are also offered as a single tabix-indexed
-    BGZF file per genome build (GRCh37, GRCh38) for Ensembl VEP and SnpSift. Includes all
-    upstream scores that are free for academic use. Free for academic and non-commercial users
-    after registration with an institutional email; download links are issued on request.
+  description: Academic branch of dbNSFP (v5.4a at time of curation, about 50 GB),
+    a ZIP of gzipped, tab-delimited per-chromosome variant tables, the gene table,
+    column descriptions and the search_dbNSFP Java program. Variant tables are also
+    offered as a single tabix-indexed BGZF file per genome build (GRCh37, GRCh38)
+    for Ensembl VEP and SnpSift. Includes all upstream scores that are free for academic
+    use. Free for academic and non-commercial users after registration with an institutional
+    email; download links are issued on request.
   format: tsv
   id: dbnsfp.academic
   license:
@@ -477,10 +478,10 @@ products:
   product_url: https://www.dbnsfp.org/download
 - category: Product
   compression: zip
-  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same format
-    as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2, PrimateAI
-    and RGC Million Exome data, whose authors require separate commercial licenses. Available
-    to subscribers under a paid license from Genos Bioinformatics.
+  description: Commercial branch of dbNSFP (v5.4c at time of curation), in the same
+    format as the academic branch but excluding CADD, VEST, M-CAP, MutScore, PolyPhen-2,
+    PrimateAI and RGC Million Exome data, whose authors require separate commercial
+    licenses. Available to subscribers under a paid license from Genos Bioinformatics.
   format: tsv
   id: dbnsfp.commercial
   license:
@@ -545,9 +546,10 @@ products:
   product_url: https://www.dbnsfp.org/license
 - category: Product
   compression: gzip
-  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible single nucleotide
-    variants in the GRCh38 human reference genome, tab-separated and bgzip-compressed with
-    a tabix index. A larger version including all annotations is also offered.
+  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible
+    single nucleotide variants in the GRCh38 human reference genome, tab-separated
+    and bgzip-compressed with a tabix index. A larger version including all annotations
+    is also offered.
   format: tsv
   id: cadd.snvs.grch38
   name: CADD v1.7 Whole-Genome SNV Scores (GRCh38)
@@ -564,9 +566,9 @@ products:
   product_url: https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh38/whole_genome_SNVs.tsv.gz
 - category: Product
   compression: gzip
-  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible single nucleotide
-    variants in the GRCh37 human reference genome, tab-separated and bgzip-compressed with
-    a tabix index.
+  description: CADD v1.7 precomputed raw and PHRED-scaled scores for all possible
+    single nucleotide variants in the GRCh37 human reference genome, tab-separated
+    and bgzip-compressed with a tabix index.
   format: tsv
   id: cadd.snvs.grch37
   name: CADD v1.7 Whole-Genome SNV Scores (GRCh37)
@@ -760,6 +762,7 @@ products:
     source: gtrnadb
   - relation_type: prov:hadPrimarySource
     source: ucsc
+  product_file_size: 128829
   product_url: https://gtrnadb.org/genomes/eukaryota/Hsapi38/hg38-tRNAs.tar.gz
   secondary_source:
   - relation_type: prov:used
