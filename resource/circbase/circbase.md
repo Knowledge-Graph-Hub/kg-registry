@@ -180,6 +180,73 @@ products:
     source: wikipathways
   product_file_size: 18370248815
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+- category: Product
+  description: Tab-delimited table of experimentally supported ncRNAs associated with
+    drug resistance or drug response, manually curated from the literature, with ncRNA
+    and drug identifiers, effect, target genes, pathways, detection method and condition.
+  format: tsv
+  id: ncrnadrug.drug-resistance-curated
+  name: ncRNADrug Curated Drug Resistance Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncrnadrug
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: circbase
+  product_file_size: 15627539
+  product_url: http://www.jianglab.cn/ncRNADrug/data_download/DR_Curated.txt
+- category: Product
+  description: Tab-delimited table of experimentally supported ncRNAs targeted by
+    drugs (drugs that regulate ncRNA expression), manually curated from the literature,
+    with ncRNA and drug identifiers, regulation direction, detection method and condition.
+  format: tsv
+  id: ncrnadrug.drug-target-curated
+  name: ncRNADrug Curated Drug Target Associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: ncrnadrug
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: circbase
+  product_file_size: 16640321
+  product_url: http://www.jianglab.cn/ncRNADrug/data_download/DT_Curated.txt
+- category: GraphProduct
+  compression: gzip
+  description: All NPInter v5.0 ncRNA interactions (literature-curated, high-throughput
+    and computational) as a gzipped tab-delimited table of ncRNA, partner, interaction
+    class, level, experiment, data source, organism, tissue or cell, and PubMed IDs.
+  format: tsv
+  id: npinter.interactions
+  latest_version: '5.0'
+  name: NPInter v5.0 All Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: npinter
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: circbase
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz
 publications:
 - authors:
   - Petar Glažar

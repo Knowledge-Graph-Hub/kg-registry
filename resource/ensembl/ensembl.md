@@ -1898,6 +1898,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: biobtree
   - relation_type: prov:hadPrimarySource
+    source: alliance
+  - relation_type: prov:hadPrimarySource
     source: alphafold
   - relation_type: prov:hadPrimarySource
     source: alphamissense
@@ -1912,6 +1914,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: brenda
   - relation_type: prov:hadPrimarySource
+    source: cellosaurus
+  - relation_type: prov:hadPrimarySource
     source: cellphonedb
   - relation_type: prov:hadPrimarySource
     source: cellxgene
@@ -1919,6 +1923,10 @@ products:
     source: chebi
   - relation_type: prov:hadPrimarySource
     source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: civic
   - relation_type: prov:hadPrimarySource
     source: cl
   - relation_type: prov:hadPrimarySource
@@ -1934,6 +1942,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: dbsnp
   - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
     source: eco
   - relation_type: prov:hadPrimarySource
     source: efo
@@ -1944,11 +1958,19 @@ products:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
   - relation_type: prov:hadPrimarySource
+    source: faers
+  - relation_type: prov:hadPrimarySource
     source: fantom5
   - relation_type: prov:hadPrimarySource
     source: gencc
   - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
+  - relation_type: prov:hadPrimarySource
+    source: gpn-star
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
@@ -1956,15 +1978,21 @@ products:
   - relation_type: prov:hadPrimarySource
     source: hmdb
   - relation_type: prov:hadPrimarySource
+    source: hmdd
+  - relation_type: prov:hadPrimarySource
     source: hp
   - relation_type: prov:hadPrimarySource
     source: intact
   - relation_type: prov:hadPrimarySource
     source: interpro
   - relation_type: prov:hadPrimarySource
+    source: intogen
+  - relation_type: prov:hadPrimarySource
     source: jaspar
   - relation_type: prov:hadPrimarySource
     source: lipidmaps
+  - relation_type: prov:hadPrimarySource
+    source: mavedb
   - relation_type: prov:hadPrimarySource
     source: mesh
   - relation_type: prov:hadPrimarySource
@@ -1978,7 +2006,15 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ncbitaxon
   - relation_type: prov:hadPrimarySource
+    source: ncrnadrug
+  - relation_type: prov:hadPrimarySource
+    source: npinter
+  - relation_type: prov:hadPrimarySource
     source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: panelapp
+  - relation_type: prov:hadPrimarySource
+    source: pangolin
   - relation_type: prov:hadPrimarySource
     source: pdb
   - relation_type: prov:hadPrimarySource
@@ -1990,11 +2026,19 @@ products:
   - relation_type: prov:hadPrimarySource
     source: refseq
   - relation_type: prov:hadPrimarySource
+    source: revel
+  - relation_type: prov:hadPrimarySource
     source: rhea
   - relation_type: prov:hadPrimarySource
     source: rnacentral
   - relation_type: prov:hadPrimarySource
+    source: sabdab
+  - relation_type: prov:hadPrimarySource
+    source: saprot
+  - relation_type: prov:hadPrimarySource
     source: signor
+  - relation_type: prov:hadPrimarySource
+    source: spliceai
   - relation_type: prov:hadPrimarySource
     source: string
   - relation_type: prov:hadPrimarySource
@@ -2002,9 +2046,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: swisslipid
   - relation_type: prov:hadPrimarySource
+    source: therasabdab
+  - relation_type: prov:hadPrimarySource
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
   product_url: https://sugi.bio/biobtree/api/
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
@@ -2275,13 +2323,16 @@ products:
   - standard: biolink
     version: 4.2.1
   compression: gzip
-  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph,
-    exported as a biolink-typed KGX graph (~40M nodes / ~132M edges, ~8.3 GB compressed
-    across separate node and edge files). A practical projection of the full graph
-    for human-centric biomedical use. Published on Zenodo.
-  edge_count: 132075627
+  description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported
+    as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across
+    node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection
+    of the full graph for human-centric biomedical use. Sources without compatible redistribution
+    terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense
+    variant-prediction layers). Published on Zenodo.
+  edge_count: 150949120
   format: kgx
   id: biobtree.graph.human-subgraph
+  latest_version: v2-2026-11
   license:
     id: https://creativecommons.org/licenses/by-nc-sa/4.0/
     label: CC-BY-NC-SA-4.0
@@ -2313,14 +2364,14 @@ products:
   - biolink:SequenceVariant
   - biolink:SmallMolecule
   - biolink:Transcript
-  node_count: 40160474
+  node_count: 47361928
   original_source:
   - relation_type: prov:hadPrimarySource
     source: biobtree
   - relation_type: prov:hadPrimarySource
-    source: alphafold
+    source: alliance
   - relation_type: prov:hadPrimarySource
-    source: alphamissense
+    source: alphafold
   - relation_type: prov:hadPrimarySource
     source: bao
   - relation_type: prov:hadPrimarySource
@@ -2332,6 +2383,8 @@ products:
   - relation_type: prov:hadPrimarySource
     source: brenda
   - relation_type: prov:hadPrimarySource
+    source: cellosaurus
+  - relation_type: prov:hadPrimarySource
     source: cellphonedb
   - relation_type: prov:hadPrimarySource
     source: cellxgene
@@ -2339,6 +2392,10 @@ products:
     source: chebi
   - relation_type: prov:hadPrimarySource
     source: chembl
+  - relation_type: prov:hadPrimarySource
+    source: chip-atlas
+  - relation_type: prov:hadPrimarySource
+    source: civic
   - relation_type: prov:hadPrimarySource
     source: cl
   - relation_type: prov:hadPrimarySource
@@ -2350,9 +2407,13 @@ products:
   - relation_type: prov:hadPrimarySource
     source: corum
   - relation_type: prov:hadPrimarySource
-    source: ctd
-  - relation_type: prov:hadPrimarySource
     source: dbsnp
+  - relation_type: prov:hadPrimarySource
+    source: dbvar
+  - relation_type: prov:hadPrimarySource
+    source: depmap
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
   - relation_type: prov:hadPrimarySource
     source: eco
   - relation_type: prov:hadPrimarySource
@@ -2364,11 +2425,17 @@ products:
   - relation_type: prov:hadPrimarySource
     source: expressionatlas
   - relation_type: prov:hadPrimarySource
+    source: faers
+  - relation_type: prov:hadPrimarySource
     source: fantom5
   - relation_type: prov:hadPrimarySource
     source: gencc
   - relation_type: prov:hadPrimarySource
+    source: gnomad
+  - relation_type: prov:hadPrimarySource
     source: go
+  - relation_type: prov:hadPrimarySource
+    source: goa
   - relation_type: prov:hadPrimarySource
     source: gwascatalog
   - relation_type: prov:hadPrimarySource
@@ -2387,8 +2454,6 @@ products:
     source: lipidmaps
   - relation_type: prov:hadPrimarySource
     source: mesh
-  - relation_type: prov:hadPrimarySource
-    source: mirdb
   - relation_type: prov:hadPrimarySource
     source: mondo
   - relation_type: prov:hadPrimarySource
@@ -2425,6 +2490,8 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: wikipathways
   predicates:
   - biolink:actively_involved_in
   - biolink:affects
@@ -2452,13 +2519,14 @@ products:
   - biolink:paralogous_to
   - biolink:participates_in
   - biolink:physically_interacts_with
+  - biolink:regulates
   - biolink:related_to
   - biolink:same_as
   - biolink:subclass_of
   - biolink:transcribed_from
   - biolink:translates_to
   - biolink:treats_or_applied_or_studied_to_treat
-  product_url: https://zenodo.org/records/20816742
+  product_url: https://doi.org/10.5281/zenodo.20816741
 - category: GraphProduct
   description: GenomicKB 1.0 Neo4j Database Dump (Requires license)
   dump_format: neo4j
@@ -3954,6 +4022,146 @@ products:
   - relation_type: prov:wasInformedBy
     source: ucsc
   product_url: https://www.gencodegenes.org/pages/data_access.html
+- category: Product
+  compression: zip
+  description: Compendium of Cancer Genes from the current IntOGen release, containing
+    the catalog of driver genes (Compendium_Cancer_Genes.tsv) and the unfiltered driver
+    results (Unfiltered_drivers.tsv) across all analyzed cohorts, with tumor type,
+    mutated samples, method-specific and combined significance, and mode of action.
+    Cohorts are drawn from TCGA, PCAWG, ICGC, Hartwig Medical Foundation, and other
+    sequencing projects; genes are annotated with Ensembl canonical transcripts and
+    the COSMIC Cancer Gene Census.
+  format: tsv
+  id: intogen.drivers
+  is_public: true
+  latest_version: 2024.09.20
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+  name: IntOGen Compendium of Cancer Genes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: intogen
+  - relation_type: prov:hadPrimarySource
+    source: tcga
+  - relation_type: prov:hadPrimarySource
+    source: icgc
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: cosmic
+  product_file_size: 964758
+  product_url: https://www.intogen.org/download?file=IntOGen-Drivers-20240920.zip
+- category: GraphProduct
+  compression: gzip
+  description: All NPInter v5.0 ncRNA interactions (literature-curated, high-throughput
+    and computational) as a gzipped tab-delimited table of ncRNA, partner, interaction
+    class, level, experiment, data source, organism, tissue or cell, and PubMed IDs.
+  format: tsv
+  id: npinter.interactions
+  latest_version: '5.0'
+  name: NPInter v5.0 All Interactions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: npinter
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: gene-expression-omnibus
+  - relation_type: prov:hadPrimarySource
+    source: noncode
+  - relation_type: prov:hadPrimarySource
+    source: mirbase
+  - relation_type: prov:hadPrimarySource
+    source: circbase
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/interaction_NPInterv5.txt.gz
+- category: Product
+  compression: zip
+  description: REVEL v1.3 precomputed scores for all possible human missense variants
+    in a single comma-separated file, with chromosome, hg19 and GRCh38 positions,
+    reference and alternate nucleotides and amino acids, REVEL score, and Ensembl
+    transcript IDs (released 2021-05-03).
+  format: csv
+  id: revel.all-chromosomes
+  latest_version: '1.3'
+  name: REVEL v1.3 Scores, All Chromosomes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: revel
+  - relation_type: prov:wasInfluencedBy
+    source: dbnsfp
+  - relation_type: prov:wasInfluencedBy
+    source: ensembl
+  product_file_size: 667102707
+  product_url: https://rothsj06.dmz.hpc.mssm.edu/revel-v1.3_all_chromosomes.zip
+- category: Product
+  description: Zenodo record of REVEL v1.3 scores, with the all-chromosome file and
+    per-chromosome genome segment files (up to 500,000 variants per file) as zipped
+    CSVs. The Zenodo record is labelled with the Open Data Commons Open Database License.
+  format: http
+  id: revel.zenodo
+  latest_version: '1.3'
+  license:
+    id: https://opendatacommons.org/licenses/odbl/1-0/
+    label: ODbL 1.0 (as labelled on the Zenodo record)
+  name: REVEL Scores on Zenodo
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: revel
+  - relation_type: prov:wasInfluencedBy
+    source: dbnsfp
+  - relation_type: prov:wasInfluencedBy
+    source: ensembl
+  product_url: https://zenodo.org/records/7072866
+- category: Product
+  compression: gzip
+  description: Ensembl precomputed raw SpliceAI scores for all possible SNVs on GRCh38,
+    calculated against one MANE Select transcript per protein-coding gene (MANE v1.4)
+    with a maximum distance of 50 bases, as a bgzip-compressed VCF with a tabix index.
+    Prepared for the Ensembl VEP SpliceAI plugin.
+  format: vcf
+  id: spliceai.ensembl-mane-raw
+  name: SpliceAI Raw SNV Scores, Ensembl MANE v1.4 (GRCh38)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spliceai
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  product_file_size: 28926367953
+  product_url: https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_plugins/spliceai_scores.raw.snv.ensembl_mane_v1.4.grch38.vcf.gz
+- category: Product
+  compression: gzip
+  description: Ensembl precomputed masked SpliceAI scores for all possible SNVs on
+    GRCh38, calculated against one MANE Select transcript per protein-coding gene
+    (MANE v1.4) with a maximum distance of 50 bases, as a bgzip-compressed VCF with
+    a tabix index. Prepared for the Ensembl VEP SpliceAI plugin.
+  format: vcf
+  id: spliceai.ensembl-mane-masked
+  name: SpliceAI Masked SNV Scores, Ensembl MANE v1.4 (GRCh38)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spliceai
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  product_file_size: 28643031420
+  product_url: https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_plugins/spliceai_scores.masked.snv.ensembl_mane_v1.4.grch38.vcf.gz
+- category: Product
+  description: Ensembl directory of precomputed SpliceAI score files for the VEP SpliceAI
+    plugin, with raw and masked SNV scores computed against Ensembl/MANE transcript
+    sets (Ensembl 107 and 110, MANE v1.0 and v1.4) on GRCh38, plus a README.
+  format: http
+  id: spliceai.ensembl-downloads
+  name: Ensembl SpliceAI Score Downloads
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: spliceai
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  product_url: https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_plugins/
 publications:
 - authors:
   - Dyer SC

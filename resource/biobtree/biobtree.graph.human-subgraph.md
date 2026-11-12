@@ -5,12 +5,15 @@ compatibility:
   version: 4.2.1
 compression: gzip
 description: Human-scoped, Neo4j-ready subgraph of the BioBTree knowledge graph, exported
-  as a biolink-typed KGX graph (~40M nodes / ~132M edges, ~8.3 GB compressed across
-  separate node and edge files). A practical projection of the full graph for human-centric
-  biomedical use. Published on Zenodo.
-edge_count: 132075627
+  as a biolink-typed KGX graph (~47M nodes / ~151M edges, ~9.6 GB compressed across
+  node and edge files in both TSV and JSON Lines, plus a manifest). A practical projection
+  of the full graph for human-centric biomedical use. Sources without compatible redistribution
+  terms are excluded (full OMIM data, CTD, PanelApp, miRDB, and the SpliceAI and AlphaMissense
+  variant-prediction layers). Published on Zenodo.
+edge_count: 150949120
 format: kgx
 id: biobtree.graph.human-subgraph
+latest_version: v2-2026-11
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/
   label: CC-BY-NC-SA-4.0
@@ -42,14 +45,14 @@ node_categories:
 - biolink:SequenceVariant
 - biolink:SmallMolecule
 - biolink:Transcript
-node_count: 40160474
+node_count: 47361928
 original_source:
 - relation_type: prov:hadPrimarySource
   source: biobtree
 - relation_type: prov:hadPrimarySource
-  source: alphafold
+  source: alliance
 - relation_type: prov:hadPrimarySource
-  source: alphamissense
+  source: alphafold
 - relation_type: prov:hadPrimarySource
   source: bao
 - relation_type: prov:hadPrimarySource
@@ -61,6 +64,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: brenda
 - relation_type: prov:hadPrimarySource
+  source: cellosaurus
+- relation_type: prov:hadPrimarySource
   source: cellphonedb
 - relation_type: prov:hadPrimarySource
   source: cellxgene
@@ -68,6 +73,10 @@ original_source:
   source: chebi
 - relation_type: prov:hadPrimarySource
   source: chembl
+- relation_type: prov:hadPrimarySource
+  source: chip-atlas
+- relation_type: prov:hadPrimarySource
+  source: civic
 - relation_type: prov:hadPrimarySource
   source: cl
 - relation_type: prov:hadPrimarySource
@@ -79,9 +88,13 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: corum
 - relation_type: prov:hadPrimarySource
-  source: ctd
-- relation_type: prov:hadPrimarySource
   source: dbsnp
+- relation_type: prov:hadPrimarySource
+  source: dbvar
+- relation_type: prov:hadPrimarySource
+  source: depmap
+- relation_type: prov:hadPrimarySource
+  source: drugcentral
 - relation_type: prov:hadPrimarySource
   source: eco
 - relation_type: prov:hadPrimarySource
@@ -93,11 +106,17 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: expressionatlas
 - relation_type: prov:hadPrimarySource
+  source: faers
+- relation_type: prov:hadPrimarySource
   source: fantom5
 - relation_type: prov:hadPrimarySource
   source: gencc
 - relation_type: prov:hadPrimarySource
+  source: gnomad
+- relation_type: prov:hadPrimarySource
   source: go
+- relation_type: prov:hadPrimarySource
+  source: goa
 - relation_type: prov:hadPrimarySource
   source: gwascatalog
 - relation_type: prov:hadPrimarySource
@@ -116,8 +135,6 @@ original_source:
   source: lipidmaps
 - relation_type: prov:hadPrimarySource
   source: mesh
-- relation_type: prov:hadPrimarySource
-  source: mirdb
 - relation_type: prov:hadPrimarySource
   source: mondo
 - relation_type: prov:hadPrimarySource
@@ -154,6 +171,8 @@ original_source:
   source: uberon
 - relation_type: prov:hadPrimarySource
   source: uniprot
+- relation_type: prov:hadPrimarySource
+  source: wikipathways
 predicates:
 - biolink:actively_involved_in
 - biolink:affects
@@ -181,12 +200,13 @@ predicates:
 - biolink:paralogous_to
 - biolink:participates_in
 - biolink:physically_interacts_with
+- biolink:regulates
 - biolink:related_to
 - biolink:same_as
 - biolink:subclass_of
 - biolink:transcribed_from
 - biolink:translates_to
 - biolink:treats_or_applied_or_studied_to_treat
-product_url: https://zenodo.org/records/20816742
+product_url: https://doi.org/10.5281/zenodo.20816741
 layout: product_detail
 ---
