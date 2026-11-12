@@ -4572,6 +4572,24 @@ entries:
     source_path: resource/hmdb/hmdb.md
     status: valid
     warnings: []
+  resource/hmdd/hmdd.md#publication[0]#DOI:10.1093/nar/gkad717:
+    checked_at: '2026-11-12T19:21:14Z'
+    errors: []
+    fingerprint: 7dfa08f303dce81f0904a2996d643bbf0a71bdd347e47f9a2576879446bfc2b6
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkad717
+    source_path: resource/hmdd/hmdd.md
+    status: valid
+    warnings: []
+  resource/hmdd/hmdd.md#publication[1]#DOI:10.1093/nar/gky1010:
+    checked_at: '2026-11-12T19:21:14Z'
+    errors: []
+    fingerprint: c9edb2ff9793dee77479173176ba1b7af308f6268930d0bff79ebaae0a3683b0
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gky1010
+    source_path: resource/hmdd/hmdd.md
+    status: valid
+    warnings: []
   resource/hocomoco/hocomoco.md#publication[0]#PMID:29140464:
     checked_at: '2026-08-06T18:17:40Z'
     errors: []
