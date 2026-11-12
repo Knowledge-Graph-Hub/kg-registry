@@ -1,6 +1,22 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: trna@soe.ucsc.edu
+  - contact_type: url
+    value: https://gtrnadb.org/contact.html
+  - contact_type: github
+    value: UCSC-LoweLab
+  label: Lowe Lab, Department of Biomolecular Engineering, University of California
+    Santa Cruz
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: lowe@soe.ucsc.edu
+  label: Todd M. Lowe
 creation_date: '2009-01-05T00:00:00Z'
 description: The Genomic tRNA Database (GtRNAdb) is a comprehensive repository of
   transfer RNA (tRNA) gene predictions identified by tRNAscan-SE in complete and draft
@@ -17,9 +33,12 @@ description: The Genomic tRNA Database (GtRNAdb) is a comprehensive repository o
 domains:
 - genomics
 - non-coding RNA
+funding:
+- National Human Genome Research Institute (NHGRI), National Institutes of Health (NIH)
+  (HG006753)
 homepage_url: https://gtrnadb.org/
 id: gtrnadb
-last_modified_date: '2026-09-23T00:00:00Z'
+last_modified_date: '2026-11-12T00:00:00Z'
 layout: resource_detail
 name: GtRNAdb
 products:
@@ -90,6 +109,40 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gtrnadb
   product_url: https://gtrnadb.org/archives.html
+  secondary_source:
+  - relation_type: prov:used
+    source: trnascan-se
+- category: Product
+  compression: targz
+  description: Per-genome tRNAscan-SE result archive for the human GRCh38/hg38 assembly,
+    downloaded from the genome's GtRNAdb page. It contains detailed and high-confidence
+    tRNAscan-SE output (.out) and secondary structure (.ss) files, a BED file of tRNA
+    gene coordinates, FASTA files of genomic, mature and filtered tRNA sequences, and
+    a tRNA name map. Equivalent archives are linked from each genome page in GtRNAdb.
+  format: mixed
+  id: gtrnadb.hg38_trnascan_results
+  name: GtRNAdb Human (hg38) tRNAscan-SE Results
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  - relation_type: prov:hadPrimarySource
+    source: ucsc
+  product_url: https://gtrnadb.org/genomes/eukaryota/Hsapi38/hg38-tRNAs.tar.gz
+  secondary_source:
+  - relation_type: prov:used
+    source: trnascan-se
+- category: GraphicalInterface
+  description: tRNA gene activity predictions for 29 placental mammals, including
+    human and mouse, made with the tRAP (tRNA gene Activity Predictor) pipeline, with
+    per-species result pages sorted by tRNA name or by isotype and activity.
+  format: http
+  id: gtrnadb.trap_predictions
+  name: tRAP tRNA Gene Activity Predictions
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: gtrnadb
+  product_url: https://gtrnadb.org/tRAP/
+  repository: https://github.com/bpt26/tRAP
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
@@ -746,27 +799,42 @@ products:
   product_url: https://www.genecards.org/
 publications:
 - authors:
-  - Patricia P. Chan
-  - Todd M. Lowe
+  - Chan PP
+  - Lowe TM
   doi: 10.1093/nar/gkv1309
-  id: https://doi.org/10.1093/nar/gkv1309
+  id: doi:10.1093/nar/gkv1309
   journal: Nucleic Acids Research
   preferred: true
   title: 'GtRNAdb 2.0: an expanded database of transfer RNA genes identified in complete
     and draft genomes'
   year: '2016'
 - authors:
-  - Patricia P. Chan
-  - Todd M. Lowe
+  - Chan PP
+  - Lowe TM
   doi: 10.1093/nar/gkn787
-  id: https://doi.org/10.1093/nar/gkn787
+  id: doi:10.1093/nar/gkn787
   journal: Nucleic Acids Research
-  title: 'GtRNAdb: A database of transfer RNA genes detected in genomic sequence'
+  title: 'GtRNAdb: a database of transfer RNA genes detected in genomic sequence'
   year: '2009'
+- authors:
+  - Chan PP
+  - Lin BY
+  - Mak AJ
+  - Lowe TM
+  doi: 10.1093/nar/gkab688
+  id: doi:10.1093/nar/gkab688
+  journal: Nucleic Acids Research
+  title: 'tRNAscan-SE 2.0: improved detection and functional classification of transfer
+    RNA genes'
+  year: '2021'
+rrid: SCR_006939
+synonyms:
+- Genomic tRNA Database
 taxon:
 - NCBITaxon:2
 - NCBITaxon:2157
 - NCBITaxon:2759
+version: Data Release 22 (September 2024)
 ---
 # GtRNAdb
 

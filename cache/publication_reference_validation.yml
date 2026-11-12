@@ -4411,20 +4411,29 @@ entries:
     status: valid
     warnings: []
   resource/gtrnadb/gtrnadb.md#publication[0]#DOI:10.1093/nar/gkv1309:
-    checked_at: '2026-06-15T22:06:36Z'
+    checked_at: '2026-11-12T20:18:56Z'
     errors: []
-    fingerprint: 9f754f13cd2e7abd4993d1baa82d4f4804be8d344f29dd36967dd589cb8d14c2
+    fingerprint: dada38ec1c2f6fbbe82631f65164d091dfdc943f88b30bba55476fbefe554e8b
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkv1309
     source_path: resource/gtrnadb/gtrnadb.md
     status: valid
     warnings: []
   resource/gtrnadb/gtrnadb.md#publication[1]#DOI:10.1093/nar/gkn787:
-    checked_at: '2026-06-15T22:06:36Z'
+    checked_at: '2026-11-12T20:18:56Z'
     errors: []
-    fingerprint: 56a16c56f5b92b9b52a5c54db85d711d562591fa7b7ead1a6abb1caebecd0ca4
+    fingerprint: 20374c49256b655e218efd86d3513f154a127d788a8ebc32b7d4736d27ac3d30
     publication_index: 1
     reference_id: DOI:10.1093/nar/gkn787
+    source_path: resource/gtrnadb/gtrnadb.md
+    status: valid
+    warnings: []
+  resource/gtrnadb/gtrnadb.md#publication[2]#DOI:10.1093/nar/gkab688:
+    checked_at: '2026-11-12T20:24:56Z'
+    errors: []
+    fingerprint: 40c439e780bee95bfa711570902d56e1d9ae72f0543c1c9457fa0a97d06db8dc
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkab688
     source_path: resource/gtrnadb/gtrnadb.md
     status: valid
     warnings: []
