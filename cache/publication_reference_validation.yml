@@ -10798,12 +10798,30 @@ entries:
     source_path: resource/treatkb/treatkb.md
     status: valid
     warnings: []
+  resource/tred/tred.md#publication[0]#DOI:10.1093/nar/gkl1041:
+    checked_at: '2026-11-12T20:24:46Z'
+    errors: []
+    fingerprint: e9791df4dc30d9a6c7cc994c9e7737aa3f08053c115a0b60694429114c620b39
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkl1041
+    source_path: resource/tred/tred.md
+    status: valid
+    warnings: []
   resource/tred/tred.md#publication[0]#PMID:17202159:
     checked_at: '2026-08-06T18:19:13Z'
     errors: []
     fingerprint: 76ec7b12c9e00431f9be511320a7a7e59799fdf75f14bc275afc0e42a3990962
     publication_index: 0
     reference_id: PMID:17202159
+    source_path: resource/tred/tred.md
+    status: valid
+    warnings: []
+  resource/tred/tred.md#publication[1]#DOI:10.1093/nar/gki004:
+    checked_at: '2026-11-12T20:26:33Z'
+    errors: []
+    fingerprint: 6d92c8910a875b8a5c66dbaf3184c59da4fffce9b1533fb94e81aafe98b4bb0e
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gki004
     source_path: resource/tred/tred.md
     status: valid
     warnings: []
