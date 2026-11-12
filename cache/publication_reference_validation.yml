@@ -9504,6 +9504,24 @@ entries:
     source_path: resource/sabdab/sabdab.md
     status: valid
     warnings: []
+  resource/saprot/saprot.md#publication[0]#DOI:10.1101/2023.10.01.560349:
+    checked_at: '2026-11-12T19:20:25Z'
+    errors: []
+    fingerprint: 2919680413418fa8f5afac89725e117b7f66501384c9bc61f7b54f9d15d60475
+    publication_index: 0
+    reference_id: DOI:10.1101/2023.10.01.560349
+    source_path: resource/saprot/saprot.md
+    status: valid
+    warnings: []
+  resource/saprot/saprot.md#publication[1]#DOI:10.1038/s41587-025-02859-7:
+    checked_at: '2026-11-12T19:21:38Z'
+    errors: []
+    fingerprint: 11f6b677837ca91155e74ac571e9a91de86a27efa97c28ec2811ab69708972c9
+    publication_index: 1
+    reference_id: DOI:10.1038/s41587-025-02859-7
+    source_path: resource/saprot/saprot.md
+    status: valid
+    warnings: []
   resource/sbo/sbo.md#publication[0]#PMID:22027554:
     checked_at: '2026-08-06T18:18:56Z'
     errors: []
