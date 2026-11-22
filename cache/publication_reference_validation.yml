@@ -938,12 +938,39 @@ entries:
     source_path: resource/biothings/biothings.md
     status: valid
     warnings: []
+  resource/bitterdb/bitterdb.md#publication[0]#DOI:10.1093/nar/gkae1044:
+    checked_at: '2026-11-22T05:38:51Z'
+    errors: []
+    fingerprint: f76e6155c32af2dcc23305163f701fa6687fad60f988b4e332e1add736b0e309
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae1044
+    source_path: resource/bitterdb/bitterdb.md
+    status: valid
+    warnings: []
   resource/bitterdb/bitterdb.md#publication[0]#DOI:10.1093/nar/gky974:
     checked_at: '2026-06-17T14:00:40Z'
     errors: []
     fingerprint: 23dbd9da35ef6ae2399a8523f97f0b8f53642b993a7a793fc4389594f31cb443
     publication_index: 0
     reference_id: DOI:10.1093/nar/gky974
+    source_path: resource/bitterdb/bitterdb.md
+    status: valid
+    warnings: []
+  resource/bitterdb/bitterdb.md#publication[1]#DOI:10.1093/nar/gky974:
+    checked_at: '2026-11-22T05:38:51Z'
+    errors: []
+    fingerprint: 59e07e57daf6be6f3a1588a6bdf53c19f5441dc779b4a35ae7f496335b6f2449
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gky974
+    source_path: resource/bitterdb/bitterdb.md
+    status: valid
+    warnings: []
+  resource/bitterdb/bitterdb.md#publication[2]#DOI:10.1093/nar/gkr755:
+    checked_at: '2026-11-22T05:38:52Z'
+    errors: []
+    fingerprint: 74d34c7a922f76eb7da53e37eea41a33fcaf42cabe7f2b07a5cbfcfa8b75f2d7
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkr755
     source_path: resource/bitterdb/bitterdb.md
     status: valid
     warnings: []
