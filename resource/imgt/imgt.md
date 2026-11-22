@@ -4,8 +4,6 @@ category: DataSource
 contacts:
 - category: Organization
   contact_details:
-  - contact_type: email
-    value: contact-imgt@igh.cnrs.fr
   - contact_type: url
     value: https://www.imgt.org/
   label: IMGT - The International ImMunoGeneTics Information System
@@ -427,6 +425,6 @@ IMGT comprises:
   IMGT/mAb-KG, queryable through a SPARQL endpoint
 
 IMGT is freely available online for academic and non-profit use (data availability
-statement of the 2025 NAR update); questions go to contact-imgt@igh.cnrs.fr.
+statement of the 2025 NAR update).
 
 GeneCards integrates immunogenetics data from IMGT.
