@@ -508,6 +508,11 @@ taxon:
 - NCBITaxon:9615
 - NCBITaxon:9913
 - NCBITaxon:9258
+warnings:
+- The bitterdb.agri.huji.ac.il host blocks automated clients (it returns a 581-byte security
+  error page with HTTP 200 for any path), so product URLs were confirmed from Internet Archive
+  captures (download page October 2026, CSV files December 2024) rather than live. The database was last updated on
+  18 October 2024.
 ---
 # BitterDB
 
