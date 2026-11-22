@@ -8,7 +8,7 @@ name: GtoPdb Ligands Dataset
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gtopdb
+product_file_size: 6880425
 product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
-warnings: []
 layout: product_detail
 ---

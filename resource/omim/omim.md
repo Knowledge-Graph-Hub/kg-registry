@@ -5008,6 +5008,169 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: orphanet
   product_url: https://panelapp.genomicsengland.co.uk/api/docs/
+- category: Product
+  description: Excel (.xls) workbook of confident gene-body part associations, including
+    both typical and non-typical manifestations, version 12. Four worksheets give
+    binary gene by body part matrices for organs, systems, regions and germ layers;
+    rows are keyed by gene symbol and NCBI Entrez Gene ID.
+  id: geneorganizer.gene-bodypart.confident-all
+  name: Gene ORGANizer gene-body part associations, confident (typical and non-typical)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneorganizer
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_file_size: 3828736
+  product_url: https://geneorganizer.huji.ac.il/assets/Uploads/GeneORGANizer-Confident-all-v12.xls
+- category: Product
+  description: Excel (.xls) workbook of confident gene-body part associations restricted
+    to typical manifestations, version 12. Four worksheets give binary gene by body
+    part matrices for organs, systems, regions and germ layers; rows are keyed by
+    gene symbol and NCBI Entrez Gene ID.
+  id: geneorganizer.gene-bodypart.confident-typical
+  name: Gene ORGANizer gene-body part associations, confident (typical)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneorganizer
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_file_size: 3824640
+  product_url: https://geneorganizer.huji.ac.il/assets/Uploads/GeneORGANizer-Confident-typical-v12.xls
+- category: Product
+  description: Excel (.xls) workbook of tentative gene-body part associations (typical
+    manifestations), a broader and less strictly curated set, version 12. Four worksheets
+    give binary gene by body part matrices for organs, systems, regions and germ layers;
+    rows are keyed by gene symbol and NCBI Entrez Gene ID.
+  id: geneorganizer.gene-bodypart.tentative-typical
+  name: Gene ORGANizer gene-body part associations, tentative (typical)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneorganizer
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_file_size: 7813120
+  product_url: https://geneorganizer.huji.ac.il/assets/Uploads/GeneORGANizer-Tentative-typical-v12.xls
+- category: Product
+  compression: gzip
+  description: Gzip-compressed CSV of gene-disease-phenotype-organ associations (version
+    12-1), the cross tabulation behind the gene-body part tables. Columns give gene
+    symbol, NCBI Entrez ID, organ, HPO phenotype term and ID, disease name and ID
+    (OMIM, ORPHANET or UMLS CUIs via DisGeNET), curation type and source database.
+  format: csv
+  id: geneorganizer.gene-disease-phenotype.organs
+  name: Gene ORGANizer gene-disease-phenotype-organ associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneorganizer
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_file_size: 7833813
+  product_url: https://geneorganizer.huji.ac.il/assets/Uploads/diseases-organs.v12-1.csv.gz
+- category: Product
+  compression: gzip
+  description: Gzip-compressed CSV of gene-disease-phenotype-system associations (version
+    12-1), the cross tabulation behind the gene-body part tables. Columns give gene
+    symbol, NCBI Entrez ID, system, HPO phenotype term and ID, disease name and ID
+    (OMIM, ORPHANET or UMLS CUIs via DisGeNET), curation type and source database.
+  format: csv
+  id: geneorganizer.gene-disease-phenotype.systems
+  name: Gene ORGANizer gene-disease-phenotype-system associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneorganizer
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_file_size: 4001844
+  product_url: https://geneorganizer.huji.ac.il/assets/Uploads/diseases-systems.v12-1.csv.gz
+- category: Product
+  compression: gzip
+  description: Gzip-compressed CSV of gene-disease-phenotype-region associations (version
+    12-1), the cross tabulation behind the gene-body part tables. Columns give gene
+    symbol, NCBI Entrez ID, region, HPO phenotype term and ID, disease name and ID
+    (OMIM, ORPHANET or UMLS CUIs via DisGeNET), curation type and source database.
+  format: csv
+  id: geneorganizer.gene-disease-phenotype.regions
+  name: Gene ORGANizer gene-disease-phenotype-region associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneorganizer
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_file_size: 3802562
+  product_url: https://geneorganizer.huji.ac.il/assets/Uploads/diseases-regions.v12-1.csv.gz
+- category: Product
+  compression: gzip
+  description: Gzip-compressed CSV of gene-disease-phenotype-germ layer associations
+    (version 12-1), the cross tabulation behind the gene-body part tables. Columns
+    give gene symbol, NCBI Entrez ID, germ layer, HPO phenotype term and ID, disease
+    name and ID (OMIM, ORPHANET or UMLS CUIs via DisGeNET), curation type and source
+    database.
+  format: csv
+  id: geneorganizer.gene-disease-phenotype.germlayers
+  name: Gene ORGANizer gene-disease-phenotype-germ layer associations
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: geneorganizer
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_file_size: 3743605
+  product_url: https://geneorganizer.huji.ac.il/assets/Uploads/diseases-germlayers.v12-1.csv.gz
 publications:
 - authors:
   - Joanna S Amberger

@@ -8,6 +8,6 @@ name: GenomeRNAi Website
 original_source:
 - relation_type: prov:hadPrimarySource
   source: genomernai
-product_url: http://www.genomernai.org/
+product_url: https://genomernai.dkfz.de/
 layout: product_detail
 ---

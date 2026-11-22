@@ -938,12 +938,39 @@ entries:
     source_path: resource/biothings/biothings.md
     status: valid
     warnings: []
+  resource/bitterdb/bitterdb.md#publication[0]#DOI:10.1093/nar/gkae1044:
+    checked_at: '2026-11-22T05:38:51Z'
+    errors: []
+    fingerprint: f76e6155c32af2dcc23305163f701fa6687fad60f988b4e332e1add736b0e309
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkae1044
+    source_path: resource/bitterdb/bitterdb.md
+    status: valid
+    warnings: []
   resource/bitterdb/bitterdb.md#publication[0]#DOI:10.1093/nar/gky974:
     checked_at: '2026-06-17T14:00:40Z'
     errors: []
     fingerprint: 23dbd9da35ef6ae2399a8523f97f0b8f53642b993a7a793fc4389594f31cb443
     publication_index: 0
     reference_id: DOI:10.1093/nar/gky974
+    source_path: resource/bitterdb/bitterdb.md
+    status: valid
+    warnings: []
+  resource/bitterdb/bitterdb.md#publication[1]#DOI:10.1093/nar/gky974:
+    checked_at: '2026-11-22T05:38:51Z'
+    errors: []
+    fingerprint: 59e07e57daf6be6f3a1588a6bdf53c19f5441dc779b4a35ae7f496335b6f2449
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gky974
+    source_path: resource/bitterdb/bitterdb.md
+    status: valid
+    warnings: []
+  resource/bitterdb/bitterdb.md#publication[2]#DOI:10.1093/nar/gkr755:
+    checked_at: '2026-11-22T05:38:52Z'
+    errors: []
+    fingerprint: 74d34c7a922f76eb7da53e37eea41a33fcaf42cabe7f2b07a5cbfcfa8b75f2d7
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkr755
     source_path: resource/bitterdb/bitterdb.md
     status: valid
     warnings: []
@@ -4014,6 +4041,24 @@ entries:
     source_path: resource/genomernai/genomernai.md
     status: valid
     warnings: []
+  resource/genomernai/genomernai.md#publication[1]#DOI:10.1093/nar/gkp1038:
+    checked_at: '2026-11-22T05:39:06Z'
+    errors: []
+    fingerprint: bba57c0acb582e94cca81d3e850413476e6c32c87e0e94240b49a72819ee7113
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkp1038
+    source_path: resource/genomernai/genomernai.md
+    status: valid
+    warnings: []
+  resource/genomernai/genomernai.md#publication[2]#DOI:10.1093/nar/gkl906:
+    checked_at: '2026-11-22T05:39:06Z'
+    errors: []
+    fingerprint: cfa8b5f455abd6ed7805de66dda695a2cbe735e38fcea87108ef0b975d44b03a
+    publication_index: 2
+    reference_id: DOI:10.1093/nar/gkl906
+    source_path: resource/genomernai/genomernai.md
+    status: valid
+    warnings: []
   resource/genophenoenvo-kg/genophenoenvo-kg.md#publication[0]#PMID:37384147:
     checked_at: '2026-06-22T16:53:36Z'
     errors: []
@@ -4370,6 +4415,24 @@ entries:
     errors: []
     fingerprint: c6c634b0b8629c33da33f71b4095daafc2396227cdb27783418d958305ea8dfe
     publication_index: 0
+    reference_id: DOI:10.1093/nar/gkad944
+    source_path: resource/gtopdb/gtopdb.md
+    status: valid
+    warnings: []
+  resource/gtopdb/gtopdb.md#publication[0]#DOI:10.1093/nar/gkaf1067:
+    checked_at: '2026-11-22T05:39:14Z'
+    errors: []
+    fingerprint: 6cbb0971a00bb373c51961cf9bf0e68c0c56573a2e10fb44f23c097c4ea25864
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1067
+    source_path: resource/gtopdb/gtopdb.md
+    status: valid
+    warnings: []
+  resource/gtopdb/gtopdb.md#publication[1]#DOI:10.1093/nar/gkad944:
+    checked_at: '2026-11-22T05:39:14Z'
+    errors: []
+    fingerprint: ded7c3c23e56668da0fa6ec95b5932a74e484978b295c1d36d5d846058343422
+    publication_index: 1
     reference_id: DOI:10.1093/nar/gkad944
     source_path: resource/gtopdb/gtopdb.md
     status: valid
@@ -5168,11 +5231,38 @@ entries:
     source_path: resource/imex/imex.md
     status: valid
     warnings: []
+  resource/imgt/imgt.md#publication[0]#DOI:10.1093/nar/gkaf1024:
+    checked_at: '2026-11-22T05:39:28Z'
+    errors: []
+    fingerprint: aefb0dbaa5447c5e4b549b116116346fc217580f3da8aa2c18cd7dad9aebb04c
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1024
+    source_path: resource/imgt/imgt.md
+    status: valid
+    warnings: []
   resource/imgt/imgt.md#publication[0]#DOI:10.1093/nar/gku1056:
     checked_at: '2026-06-17T13:48:54Z'
     errors: []
     fingerprint: 281a8d5e3aa2ef198ef92f4fca3c8e77cd0ea27242288ea8518f614dd0acc2db
     publication_index: 0
+    reference_id: DOI:10.1093/nar/gku1056
+    source_path: resource/imgt/imgt.md
+    status: valid
+    warnings: []
+  resource/imgt/imgt.md#publication[1]#DOI:10.1093/nar/gkab1136:
+    checked_at: '2026-11-22T05:39:29Z'
+    errors: []
+    fingerprint: 93b99061febc39a2580d5572321a6e3bb202d67c744530300a0551b46b9fc771
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkab1136
+    source_path: resource/imgt/imgt.md
+    status: valid
+    warnings: []
+  resource/imgt/imgt.md#publication[2]#DOI:10.1093/nar/gku1056:
+    checked_at: '2026-11-22T05:39:29Z'
+    errors: []
+    fingerprint: 442c617833410fe6f8b10dd242eb58013a58f01b11df685a7d9b8572fab7cfee
+    publication_index: 2
     reference_id: DOI:10.1093/nar/gku1056
     source_path: resource/imgt/imgt.md
     status: valid
@@ -7941,6 +8031,24 @@ entries:
     source_path: resource/owlsim/owlsim.md
     status: valid
     warnings: []
+  resource/owlsim/owlsim.md#publication[1]#DOI:10.1093/database/bat025:
+    checked_at: '2026-11-22T05:20:10Z'
+    errors: []
+    fingerprint: 5b5c979b322fbeb47749b9a693ea119b934c26d7e4692f9efbe6c7e71a326933
+    publication_index: 1
+    reference_id: DOI:10.1093/database/bat025
+    source_path: resource/owlsim/owlsim.md
+    status: valid
+    warnings: []
+  resource/owlsim/owlsim.md#publication[2]#DOI:10.1002/humu.22051:
+    checked_at: '2026-11-22T05:20:11Z'
+    errors: []
+    fingerprint: 621c7ad5357e18a7e16402430c429195f99d1c5b31c73d5ab57d8813af4e8d63
+    publication_index: 2
+    reference_id: DOI:10.1002/humu.22051
+    source_path: resource/owlsim/owlsim.md
+    status: valid
+    warnings: []
   resource/p3db/p3db.md#publication[0]#DOI:10.3389/fpls.2012.00206:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
@@ -8130,6 +8238,33 @@ entries:
     fingerprint: 7c2ed789b63ccd3e1c363ef732688a6fd2a562d0a570540e91a24aec37859bfd
     publication_index: 0
     reference_id: DOI:10.1093/nar/gkaf1066
+    source_path: resource/paxdb/paxdb.md
+    status: valid
+    warnings: []
+  resource/paxdb/paxdb.md#publication[1]#DOI:10.1016/j.mcpro.2023.100640:
+    checked_at: '2026-11-22T05:39:47Z'
+    errors: []
+    fingerprint: c2bf72d244f075e64d77c10723399c6b164ee52273d0967fdb28f8c9c24b3605
+    publication_index: 1
+    reference_id: DOI:10.1016/j.mcpro.2023.100640
+    source_path: resource/paxdb/paxdb.md
+    status: valid
+    warnings: []
+  resource/paxdb/paxdb.md#publication[2]#DOI:10.1002/pmic.201400441:
+    checked_at: '2026-11-22T05:39:48Z'
+    errors: []
+    fingerprint: 5b12cb9671c125293bdd4ea5a488ca37dfc8128e81933243999a4c642e74b669
+    publication_index: 2
+    reference_id: DOI:10.1002/pmic.201400441
+    source_path: resource/paxdb/paxdb.md
+    status: valid
+    warnings: []
+  resource/paxdb/paxdb.md#publication[3]#DOI:10.1074/mcp.o111.014704:
+    checked_at: '2026-11-22T05:39:49Z'
+    errors: []
+    fingerprint: 644404d1af762fd6c762e4c6f335c68e46e8ca0729346b39a2666a6b7b28a9c7
+    publication_index: 3
+    reference_id: DOI:10.1074/mcp.o111.014704
     source_path: resource/paxdb/paxdb.md
     status: valid
     warnings: []
@@ -10332,9 +10467,9 @@ entries:
     status: valid
     warnings: []
   resource/suppkg/suppkg.md#publication[0]#DOI:10.1016/j.jbi.2022.104120:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-11-22T05:39:55Z'
     errors: []
-    fingerprint: 9e26f1b78e7431e38bc2b62abc5246589257ea8ef8112487396f07186352b425
+    fingerprint: d252774c35319cd1fdd6ba074023b51e30c7f98f2ce4b11cdff488cc47c2a094
     publication_index: 0
     reference_id: DOI:10.1016/j.jbi.2022.104120
     source_path: resource/suppkg/suppkg.md
@@ -11052,11 +11187,29 @@ entries:
     source_path: resource/unichem/unichem.md
     status: valid
     warnings: []
+  resource/unii/unii.md#publication[0]#DOI:10.1093/nar/gkaa962:
+    checked_at: '2026-11-22T05:40:24Z'
+    errors: []
+    fingerprint: c4e07eb57e2246472866503bc2862af5a97cbac56e6a80ade6c45c27b5686247
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaa962
+    source_path: resource/unii/unii.md
+    status: valid
+    warnings: []
   ? resource/unii/unii.md#publication[0]#url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
   : checked_at: '2026-08-31T17:59:41Z'
     errors: []
     fingerprint: 2904d3ab7f87f14ca251b763d7173c3e4be405cd9ee3e81305d5e1fccff1b70f
     publication_index: 0
+    reference_id: url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
+    source_path: resource/unii/unii.md
+    status: valid
+    warnings: []
+  ? resource/unii/unii.md#publication[1]#url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
+  : checked_at: '2026-11-22T05:40:02Z'
+    errors: []
+    fingerprint: 2904d3ab7f87f14ca251b763d7173c3e4be405cd9ee3e81305d5e1fccff1b70f
+    publication_index: 1
     reference_id: url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
     source_path: resource/unii/unii.md
     status: valid

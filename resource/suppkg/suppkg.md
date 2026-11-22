@@ -2,35 +2,47 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: zhan1386@umn.edu
+    label: Rui Zhang
   - category: Organization
     contact_details:
       - contact_type: url
         value: https://ncats.nih.gov/translator
     label: NCATS Biomedical Data Translator
 creation_date: '2025-10-30T00:00:00Z'
-description: SuppKG is a knowledge graph that integrates information about dietary supplements and their relationships with diseases, genes, proteins, and other biomedical entities, developed to support translational research and clinical decision-making.
+description: SuppKG is a literature-derived knowledge graph of dietary supplements and their relationships with diseases, drugs, genes, and other biomedical concepts. It was built at the University of Minnesota by running SemRepDS (SemRep extended with the iDISK dietary supplement terminology) over PubMed abstracts and filtering the resulting semantic predications with a PubMedBERT-based model; nodes are UMLS concepts. The original 2021 release has 56,635 nodes and 595,222 directed edges, and a v2 rebuild on newer abstracts has 57,944 nodes and 1,321,374 edges. It was used to discover drug-supplement interactions and is served in NCATS Translator through a BioThings API.
 domains:
   - nutrition
   - biomedical
+  - pharmacology
+  - drug interactions
+  - literature
+  - natural language processing
+funding:
+  - National Center for Complementary and Integrative Health (NCCIH) (R01AT009457)
+  - Office of Dietary Supplements (ODS)
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
 id: suppkg
 infores_id: suppkg
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-11-22T00:00:00Z'
 layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
-    license (permissive) among its sources: chebi, uniprot.'
-  id: https://creativecommons.org/licenses/by/4.0/
+    license (custom) among its sources: umls.'
+  id: https://uts.nlm.nih.gov/uts/
   inferred_from:
-  - chebi
-  - uniprot
-  label: CC BY 4.0
-  restrictiveness: permissive
+  - umls
+  label: UMLS License (free for individuals)
+  restrictiveness: custom
   status: inferred
   unresolved_sources: []
 name: SuppKG
 publications:
-  - id: doi:10.1016/j.jbi.2022.104120
+  - preferred: true
+    id: doi:10.1016/j.jbi.2022.104120
     doi: 10.1016/j.jbi.2022.104120
     title: Discovering novel drug-supplement interactions using SuppKG generated from the biomedical literature
     authors:
@@ -59,7 +71,7 @@ products:
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG
   - category: ProcessProduct
-    description: Source data directory used for SuppKG in the SemRep_DS repository.
+    description: SuppKG directory in the SemRep_DS repository, holding the SuppKG graph files and a README describing their node and edge structure.
     format: http
     id: suppkg.source-data
     name: SuppKG Source Data Repository
@@ -68,13 +80,85 @@ products:
         relation_type: prov:hadPrimarySource
       - source: pubmed
         relation_type: prov:hadPrimarySource
-      - source: uniprot
+      - source: umls
         relation_type: prov:hadPrimarySource
-      - source: chebi
-        relation_type: prov:hadPrimarySource
-      - source: pubchem
+      - source: idisk
         relation_type: prov:hadPrimarySource
     product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
+  - category: GraphProduct
+    compression: other
+    description: Original (2021) SuppKG as a bzip2-compressed NetworkX gpickle (NetworkX 2.5, Python 3.8, pickle protocol 5) with 56,635 UMLS concept nodes and 595,222 directed edges over 31 predicates; each edge carries the source sentences, PubMed IDs and PubMedBERT confidence scores.
+    dump_format: gpickle
+    format: mixed
+    id: suppkg.graph.gpickle
+    name: SuppKG NetworkX gpickle
+    original_source:
+      - source: suppkg
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: idisk
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: semrep
+        relation_type: prov:wasInfluencedBy
+    product_file_size: 71635045
+    product_url: https://raw.githubusercontent.com/zhang-informatics/SemRep_DS/main/SuppKG/supp_kg.gpickle.bz2
+  - category: GraphProduct
+    compression: other
+    description: Original (2021) SuppKG as NetworkX node-link JSON in a bzip2-compressed tar archive, loadable with networkx.readwrite.json_graph.node_link_graph(); same content as the gpickle release.
+    format: json
+    id: suppkg.graph.json
+    name: SuppKG Node-Link JSON
+    original_source:
+      - source: suppkg
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: idisk
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: semrep
+        relation_type: prov:wasInfluencedBy
+    product_file_size: 68821417
+    product_url: https://raw.githubusercontent.com/zhang-informatics/SemRep_DS/main/SuppKG/supp_kg.json.tar.bz2
+  - category: GraphProduct
+    compression: other
+    description: SuppKG v2, rebuilt from additional PubMed abstracts published after the 2021 pull, as a NetworkX edge list in a bzip2-compressed tar archive (nx.read_edgelist gives a MultiDiGraph with 57,944 nodes and 1,321,374 edges). PubMed IDs, sentences and confidence scores are omitted in v2.
+    format: txt
+    id: suppkg.v2.edgelist
+    name: SuppKG v2 Edge List
+    original_source:
+      - source: suppkg
+        relation_type: prov:hadPrimarySource
+      - source: pubmed
+        relation_type: prov:hadPrimarySource
+      - source: umls
+        relation_type: prov:hadPrimarySource
+      - source: idisk
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: semrep
+        relation_type: prov:wasInfluencedBy
+    product_file_size: 57233095
+    product_url: https://raw.githubusercontent.com/zhang-informatics/SemRep_DS/main/SuppKG/suppkg_v2.edgelist.tar.bz2
+  - category: ProgrammingInterface
+    description: BioThings API (infores:biothings-suppkg) serving the original 595,222 SuppKG subject-predicate-object records, including UMLS identifiers, semantic types, PubMed IDs, sentences and confidence scores; it backs the Service Provider TRAPI in NCATS Translator.
+    format: http
+    id: suppkg.biothings-api
+    is_public: true
+    name: BioThings SuppKG API
+    original_source:
+      - source: suppkg
+        relation_type: prov:hadPrimarySource
+    secondary_source:
+      - source: biothings
+        relation_type: prov:wasInfluencedBy
+    product_url: https://pending.biothings.io/suppkg/metadata
   - category: ProgrammingInterface
     description: TRAPI endpoint for the Service Provider team, served by BioThings Explorer,
       querying the BioThings and other APIs registered to the team in SmartAPI.
@@ -192,6 +276,7 @@ products:
     - relation_type: prov:hadPrimarySource
       source: myvariant
     product_url: https://bte.transltr.io/v1/team/Service%20Provider
+repository: https://github.com/zhang-informatics/SemRep_DS
 synonyms:
   - SuppKG
   - Dietary Supplement Knowledge Graph
@@ -203,107 +288,35 @@ taxon:
 
 ## Overview
 
-SuppKG (Dietary Supplement Knowledge Graph) is a comprehensive knowledge graph that integrates information about dietary supplements and their relationships with diseases, genes, proteins, chemicals, and other biomedical entities. Developed as part of the NCATS Biomedical Data Translator program, SuppKG addresses the critical need for structured, computable knowledge about dietary supplements to support evidence-based clinical decision-making and translational research.
+SuppKG is a knowledge graph of dietary supplements built from the biomedical
+literature by the University of Minnesota Institute for Health Informatics. It
+was generated by running SemRepDS (SemRep extended with the iDISK dietary
+supplement terminology loaded into the UMLS) over about 600,000 PubMed
+abstracts, then filtering the extracted semantic predications with a
+PubMedBERT-based model. Nodes are UMLS concepts (CUIs) carrying their semantic
+types and the terms found in the abstracts; edges use 31 SemRep predicates such
+as TREATS, INTERACTS_WITH and METHOD_OF.
 
-## Key Features
+## Releases
 
-- **Comprehensive Coverage**: Integrates diverse data about dietary supplements including ingredients, biological activities, and health effects
-- **Multi-Entity Relationships**: Links supplements to diseases, genes, proteins, pathways, and chemical compounds
-- **Evidence-Based**: Relationships supported by literature and clinical evidence
-- **Standardized Representation**: Uses Biolink Model for semantic interoperability
-- **TRAPI-Compatible**: Accessible through the Translator Reasoner API
-- **Integration with Translator**: Part of the NCATS Translator knowledge provider ecosystem
+- **SuppKG (2021)**: 56,635 nodes and 595,222 directed edges. Each edge keeps
+  the supporting sentences, PubMed IDs and model confidence scores. Distributed
+  as a NetworkX gpickle and as node-link JSON.
+- **SuppKG v2**: rebuilt with the same pipeline on abstracts published since
+  the 2021 pull, with 57,944 nodes and 1,321,374 edges. Distributed as a
+  NetworkX edge list; PubMed IDs, sentences and confidence scores are omitted.
 
-## Data Content
+All files are in the
+[SemRep_DS repository](https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG),
+which declares no license.
 
-### Entities
+## Use
 
-- **Dietary Supplements**: Vitamins, minerals, herbs, botanicals, amino acids, and other supplement products
-- **Supplement Ingredients**: Active and inactive components
-- **Diseases and Conditions**: Health conditions associated with supplement use
-- **Genes and Proteins**: Molecular targets and mechanisms of action
-- **Chemical Compounds**: Chemical structures and identifiers
-- **Biological Pathways**: Mechanistic pathways affected by supplements
-
-### Relationships
-
-- Supplement-disease associations (therapeutic uses, contraindications)
-- Supplement-gene interactions
-- Supplement-protein interactions
-- Supplement-chemical compound relationships
-- Ingredient-supplement compositions
-- Mechanism of action relationships
-- Drug-supplement interactions
-
-## Data Sources
-
-SuppKG integrates information from multiple authoritative sources:
-- Scientific literature (PubMed)
-- Clinical databases
-- Natural product databases
-- Chemical databases (ChEBI, PubChem)
-- Protein databases (UniProt)
-- Pathway databases
-- FDA and regulatory information
-
-## Applications
-
-### Clinical Decision Support
-
-- **Patient Safety**: Identifying potential drug-supplement interactions
-- **Treatment Planning**: Evidence-based supplement recommendations
-- **Contraindication Checking**: Warning about unsafe supplement use in specific conditions
-- **Personalized Medicine**: Tailoring supplement recommendations based on patient profiles
-
-### Research and Discovery
-
-- **Hypothesis Generation**: Discovering novel supplement-disease associations
-- **Mechanism Exploration**: Understanding biological mechanisms of supplement effects
-- **Repurposing Opportunities**: Identifying new therapeutic applications for supplements
-- **Literature Mining**: Systematic extraction of supplement knowledge from publications
-
-### Public Health
-
-- **Evidence Synthesis**: Aggregating evidence about supplement efficacy and safety
-- **Policy Support**: Informing regulatory decisions about dietary supplements
-- **Consumer Education**: Providing accurate, evidence-based information about supplements
-
-## Technical Implementation
-
-### Knowledge Graph Structure
-
-- **Format**: RDF-based knowledge graph
-- **Ontologies**: Biolink Model for semantic standardization
-- **Identifiers**: Standard biomedical identifiers (e.g., CUI, ChEBI, UniProt)
-- **Provenance**: Comprehensive tracking of data sources and evidence
-
-### Access Methods
-
-- **Translator API**: Query via TRAPI (Translator Reasoner API)
-- **Knowledge Provider**: Accessible through Translator ARS (Autonomous Relay System)
-- **Programmatic Access**: RESTful API endpoints
-- **SPARQL**: Semantic queries for advanced users
-
-## Integration with Translator Ecosystem
-
-SuppKG serves as a Knowledge Provider (KP) in the NCATS Translator program:
-- Responds to queries about dietary supplements
-- Integrates with other Translator KPs and ARAs
-- Supports multi-hop reasoning across biomedical domains
-- Contributes to comprehensive translational research queries
-
-## Information Resource ID
-
-This resource has the Information Resource identifier: `infores:suppkg`
-
-## Publication
-
-SuppKG is described in:
-- **Title**: "SuppKG: A knowledge graph for dietary supplements"
-- **DOI**: https://doi.org/10.1016/j.jbi.2022.104120
-- **Year**: 2022
-
-For more information, visit the [SuppKG wiki](https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG) or the [NCATS Translator website](https://ncats.nih.gov/translator).
+The 2022 Journal of Biomedical Informatics paper used SuppKG with discovery
+patterns to propose novel drug-supplement interactions. In the NCATS
+Biomedical Data Translator, the 2021 release is served through the BioThings
+SuppKG API (`infores:biothings-suppkg`), which the Service Provider TRAPI
+queries.
 
 ## Automated Evaluation
 

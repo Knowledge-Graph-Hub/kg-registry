@@ -22,7 +22,7 @@ domains:
 homepage_url: https://precision.fda.gov/uniisearch
 id: unii
 infores_id: unii
-last_modified_date: '2026-06-12T00:00:00Z'
+last_modified_date: '2026-11-22T00:00:00Z'
 layout: resource_detail
 name: FDA Global Substance Registration System (UNII)
 products:
@@ -38,42 +38,93 @@ products:
   product_url: https://precision.fda.gov/uniisearch
 - category: Product
   compression: zip
-  description: Downloadable list of all UNIIs with basic substance information
-  format: csv
+  description: Zipped tab-delimited list of all names associated with each UNII (name,
+    name type such as official, systematic, common, code or brand name, UNII and preferred
+    display name), with a README describing the fields
+  format: tsv
   id: unii.list
   name: UNII List Download
   original_source:
   - relation_type: prov:hadPrimarySource
     source: unii
+  product_file_size: 20344194
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
+- category: MappingProduct
   compression: zip
-  description: Comprehensive UNII data with detailed substance attributes and mappings
-  format: mixed
+  description: Zipped tab-delimited UNII records file with one row per UNII, giving
+    the display name, molecular formula, InChIKey, SMILES, ingredient type and ISO
+    11238 substance type, plus cross-references to CAS registry numbers, EC numbers,
+    NCI Thesaurus, RxNorm, PubChem, EMA SMS IDs, EPA CompTox (DSSTox), Catalogue of
+    Life, ITIS, NCBI Taxonomy, USDA PLANTS, Plants of the World Online, GRIN, the Kew
+    Medicinal Plant Names Services, INN and USAN codes, and DailyMed. Also includes
+    the Legacy UNIIs file.
+  format: tsv
   id: unii.data
   name: UNII Data Download
   original_source:
   - relation_type: prov:hadPrimarySource
     source: unii
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  product_file_size: 14477857
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-- category: Product
-  description: Legacy UNII identifiers for historical substances
-  format: txt
+- category: MappingProduct
+  description: Tab-delimited mapping of retired (legacy) UNIIs to their current replacement
+    UNII and preferred term
+  format: tsv
   id: unii.legacy
   name: Legacy UNIIs
   original_source:
   - relation_type: prov:hadPrimarySource
     source: unii
+  product_file_size: 7922
   product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+- category: GraphicalInterface
+  description: Public Global Substance Registration System hosted by NCATS, for searching
+    and browsing full GSRS substance records (chemicals, proteins, nucleic acids, polymers,
+    structurally diverse substances and mixtures) with their names, codes, relationships
+    and references
+  format: http
+  id: unii.gsrs
+  name: NCATS Public GSRS
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  product_url: https://gsrs.ncats.nih.gov/ginas/app/ui/
+- category: ProgrammingInterface
+  description: REST API of the public NCATS GSRS, returning GSRS substance records
+    as JSON (for example /api/v1/substances)
+  format: http
+  id: unii.gsrs.api
+  name: NCATS Public GSRS REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  product_url: https://gsrs.ncats.nih.gov/api/v1/substances
+- category: ProcessProduct
+  description: Source repository for deploying the GSRS 3 software, a set of Java Spring
+    Boot microservices and an Angular frontend developed by NCATS and FDA
+  format: java
+  id: unii.gsrs.software
+  name: GSRS 3 Deployment Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  product_url: https://github.com/ncats/gsrs3-main-deployment
 - description: The MechRepoNet knowledge graph in its original format
   format: mixed
   id: mechreponet.kg
@@ -394,10 +445,33 @@ products:
     source: cl
   product_url: https://stars.renci.org/var/babel_outputs/latest/compendia/
 publications:
+- authors:
+  - Tyler Peryea
+  - Noel Southall
+  - Mitch Miller
+  - Daniel Katzel
+  - Niko Anderson
+  - Jorge Neyra
+  - Sarah Stemann
+  - Ðắc-Trung Nguyễn
+  - Dammika Amugoda
+  - Archana Newatia
+  - Ramez Ghazzaoui
+  - Elaine Johanson
+  - Herman Diederik
+  - Larry Callahan
+  - Frank Switzer
+  doi: 10.1093/nar/gkaa962
+  id: doi:10.1093/nar/gkaa962
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'Global Substance Registration System: consistent scientific descriptions
+    for substances related to health'
+  year: '2021'
 - id: https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
   title: FDA’s Global Substance Registration System (GSRS) Unique Ingredient Identifiers
     (UNIIs) uniquely define substances in FDA-regulated products - 06/08/2023 | FDA
-repository: https://ginas.ncats.nih.gov/ginas/app
+repository: https://github.com/ncats/gsrs3-main-deployment
 taxon:
 - NCBITaxon:9606
 ---
@@ -436,4 +510,4 @@ UNII identifiers are essential for:
 
 ## Data Quality and Updates
 
-The system is regularly updated, with the most recent data refresh on August 18, 2025. UNIIs are generated based on the best available public information, and synonyms and mappings are continuously refined. The FDA encourages reporting of data issues to maintain accuracy and completeness.
+The system is regularly updated; the downloadable UNII files current as of November 2026 are the August 4, 2026 release. UNIIs are generated based on the best available public information, and synonyms and mappings are continuously refined. The FDA encourages reporting of data issues to maintain accuracy and completeness.

@@ -7,7 +7,7 @@ name: GtoPdb Targets and Families
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gtopdb
+product_file_size: 1896910
 product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
-warnings: []
 layout: product_detail
 ---

@@ -2537,23 +2537,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubmed
   product_url: http://pitools.niper.ac.in/medkg/
-- category: ProcessProduct
-  description: Source data directory used for SuppKG in the SemRep_DS repository.
-  format: http
-  id: suppkg.source-data
-  name: SuppKG Source Data Repository
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: suppkg
-  - relation_type: prov:hadPrimarySource
-    source: pubmed
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: pubchem
-  product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
 - category: GraphProduct
   description: The OREGANO knowledge graph dataset integrating drug, protein, gene,
     and disease information for drug repositioning.
@@ -7052,6 +7035,60 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-11-12 (HTTP 404); no archived
     copy was found in the Internet Archive.
+- category: Product
+  description: BitterDB 2024 receptor table with one row per bitter taste receptor
+    (TAS2R) across species, giving sequence, organism, UniProt accession, gene and
+    protein names, number of known ligands, and links to GeneCards, GPCRdb, the Human
+    Protein Atlas, the IUPHAR/BPS Guide to Pharmacology and AlphaFold models.
+  format: csv
+  id: bitterdb.downloads.receptors
+  name: BitterDB 2024 Bitter Taste Receptors
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bitterdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://bitterdb.agri.huji.ac.il/downloads/2024/?file=ReceptorSearchA_2024.csv
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: genecards
+  - relation_type: prov:wasInfluencedBy
+    source: gpcrdb
+  - relation_type: prov:wasInfluencedBy
+    source: hpa
+  - relation_type: prov:wasInfluencedBy
+    source: gtopdb
+  - relation_type: prov:wasInfluencedBy
+    source: alphafold
+- category: MappingProduct
+  compression: zip
+  description: Tab-delimited mapping of PaxDb (STRING) protein identifiers to UniProt
+    accessions (v6.1).
+  format: tsv
+  id: paxdb.uniprot-links
+  name: PaxDb UniProt Links
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_file_size: 17181630
+  product_url: https://pax-db.org/downloads/latest/paxdb-uniprot-links-v6.1.zip
+- category: MappingProduct
+  description: Two-column text file of UniProt accessions and the corresponding PaxDb
+    (STRING) protein identifiers.
+  format: txt
+  id: paxdb.uniprot-crossreferences
+  name: PaxDb UniProt Cross-references
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_file_size: 85554748
+  product_url: https://pax-db.org/downloads/latest/paxdb-uniprot-crossreferences.txt
 publications:
 - authors:
   - Alex Bateman

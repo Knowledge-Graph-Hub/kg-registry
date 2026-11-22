@@ -1,23 +1,42 @@
 ---
-activity_status: active
+activity_status: inactive
 category: DataSource
 contacts:
 - category: Organization
   contact_details:
   - contact_type: url
-    value: http://www.genomernai.org/
+    value: https://genomernai.dkfz.de/
+  - contact_type: email
+    value: contact@genomernai.org
   label: GenomeRNAi
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: m.boutros@dkfz.de
+  label: Michael Boutros
+  orcid: 0000-0002-9458-817X
 creation_date: '2026-06-17T00:00:00Z'
 description: GenomeRNAi is a database containing phenotypes from cell-based and in
-  vivo RNA interference (RNAi) screens in Drosophila and Homo sapiens. It also provides
-  a curated resource of RNAi reagents and their predicted specificity and efficiency.
+  vivo RNA interference (RNAi) screens in Drosophila and Homo sapiens, manually curated
+  from the literature or submitted by authors. It also provides a curated resource
+  of RNAi reagents and their predicted specificity and efficiency. It is maintained
+  by the Division of Signaling and Functional Genomics at the German Cancer Research
+  Center (DKFZ); the latest release is version 17 (November 2017), with 687 screens.
 domains:
 - genomics
 - organisms
-homepage_url: http://www.genomernai.org/
+- model organisms
+- phenotype
+funding:
+- European Community's Seventh Framework Programme (FP7) (HEALTH-F2-2008-201666)
+- Helmholtz Alliance for Systems Biology
+homepage_url: https://genomernai.dkfz.de/
 id: genomernai
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-11-22T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY-3.0
 name: GenomeRNAi
 products:
 - category: GraphicalInterface
@@ -29,16 +48,25 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: genomernai
-  product_url: http://www.genomernai.org/
+  product_url: https://genomernai.dkfz.de/
 - category: Product
-  description: Bulk downloads of RNAi phenotype and reagent datasets.
+  description: Downloads of RNAi screen data. Each screen downloads from its page
+    in the web interface as a file with a screen-metadata section followed by tab-delimited
+    gene-phenotype associations (with mapped Entrez Gene IDs); a file with all screens
+    is sent by e-mail on request.
   format: mixed
   id: genomernai.downloads
   name: GenomeRNAi Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: genomernai
-  product_url: http://www.genomernai.org/Download
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  product_url: https://genomernai.dkfz.de/DownloadAllExperimentsForm
+  warnings:
+  - The full all-screens file is available only by e-mail request, and the static
+    frequent-hitter and archived-screen zip downloads linked from the download page
+    returned HTTP 404 (file missing on the server) when checked on 2026-11-22.
 - category: GraphicalInterface
   description: Web-based interface for searching and browsing comprehensive gene-centric
     information integrating data from over 200 sources
@@ -318,6 +346,37 @@ publications:
   title: 'GenomeRNAi: a database for cell-based and in vivo RNAi phenotypes, 2013
     update'
   year: '2013'
+- authors:
+  - Moritz Gilsdorf
+  - Thomas Horn
+  - Zeynep Arziman
+  - Oliver Pelz
+  - Evgeny Kiner
+  - Michael Boutros
+  doi: 10.1093/nar/gkp1038
+  id: https://doi.org/10.1093/nar/gkp1038
+  journal: Nucleic Acids Research
+  title: 'GenomeRNAi: a database for cell-based RNAi phenotypes. 2009 update'
+  year: '2010'
+- authors:
+  - T. Horn
+  - Z. Arziman
+  - J. Berger
+  - M. Boutros
+  doi: 10.1093/nar/gkl906
+  id: https://doi.org/10.1093/nar/gkl906
+  journal: Nucleic Acids Research
+  title: 'GenomeRNAi: a database for cell-based RNAi phenotypes'
+  year: '2007'
+rrid: SCR_013088
+taxon:
+- NCBITaxon:7227
+- NCBITaxon:9606
+version: '17.0'
+warnings:
+- No release since version 17.0 (27 November 2017); the website remains online at
+  genomernai.dkfz.de (the old genomernai.org address redirects there), but the published
+  release schedule ends in 2014.
 ---
 # GenomeRNAi
 
@@ -333,3 +392,7 @@ Content includes:
 - Bulk downloads of phenotype and reagent data
 
 GeneCards integrates RNAi phenotype data from GenomeRNAi.
+
+The current release, version 17.0 (November 2017), holds 687 screens (478 human,
+209 Drosophila). The site is hosted by DKFZ at genomernai.dkfz.de, and the data are
+licensed under CC BY 3.0.

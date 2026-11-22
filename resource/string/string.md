@@ -5579,6 +5579,69 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubtator
   product_url: https://pharos.nih.gov/graphql
+- category: Product
+  description: Protein abundance datasets, one directory per NCBI Taxonomy species
+    ID, with one tab-delimited text file per dataset (integrated whole-organism, tissue,
+    cell line or condition) giving gene name, STRING protein identifier and abundance
+    in parts per million, with a header of dataset metadata, source publication and
+    consistency score.
+  format: txt
+  id: paxdb.datasets
+  name: PaxDb Protein Abundance Datasets
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  product_url: https://pax-db.org/downloads/latest/datasets/
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: proteomexchange
+  - relation_type: prov:used
+    source: string
+- category: Product
+  compression: zip
+  description: FASTA protein sequences per species used by PaxDb v6.1, following STRING
+    genome versions and protein identifiers.
+  format: fasta
+  id: paxdb.protein-sequences
+  name: PaxDb Protein Sequences
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_file_size: 67240395
+  product_url: https://pax-db.org/downloads/latest/paxdb-protein-sequences-v6.1.zip
+- category: MappingProduct
+  compression: zip
+  description: Tab-delimited mapping of PaxDb (STRING) protein identifiers to UniProt
+    accessions (v6.1).
+  format: tsv
+  id: paxdb.uniprot-links
+  name: PaxDb UniProt Links
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: string
+  product_file_size: 17181630
+  product_url: https://pax-db.org/downloads/latest/paxdb-uniprot-links-v6.1.zip
+- category: GraphicalInterface
+  description: Web tool for uploading peptide counts or intensities to compute protein
+    abundances with the PaxDb pipeline, score the dataset by STRING interaction consistency,
+    and compare it with PaxDb reference datasets for the same species.
+  format: http
+  id: paxdb.compute
+  is_public: true
+  name: PaxDb Abundance Computation Tool
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: paxdb
+  product_url: https://pax-db.org/compute
+  secondary_source:
+  - relation_type: prov:used
+    source: string
 publications:
 - authors:
   - Szklarczyk D
