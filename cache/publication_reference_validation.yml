@@ -10467,9 +10467,9 @@ entries:
     status: valid
     warnings: []
   resource/suppkg/suppkg.md#publication[0]#DOI:10.1016/j.jbi.2022.104120:
-    checked_at: '2026-06-12T20:32:32Z'
+    checked_at: '2026-11-22T05:39:55Z'
     errors: []
-    fingerprint: 9e26f1b78e7431e38bc2b62abc5246589257ea8ef8112487396f07186352b425
+    fingerprint: d252774c35319cd1fdd6ba074023b51e30c7f98f2ce4b11cdff488cc47c2a094
     publication_index: 0
     reference_id: DOI:10.1016/j.jbi.2022.104120
     source_path: resource/suppkg/suppkg.md
