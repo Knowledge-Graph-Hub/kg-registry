@@ -17,7 +17,7 @@ layout: resource_detail
 license:
   display_note: 'No license is declared for this resource. This is the most restrictive
     license (custom) among its sources: ctd. Not accounted for, no known license:
-    mirtarbase, unii.'
+    mirtarbase.'
   id: https://ctdbase.org/about/legal.jsp
   inferred_from:
   - ctd
@@ -26,7 +26,6 @@ license:
   status: inferred
   unresolved_sources:
   - mirtarbase
-  - unii
 name: MechRepoNet
 products:
 - description: The MechRepoNet knowledge graph in its original format
