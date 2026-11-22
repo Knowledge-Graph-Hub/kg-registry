@@ -7,7 +7,7 @@ name: GtoPdb Approved Drugs Dataset
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gtopdb
+product_file_size: 3768953
 product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
-warnings: []
 layout: product_detail
 ---

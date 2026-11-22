@@ -7,7 +7,7 @@ name: GtoPdb Interactions Dataset
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gtopdb
+product_file_size: 7560316
 product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
-warnings: []
 layout: product_detail
 ---

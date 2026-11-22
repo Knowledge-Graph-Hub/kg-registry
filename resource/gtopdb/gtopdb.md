@@ -13,17 +13,25 @@ contacts:
     value: jamie.davies@ed.ac.uk
   label: Jamie Davies
 creation_date: '2025-05-30T00:00:00Z'
-description: The IUPHAR/BPS Guide to PHARMACOLOGY is an expert-curated resource providing
-  quantitative information on drug targets and the substances that act on them, including
-  approved drugs and experimental therapeutics
+description: The IUPHAR/BPS Guide to PHARMACOLOGY (GtoPdb) is an expert-curated resource
+  providing quantitative information on drug targets and the substances that act on
+  them, including approved drugs and experimental therapeutics. Ligand-activity-target
+  relationships are curated mainly from the pharmacological and medicinal chemistry
+  literature by NC-IUPHAR and the British Pharmacological Society. Since August 2026
+  the website requires free user registration, and the REST API requires an API key.
 domains:
 - pharmacology
 - biomedical
 - drug discovery
+funding:
+- British Pharmacological Society
+- International Union of Basic and Clinical Pharmacology
+- UKRI Biotechnology and Biological Sciences Research Council
+- Global Antibiotic Research and Development Partnership
 homepage_url: https://www.guidetopharmacology.org
 id: gtopdb
 infores_id: gtopdb
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-11-22T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by-sa/4.0/
@@ -40,6 +48,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
   product_url: https://www.guidetopharmacology.org
+  warnings:
+  - Since 18 August 2026 the GtoPdb website requires users to register and log in;
+    registration is free for academic and non-commercial users, and commercial organizations
+    pay an annual access fee. A guest login is offered for a limited time.
 - category: ProgrammingInterface
   description: RESTful web services enabling computational access to most of the GtoPdb
     data in JSON format
@@ -50,6 +62,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/webServices.jsp
+  warnings:
+  - Since September 2026 the REST API (base URL https://www.guidetopharmacology.org/services/)
+    requires an API key, available to registered users on request and passed in the
+    GTP-API-Key header. Requests are rate limited to about 60 per minute.
 - category: Product
   description: Complete list of drug targets and their families with detailed information
   format: csv
@@ -58,8 +74,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  product_file_size: 1896910
   product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
-  warnings: []
 - category: Product
   description: Complete list of ligands including drugs, small molecules, and other
     bioactive compounds
@@ -69,8 +85,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  product_file_size: 6880425
   product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
-  warnings: []
 - category: Product
   description: Comprehensive dataset of all interactions between ligands and targets
   format: csv
@@ -79,8 +95,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  product_file_size: 7560316
   product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
-  warnings: []
 - category: Product
   description: Detailed interactions list for approved drugs and their targets
   format: csv
@@ -89,8 +105,8 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  product_file_size: 3768953
   product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
-  warnings: []
 - category: Product
   description: SDF file containing chemical structures with SMILES for all ligands
     in the database
@@ -100,30 +116,31 @@ products:
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
+  product_file_size: 53426061
   product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
-  warnings: []
 - category: Product
-  description: RDF/linked data format of the GtoPdb data (target-ligand interactions
-    with supporting information)
-  format: rdfxml
+  description: RDF/linked data distribution of the GtoPdb data (target-ligand interactions
+    with supporting information), one triple per line in an N3 file, release 2026.3
+  format: n3
   id: gtopdb.download.rdf
   name: GtoPdb RDF Dataset
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
-  product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
-  warnings: []
+  product_file_size: 65381760
+  product_url: https://www.guidetopharmacology.org/DATA/rdf/2026.3/gtp-rdf.n3
 - category: Product
-  description: Complete PostgreSQL database dump of the current Guide to Pharmacology
-    database
+  compression: zip
+  description: Complete PostgreSQL database dump of the Guide to Pharmacology database,
+    release 2026.3.1
   format: postgres
   id: gtopdb.database
   name: GtoPdb Full Database
   original_source:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
-  product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
-  warnings: []
+  product_file_size: 32190932
+  product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2026.3.1.zip
 - category: GraphicalInterface
   description: An extension of the Guide to PHARMACOLOGY database providing immunological
     access-point to GtoPdb data
@@ -134,6 +151,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/immuno/index.jsp
+  warnings:
+  - Since 18 August 2026 the GtoPdb website requires users to register and log in;
+    registration is free for academic and non-commercial users, and commercial organizations
+    pay an annual access fee. A guest login is offered for a limited time.
 - category: GraphicalInterface
   description: A specialized portal providing optimized access for the malaria research
     community
@@ -144,6 +165,10 @@ products:
   - relation_type: prov:hadPrimarySource
     source: gtopdb
   product_url: https://www.guidetopharmacology.org/malaria/index.jsp
+  warnings:
+  - Since 18 August 2026 the GtoPdb website requires users to register and log in;
+    registration is free for academic and non-commercial users, and commercial organizations
+    pay an annual access fee. A guest login is offered for a limited time.
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -1819,7 +1844,59 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubtator
   product_url: https://pharos.nih.gov/graphql
+- category: Product
+  description: BitterDB 2024 receptor table with one row per bitter taste receptor
+    (TAS2R) across species, giving sequence, organism, UniProt accession, gene and
+    protein names, number of known ligands, and links to GeneCards, GPCRdb, the Human
+    Protein Atlas, the IUPHAR/BPS Guide to Pharmacology and AlphaFold models.
+  format: csv
+  id: bitterdb.downloads.receptors
+  name: BitterDB 2024 Bitter Taste Receptors
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bitterdb
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://bitterdb.agri.huji.ac.il/downloads/2024/?file=ReceptorSearchA_2024.csv
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: genecards
+  - relation_type: prov:wasInfluencedBy
+    source: gpcrdb
+  - relation_type: prov:wasInfluencedBy
+    source: hpa
+  - relation_type: prov:wasInfluencedBy
+    source: gtopdb
+  - relation_type: prov:wasInfluencedBy
+    source: alphafold
+- category: MappingProduct
+  description: BitterDB 2024 mapping of BitterDB compound IDs to IUPHAR/BPS Guide
+    to Pharmacology ligand IDs.
+  format: csv
+  id: bitterdb.downloads.gtopdb_mapping
+  name: BitterDB 2024 Compound to Guide to Pharmacology Mapping
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bitterdb
+  - relation_type: prov:hadPrimarySource
+    source: gtopdb
+  product_url: https://bitterdb.agri.huji.ac.il/downloads/2024/?file=IUPHAR_cidA_2024.csv
 publications:
+- authors:
+  - Harding SD
+  - Armstrong JF
+  - Faccenda E
+  - Southan C
+  - Alexander SPH
+  - Davenport AP
+  - Spedding M
+  - Davies JA
+  doi: doi:10.1093/nar/gkaf1067
+  id: https://doi.org/10.1093/nar/gkaf1067
+  journal: Nucleic Acids Research
+  preferred: true
+  title: The IUPHAR/BPS Guide to PHARMACOLOGY in 2026
+  year: '2026'
 - authors:
   - Harding SD
   - Armstrong JF
@@ -1832,10 +1909,15 @@ publications:
   doi: doi:10.1093/nar/gkad944
   id: https://doi.org/10.1093/nar/gkad944
   journal: Nucleic Acids Research
-  preferred: true
+  preferred: false
   title: The IUPHAR/BPS Guide to PHARMACOLOGY in 2024
   year: '2024'
 repository: https://www.guidetopharmacology.org/download.jsp
+rrid: SCR_013077
+synonyms:
+- GtoPdb
+- IUPHAR/BPS Guide to PHARMACOLOGY
+version: 2026.3.1
 ---
 ## Guide to Pharmacology (GtoPdb)
 
@@ -1889,6 +1971,13 @@ The database includes detailed information on:
 - Inorganics
 - Antibodies
 - Labeled ligands
+
+### Access
+
+Since 18 August 2026 the GtoPdb website requires users to register and log in.
+Registration is free for academic and non-commercial users; commercial organizations
+pay an annual access fee. Since September 2026 the REST API requires an API key,
+which registered users can request. The data remain licensed under CC BY-SA 4.0.
 
 ### Update Cycle
 

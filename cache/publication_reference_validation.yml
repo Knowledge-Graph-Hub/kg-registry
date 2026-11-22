@@ -4419,6 +4419,24 @@ entries:
     source_path: resource/gtopdb/gtopdb.md
     status: valid
     warnings: []
+  resource/gtopdb/gtopdb.md#publication[0]#DOI:10.1093/nar/gkaf1067:
+    checked_at: '2026-11-22T05:39:14Z'
+    errors: []
+    fingerprint: 6cbb0971a00bb373c51961cf9bf0e68c0c56573a2e10fb44f23c097c4ea25864
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1067
+    source_path: resource/gtopdb/gtopdb.md
+    status: valid
+    warnings: []
+  resource/gtopdb/gtopdb.md#publication[1]#DOI:10.1093/nar/gkad944:
+    checked_at: '2026-11-22T05:39:14Z'
+    errors: []
+    fingerprint: ded7c3c23e56668da0fa6ec95b5932a74e484978b295c1d36d5d846058343422
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkad944
+    source_path: resource/gtopdb/gtopdb.md
+    status: valid
+    warnings: []
   resource/gtr/gtr.md#publication[0]#DOI:10.1093/nar/gks1173:
     checked_at: '2026-10-05T16:48:28Z'
     errors: []

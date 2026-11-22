@@ -8,7 +8,7 @@ name: GtoPdb Ligand SDF File
 original_source:
 - relation_type: prov:hadPrimarySource
   source: gtopdb
+product_file_size: 53426061
 product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
-warnings: []
 layout: product_detail
 ---
