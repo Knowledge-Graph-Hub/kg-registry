@@ -7941,6 +7941,24 @@ entries:
     source_path: resource/owlsim/owlsim.md
     status: valid
     warnings: []
+  resource/owlsim/owlsim.md#publication[1]#DOI:10.1093/database/bat025:
+    checked_at: '2026-11-22T05:20:10Z'
+    errors: []
+    fingerprint: 5b5c979b322fbeb47749b9a693ea119b934c26d7e4692f9efbe6c7e71a326933
+    publication_index: 1
+    reference_id: DOI:10.1093/database/bat025
+    source_path: resource/owlsim/owlsim.md
+    status: valid
+    warnings: []
+  resource/owlsim/owlsim.md#publication[2]#DOI:10.1002/humu.22051:
+    checked_at: '2026-11-22T05:20:11Z'
+    errors: []
+    fingerprint: 621c7ad5357e18a7e16402430c429195f99d1c5b31c73d5ab57d8813af4e8d63
+    publication_index: 2
+    reference_id: DOI:10.1002/humu.22051
+    source_path: resource/owlsim/owlsim.md
+    status: valid
+    warnings: []
   resource/p3db/p3db.md#publication[0]#DOI:10.3389/fpls.2012.00206:
     checked_at: '2026-06-12T20:32:32Z'
     errors: []
