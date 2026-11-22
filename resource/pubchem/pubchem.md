@@ -847,23 +847,6 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubchem
   product_url: https://maayanlab.cloud/reprotox-kg/downloads
-- category: ProcessProduct
-  description: Source data directory used for SuppKG in the SemRep_DS repository.
-  format: http
-  id: suppkg.source-data
-  name: SuppKG Source Data Repository
-  original_source:
-  - relation_type: prov:hadPrimarySource
-    source: suppkg
-  - relation_type: prov:hadPrimarySource
-    source: pubmed
-  - relation_type: prov:hadPrimarySource
-    source: uniprot
-  - relation_type: prov:hadPrimarySource
-    source: chebi
-  - relation_type: prov:hadPrimarySource
-    source: pubchem
-  product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
 - category: MappingProduct
   description: Mapping file linking ChEBI identifiers to MeSH identifiers
   format: csv
@@ -4139,6 +4122,53 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2026-11-12 (HTTP 404); no archived
     copy was found in the Internet Archive.
+- category: Product
+  description: BitterDB 2024 compound table with one row per bitter molecule, giving
+    structure (SMILES, InChIKey, formula), PubChem identifier, CAS number, physicochemical
+    properties, natural-product flag, and sensory threshold and toxicity values where
+    known.
+  format: csv
+  id: bitterdb.downloads.compounds
+  name: BitterDB 2024 Bitter Compound Properties
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: bitterdb
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  product_url: https://bitterdb.agri.huji.ac.il/downloads/2024/?file=BitterCompoundsPropA_2024.csv
+- category: MappingProduct
+  compression: zip
+  description: Zipped tab-delimited UNII records file with one row per UNII, giving
+    the display name, molecular formula, InChIKey, SMILES, ingredient type and ISO
+    11238 substance type, plus cross-references to CAS registry numbers, EC numbers,
+    NCI Thesaurus, RxNorm, PubChem, EMA SMS IDs, EPA CompTox (DSSTox), Catalogue of
+    Life, ITIS, NCBI Taxonomy, USDA PLANTS, Plants of the World Online, GRIN, the
+    Kew Medicinal Plant Names Services, INN and USAN codes, and DailyMed. Also includes
+    the Legacy UNIIs file.
+  format: tsv
+  id: unii.data
+  name: UNII Data Download
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: unii
+  - relation_type: prov:hadPrimarySource
+    source: ncit
+  - relation_type: prov:hadPrimarySource
+    source: rxnorm
+  - relation_type: prov:hadPrimarySource
+    source: pubchem
+  - relation_type: prov:hadPrimarySource
+    source: dsstoxdb
+  - relation_type: prov:hadPrimarySource
+    source: catalogue-of-life
+  - relation_type: prov:hadPrimarySource
+    source: itis
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: dailymed
+  product_file_size: 14477857
+  product_url: https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip
 publications:
 - authors:
   - Kim S

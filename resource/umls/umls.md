@@ -2362,6 +2362,91 @@ products:
   secondary_source:
   - relation_type: prov:used
     source: umls
+- category: ProcessProduct
+  description: SuppKG directory in the SemRep_DS repository, holding the SuppKG graph
+    files and a README describing their node and edge structure.
+  format: http
+  id: suppkg.source-data
+  name: SuppKG Source Data Repository
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  product_url: https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG
+- category: GraphProduct
+  compression: other
+  description: Original (2021) SuppKG as a bzip2-compressed NetworkX gpickle (NetworkX
+    2.5, Python 3.8, pickle protocol 5) with 56,635 UMLS concept nodes and 595,222
+    directed edges over 31 predicates; each edge carries the source sentences, PubMed
+    IDs and PubMedBERT confidence scores.
+  dump_format: gpickle
+  format: mixed
+  id: suppkg.graph.gpickle
+  name: SuppKG NetworkX gpickle
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  product_file_size: 71635045
+  product_url: https://raw.githubusercontent.com/zhang-informatics/SemRep_DS/main/SuppKG/supp_kg.gpickle.bz2
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: semrep
+- category: GraphProduct
+  compression: other
+  description: Original (2021) SuppKG as NetworkX node-link JSON in a bzip2-compressed
+    tar archive, loadable with networkx.readwrite.json_graph.node_link_graph(); same
+    content as the gpickle release.
+  format: json
+  id: suppkg.graph.json
+  name: SuppKG Node-Link JSON
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  product_file_size: 68821417
+  product_url: https://raw.githubusercontent.com/zhang-informatics/SemRep_DS/main/SuppKG/supp_kg.json.tar.bz2
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: semrep
+- category: GraphProduct
+  compression: other
+  description: SuppKG v2, rebuilt from additional PubMed abstracts published after
+    the 2021 pull, as a NetworkX edge list in a bzip2-compressed tar archive (nx.read_edgelist
+    gives a MultiDiGraph with 57,944 nodes and 1,321,374 edges). PubMed IDs, sentences
+    and confidence scores are omitted in v2.
+  format: txt
+  id: suppkg.v2.edgelist
+  name: SuppKG v2 Edge List
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: suppkg
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  - relation_type: prov:hadPrimarySource
+    source: idisk
+  product_file_size: 57233095
+  product_url: https://raw.githubusercontent.com/zhang-informatics/SemRep_DS/main/SuppKG/suppkg_v2.edgelist.tar.bz2
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: semrep
 publications:
 - authors:
   - Bodenreider O

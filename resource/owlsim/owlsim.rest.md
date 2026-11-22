@@ -11,6 +11,7 @@ original_source:
 product_url: https://github.com/monarch-initiative/owlsim-v3
 warnings:
 - The OWLSim v3 README documents a locally run REST service; no maintained public
-  production endpoint was identified during 2026-06-02 curation.
+  production endpoint was identified during 2026-06-02 curation or the 2026-11-22
+  recheck.
 layout: product_detail
 ---
