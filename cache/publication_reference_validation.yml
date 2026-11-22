@@ -8241,6 +8241,33 @@ entries:
     source_path: resource/paxdb/paxdb.md
     status: valid
     warnings: []
+  resource/paxdb/paxdb.md#publication[1]#DOI:10.1016/j.mcpro.2023.100640:
+    checked_at: '2026-11-22T05:39:47Z'
+    errors: []
+    fingerprint: c2bf72d244f075e64d77c10723399c6b164ee52273d0967fdb28f8c9c24b3605
+    publication_index: 1
+    reference_id: DOI:10.1016/j.mcpro.2023.100640
+    source_path: resource/paxdb/paxdb.md
+    status: valid
+    warnings: []
+  resource/paxdb/paxdb.md#publication[2]#DOI:10.1002/pmic.201400441:
+    checked_at: '2026-11-22T05:39:48Z'
+    errors: []
+    fingerprint: 5b12cb9671c125293bdd4ea5a488ca37dfc8128e81933243999a4c642e74b669
+    publication_index: 2
+    reference_id: DOI:10.1002/pmic.201400441
+    source_path: resource/paxdb/paxdb.md
+    status: valid
+    warnings: []
+  resource/paxdb/paxdb.md#publication[3]#DOI:10.1074/mcp.o111.014704:
+    checked_at: '2026-11-22T05:39:49Z'
+    errors: []
+    fingerprint: 644404d1af762fd6c762e4c6f335c68e46e8ca0729346b39a2666a6b7b28a9c7
+    publication_index: 3
+    reference_id: DOI:10.1074/mcp.o111.014704
+    source_path: resource/paxdb/paxdb.md
+    status: valid
+    warnings: []
   resource/pazar/pazar.md#publication[0]#DOI:10.1186/gb-2007-8-10-r207:
     checked_at: '2026-11-12T20:57:53Z'
     errors: []

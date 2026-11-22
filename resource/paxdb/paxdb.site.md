@@ -1,7 +1,8 @@
 ---
 category: GraphicalInterface
-description: Web interface for browsing and searching protein abundance data across
-  organisms.
+description: Web interface for searching proteins and browsing protein abundance datasets
+  by species, tissue and dataset, with per-protein abundance profiles, orthologs and
+  links to STRING and UniProt.
 format: http
 id: paxdb.site
 is_public: true
