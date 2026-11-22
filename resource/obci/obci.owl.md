@@ -2,7 +2,8 @@
 category: OntologyProduct
 description: Ontology for Biomarkers of Clinical Interest, OWL format. Defines biomarker
   classes and their clinical role classifications (e.g. diagnostic, prognostic, predictive,
-  monitoring, pharmacodynamic/response, safety, susceptibility/risk biomarkers).
+  monitoring, pharmacodynamic/response, safety, susceptibility/risk biomarkers). Release
+  2024-10-18 at the time of checking.
 format: owl
 id: obci.owl
 name: OBCI, OWL format
