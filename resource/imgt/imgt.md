@@ -4,6 +4,8 @@ category: DataSource
 contacts:
 - category: Organization
   contact_details:
+  - contact_type: email
+    value: contact-imgt@igh.cnrs.fr
   - contact_type: url
     value: https://www.imgt.org/
   label: IMGT - The International ImMunoGeneTics Information System
@@ -12,14 +14,22 @@ description: IMGT, the international ImMunoGeneTics information system, is a hig
   integrated knowledge resource specializing in the immunoglobulins (IG), T cell receptors
   (TR), major histocompatibility complex (MHC), and related proteins of the immune
   system across vertebrate species. It provides standardized data, tools, and reference
-  directories built on the IMGT-ONTOLOGY.
+  directories built on the IMGT-ONTOLOGY, and exposes integrated immunogenetics data
+  as the IMGT Knowledge Graph (IMGT-KG) through a SPARQL endpoint.
 domains:
 - immunology
 - genomics
 - proteomics
+funding:
+- Centre National de la Recherche Scientifique (CNRS)
+- University of Montpellier
+- Institut Universitaire de France
+- Immun4Cure University Hospital Institute (IHU) (ANR-23-IHUA-0009)
+- Institut du Développement et des Ressources en Informatique Scientifique (IDRIS) (036029)
+- Grand Equipement National de Calcul Intensif (GENCI)
 homepage_url: https://www.imgt.org/
 id: imgt
-last_modified_date: '2026-06-17T00:00:00Z'
+last_modified_date: '2026-11-22T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-nd/4.0/
@@ -314,6 +324,65 @@ products:
   product_url: https://www.genecards.org/
 publications:
 - authors:
+  - Gaoussou Sanou
+  - Guilhem Zeitoun
+  - Taciana Manso
+  - Milad Eidi
+  - Shamsa Batool
+  - Anjana Kushwaha
+  - François Grand
+  - Myriam Croze
+  - Axel Vaillant
+  - Chahrazed Debbagh
+  - Nika Abdollahi
+  - Maria Georga
+  - Ariadni Papadaki
+  - Ifigeneia Sideri
+  - Turkan Samadova
+  - Joumana Jabado-Michaloud
+  - Géraldine Folch
+  - Véronique Giudicelli
+  - Patrice Duroux
+  - Sofia Kossida
+  doi: 10.1093/nar/gkaf1024
+  id: https://doi.org/10.1093/nar/gkaf1024
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'IMGT® at scale: FAIR, dynamic, and automated tools for immune locus analysis'
+  year: '2026'
+- authors:
+  - Taciana Manso
+  - Géraldine Folch
+  - Véronique Giudicelli
+  - Joumana Jabado-Michaloud
+  - Anjana Kushwaha
+  - Viviane Nguefack Ngoune
+  - Maria Georga
+  - Ariadni Papadaki
+  - Chahrazed Debbagh
+  - Perrine Pégorier
+  - Morgane Bertignac
+  - Saida Hadi-Saljoqi
+  - Imène Chentli
+  - Karima Cherouali
+  - Safa Aouinti
+  - Amar El Hamwi
+  - Alexandre Albani
+  - Merouane Elazami Elhassani
+  - Benjamin Viart
+  - Agathe Goret
+  - Anna Tran
+  - Gaoussou Sanou
+  - Maël Rollin
+  - Patrice Duroux
+  - Sofia Kossida
+  doi: 10.1093/nar/gkab1136
+  id: https://doi.org/10.1093/nar/gkab1136
+  journal: Nucleic Acids Research
+  title: IMGT® databases, related tools and web resources through three main axes of
+    research and development
+  year: '2022'
+- authors:
   - Marie-Paule Lefranc
   - Véronique Giudicelli
   - Patrice Duroux
@@ -331,10 +400,15 @@ publications:
   doi: 10.1093/nar/gku1056
   id: https://doi.org/10.1093/nar/gku1056
   journal: Nucleic Acids Research
-  preferred: true
   title: IMGT, the international ImMunoGeneTics information system 25 years on
   year: '2015'
 rrid: SCR_012780
+synonyms:
+- IMGT®
+- international ImMunoGeneTics information system
+taxon:
+- NCBITaxon:7742
+- NCBITaxon:9606
 ---
 # IMGT
 
@@ -349,5 +423,10 @@ IMGT comprises:
 - Sequence, gene, and structure databases (including IMGT/GENE-DB and IMGT/3Dstructure-DB)
 - Analysis tools such as IMGT/V-QUEST and IMGT/HighV-QUEST
 - Reference directories and the IMGT-ONTOLOGY controlled vocabulary
+- The IMGT Knowledge Graph (IMGT-KG) and its therapeutic antibody extension
+  IMGT/mAb-KG, queryable through a SPARQL endpoint
+
+IMGT is freely available online for academic and non-profit use (data availability
+statement of the 2025 NAR update); questions go to contact-imgt@igh.cnrs.fr.
 
 GeneCards integrates immunogenetics data from IMGT.

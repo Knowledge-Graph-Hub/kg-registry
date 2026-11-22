@@ -5231,11 +5231,38 @@ entries:
     source_path: resource/imex/imex.md
     status: valid
     warnings: []
+  resource/imgt/imgt.md#publication[0]#DOI:10.1093/nar/gkaf1024:
+    checked_at: '2026-11-22T05:39:28Z'
+    errors: []
+    fingerprint: aefb0dbaa5447c5e4b549b116116346fc217580f3da8aa2c18cd7dad9aebb04c
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaf1024
+    source_path: resource/imgt/imgt.md
+    status: valid
+    warnings: []
   resource/imgt/imgt.md#publication[0]#DOI:10.1093/nar/gku1056:
     checked_at: '2026-06-17T13:48:54Z'
     errors: []
     fingerprint: 281a8d5e3aa2ef198ef92f4fca3c8e77cd0ea27242288ea8518f614dd0acc2db
     publication_index: 0
+    reference_id: DOI:10.1093/nar/gku1056
+    source_path: resource/imgt/imgt.md
+    status: valid
+    warnings: []
+  resource/imgt/imgt.md#publication[1]#DOI:10.1093/nar/gkab1136:
+    checked_at: '2026-11-22T05:39:29Z'
+    errors: []
+    fingerprint: 93b99061febc39a2580d5572321a6e3bb202d67c744530300a0551b46b9fc771
+    publication_index: 1
+    reference_id: DOI:10.1093/nar/gkab1136
+    source_path: resource/imgt/imgt.md
+    status: valid
+    warnings: []
+  resource/imgt/imgt.md#publication[2]#DOI:10.1093/nar/gku1056:
+    checked_at: '2026-11-22T05:39:29Z'
+    errors: []
+    fingerprint: 442c617833410fe6f8b10dd242eb58013a58f01b11df685a7d9b8572fab7cfee
+    publication_index: 2
     reference_id: DOI:10.1093/nar/gku1056
     source_path: resource/imgt/imgt.md
     status: valid
