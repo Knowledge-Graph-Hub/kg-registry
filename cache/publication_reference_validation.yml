@@ -11187,11 +11187,29 @@ entries:
     source_path: resource/unichem/unichem.md
     status: valid
     warnings: []
+  resource/unii/unii.md#publication[0]#DOI:10.1093/nar/gkaa962:
+    checked_at: '2026-11-22T05:40:24Z'
+    errors: []
+    fingerprint: c4e07eb57e2246472866503bc2862af5a97cbac56e6a80ade6c45c27b5686247
+    publication_index: 0
+    reference_id: DOI:10.1093/nar/gkaa962
+    source_path: resource/unii/unii.md
+    status: valid
+    warnings: []
   ? resource/unii/unii.md#publication[0]#url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
   : checked_at: '2026-08-31T17:59:41Z'
     errors: []
     fingerprint: 2904d3ab7f87f14ca251b763d7173c3e4be405cd9ee3e81305d5e1fccff1b70f
     publication_index: 0
+    reference_id: url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
+    source_path: resource/unii/unii.md
+    status: valid
+    warnings: []
+  ? resource/unii/unii.md#publication[1]#url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
+  : checked_at: '2026-11-22T05:40:02Z'
+    errors: []
+    fingerprint: 2904d3ab7f87f14ca251b763d7173c3e4be405cd9ee3e81305d5e1fccff1b70f
+    publication_index: 1
     reference_id: url:https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
     source_path: resource/unii/unii.md
     status: valid
