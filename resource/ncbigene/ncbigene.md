@@ -2334,6 +2334,8 @@ products:
     returned HTTP 404 during curation on 2026-06-02.
   - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 502 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 502 error
+    when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
     data sources with a chain-query syntax, and retrieving entries across the integrated
@@ -3077,6 +3079,8 @@ products:
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
   - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
@@ -4453,6 +4457,8 @@ products:
   - Site did not respond (connection timed out) when checked on 2026-10-19; the last
     Internet Archive snapshot is from 2022-08-17.
   - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-11-22: Timeout connecting
     to URL'
 - category: GraphicalInterface
   description: Interactive web interface for exploring the neighborhood of related

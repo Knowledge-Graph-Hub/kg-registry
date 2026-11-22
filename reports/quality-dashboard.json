@@ -1,19 +1,19 @@
 {
   "citations": {
-    "publication_entries_total": 1226,
+    "publication_entries_total": 1239,
     "publication_entries_with_issues": 44,
     "resources_with_citation_issues": 33,
-    "resources_without_publications": 371,
+    "resources_without_publications": 372,
     "validation_errors": 2,
     "validation_warnings": 69
   },
   "dates": {
     "missing_creation_date": 0,
     "missing_last_modified_date": 0,
-    "modified_after_creation": 1040,
+    "modified_after_creation": 1046,
     "stale_over_365_days": 0,
-    "unchanged_since_creation": 181,
-    "with_both_dates": 1221
+    "unchanged_since_creation": 176,
+    "with_both_dates": 1222
   },
   "detail_lists": {
     "broken_link_page_ids": [
@@ -139,6 +139,13 @@
       "gad",
       "gbif.maps-api",
       "gene-expression-atlas-okn.graph",
+      "geneorganizer.gene-bodypart.confident-all",
+      "geneorganizer.gene-bodypart.confident-typical",
+      "geneorganizer.gene-bodypart.tentative-typical",
+      "geneorganizer.gene-disease-phenotype.germlayers",
+      "geneorganizer.gene-disease-phenotype.organs",
+      "geneorganizer.gene-disease-phenotype.regions",
+      "geneorganizer.gene-disease-phenotype.systems",
       "genetics-kp.trapi",
       "ginsim-models.software",
       "glida",
@@ -1267,6 +1274,7 @@
       "orthomcl",
       "osv",
       "ovae",
+      "owlsim",
       "p3db",
       "pacer",
       "panelapp",
@@ -2003,6 +2011,17 @@
       "biothings.portal",
       "biothings.sdk",
       "bitterdb",
+      "bitterdb.bittermatch",
+      "bitterdb.bitterpredict",
+      "bitterdb.downloads.compound_sources",
+      "bitterdb.downloads.compounds",
+      "bitterdb.downloads.drugbank_mapping",
+      "bitterdb.downloads.gtopdb_mapping",
+      "bitterdb.downloads.ligand_receptors",
+      "bitterdb.downloads.mutations",
+      "bitterdb.downloads.receptors",
+      "bitterdb.downloads.snps",
+      "bitterdb.downloads.zinc_mapping",
       "bitterdb.site",
       "bluesky",
       "bluesky.code",
@@ -5286,6 +5305,9 @@
       "oba.owl",
       "oba.subsets.oba-basic.obo",
       "obci",
+      "obci.core_full",
+      "obci.core_full_reasoned_noequiv",
+      "obci.for_biomarkerkg",
       "obcs",
       "obcs.kg-bioportal",
       "obcs.owl",
@@ -6005,8 +6027,17 @@
       "pavs-kg.portal",
       "pavs-kg.sparql",
       "paxdb",
+      "paxdb.api",
+      "paxdb.compute",
+      "paxdb.datasets",
       "paxdb.downloads",
+      "paxdb.mapped-peptides",
+      "paxdb.orthologs",
+      "paxdb.protein-sequences",
+      "paxdb.sdrf",
       "paxdb.site",
+      "paxdb.uniprot-crossreferences",
+      "paxdb.uniprot-links",
       "pazar.api_docs",
       "pazar.portal",
       "pazar.sourceforge",
@@ -7141,8 +7172,12 @@
       "sugi-atlas.preprint",
       "sugi-atlas.sources",
       "suppkg",
+      "suppkg.biothings-api",
       "suppkg.docs",
+      "suppkg.graph.gpickle",
+      "suppkg.graph.json",
       "suppkg.source-data",
+      "suppkg.v2.edgelist",
       "surechembl",
       "surechembl.bulk-data",
       "surechembl.docs",
@@ -7459,6 +7494,9 @@
       "unichem.sources",
       "unii",
       "unii.data",
+      "unii.gsrs",
+      "unii.gsrs.api",
+      "unii.gsrs.software",
       "unii.legacy",
       "unii.list",
       "unii.search",
@@ -7976,7 +8014,6 @@
       "ndcd",
       "ndfrt",
       "oreganno",
-      "owlsim",
       "pdb",
       "pdbe",
       "pf1600",
@@ -8010,7 +8047,8 @@
       "ukbiobank",
       "unicarbkb",
       "vhog",
-      "xenbase"
+      "xenbase",
+      "zinc"
     ],
     "missing_creation_date_resource_ids": [],
     "missing_description_resource_ids": [],
@@ -9214,11 +9252,14 @@
       "zfa",
       "zfin",
       "zfs",
+      "zinc",
       "zirc",
       "zp",
       "zwd"
     ],
-    "missing_homepage_url_resource_ids": [],
+    "missing_homepage_url_resource_ids": [
+      "zinc"
+    ],
     "missing_infores_id_resource_ids": [
       "1000genomes",
       "4dn",
@@ -10169,6 +10210,7 @@
       "ypo",
       "zea",
       "zeco",
+      "zinc",
       "zirc",
       "zwd"
     ],
@@ -10216,7 +10258,6 @@
       "bioplanet",
       "bioplex",
       "bioteque",
-      "bitterdb",
       "bluesky",
       "bootstrep",
       "brain-cell-kg",
@@ -10335,7 +10376,6 @@
       "geneorganizer",
       "geneprof",
       "genetics-kp",
-      "genomernai",
       "geoals",
       "gff",
       "ghr",
@@ -10485,7 +10525,6 @@
       "pathophenodb",
       "pathwhiz",
       "patric",
-      "paxdb",
       "pazar",
       "pd_st",
       "pdb",
@@ -10607,6 +10646,7 @@
       "worldclim",
       "ypo",
       "zea",
+      "zinc",
       "zwd"
     ],
     "missing_repository_resource_ids": [
@@ -11177,7 +11217,6 @@
       "stitch",
       "string",
       "sty",
-      "suppkg",
       "surechembl",
       "swissmodel",
       "synlethdb",
@@ -11245,6 +11284,7 @@
       "yoda",
       "ypo",
       "zea",
+      "zinc",
       "zirc"
     ],
     "modified_after_creation_resource_ids": [
@@ -11332,6 +11372,7 @@
       "bioteque",
       "biothings",
       "biothings-explorer",
+      "bitterdb",
       "bluesky",
       "bmont",
       "bootstrep",
@@ -11612,10 +11653,12 @@
       "genebass",
       "genecards",
       "genemania",
+      "geneorganizer",
       "genepio",
       "geneprof",
       "genetics-kp",
       "geno",
+      "genomernai",
       "genomickb",
       "genophenoenvo-kg",
       "geo",
@@ -11710,6 +11753,7 @@
       "iidp",
       "ikraph",
       "imex",
+      "imgt",
       "immport",
       "imo-knowledge-graph",
       "imodulondb",
@@ -11915,6 +11959,7 @@
       "oard",
       "oard-kg",
       "oba",
+      "obci",
       "obcs",
       "obi",
       "obib",
@@ -11991,6 +12036,7 @@
       "pathwhiz",
       "pato",
       "patric",
+      "paxdb",
       "pbpko",
       "pcl",
       "pco",
@@ -12718,6 +12764,17 @@
       "biothings.api-specs",
       "biothings.portal",
       "biothings.sdk",
+      "bitterdb.bittermatch",
+      "bitterdb.bitterpredict",
+      "bitterdb.downloads.compound_sources",
+      "bitterdb.downloads.compounds",
+      "bitterdb.downloads.drugbank_mapping",
+      "bitterdb.downloads.gtopdb_mapping",
+      "bitterdb.downloads.ligand_receptors",
+      "bitterdb.downloads.mutations",
+      "bitterdb.downloads.receptors",
+      "bitterdb.downloads.snps",
+      "bitterdb.downloads.zinc_mapping",
       "bitterdb.site",
       "bluesky.code",
       "bluesky.portal",
@@ -14009,6 +14066,13 @@
       "genemania.cytoscape-app",
       "genemania.networks",
       "genemania.web",
+      "geneorganizer.gene-bodypart.confident-all",
+      "geneorganizer.gene-bodypart.confident-typical",
+      "geneorganizer.gene-bodypart.tentative-typical",
+      "geneorganizer.gene-disease-phenotype.germlayers",
+      "geneorganizer.gene-disease-phenotype.organs",
+      "geneorganizer.gene-disease-phenotype.regions",
+      "geneorganizer.gene-disease-phenotype.systems",
       "geneorganizer.site",
       "genepio.kg-bioportal",
       "genepio.owl",
@@ -15492,6 +15556,9 @@
       "oba.obo",
       "oba.owl",
       "oba.subsets.oba-basic.obo",
+      "obci.core_full",
+      "obci.core_full_reasoned_noequiv",
+      "obci.for_biomarkerkg",
       "obci.owl",
       "obcs.kg-bioportal",
       "obcs.owl",
@@ -16152,8 +16219,17 @@
       "pavs-kg.phenopackets",
       "pavs-kg.portal",
       "pavs-kg.sparql",
+      "paxdb.api",
+      "paxdb.compute",
+      "paxdb.datasets",
       "paxdb.downloads",
+      "paxdb.mapped-peptides",
+      "paxdb.orthologs",
+      "paxdb.protein-sequences",
+      "paxdb.sdrf",
       "paxdb.site",
+      "paxdb.uniprot-crossreferences",
+      "paxdb.uniprot-links",
       "pazar.api_docs",
       "pazar.portal",
       "pazar.sourceforge",
@@ -17153,8 +17229,12 @@
       "sugi-atlas.portal",
       "sugi-atlas.preprint",
       "sugi-atlas.sources",
+      "suppkg.biothings-api",
       "suppkg.docs",
+      "suppkg.graph.gpickle",
+      "suppkg.graph.json",
       "suppkg.source-data",
+      "suppkg.v2.edgelist",
       "surechembl.bulk-data",
       "surechembl.docs",
       "surechembl.search",
@@ -17439,6 +17519,9 @@
       "unichem.search",
       "unichem.sources",
       "unii.data",
+      "unii.gsrs",
+      "unii.gsrs.api",
+      "unii.gsrs.software",
       "unii.legacy",
       "unii.list",
       "unii.search",
@@ -17658,6 +17741,9 @@
       "cancer-registry-kg.kcr",
       "cancer-registry-kg.ltr",
       "cancer-registry-kg.visualization",
+      "geneorganizer.gene-bodypart.confident-all",
+      "geneorganizer.gene-bodypart.confident-typical",
+      "geneorganizer.gene-bodypart.tentative-typical",
       "gpmdb.xtandem",
       "kg-fm.demonstration_video",
       "kg-monarch.solr",
@@ -18912,6 +18998,7 @@
       "zfa",
       "zfin",
       "zfs",
+      "zinc",
       "zirc",
       "zp",
       "zwd"
@@ -18986,6 +19073,7 @@
       "gad",
       "gbif",
       "gene-expression-atlas-okn",
+      "geneorganizer",
       "genetics-kp",
       "ginsim-models",
       "glida",
@@ -19525,7 +19613,8 @@
       "ypo",
       "zea",
       "zeco",
-      "zfs"
+      "zfs",
+      "zinc"
     ],
     "retrieval_warning_product_ids": [
       "aao.owl",
@@ -19590,7 +19679,9 @@
       "tga-approved-terminology.publication"
     ],
     "stale_over_365_days_resource_ids": [],
-    "stub_resource_ids": [],
+    "stub_resource_ids": [
+      "zinc"
+    ],
     "unchanged_since_creation_resource_ids": [
       "aberowl",
       "afcd",
@@ -19608,7 +19699,6 @@
       "bioproject",
       "biosample",
       "biostudies",
-      "bitterdb",
       "brain-cell-kg",
       "cadd",
       "camera",
@@ -19656,10 +19746,8 @@
       "gbd",
       "gdelt",
       "genbank",
-      "geneorganizer",
       "genereviews",
       "geneshot",
-      "genomernai",
       "geoals",
       "ginsim-models",
       "glida",
@@ -19679,7 +19767,6 @@
       "icews",
       "identifiers-org",
       "iedison",
-      "imgt",
       "infernal",
       "interlex",
       "intogen",
@@ -19716,7 +19803,6 @@
       "npinter",
       "nsrr",
       "ntp",
-      "obci",
       "oboe",
       "obofoundry",
       "oecd-qsar-toolbox",
@@ -19731,7 +19817,6 @@
       "panorama-public",
       "papyrus",
       "pavs-kg",
-      "paxdb",
       "pazar",
       "peptideatlas",
       "pride",
@@ -19772,61 +19857,62 @@
       "wikimedia-commons",
       "wqx",
       "yoda",
+      "zinc",
       "zirc"
     ],
     "unchecked_link_page_ids": []
   },
-  "generated_at": "2026-11-12T22:08:41Z",
+  "generated_at": "2026-11-22T13:23:43Z",
   "knowledge_graph_evaluations": {
     "knowledge_graph_total": 167,
     "with_evaluation_page": 125,
     "without_evaluation_page": 42
   },
   "links": {
-    "broken_urls": 311,
-    "cache_hits": 5834,
+    "broken_urls": 318,
+    "cache_hits": 5913,
     "cache_path": "cache/quality_url_status_cache.yml",
-    "healthy_urls": 5607,
-    "live_checked_urls": 84,
+    "healthy_urls": 5637,
+    "live_checked_urls": 42,
     "mode": "live",
-    "total_unique_urls": 5918,
+    "total_unique_urls": 5955,
     "unchecked_urls": 0
   },
   "products": {
-    "missing_format": 17,
+    "missing_format": 20,
     "missing_original_source": 0,
     "missing_product_url": 21,
-    "total": 5359,
+    "total": 5396,
     "with_retrieval_warning": 60
   },
-  "resource_count": 1221,
+  "resource_count": 1222,
   "resources": {
     "contacts_with_org_connection": 271,
-    "contacts_without_org_connection": 834,
+    "contacts_without_org_connection": 835,
     "missing_contacts": 116,
     "missing_description": 0,
-    "missing_fairsharing_id": 1202,
-    "missing_homepage_url": 0,
-    "missing_infores_id": 951,
-    "missing_license": 434,
+    "missing_fairsharing_id": 1203,
+    "missing_homepage_url": 1,
+    "missing_infores_id": 952,
+    "missing_license": 432,
     "missing_repository": 636,
     "status_counts": {
       "active": 1056,
-      "inactive": 143,
+      "inactive": 144,
       "orphaned": 15,
       "unresponsive": 7
     },
-    "stub_count": 0,
-    "total": 1221,
-    "with_broken_links": 189,
+    "stub_count": 1,
+    "total": 1222,
+    "with_broken_links": 190,
     "with_citation_issues": 33,
     "without_products": 10,
-    "without_publications": 371
+    "without_publications": 372
   },
   "scoring": {
-    "average_score": 6.94,
+    "average_score": 6.95,
     "median_score": 7.0,
-    "resources_with_issues": 1181,
+    "resources_with_issues": 1182,
     "tracked_but_unscored_metrics": [
       "missing_fairsharing_id"
     ],
@@ -20074,6 +20160,95 @@
       "broken_links": [
         {
           "sources": [
+            "live"
+          ],
+          "url": "https://geneorganizer.huji.ac.il/assets/Uploads/diseases-germlayers.v12-1.csv.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://geneorganizer.huji.ac.il/assets/Uploads/diseases-organs.v12-1.csv.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://geneorganizer.huji.ac.il/assets/Uploads/diseases-regions.v12-1.csv.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://geneorganizer.huji.ac.il/assets/Uploads/diseases-systems.v12-1.csv.gz"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://geneorganizer.huji.ac.il/assets/Uploads/GeneORGANizer-Confident-all-v12.xls"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://geneorganizer.huji.ac.il/assets/Uploads/GeneORGANizer-Confident-typical-v12.xls"
+        },
+        {
+          "sources": [
+            "live"
+          ],
+          "url": "https://geneorganizer.huji.ac.il/assets/Uploads/GeneORGANizer-Tentative-typical-v12.xls"
+        }
+      ],
+      "id": "geneorganizer",
+      "issues": [
+        {
+          "count": 7,
+          "issue_key": "broken_link",
+          "label": "Broken/inaccessible links",
+          "points": 21
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 3,
+          "issue_key": "product_missing_format",
+          "label": "Products missing format",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "contacts_not_connected_to_org",
+          "label": "Contacts not linked to Organization entry",
+          "points": 1
+        }
+      ],
+      "name": "Gene ORGANizer",
+      "resource_page": "resource/geneorganizer/geneorganizer.html",
+      "score": 32
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [
+        {
+          "sources": [
             "warning",
             "cache"
           ],
@@ -20300,6 +20475,64 @@
       "name": "4D Nucleome Data Portal",
       "resource_page": "resource/4dn/4dn.html",
       "score": 26
+    },
+    {
+      "activity_status": "active",
+      "broken_links": [],
+      "id": "zinc",
+      "issues": [
+        {
+          "count": 1,
+          "issue_key": "stub_domain",
+          "label": "Tagged as stub",
+          "points": 8
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_homepage_url",
+          "label": "Missing homepage_url",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_infores_id",
+          "label": "Missing infores_id",
+          "points": 3
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_contacts",
+          "label": "Missing contacts",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_license",
+          "label": "Missing license",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_publications",
+          "label": "Missing publications",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "missing_repository",
+          "label": "Missing repository",
+          "points": 2
+        },
+        {
+          "count": 1,
+          "issue_key": "unchanged_since_creation",
+          "label": "Not modified since creation",
+          "points": 2
+        }
+      ],
+      "name": "Zinc",
+      "resource_page": "resource/zinc/zinc.html",
+      "score": 24
     },
     {
       "activity_status": "active",
@@ -20554,136 +20787,6 @@
       "name": "OrganoidDB",
       "resource_page": "resource/organoiddb/organoiddb.html",
       "score": 21
-    },
-    {
-      "activity_status": "active",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://117.50.127.228/CellMarker/CellMarker_annotation.jsp"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_All.xlsx"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Mouse.xlsx"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Seq.xlsx"
-        }
-      ],
-      "id": "cellmarker",
-      "issues": [
-        {
-          "count": 5,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 15
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "CellMarker",
-      "resource_page": "resource/cellmarker/cellmarker.html",
-      "score": 20
-    },
-    {
-      "activity_status": "orphaned",
-      "broken_links": [
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://phospho.elm.eu.org/"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://phospho.elm.eu.org/dataset.html"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://phospho.elm.eu.org/pELMBlastSearch.html"
-        },
-        {
-          "sources": [
-            "cache"
-          ],
-          "url": "http://phospho.elm.eu.org/webservice/phosphoELMdb.wsdl"
-        }
-      ],
-      "id": "phosphoelm",
-      "issues": [
-        {
-          "count": 4,
-          "issue_key": "broken_link",
-          "label": "Broken/inaccessible links",
-          "points": 12
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_infores_id",
-          "label": "Missing infores_id",
-          "points": 3
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_license",
-          "label": "Missing license",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "missing_repository",
-          "label": "Missing repository",
-          "points": 2
-        },
-        {
-          "count": 1,
-          "issue_key": "contacts_not_connected_to_org",
-          "label": "Contacts not linked to Organization entry",
-          "points": 1
-        }
-      ],
-      "name": "Phospho.ELM",
-      "resource_page": "resource/phosphoelm/phosphoelm.html",
-      "score": 20
     }
   ]
 }

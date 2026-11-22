@@ -29,11 +29,11 @@ products:
     source: ev
   product_url: http://purl.obolibrary.org/obo/ev.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: eVOC in OBO format
@@ -50,6 +50,8 @@ products:
   - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 503 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
     when accessing file'
 publications: []
 ---

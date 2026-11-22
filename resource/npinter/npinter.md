@@ -130,6 +130,9 @@ products:
   - 'File was not able to be retrieved when checked on 2026-11-12: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
+  - 'File was not able to be retrieved when checked on 2026-11-22: Error connecting
+    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+    without response''))'
 - category: GraphProduct
   compression: gzip
   description: Genome-wide RNA-DNA interactions collected by NPInter v5.0 from iMARGI,
@@ -146,6 +149,9 @@ products:
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/dna_interactions.npinter5.txt.gz
   warnings:
   - 'File was not able to be retrieved when checked on 2026-11-12: Error connecting
+    to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
+    without response''))'
+  - 'File was not able to be retrieved when checked on 2026-11-22: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
 - category: ProgrammingInterface

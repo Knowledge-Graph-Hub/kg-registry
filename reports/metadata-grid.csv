@@ -378,7 +378,6 @@ genereviews,active,PASS
 geneshot,active,PASS
 genetics-kp,active,PASS
 geno,active,PASS
-genomernai,active,PASS
 genomickb,active,PASS
 genophenoenvo-kg,active,PASS
 geo,active,PASS
@@ -1052,6 +1051,7 @@ zeco,active,PASS
 zfa,active,PASS
 zfin,active,PASS
 zfs,active,PASS
+zinc,active,PASS
 zirc,active,PASS
 zp,active,PASS
 zwd,active,PASS
@@ -1111,6 +1111,7 @@ foodkg,inactive,PASS
 freebase,inactive,PASS
 gad,inactive,PASS
 geneprof,inactive,PASS
+genomernai,inactive,PASS
 ghr,inactive,PASS
 glida,inactive,PASS
 greenclaims,inactive,PASS

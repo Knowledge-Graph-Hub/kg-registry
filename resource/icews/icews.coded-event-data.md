@@ -18,5 +18,7 @@ secondary_source:
   source: cameo
 warnings:
 - ICEWS was discontinued on 11 April 2023; no further event data will be added.
+- File was not able to be retrieved when checked on 2026-11-12_ HTTP 202 error when
+  accessing file
 layout: product_detail
 ---

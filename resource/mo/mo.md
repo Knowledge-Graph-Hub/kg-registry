@@ -42,6 +42,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 503 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   compression: targz
   description: KGX TSV transform of Microarray and Gene Expression Data Ontology (MO),

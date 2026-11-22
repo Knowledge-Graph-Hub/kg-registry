@@ -16,5 +16,7 @@ warnings:
   accessing file
 - File was not able to be retrieved when checked on 2026-10-21_ Timeout connecting
   to URL
+- File was not able to be retrieved when checked on 2026-11-12_ HTTP 503 error when
+  accessing file
 layout: product_detail
 ---

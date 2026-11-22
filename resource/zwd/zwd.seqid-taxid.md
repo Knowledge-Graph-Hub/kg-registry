@@ -12,6 +12,7 @@ original_source:
   source: refseq
 - relation_type: prov:hadPrimarySource
   source: ncbitaxon
+product_file_size: 311756
 product_url: https://bitbucket.org/zashaw/zashaweinbergdata/raw/master/sto-seqid-taxid.tab
 layout: product_detail
 ---

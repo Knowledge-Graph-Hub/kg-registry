@@ -14,6 +14,7 @@ original_source:
   source: gtrnadb
 - relation_type: prov:hadPrimarySource
   source: ucsc
+product_file_size: 128829
 product_url: https://gtrnadb.org/genomes/eukaryota/Hsapi38/hg38-tRNAs.tar.gz
 secondary_source:
 - relation_type: prov:used

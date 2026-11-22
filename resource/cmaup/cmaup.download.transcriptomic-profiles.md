@@ -13,6 +13,7 @@ original_source:
   source: archs4
 - relation_type: prov:hadPrimarySource
   source: tcga
+product_file_size: 159129856
 product_url: https://bidd.group/CMAUP/downloadFiles/CMAUPv2.0_download_Transcriptomic_profiling_of_74_diseases.rar
 layout: product_detail
 ---

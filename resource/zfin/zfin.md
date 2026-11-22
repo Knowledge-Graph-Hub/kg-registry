@@ -137,7 +137,7 @@ products:
   product_url: https://zfin.org/downloads/gene_publication.txt
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 16433147
+  edge_count: 16958940
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -150,6 +150,7 @@ products:
   - biolink:ChemicalEntity
   - biolink:ClinicalMeasurement
   - biolink:Disease
+  - biolink:Drug
   - biolink:Gene
   - biolink:Genotype
   - biolink:LifeStage
@@ -161,7 +162,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1670861
+  node_count: 2006605
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -216,10 +217,12 @@ products:
   - biolink:causes
   - biolink:coexists_with
   - biolink:colocalizes_with
+  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:correlated_with
   - biolink:derives_from
   - biolink:develops_from
+  - biolink:diagnoses
   - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
@@ -256,6 +259,7 @@ products:
   - biolink:positively_correlated_with
   - biolink:preceded_by
   - biolink:precedes
+  - biolink:preventative_for_condition
   - biolink:produced_by
   - biolink:produces
   - biolink:regulates
@@ -263,11 +267,12 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
+  - biolink:treats
   product_file_size: 230877741
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 16433147
+  edge_count: 16958940
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -280,6 +285,7 @@ products:
   - biolink:ChemicalEntity
   - biolink:ClinicalMeasurement
   - biolink:Disease
+  - biolink:Drug
   - biolink:Gene
   - biolink:Genotype
   - biolink:LifeStage
@@ -291,7 +297,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1670861
+  node_count: 2006605
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -346,10 +352,12 @@ products:
   - biolink:causes
   - biolink:coexists_with
   - biolink:colocalizes_with
+  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:correlated_with
   - biolink:derives_from
   - biolink:develops_from
+  - biolink:diagnoses
   - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
@@ -386,6 +394,7 @@ products:
   - biolink:positively_correlated_with
   - biolink:preceded_by
   - biolink:precedes
+  - biolink:preventative_for_condition
   - biolink:produced_by
   - biolink:produces
   - biolink:regulates
@@ -393,11 +402,12 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
+  - biolink:treats
   product_file_size: 315667976
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 16433147
+  edge_count: 16958940
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -410,6 +420,7 @@ products:
   - biolink:ChemicalEntity
   - biolink:ClinicalMeasurement
   - biolink:Disease
+  - biolink:Drug
   - biolink:Gene
   - biolink:Genotype
   - biolink:LifeStage
@@ -421,7 +432,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1670861
+  node_count: 2006605
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -476,10 +487,12 @@ products:
   - biolink:causes
   - biolink:coexists_with
   - biolink:colocalizes_with
+  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:correlated_with
   - biolink:derives_from
   - biolink:develops_from
+  - biolink:diagnoses
   - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
@@ -516,6 +529,7 @@ products:
   - biolink:positively_correlated_with
   - biolink:preceded_by
   - biolink:precedes
+  - biolink:preventative_for_condition
   - biolink:produced_by
   - biolink:produces
   - biolink:regulates
@@ -523,12 +537,13 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
+  - biolink:treats
   product_file_size: 879238775
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 16433147
+  edge_count: 16958940
   format: neo4j
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
@@ -541,6 +556,7 @@ products:
   - biolink:ChemicalEntity
   - biolink:ClinicalMeasurement
   - biolink:Disease
+  - biolink:Drug
   - biolink:Gene
   - biolink:Genotype
   - biolink:LifeStage
@@ -552,7 +568,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1670861
+  node_count: 2006605
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -607,10 +623,12 @@ products:
   - biolink:causes
   - biolink:coexists_with
   - biolink:colocalizes_with
+  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:correlated_with
   - biolink:derives_from
   - biolink:develops_from
+  - biolink:diagnoses
   - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
@@ -647,6 +665,7 @@ products:
   - biolink:positively_correlated_with
   - biolink:preceded_by
   - biolink:precedes
+  - biolink:preventative_for_condition
   - biolink:produced_by
   - biolink:produces
   - biolink:regulates
@@ -654,12 +673,13 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
+  - biolink:treats
   product_file_size: 1438250397
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 16433147
+  edge_count: 16958940
   format: mixed
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
@@ -672,6 +692,7 @@ products:
   - biolink:ChemicalEntity
   - biolink:ClinicalMeasurement
   - biolink:Disease
+  - biolink:Drug
   - biolink:Gene
   - biolink:Genotype
   - biolink:LifeStage
@@ -683,7 +704,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1670861
+  node_count: 2006605
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -738,10 +759,12 @@ products:
   - biolink:causes
   - biolink:coexists_with
   - biolink:colocalizes_with
+  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:correlated_with
   - biolink:derives_from
   - biolink:develops_from
+  - biolink:diagnoses
   - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
@@ -778,6 +801,7 @@ products:
   - biolink:positively_correlated_with
   - biolink:preceded_by
   - biolink:precedes
+  - biolink:preventative_for_condition
   - biolink:produced_by
   - biolink:produces
   - biolink:regulates
@@ -785,12 +809,13 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
+  - biolink:treats
   product_file_size: 6827814912
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 16433147
+  edge_count: 16958940
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -803,6 +828,7 @@ products:
   - biolink:ChemicalEntity
   - biolink:ClinicalMeasurement
   - biolink:Disease
+  - biolink:Drug
   - biolink:Gene
   - biolink:Genotype
   - biolink:LifeStage
@@ -814,7 +840,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1670861
+  node_count: 2006605
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -869,10 +895,12 @@ products:
   - biolink:causes
   - biolink:coexists_with
   - biolink:colocalizes_with
+  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:correlated_with
   - biolink:derives_from
   - biolink:develops_from
+  - biolink:diagnoses
   - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
@@ -909,6 +937,7 @@ products:
   - biolink:positively_correlated_with
   - biolink:preceded_by
   - biolink:precedes
+  - biolink:preventative_for_condition
   - biolink:produced_by
   - biolink:produces
   - biolink:regulates
@@ -916,12 +945,13 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
+  - biolink:treats
   product_file_size: 487854288
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   compression: targz
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 16433147
+  edge_count: 16958940
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -934,6 +964,7 @@ products:
   - biolink:ChemicalEntity
   - biolink:ClinicalMeasurement
   - biolink:Disease
+  - biolink:Drug
   - biolink:Gene
   - biolink:Genotype
   - biolink:LifeStage
@@ -945,7 +976,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1670861
+  node_count: 2006605
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1000,10 +1031,12 @@ products:
   - biolink:causes
   - biolink:coexists_with
   - biolink:colocalizes_with
+  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:correlated_with
   - biolink:derives_from
   - biolink:develops_from
+  - biolink:diagnoses
   - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
@@ -1040,6 +1073,7 @@ products:
   - biolink:positively_correlated_with
   - biolink:preceded_by
   - biolink:precedes
+  - biolink:preventative_for_condition
   - biolink:produced_by
   - biolink:produces
   - biolink:regulates
@@ -1047,11 +1081,12 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
+  - biolink:treats
   product_file_size: 487854288
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 16433147
+  edge_count: 16958940
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -1064,6 +1099,7 @@ products:
   - biolink:ChemicalEntity
   - biolink:ClinicalMeasurement
   - biolink:Disease
+  - biolink:Drug
   - biolink:Gene
   - biolink:Genotype
   - biolink:LifeStage
@@ -1075,7 +1111,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1670861
+  node_count: 2006605
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1130,10 +1166,12 @@ products:
   - biolink:causes
   - biolink:coexists_with
   - biolink:colocalizes_with
+  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:correlated_with
   - biolink:derives_from
   - biolink:develops_from
+  - biolink:diagnoses
   - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
@@ -1170,6 +1208,7 @@ products:
   - biolink:positively_correlated_with
   - biolink:preceded_by
   - biolink:precedes
+  - biolink:preventative_for_condition
   - biolink:produced_by
   - biolink:produces
   - biolink:regulates
@@ -1177,11 +1216,12 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
+  - biolink:treats
   product_file_size: 4386388748
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 16433147
+  edge_count: 16958940
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -1194,6 +1234,7 @@ products:
   - biolink:ChemicalEntity
   - biolink:ClinicalMeasurement
   - biolink:Disease
+  - biolink:Drug
   - biolink:Gene
   - biolink:Genotype
   - biolink:LifeStage
@@ -1205,7 +1246,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1670861
+  node_count: 2006605
   original_source:
   - relation_type: prov:hadPrimarySource
     source: alliance
@@ -1260,10 +1301,12 @@ products:
   - biolink:causes
   - biolink:coexists_with
   - biolink:colocalizes_with
+  - biolink:contraindicated_in
   - biolink:contributes_to
   - biolink:correlated_with
   - biolink:derives_from
   - biolink:develops_from
+  - biolink:diagnoses
   - biolink:directly_physically_interacts_with
   - biolink:disease_has_location
   - biolink:disrupts
@@ -1300,6 +1343,7 @@ products:
   - biolink:positively_correlated_with
   - biolink:preceded_by
   - biolink:precedes
+  - biolink:preventative_for_condition
   - biolink:produced_by
   - biolink:produces
   - biolink:regulates
@@ -1307,6 +1351,7 @@ products:
   - biolink:same_as
   - biolink:subclass_of
   - biolink:temporally_related_to
+  - biolink:treats
   product_file_size: 349573789
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
 - category: GraphicalInterface

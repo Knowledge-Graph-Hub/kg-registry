@@ -7,6 +7,7 @@ name: Infernal 1.1.5 Release Notes
 original_source:
 - relation_type: prov:hadPrimarySource
   source: infernal
+product_file_size: 4410
 product_url: http://eddylab.org/infernal/RELEASE-1.1.5.md
 layout: product_detail
 ---

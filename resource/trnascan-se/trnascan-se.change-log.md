@@ -8,6 +8,7 @@ name: tRNAscan-SE Change Log
 original_source:
 - relation_type: prov:hadPrimarySource
   source: trnascan-se
+product_file_size: 2204
 product_url: https://trna.ucsc.edu/tRNAscan-SE/change_log.txt
 layout: product_detail
 ---

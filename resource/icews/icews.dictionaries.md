@@ -10,5 +10,8 @@ original_source:
 - relation_type: prov:hadPrimarySource
   source: icews
 product_url: https://doi.org/10.7910/DVN/28118
+warnings:
+- File was not able to be retrieved when checked on 2026-11-12_ HTTP 202 error when
+  accessing file
 layout: product_detail
 ---

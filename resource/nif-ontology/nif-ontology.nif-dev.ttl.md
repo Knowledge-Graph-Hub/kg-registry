@@ -8,6 +8,7 @@ name: NIFSTD (nif.ttl, dev branch)
 original_source:
 - relation_type: prov:hadPrimarySource
   source: nif-ontology
+product_file_size: 1088
 product_url: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/dev/ttl/nif.ttl
 layout: product_detail
 ---

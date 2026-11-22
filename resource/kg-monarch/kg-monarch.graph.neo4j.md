@@ -2,7 +2,7 @@
 category: GraphProduct
 description: Neo4j Dump of KG-Monarch
 dump_format: neo4j
-edge_count: 16433147
+edge_count: 16958940
 format: neo4j
 id: kg-monarch.graph.neo4j
 name: Neo4j Dump of KG-Monarch
@@ -15,6 +15,7 @@ node_categories:
 - biolink:ChemicalEntity
 - biolink:ClinicalMeasurement
 - biolink:Disease
+- biolink:Drug
 - biolink:Gene
 - biolink:Genotype
 - biolink:LifeStage
@@ -26,7 +27,7 @@ node_categories:
 - biolink:PhenotypicFeature
 - biolink:Protein
 - biolink:SequenceVariant
-node_count: 1670861
+node_count: 2006605
 original_source:
 - relation_type: prov:hadPrimarySource
   source: alliance
@@ -81,10 +82,12 @@ predicates:
 - biolink:causes
 - biolink:coexists_with
 - biolink:colocalizes_with
+- biolink:contraindicated_in
 - biolink:contributes_to
 - biolink:correlated_with
 - biolink:derives_from
 - biolink:develops_from
+- biolink:diagnoses
 - biolink:directly_physically_interacts_with
 - biolink:disease_has_location
 - biolink:disrupts
@@ -121,6 +124,7 @@ predicates:
 - biolink:positively_correlated_with
 - biolink:preceded_by
 - biolink:precedes
+- biolink:preventative_for_condition
 - biolink:produced_by
 - biolink:produces
 - biolink:regulates
@@ -128,6 +132,7 @@ predicates:
 - biolink:same_as
 - biolink:subclass_of
 - biolink:temporally_related_to
+- biolink:treats
 product_file_size: 1438250397
 product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
 warnings: []

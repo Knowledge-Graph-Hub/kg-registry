@@ -625,6 +625,7 @@ kgr:alphafold a schema1:DataSource ;
         kgr:alphafold.web,
         kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
+        kgr:bitterdb.downloads.receptors,
         kgr:europepmc.textmined-terms,
         kgr:genecards.web.interface,
         kgr:saprot.af2-uniref50,
@@ -2628,7 +2629,8 @@ kgr:biothings a schema1:DataSource ;
         kgr:myvariant.code,
         kgr:service-kp.code,
         kgr:service-kp.portal,
-        kgr:service-kp.trapi ;
+        kgr:service-kp.trapi,
+        kgr:suppkg.biothings-api ;
     schema1:identifier "RRID:SCR_024539" ;
     schema1:name "BioThings" ;
     doap:repository <https://github.com/biothings/biothings.api> ;
@@ -2667,14 +2669,39 @@ kgr:biothings-explorer a schema1:Aggregator ;
 kgr:bitterdb a schema1:DataSource ;
     rdfs:label "BitterDB" ;
     dcterms:created "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "BitterDB is a database of bitter-tasting compounds and their associated bitter taste receptors. It compiles bitter molecules reported in the literature together with the human and other species' bitter taste receptors (T2Rs) they activate, supporting research in chemoreception and ligand-receptor pharmacology." ;
+    dcterms:description "BitterDB is a database of bitter-tasting compounds and their associated bitter taste receptors (TAS2Rs), maintained by the Niv lab at the Hebrew University of Jerusalem. The 2024 release holds over 2,200 bitter molecules, close to 1,800 ligand-TAS2R associations, and receptors from 66 species, with links to receptor structures, mutation and SNP data, and machine-learning bitterness classifiers, supporting research in chemoreception and ligand-receptor pharmacology." ;
     dcterms:identifier "bitterdb" ;
-    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gky974> ;
-    dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:bitterdb.site,
+    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkae1044>,
+        <https://doi.org/10.1093/nar/gkr755>,
+        <https://doi.org/10.1093/nar/gky974> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:9031>,
+        <NCBITaxon:9258>,
+        <NCBITaxon:9606>,
+        <NCBITaxon:9615>,
+        <NCBITaxon:9685>,
+        <NCBITaxon:9913> ;
+    schema1:hasPart kgr:bitterdb.bittermatch,
+        kgr:bitterdb.bitterpredict,
+        kgr:bitterdb.downloads.compound_sources,
+        kgr:bitterdb.downloads.compounds,
+        kgr:bitterdb.downloads.drugbank_mapping,
+        kgr:bitterdb.downloads.gtopdb_mapping,
+        kgr:bitterdb.downloads.ligand_receptors,
+        kgr:bitterdb.downloads.mutations,
+        kgr:bitterdb.downloads.receptors,
+        kgr:bitterdb.downloads.snps,
+        kgr:bitterdb.downloads.zinc_mapping,
+        kgr:bitterdb.site,
         kgr:genecards.web.interface ;
+    schema1:identifier "RRID:SCR_006977" ;
     schema1:name "BitterDB" ;
-    skos:inScheme "chemistry and biochemistry",
+    skos:inScheme "cheminformatics",
+        "chemistry and biochemistry",
+        "food",
+        "nutrition",
         "pharmacology" ;
     adms:status "Active" ;
     foaf:homepage <https://bitterdb.agri.huji.ac.il/dbbitter.php> .
@@ -3264,7 +3291,8 @@ kgr:catalogue-of-life a schema1:KnowledgeGraph ;
         kgr:mangal.api,
         kgr:mangal.docs,
         kgr:mangal.portal,
-        kgr:mangal.rmangal ;
+        kgr:mangal.rmangal,
+        kgr:unii.data ;
     schema1:identifier "catalogue-of-life" ;
     schema1:name "Catalogue of Life" ;
     doap:repository <https://github.com/CatalogueOfLife> ;
@@ -4088,7 +4116,6 @@ kgr:chebi a schema1:Ontology ;
         kgr:skm.pss.live.sif.projection.annotations,
         kgr:skm.pss.live.sif.projection.graph,
         kgr:sri-reference-kg.graph,
-        kgr:suppkg.source-data,
         kgr:tera.cas-to-mesh-csv,
         kgr:uberon.collected-metazoan.owl,
         kgr:uberon.composite-metazoan.owl,
@@ -6274,7 +6301,8 @@ kgr:dailymed a schema1:DataSource ;
         kgr:medi.github,
         kgr:medi.matrix_indication_list,
         kgr:multiomics-kp.graph,
-        kgr:spoke.graph ;
+        kgr:spoke.graph,
+        kgr:unii.data ;
     schema1:identifier "dailymed" ;
     schema1:name "DailyMed" ;
     skos:inScheme "biomedical",
@@ -6522,6 +6550,7 @@ kgr:dbsnp a schema1:DataSource ;
         kgr:biobtree.graph.human-subgraph,
         kgr:biomarker.bkg.edges.variant,
         kgr:biomarker.bkg.nodes.variant,
+        kgr:bitterdb.downloads.snps,
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
         kgr:dbsnp.api,
@@ -7245,6 +7274,13 @@ kgr:disgenet a schema1:DataSource ;
         kgr:enrichr-kg.graph,
         kgr:enrichr.libraries,
         kgr:genecards.disease.associations,
+        kgr:geneorganizer.gene-bodypart.confident-all,
+        kgr:geneorganizer.gene-bodypart.confident-typical,
+        kgr:geneorganizer.gene-bodypart.tentative-typical,
+        kgr:geneorganizer.gene-disease-phenotype.germlayers,
+        kgr:geneorganizer.gene-disease-phenotype.organs,
+        kgr:geneorganizer.gene-disease-phenotype.regions,
+        kgr:geneorganizer.gene-disease-phenotype.systems,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:indra.cogex.code,
@@ -7694,6 +7730,7 @@ kgr:drugbank a schema1:DataSource ;
         kgr:alzkb.data,
         kgr:babel.compendia,
         kgr:bioteque.embeddings,
+        kgr:bitterdb.downloads.drugbank_mapping,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:cardiokg.neo4j,
         kgr:cdcdb.csv,
@@ -8016,7 +8053,8 @@ kgr:dsstoxdb a schema1:DataSource ;
         kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:nice.data,
-        kgr:nice.search ;
+        kgr:nice.search,
+        kgr:unii.data ;
     schema1:identifier "dsstoxdb" ;
     schema1:name "Distributed Structure-Searchable Toxicity (DSSTox) Database" ;
     skos:inScheme "biomedical",
@@ -8565,6 +8603,7 @@ kgr:eggnog a schema1:DataSource ;
         kgr:hcop.all-sixteen-column,
         kgr:hcop.species-downloads,
         kgr:hcop.web,
+        kgr:paxdb.orthologs,
         kgr:string.cog.links,
         kgr:string.cog.links.detailed,
         kgr:string.database,
@@ -11383,7 +11422,8 @@ kgr:genecards a schema1:Aggregator ;
     dcterms:license <https://www.lifemapsc.com/genecards-suite-terms-of-use/> ;
     dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:genecards.clinical.trials,
+    schema1:hasPart kgr:bitterdb.downloads.receptors,
+        kgr:genecards.clinical.trials,
         kgr:genecards.disease.associations,
         kgr:genecards.expression.data,
         kgr:genecards.gene.annotations,
@@ -11433,15 +11473,26 @@ kgr:genemania a schema1:DataSource ;
 kgr:geneorganizer a schema1:DataSource ;
     rdfs:label "Gene ORGANizer" ;
     dcterms:created "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Gene ORGANizer is a tool and database that links genes to the body parts and organs they affect. It contains curated associations between human genes and the anatomical components in which their phenotypes manifest, supporting analysis of the physiological effects of genes." ;
+    dcterms:description "Gene ORGANizer is a tool and database that links genes to the body parts and organs they affect. It contains curated associations between human genes and the anatomical components in which their phenotypes manifest, supporting analysis of the physiological effects of genes. Associations cover about 150 body parts at four annotation levels (organs, systems, regions and germ layers) and are derived from gene-phenotype and gene-disease links in the Human Phenotype Ontology, OMIM, Orphanet and DisGeNET." ;
+    dcterms:hasVersion "12" ;
     dcterms:identifier "geneorganizer" ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkx302> ;
-    dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:genecards.web.interface,
+        kgr:geneorganizer.gene-bodypart.confident-all,
+        kgr:geneorganizer.gene-bodypart.confident-typical,
+        kgr:geneorganizer.gene-bodypart.tentative-typical,
+        kgr:geneorganizer.gene-disease-phenotype.germlayers,
+        kgr:geneorganizer.gene-disease-phenotype.organs,
+        kgr:geneorganizer.gene-disease-phenotype.regions,
+        kgr:geneorganizer.gene-disease-phenotype.systems,
         kgr:geneorganizer.site ;
     schema1:name "Gene ORGANizer" ;
+    skos:altLabel "GeneORGANizer" ;
     skos:inScheme "anatomy and development",
-        "genomics" ;
+        "genomics",
+        "phenotype" ;
     adms:status "Active" ;
     foaf:homepage <https://geneorganizer.huji.ac.il/> .
 
@@ -11591,18 +11642,27 @@ kgr:geno a schema1:Ontology ;
 kgr:genomernai a schema1:DataSource ;
     rdfs:label "GenomeRNAi" ;
     dcterms:created "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "GenomeRNAi is a database containing phenotypes from cell-based and in vivo RNA interference (RNAi) screens in Drosophila and Homo sapiens. It also provides a curated resource of RNAi reagents and their predicted specificity and efficiency." ;
+    dcterms:description "GenomeRNAi is a database containing phenotypes from cell-based and in vivo RNA interference (RNAi) screens in Drosophila and Homo sapiens, manually curated from the literature or submitted by authors. It also provides a curated resource of RNAi reagents and their predicted specificity and efficiency. It is maintained by the Division of Signaling and Functional Genomics at the German Cancer Research Center (DKFZ); the latest release is version 17 (November 2017), with 687 screens." ;
+    dcterms:hasVersion "17.0" ;
     dcterms:identifier "genomernai" ;
-    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gks1170> ;
-    dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkl906>,
+        <https://doi.org/10.1093/nar/gkp1038>,
+        <https://doi.org/10.1093/nar/gks1170> ;
+    dcterms:license <https://creativecommons.org/licenses/by/3.0/> ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:7227>,
+        <NCBITaxon:9606> ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:genomernai.downloads,
         kgr:genomernai.site ;
+    schema1:identifier "RRID:SCR_013088" ;
     schema1:name "GenomeRNAi" ;
     skos:inScheme "genomics",
-        "organisms" ;
-    adms:status "Active" ;
-    foaf:homepage <http://www.genomernai.org/> .
+        "model organisms",
+        "organisms",
+        "phenotype" ;
+    adms:status "Inactive" ;
+    foaf:homepage <https://genomernai.dkfz.de/> .
 
 kgr:genomickb a schema1:KnowledgeGraph ;
     rdfs:label "GenomicKB" ;
@@ -12631,7 +12691,8 @@ kgr:gpcrdb a schema1:DataSource ;
         <doi:10.1093/nar/gkx1109> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:gpcrdb.api,
+    schema1:hasPart kgr:bitterdb.downloads.receptors,
+        kgr:gpcrdb.api,
         kgr:gpcrdb.code,
         kgr:gpcrdb.data,
         kgr:gpcrdb.docs,
@@ -12879,14 +12940,18 @@ kgr:gtex a schema1:DataSource ;
 kgr:gtopdb a schema1:DataSource ;
     rdfs:label "Guide to Pharmacology" ;
     dcterms:created "2025-05-30T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The IUPHAR/BPS Guide to PHARMACOLOGY is an expert-curated resource providing quantitative information on drug targets and the substances that act on them, including approved drugs and experimental therapeutics" ;
+    dcterms:description "The IUPHAR/BPS Guide to PHARMACOLOGY (GtoPdb) is an expert-curated resource providing quantitative information on drug targets and the substances that act on them, including approved drugs and experimental therapeutics. Ligand-activity-target relationships are curated mainly from the pharmacological and medicinal chemistry literature by NC-IUPHAR and the British Pharmacological Society. Since August 2026 the website requires free user registration, and the REST API requires an API key." ;
+    dcterms:hasVersion "2026.3.1" ;
     dcterms:identifier "gtopdb" ;
-    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkad944> ;
+    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkad944>,
+        <https://doi.org/10.1093/nar/gkaf1067> ;
     dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:automat.gtopdb,
         kgr:automat.robokopkg,
         kgr:babel.compendia,
+        kgr:bitterdb.downloads.gtopdb_mapping,
+        kgr:bitterdb.downloads.receptors,
         kgr:date.archive,
         kgr:genecards.web.interface,
         kgr:gpcrdb.api,
@@ -12919,9 +12984,12 @@ kgr:gtopdb a schema1:DataSource ;
         kgr:rtx-kg2.neo4j,
         kgr:translator.gtopdb.graph,
         kgr:translator.translator_kg.graph ;
-    schema1:identifier "gtopdb" ;
+    schema1:identifier "RRID:SCR_013077",
+        "gtopdb" ;
     schema1:name "Guide to Pharmacology" ;
     doap:repository <https://www.guidetopharmacology.org/download.jsp> ;
+    skos:altLabel "GtoPdb",
+        "IUPHAR/BPS Guide to PHARMACOLOGY" ;
     skos:inScheme "biomedical",
         "drug discovery",
         "pharmacology" ;
@@ -13772,6 +13840,13 @@ kgr:hp a schema1:Ontology ;
         kgr:eram.downloads,
         kgr:eram.web,
         kgr:genecards.web.interface,
+        kgr:geneorganizer.gene-bodypart.confident-all,
+        kgr:geneorganizer.gene-bodypart.confident-typical,
+        kgr:geneorganizer.gene-bodypart.tentative-typical,
+        kgr:geneorganizer.gene-disease-phenotype.germlayers,
+        kgr:geneorganizer.gene-disease-phenotype.organs,
+        kgr:geneorganizer.gene-disease-phenotype.regions,
+        kgr:geneorganizer.gene-disease-phenotype.systems,
         kgr:gp-kg.graph,
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
@@ -13901,6 +13976,7 @@ kgr:hpa a schema1:Aggregator ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bioteque.embeddings,
+        kgr:bitterdb.downloads.receptors,
         kgr:cancer-genome-interpreter.clinicalkg.graph,
         kgr:clinicalkg.graph,
         kgr:dbnsfp.academic,
@@ -14903,7 +14979,11 @@ kgr:idisk a schema1:KnowledgeGraph ;
         kgr:idisk.code,
         kgr:idisk.idisk2-entities,
         kgr:idisk.idisk2-relations,
-        kgr:service-kp.trapi ;
+        kgr:service-kp.trapi,
+        kgr:suppkg.graph.gpickle,
+        kgr:suppkg.graph.json,
+        kgr:suppkg.source-data,
+        kgr:suppkg.v2.edgelist ;
     schema1:identifier "idisk" ;
     schema1:name "integrated Dietary Supplement Knowledge Base" ;
     doap:repository <https://github.com/jvasilakes/iDISK> ;
@@ -15099,16 +15179,22 @@ kgr:imex a schema1:Aggregator ;
 kgr:imgt a schema1:DataSource ;
     rdfs:label "IMGT" ;
     dcterms:created "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "IMGT, the international ImMunoGeneTics information system, is a high-quality integrated knowledge resource specializing in the immunoglobulins (IG), T cell receptors (TR), major histocompatibility complex (MHC), and related proteins of the immune system across vertebrate species. It provides standardized data, tools, and reference directories built on the IMGT-ONTOLOGY." ;
+    dcterms:description "IMGT, the international ImMunoGeneTics information system, is a high-quality integrated knowledge resource specializing in the immunoglobulins (IG), T cell receptors (TR), major histocompatibility complex (MHC), and related proteins of the immune system across vertebrate species. It provides standardized data, tools, and reference directories built on the IMGT-ONTOLOGY, and exposes integrated immunogenetics data as the IMGT Knowledge Graph (IMGT-KG) through a SPARQL endpoint." ;
     dcterms:identifier "imgt" ;
-    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gku1056> ;
+    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkab1136>,
+        <https://doi.org/10.1093/nar/gkaf1024>,
+        <https://doi.org/10.1093/nar/gku1056> ;
     dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:7742>,
+        <NCBITaxon:9606> ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:imgt.genedb,
         kgr:imgt.site ;
     schema1:identifier "RRID:SCR_012780" ;
     schema1:name "IMGT" ;
+    skos:altLabel "IMGT®",
+        "international ImMunoGeneTics information system" ;
     skos:inScheme "genomics",
         "immunology",
         "proteomics" ;
@@ -15868,7 +15954,8 @@ kgr:itis a schema1:DataSource ;
         kgr:obo-db-ingest.itis.json,
         kgr:obo-db-ingest.itis.obo,
         kgr:obo-db-ingest.itis.owl,
-        kgr:obo-db-ingest.itis.tsv ;
+        kgr:obo-db-ingest.itis.tsv,
+        kgr:unii.data ;
     schema1:name "ITIS" ;
     skos:inScheme "biodiversity",
         "environment",
@@ -16360,7 +16447,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-11-12T21:57:10+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-22T13:14:01+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -20011,7 +20098,15 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:gendr.data,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
+        kgr:geneorganizer.gene-bodypart.confident-all,
+        kgr:geneorganizer.gene-bodypart.confident-typical,
+        kgr:geneorganizer.gene-bodypart.tentative-typical,
+        kgr:geneorganizer.gene-disease-phenotype.germlayers,
+        kgr:geneorganizer.gene-disease-phenotype.organs,
+        kgr:geneorganizer.gene-disease-phenotype.regions,
+        kgr:geneorganizer.gene-disease-phenotype.systems,
         kgr:geneshot.generif,
+        kgr:genomernai.downloads,
         kgr:gtr.test_condition_gene,
         kgr:gtr.xml,
         kgr:gtrx.data,
@@ -20199,6 +20294,7 @@ kgr:ncbitaxon a schema1:Ontology ;
         kgr:uberon.composite-vertebrate.owl,
         kgr:uberon.owl,
         kgr:uberon.uberon-basic.obo,
+        kgr:unii.data,
         kgr:vbo.json,
         kgr:vbo.obo,
         kgr:vbo.owl,
@@ -20306,7 +20402,8 @@ kgr:ncit a schema1:Ontology ;
         kgr:pistoia-pgo.core_concepts_xlsx,
         kgr:scdo.obo,
         kgr:scdo.owl,
-        kgr:sri-reference-kg.graph ;
+        kgr:sri-reference-kg.graph,
+        kgr:unii.data ;
     schema1:identifier "ncit" ;
     schema1:name "NCI Thesaurus OBO Edition" ;
     doap:repository <https://github.com/ncit-obo-org/ncit-obo-edition> ;
@@ -21452,12 +21549,17 @@ kgr:obci a schema1:Ontology ;
     dcterms:description "An OWL-formatted ontology that formally defines biomarkers of clinical interest for diseases, phenotypes, and effects, including the FDA-NIH BEST-aligned biomarker role classifications (diagnostic, prognostic, predictive, monitoring, pharmacodynamic/response, safety, and susceptibility/risk biomarkers). OBCI is developed by the clinical-biomarkers group associated with the GlyGen and OncoMX biomarker data resources, and supplies the \"role\" / best-classification vocabulary used by downstream biomarker knowledge graphs." ;
     dcterms:identifier "obci" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:biomarker.bkg.edges.role,
         kgr:biomarker.bkg.nodes.role,
+        kgr:obci.core_full,
+        kgr:obci.core_full_reasoned_noequiv,
+        kgr:obci.for_biomarkerkg,
         kgr:obci.owl ;
     schema1:name "Ontology for Biomarkers of Clinical Interest" ;
     doap:repository <https://github.com/clinical-biomarkers/OBCI> ;
+    skos:altLabel "OBCI" ;
     skos:inScheme "biomedical",
         "clinical",
         "precision medicine" ;
@@ -22399,6 +22501,13 @@ kgr:omim a schema1:DataSource ;
         kgr:genecards.disease.associations,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
+        kgr:geneorganizer.gene-bodypart.confident-all,
+        kgr:geneorganizer.gene-bodypart.confident-typical,
+        kgr:geneorganizer.gene-bodypart.tentative-typical,
+        kgr:geneorganizer.gene-disease-phenotype.germlayers,
+        kgr:geneorganizer.gene-disease-phenotype.organs,
+        kgr:geneorganizer.gene-disease-phenotype.regions,
+        kgr:geneorganizer.gene-disease-phenotype.systems,
         kgr:genereviews.omim,
         kgr:gp-kg.graph,
         kgr:gtr.test_condition_gene,
@@ -23378,6 +23487,13 @@ kgr:orphanet a schema1:DataSource ;
         kgr:eram.web,
         kgr:genecards.disease.associations,
         kgr:genecards.web.interface,
+        kgr:geneorganizer.gene-bodypart.confident-all,
+        kgr:geneorganizer.gene-bodypart.confident-typical,
+        kgr:geneorganizer.gene-bodypart.tentative-typical,
+        kgr:geneorganizer.gene-disease-phenotype.germlayers,
+        kgr:geneorganizer.gene-disease-phenotype.organs,
+        kgr:geneorganizer.gene-disease-phenotype.regions,
+        kgr:geneorganizer.gene-disease-phenotype.systems,
         kgr:kg-ebi-gene2pheno.edges.kgx,
         kgr:kg-ebi-gene2pheno.edges.trapi,
         kgr:kg-ebi-gene2pheno.nodes.kgx,
@@ -23521,16 +23637,23 @@ kgr:owlsim a schema1:DataSource ;
     dcterms:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "OWLSim is ontology-based profile matching software for calculating semantic similarity between ontology classes and individuals. The tool was used by the Monarch Initiative and related phenotype-comparison projects, and has since been replaced by Semsimian." ;
     dcterms:identifier "owlsim" ;
-    dcterms:isReferencedBy <doi:10.1101/gr.160325.113> ;
-    dcterms:modified "2026-06-12T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:about <NCBITaxon:9606> ;
+    dcterms:isReferencedBy <doi:10.1002/humu.22051>,
+        <doi:10.1093/database/bat025>,
+        <doi:10.1101/gr.160325.113> ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:10090>,
+        <NCBITaxon:7955>,
+        <NCBITaxon:9606> ;
     schema1:hasPart kgr:owlsim.owltools,
         kgr:owlsim.rest,
         kgr:owlsim.v3 ;
-    schema1:identifier "owlsim" ;
+    schema1:identifier "RRID:SCR_006819",
+        "owlsim" ;
     schema1:name "OWLSim Ontology Based Profile Matching" ;
     doap:repository <https://github.com/monarch-initiative/owlsim-v3> ;
-    skos:altLabel "OWLSim" ;
+    skos:altLabel "OWLSim",
+        "OwlSim",
+        "owlsim-v3" ;
     skos:inScheme "biomedical",
         "genomics",
         "information technology",
@@ -24070,17 +24193,33 @@ kgr:pavs-kg a schema1:KnowledgeGraph ;
 kgr:paxdb a schema1:DataSource ;
     rdfs:label "PaxDb" ;
     dcterms:created "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "PaxDb (Protein Abundance Database) is a database of whole-organism protein abundance information across organisms. It integrates and re-processes quantitative proteomics datasets to provide consistent, comparable protein abundance estimates for thousands of proteins in many species." ;
+    dcterms:description "PaxDb (Protein Abundance Database) is a meta-resource of whole-organism and tissue-specific protein abundance data, expressed in parts per million, for over 400 species across all kingdoms of life. It integrates published quantitative proteomics datasets and, since v6.0, raw mass spectrometry data from ProteomeXchange re-analyzed with a uniform FragPipe pipeline, mapped to STRING protein identifiers, scored for consistency against the STRING interaction network, and linked to UniProt, eggNOG orthologous groups, and tissue ontologies. It is developed by the von Mering group at the University of Zurich and the Swiss Institute of Bioinformatics." ;
+    dcterms:hasVersion "6.1" ;
     dcterms:identifier "paxdb" ;
-    dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkaf1066> ;
-    dcterms:modified "2026-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <https://doi.org/10.1002/pmic.201400441>,
+        <https://doi.org/10.1016/j.mcpro.2023.100640>,
+        <https://doi.org/10.1074/mcp.o111.014704>,
+        <https://doi.org/10.1093/nar/gkaf1066> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
         kgr:omicsdi.api,
         kgr:omicsdi.portal,
+        kgr:paxdb.api,
+        kgr:paxdb.compute,
+        kgr:paxdb.datasets,
         kgr:paxdb.downloads,
-        kgr:paxdb.site ;
+        kgr:paxdb.mapped-peptides,
+        kgr:paxdb.orthologs,
+        kgr:paxdb.protein-sequences,
+        kgr:paxdb.sdrf,
+        kgr:paxdb.site,
+        kgr:paxdb.uniprot-crossreferences,
+        kgr:paxdb.uniprot-links ;
     schema1:identifier "RRID:SCR_018910" ;
     schema1:name "PaxDb" ;
+    skos:altLabel "PaxDB",
+        "Protein Abundance Database" ;
     skos:inScheme "proteomics" ;
     adms:status "Active" ;
     foaf:homepage <https://pax-db.org/> .
@@ -26210,6 +26349,8 @@ kgr:proteomexchange a schema1:Aggregator ;
     dcterms:modified "2026-10-05T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:omicsdi.api,
         kgr:omicsdi.portal,
+        kgr:paxdb.datasets,
+        kgr:paxdb.sdrf,
         kgr:proteomexchange.dataset-list,
         kgr:proteomexchange.dataset-records,
         kgr:proteomexchange.guidelines,
@@ -26431,6 +26572,7 @@ kgr:pubchem a schema1:DataSource ;
         kgr:biobtree.graph.human-subgraph,
         kgr:biomarker.bkg.edges.compound,
         kgr:biomarker.bkg.nodes.compound,
+        kgr:bitterdb.downloads.compounds,
         kgr:cdcdb.csv,
         kgr:cdcdb.figshare,
         kgr:cdcdb.sqlite,
@@ -26501,13 +26643,13 @@ kgr:pubchem a schema1:DataSource ;
         kgr:stitch.api,
         kgr:stitch.downloads,
         kgr:stitch.portal,
-        kgr:suppkg.source-data,
         kgr:tera.chebi-to-mesh-csv,
         kgr:unibiomap.auxs,
         kgr:unibiomap.compound_desc,
         kgr:unibiomap.links,
         kgr:unibiomap.pred,
-        kgr:unibiomap.pred.full ;
+        kgr:unibiomap.pred.full,
+        kgr:unii.data ;
     schema1:identifier "RRID:SCR_004742",
         "pubchem" ;
     schema1:name "PubChem" ;
@@ -26647,7 +26789,10 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:stitch.downloads,
         kgr:stitch.portal,
         kgr:suppkg.docs,
+        kgr:suppkg.graph.gpickle,
+        kgr:suppkg.graph.json,
         kgr:suppkg.source-data,
+        kgr:suppkg.v2.edgelist,
         kgr:tbkg.data,
         kgr:tbkg.osimertinib_case_study,
         kgr:togows.rest-api,
@@ -28226,7 +28371,8 @@ kgr:rxnorm a schema1:DataSource ;
         kgr:rxnorm.rxclass,
         kgr:rxnorm.rxmix,
         kgr:rxnorm.rxnav,
-        kgr:rxnorm.rxnav_in_a_box ;
+        kgr:rxnorm.rxnav_in_a_box,
+        kgr:unii.data ;
     schema1:identifier "RRID:SCR_006645",
         "rxnorm" ;
     schema1:name "RxNorm" ;
@@ -28582,7 +28728,10 @@ kgr:semrep a schema1:DataSource ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:np-kg.graph.networkx,
         kgr:np-kg.graph.tsv,
-        kgr:semrep.homepage ;
+        kgr:semrep.homepage,
+        kgr:suppkg.graph.gpickle,
+        kgr:suppkg.graph.json,
+        kgr:suppkg.v2.edgelist ;
     schema1:name "SemRep" ;
     skos:inScheme "biomedical",
         "information technology",
@@ -30053,6 +30202,10 @@ kgr:string a schema1:DataSource ;
         kgr:molepro.graph.edges,
         kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
+        kgr:paxdb.compute,
+        kgr:paxdb.datasets,
+        kgr:paxdb.protein-sequences,
+        kgr:paxdb.uniprot-links,
         kgr:petagraph.graph,
         kgr:pharos.api,
         kgr:pharos.portal,
@@ -30182,21 +30335,30 @@ kgr:sugi-atlas a schema1:Aggregator ;
 kgr:suppkg a schema1:KnowledgeGraph ;
     rdfs:label "SuppKG" ;
     dcterms:created "2025-10-30T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "SuppKG is a knowledge graph that integrates information about dietary supplements and their relationships with diseases, genes, proteins, and other biomedical entities, developed to support translational research and clinical decision-making." ;
+    dcterms:description "SuppKG is a literature-derived knowledge graph of dietary supplements and their relationships with diseases, drugs, genes, and other biomedical concepts. It was built at the University of Minnesota by running SemRepDS (SemRep extended with the iDISK dietary supplement terminology) over PubMed abstracts and filtering the resulting semantic predications with a PubMedBERT-based model; nodes are UMLS concepts. The original 2021 release has 56,635 nodes and 595,222 directed edges, and a v2 rebuild on newer abstracts has 57,944 nodes and 1,321,374 edges. It was used to discover drug-supplement interactions and is served in NCATS Translator through a BioThings API." ;
     dcterms:identifier "suppkg" ;
     dcterms:isReferencedBy <doi:10.1016/j.jbi.2022.104120> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:license <https://uts.nlm.nih.gov/uts/> ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:service-kp.trapi,
+        kgr:suppkg.biothings-api,
         kgr:suppkg.docs,
-        kgr:suppkg.source-data ;
+        kgr:suppkg.graph.gpickle,
+        kgr:suppkg.graph.json,
+        kgr:suppkg.source-data,
+        kgr:suppkg.v2.edgelist ;
     schema1:identifier "suppkg" ;
     schema1:name "SuppKG" ;
+    doap:repository <https://github.com/zhang-informatics/SemRep_DS> ;
     skos:altLabel "Dietary Supplement Knowledge Graph",
         "SuppKG" ;
     skos:inScheme "biomedical",
-        "nutrition" ;
+        "drug interactions",
+        "literature",
+        "natural language processing",
+        "nutrition",
+        "pharmacology" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/NCATSTranslator/Translator-All/wiki/SuppKG> .
 
@@ -31955,6 +32117,10 @@ kgr:umls a schema1:Aggregator ;
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
+        kgr:suppkg.graph.gpickle,
+        kgr:suppkg.graph.json,
+        kgr:suppkg.source-data,
+        kgr:suppkg.v2.edgelist,
         kgr:tbkg.data,
         kgr:tbkg.osimertinib_case_study,
         kgr:ubkg.api,
@@ -32082,8 +32248,9 @@ kgr:unii a schema1:DataSource ;
     dcterms:created "2025-07-17T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "FDA's Global Substance Registration System (GSRS) is a comprehensive database that provides Unique Ingredient Identifiers (UNIIs) for substances in FDA-regulated products. UNIIs uniquely define substances based on scientific identity characteristics using ISO 11238 data elements, enabling efficient and accurate exchange of substance information across regulatory domains." ;
     dcterms:identifier "unii" ;
-    dcterms:isReferencedBy <https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define> ;
-    dcterms:modified "2026-06-12T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1093/nar/gkaa962>,
+        <https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define> ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:babel.compendia,
         kgr:dailymed.spl_files,
@@ -32093,12 +32260,15 @@ kgr:unii a schema1:DataSource ;
         kgr:openfda.apis,
         kgr:openfda.downloads,
         kgr:unii.data,
+        kgr:unii.gsrs,
+        kgr:unii.gsrs.api,
+        kgr:unii.gsrs.software,
         kgr:unii.legacy,
         kgr:unii.list,
         kgr:unii.search ;
     schema1:identifier "unii" ;
     schema1:name "FDA Global Substance Registration System (UNII)" ;
-    doap:repository <https://ginas.ncats.nih.gov/ginas/app> ;
+    doap:repository <https://github.com/ncats/gsrs3-main-deployment> ;
     skos:inScheme "clinical",
         "drug discovery",
         "pharmacology",
@@ -32130,6 +32300,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:biogrid.identifiers,
         kgr:bioregistry.registry.json,
         kgr:bioregistry.sssom,
+        kgr:bitterdb.downloads.receptors,
         kgr:cacao.api,
         kgr:cacao.go-annotations,
         kgr:cacao.gowiki,
@@ -32220,6 +32391,8 @@ kgr:uniprot a schema1:DataSource ;
         kgr:pathwaycommons.gmt,
         kgr:pathwaycommons.sif,
         kgr:pathwaycommons.txt,
+        kgr:paxdb.uniprot-crossreferences,
+        kgr:paxdb.uniprot-links,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
         kgr:pharmebinet.neo4j,
@@ -32261,7 +32434,6 @@ kgr:uniprot a schema1:DataSource ;
         kgr:string.protein.physical.links,
         kgr:string.protein.physical.links.detailed,
         kgr:string.protein.physical.links.full,
-        kgr:suppkg.source-data,
         kgr:swisslipid.enzymes,
         kgr:swisslipid.lipids2uniprot,
         kgr:tcrd.api,
@@ -33621,6 +33793,17 @@ kgr:zfs a schema1:Ontology ;
     skos:inScheme "anatomy and development" ;
     adms:status "Active" ;
     foaf:homepage <https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources> .
+
+kgr:zinc a schema1:DataSource ;
+    rdfs:label "Zinc" ;
+    dcterms:created "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "Stub Resource page for zinc. This page was automatically generated because it was referenced by other resources." ;
+    dcterms:identifier "zinc" ;
+    dcterms:modified "2026-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:bitterdb.downloads.zinc_mapping ;
+    schema1:name "Zinc" ;
+    skos:inScheme "stub" ;
+    adms:status "Active" .
 
 kgr:zirc a schema1:DataSource ;
     rdfs:label "Zebrafish International Resource Center" ;
@@ -35189,6 +35372,31 @@ kgr:biothings.sdk a schema1:Product ;
     rdfs:label "BioThings SDK" ;
     dcterms:description "Python-based BioThings SDK for aggregating biomedical annotations and exposing them as high-performance APIs." ;
     schema1:url <https://docs.biothings.io/> .
+
+kgr:bitterdb.bittermatch a schema1:ProcessProduct ;
+    rdfs:label "BitterMatch" ;
+    dcterms:description "BitterMatch, a recommendation-system algorithm for predicting which bitter taste receptors a molecule activates, trained on BitterDB ligand-receptor associations and offered as a BitterDB classifier." ;
+    schema1:url <https://github.com/YuliSl/BitterMatch> .
+
+kgr:bitterdb.bitterpredict a schema1:ProcessProduct ;
+    rdfs:label "BitterPredict" ;
+    dcterms:description "MATLAB code for BitterPredict, a machine-learning classifier that predicts whether a molecule tastes bitter from its chemical structure, trained on BitterDB compounds and offered as a BitterDB classifier." ;
+    schema1:url <https://github.com/Niv-Lab/BitterPredict1> .
+
+kgr:bitterdb.downloads.compound_sources a schema1:Product ;
+    rdfs:label "BitterDB 2024 Compound Bitterness Sources" ;
+    dcterms:description "BitterDB 2024 table of the sources reporting each compound as bitter (handbooks, literature and databases), with bitterness classification, sensory test concentration, EC50, threshold, citation and organism." ;
+    schema1:url <https://bitterdb.agri.huji.ac.il/downloads/2024/?file=cbitterresourceA_2024.csv> .
+
+kgr:bitterdb.downloads.ligand_receptors a schema1:Product ;
+    rdfs:label "BitterDB 2024 Ligand-Receptor Associations" ;
+    dcterms:description "BitterDB 2024 ligand-receptor association table linking bitter compounds to the bitter taste receptors (TAS2Rs) they activate, with literature references, threshold, EC50 and efficacy values, and the receptor sequence variant tested." ;
+    schema1:url <https://bitterdb.agri.huji.ac.il/downloads/2024/?file=ligandReceptorsA_2024.csv> .
+
+kgr:bitterdb.downloads.mutations a schema1:Product ;
+    rdfs:label "BitterDB 2024 Receptor Mutation Data" ;
+    dcterms:description "BitterDB 2024 table of TAS2R residues studied by site-directed mutagenesis, giving receptor, transmembrane location, Ballesteros-Weinstein number, residue and literature references." ;
+    schema1:url <https://bitterdb.agri.huji.ac.il/downloads/2024/?file=mutationData_2024.csv> .
 
 kgr:bitterdb.site a schema1:GraphicalInterface ;
     rdfs:label "BitterDB Website" ;
@@ -40239,15 +40447,10 @@ kgr:geno.owl a schema1:OntologyProduct ;
     dcterms:description "GENO" ;
     schema1:url <http://purl.obolibrary.org/obo/geno.owl> .
 
-kgr:genomernai.downloads a schema1:Product ;
-    rdfs:label "GenomeRNAi Downloads" ;
-    dcterms:description "Bulk downloads of RNAi phenotype and reagent datasets." ;
-    schema1:url <http://www.genomernai.org/Download> .
-
 kgr:genomernai.site a schema1:GraphicalInterface ;
     rdfs:label "GenomeRNAi Website" ;
     dcterms:description "Web interface for browsing and searching RNAi phenotypes and reagents." ;
-    schema1:url <http://www.genomernai.org/> .
+    schema1:url <https://genomernai.dkfz.de/> .
 
 kgr:genomickb.site a schema1:GraphicalInterface ;
     rdfs:label "GenomicKB Site" ;
@@ -40940,13 +41143,13 @@ kgr:gtopdb.approved_drugs.csv a schema1:Product ;
 
 kgr:gtopdb.database a schema1:Product ;
     rdfs:label "GtoPdb Full Database" ;
-    dcterms:description "Complete PostgreSQL database dump of the current Guide to Pharmacology database" ;
-    schema1:url <https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip> .
+    dcterms:description "Complete PostgreSQL database dump of the Guide to Pharmacology database, release 2026.3.1" ;
+    schema1:url <https://www.guidetopharmacology.org/DATA/public_iuphardb_v2026.3.1.zip> .
 
 kgr:gtopdb.download.rdf a schema1:Product ;
     rdfs:label "GtoPdb RDF Dataset" ;
-    dcterms:description "RDF/linked data format of the GtoPdb data (target-ligand interactions with supporting information)" ;
-    schema1:url <https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3> .
+    dcterms:description "RDF/linked data distribution of the GtoPdb data (target-ligand interactions with supporting information), one triple per line in an N3 file, release 2026.3" ;
+    schema1:url <https://www.guidetopharmacology.org/DATA/rdf/2026.3/gtp-rdf.n3> .
 
 kgr:gtopdb.download.sdf a schema1:Product ;
     rdfs:label "GtoPdb Ligand SDF File" ;
@@ -45728,9 +45931,24 @@ kgr:oba.subsets.oba-basic.obo a schema1:OntologyProduct ;
     dcterms:description "Ontology of Biological Attributes in OBO format" ;
     schema1:url <http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo> .
 
+kgr:obci.core_full a schema1:OntologyProduct ;
+    rdfs:label "OBCI core subset, OWL format" ;
+    dcterms:description "OBCI core subset, OWL format. Contains the upper-level OBCI terms with all imported terms merged in. The complete version of OBCI is still in progress. Version 2026-06-26." ;
+    schema1:url <https://raw.githubusercontent.com/clinical-biomarkers/OBCI/main/ontology/subsets/obci_core_full.owl> .
+
+kgr:obci.core_full_reasoned_noequiv a schema1:OntologyProduct ;
+    rdfs:label "OBCI core subset, reasoned without equivalence axioms, OWL format" ;
+    dcterms:description "OBCI core subset with reasoning applied and equivalence axioms removed (replaced by subclass relations), OWL format. Version 2026-06-26." ;
+    schema1:url <https://raw.githubusercontent.com/clinical-biomarkers/OBCI/main/ontology/subsets/obci_core_full_reasoned_noequiv.owl> .
+
+kgr:obci.for_biomarkerkg a schema1:OntologyProduct ;
+    rdfs:label "OBCI subset for the Biomarker Knowledge Graph, OWL format" ;
+    dcterms:description "OBCI subset containing only the relations used in the Biomarker Knowledge Graph (BiomarkerKB), OWL format. Version 2026-06-26." ;
+    schema1:url <https://raw.githubusercontent.com/clinical-biomarkers/OBCI/main/ontology/subsets/obci_for_biomarkerKG.owl> .
+
 kgr:obci.owl a schema1:OntologyProduct ;
     rdfs:label "OBCI, OWL format" ;
-    dcterms:description "Ontology for Biomarkers of Clinical Interest, OWL format. Defines biomarker classes and their clinical role classifications (e.g. diagnostic, prognostic, predictive, monitoring, pharmacodynamic/response, safety, susceptibility/risk biomarkers)." ;
+    dcterms:description "Ontology for Biomarkers of Clinical Interest, OWL format. Defines biomarker classes and their clinical role classifications (e.g. diagnostic, prognostic, predictive, monitoring, pharmacodynamic/response, safety, susceptibility/risk biomarkers). Release 2024-10-18 at the time of checking." ;
     schema1:url <https://proteininformationresource.org/staff/nataled/OBCI/obci.owl> .
 
 kgr:obcs.kg-bioportal a schema1:GraphProduct ;
@@ -47113,14 +47331,24 @@ kgr:pavs-kg.code a schema1:ProcessProduct ;
     dcterms:description "Pipeline code that normalizes source cohort tables to HPO, MONDO, OMIM and HGVS, annotates variants and genes, generates Phenopackets, and produces the Turtle files loaded into Virtuoso." ;
     schema1:url <https://github.com/bio-ontology-research-group/pavs-knowledge-graph> .
 
+kgr:paxdb.api a schema1:ProgrammingInterface ;
+    rdfs:label "PaxDb API" ;
+    dcterms:description "REST API (OpenAPI, v6.1) for protein, dataset, species and tissue metadata, abundance values by protein, dataset or ortholog group, eggNOG orthology lookups, and identifier disambiguation." ;
+    schema1:url <https://api.pax-db.org/docs> .
+
 kgr:paxdb.downloads a schema1:Product ;
     rdfs:label "PaxDb Downloads" ;
-    dcterms:description "Bulk downloads of protein abundance datasets by organism." ;
+    dcterms:description "Directory of bulk downloads for the current PaxDb release (v6.1), including per-species abundance datasets, orthologs, protein sequences, SDRF metadata, mapped peptides and UniProt mappings. Previous releases back to 1.0 are under https://pax-db.org/downloads/." ;
     schema1:url <https://pax-db.org/downloads/latest/> .
+
+kgr:paxdb.mapped-peptides a schema1:Product ;
+    rdfs:label "PaxDb Mapped Peptides" ;
+    dcterms:description "Peptide-level identification and quantity files mapped to PaxDb proteins, per species and dataset (v6.1)." ;
+    schema1:url <https://pax-db.org/downloads/latest/paxdb-mapped_peptides-v6.1.zip> .
 
 kgr:paxdb.site a schema1:GraphicalInterface ;
     rdfs:label "PaxDb Website" ;
-    dcterms:description "Web interface for browsing and searching protein abundance data across organisms." ;
+    dcterms:description "Web interface for searching proteins and browsing protein abundance datasets by species, tissue and dataset, with per-protein abundance profiles, orthologs and links to STRING and UniProt." ;
     schema1:url <https://pax-db.org/> .
 
 kgr:pazar.api_docs a schema1:DocumentationProduct ;
@@ -51428,19 +51656,29 @@ kgr:unichem.sources a schema1:Product ;
     dcterms:description "Comprehensive list of all integrated chemistry databases and their metadata in UniChem" ;
     schema1:url <https://www.ebi.ac.uk/unichem/sources> .
 
-kgr:unii.data a schema1:Product ;
-    rdfs:label "UNII Data Download" ;
-    dcterms:description "Comprehensive UNII data with detailed substance attributes and mappings" ;
-    schema1:url <https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip> .
+kgr:unii.gsrs a schema1:GraphicalInterface ;
+    rdfs:label "NCATS Public GSRS" ;
+    dcterms:description "Public Global Substance Registration System hosted by NCATS, for searching and browsing full GSRS substance records (chemicals, proteins, nucleic acids, polymers, structurally diverse substances and mixtures) with their names, codes, relationships and references" ;
+    schema1:url <https://gsrs.ncats.nih.gov/ginas/app/ui/> .
 
-kgr:unii.legacy a schema1:Product ;
+kgr:unii.gsrs.api a schema1:ProgrammingInterface ;
+    rdfs:label "NCATS Public GSRS REST API" ;
+    dcterms:description "REST API of the public NCATS GSRS, returning GSRS substance records as JSON (for example /api/v1/substances)" ;
+    schema1:url <https://gsrs.ncats.nih.gov/api/v1/substances> .
+
+kgr:unii.gsrs.software a schema1:ProcessProduct ;
+    rdfs:label "GSRS 3 Deployment Repository" ;
+    dcterms:description "Source repository for deploying the GSRS 3 software, a set of Java Spring Boot microservices and an Angular frontend developed by NCATS and FDA" ;
+    schema1:url <https://github.com/ncats/gsrs3-main-deployment> .
+
+kgr:unii.legacy a schema1:MappingProduct ;
     rdfs:label "Legacy UNIIs" ;
-    dcterms:description "Legacy UNII identifiers for historical substances" ;
+    dcterms:description "Tab-delimited mapping of retired (legacy) UNIIs to their current replacement UNII and preferred term" ;
     schema1:url <https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt> .
 
 kgr:unii.list a schema1:Product ;
     rdfs:label "UNII List Download" ;
-    dcterms:description "Downloadable list of all UNIIs with basic substance information" ;
+    dcterms:description "Zipped tab-delimited list of all names associated with each UNII (name, name type such as official, systematic, common, code or brand name, UNII and preferred display name), with a README describing the fields" ;
     schema1:url <https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip> .
 
 kgr:unii.search a schema1:GraphicalInterface ;
@@ -52792,6 +53030,31 @@ kgr:biostudies.api a schema1:ProgrammingInterface ;
     dcterms:description "REST API returning JSON for searching BioStudies, with per-collection search endpoints and per-study metadata and file listings. Covers all collections, including supplementary data imported from Europe PMC." ;
     schema1:url <https://www.ebi.ac.uk/biostudies/api/v1/search> .
 
+kgr:bitterdb.downloads.compounds a schema1:Product ;
+    rdfs:label "BitterDB 2024 Bitter Compound Properties" ;
+    dcterms:description "BitterDB 2024 compound table with one row per bitter molecule, giving structure (SMILES, InChIKey, formula), PubChem identifier, CAS number, physicochemical properties, natural-product flag, and sensory threshold and toxicity values where known." ;
+    schema1:url <https://bitterdb.agri.huji.ac.il/downloads/2024/?file=BitterCompoundsPropA_2024.csv> .
+
+kgr:bitterdb.downloads.drugbank_mapping a schema1:MappingProduct ;
+    rdfs:label "BitterDB 2024 Compound to DrugBank Mapping" ;
+    dcterms:description "BitterDB 2024 mapping of BitterDB compound IDs to identical and similar DrugBank drugs." ;
+    schema1:url <https://bitterdb.agri.huji.ac.il/downloads/2024/?file=drugbankcidA_2024.csv> .
+
+kgr:bitterdb.downloads.gtopdb_mapping a schema1:MappingProduct ;
+    rdfs:label "BitterDB 2024 Compound to Guide to Pharmacology Mapping" ;
+    dcterms:description "BitterDB 2024 mapping of BitterDB compound IDs to IUPHAR/BPS Guide to Pharmacology ligand IDs." ;
+    schema1:url <https://bitterdb.agri.huji.ac.il/downloads/2024/?file=IUPHAR_cidA_2024.csv> .
+
+kgr:bitterdb.downloads.snps a schema1:Product ;
+    rdfs:label "BitterDB 2024 Receptor SNP Data" ;
+    dcterms:description "BitterDB 2024 table of TAS2R single-nucleotide polymorphisms, giving receptor, location, Ballesteros-Weinstein number, residue change, minor allele frequency and dbSNP identifier." ;
+    schema1:url <https://bitterdb.agri.huji.ac.il/downloads/2024/?file=snpData_2024.csv> .
+
+kgr:bitterdb.downloads.zinc_mapping a schema1:MappingProduct ;
+    rdfs:label "BitterDB 2024 Compound to ZINC Mapping" ;
+    dcterms:description "BitterDB 2024 mapping of BitterDB compound IDs to ZINC database identifiers." ;
+    schema1:url <https://bitterdb.agri.huji.ac.il/downloads/2024/?file=compzinclinksA_2024.csv> .
+
 kgr:brain-cell-kg.owl-mappings a schema1:MappingProduct ;
     rdfs:label "Brain_Cell_KG OWL mapping files" ;
     dcterms:description "OWL files generated in the repository and loaded into the KG, including annotation transfer mappings between the HMBA Basal Ganglia and Whole Mouse Brain taxonomies and between the Whole Human Brain and Whole Mouse Brain taxonomies (scFAIR), Whole Mouse Brain cell type to anatomy, gene and neurotransmitter links, MERFISH-derived cell type location mappings, region adjacency axioms and Allen Mouse Brain Atlas CCF 2020 coverage files." ;
@@ -53377,6 +53640,11 @@ kgr:genetics-kp.trapi a schema1:ProgrammingInterface ;
     rdfs:label "Genetics KP TRAPI Endpoint" ;
     dcterms:description "Translator Reasoner API endpoint for Genetics KP." ;
     schema1:url <https://genetics-kp.transltr.io/genetics_provider/trapi/v1.5/> .
+
+kgr:genomernai.downloads a schema1:Product ;
+    rdfs:label "GenomeRNAi Downloads" ;
+    dcterms:description "Downloads of RNAi screen data. Each screen downloads from its page in the web interface as a file with a screen-metadata section followed by tab-delimited gene-phenotype associations (with mapped Entrez Gene IDs); a file with all screens is sent by e-mail on request." ;
+    schema1:url <https://genomernai.dkfz.de/DownloadAllExperimentsForm> .
 
 kgr:gff.specification a schema1:DocumentationProduct ;
     rdfs:label "GFF3 Specification" ;
@@ -55711,6 +55979,31 @@ kgr:patric.web a schema1:GraphicalInterface ;
     dcterms:description "BV-BRC web portal that hosts legacy PATRIC bacterial genomics data and tools alongside expanded viral resources" ;
     schema1:url <https://www.bv-brc.org/> .
 
+kgr:paxdb.compute a schema1:GraphicalInterface ;
+    rdfs:label "PaxDb Abundance Computation Tool" ;
+    dcterms:description "Web tool for uploading peptide counts or intensities to compute protein abundances with the PaxDb pipeline, score the dataset by STRING interaction consistency, and compare it with PaxDb reference datasets for the same species." ;
+    schema1:url <https://pax-db.org/compute> .
+
+kgr:paxdb.orthologs a schema1:MappingProduct ;
+    rdfs:label "PaxDb Orthologs" ;
+    dcterms:description "Ortholog files per eggNOG taxonomic level, grouping PaxDb proteins into eggNOG orthologous groups for cross-species abundance comparison (v6.1)." ;
+    schema1:url <https://pax-db.org/downloads/latest/paxdb-orthologs-v6.1.zip> .
+
+kgr:paxdb.protein-sequences a schema1:Product ;
+    rdfs:label "PaxDb Protein Sequences" ;
+    dcterms:description "FASTA protein sequences per species used by PaxDb v6.1, following STRING genome versions and protein identifiers." ;
+    schema1:url <https://pax-db.org/downloads/latest/paxdb-protein-sequences-v6.1.zip> .
+
+kgr:paxdb.sdrf a schema1:Product ;
+    rdfs:label "PaxDb SDRF Metadata" ;
+    dcterms:description "Sample and Data Relationship Format (SDRF) metadata files for the ProteomeXchange projects reprocessed in PaxDb v6.1, one file per PXD project." ;
+    schema1:url <https://pax-db.org/downloads/latest/paxdb-sdrf-v6.1.zip> .
+
+kgr:paxdb.uniprot-crossreferences a schema1:MappingProduct ;
+    rdfs:label "PaxDb UniProt Cross-references" ;
+    dcterms:description "Two-column text file of UniProt accessions and the corresponding PaxDb (STRING) protein identifiers." ;
+    schema1:url <https://pax-db.org/downloads/latest/paxdb-uniprot-crossreferences.txt> .
+
 kgr:peptideatlas.human.ensembl-mapping a schema1:MappingProduct ;
     rdfs:label "PeptideAtlas Human Peptide to Ensembl Mapping" ;
     dcterms:description "Mapping of Human 2026-01 PeptideAtlas peptides to Ensembl proteins." ;
@@ -56626,6 +56919,11 @@ kgr:sugi-atlas.manifest a schema1:Product ;
     rdfs:label "Sugi Atlas Manifest" ;
     dcterms:description "JSON manifest of the atlas corpus, mapping page slugs to canonical names and synonyms for genes, drugs, diseases and pathways (about 12.8 MB when checked on 2026-10-04)." ;
     schema1:url <https://sugi.bio/atlas/manifest.json> .
+
+kgr:suppkg.biothings-api a schema1:ProgrammingInterface ;
+    rdfs:label "BioThings SuppKG API" ;
+    dcterms:description "BioThings API (infores:biothings-suppkg) serving the original 595,222 SuppKG subject-predicate-object records, including UMLS identifiers, semantic types, PubMed IDs, sentences and confidence scores; it backs the Service Provider TRAPI in NCATS Translator." ;
+    schema1:url <https://pending.biothings.io/suppkg/metadata> .
 
 kgr:suppkg.docs a schema1:DocumentationProduct ;
     rdfs:label "SuppKG Documentation" ;
@@ -57554,6 +57852,16 @@ kgr:panelapp.portal a schema1:GraphicalInterface ;
     dcterms:description "PanelApp web site for browsing, searching and downloading gene panels, viewing gene, STR and region ratings and evidence, and submitting expert reviews." ;
     schema1:url <https://panelapp.genomicsengland.co.uk/> .
 
+kgr:paxdb.datasets a schema1:Product ;
+    rdfs:label "PaxDb Protein Abundance Datasets" ;
+    dcterms:description "Protein abundance datasets, one directory per NCBI Taxonomy species ID, with one tab-delimited text file per dataset (integrated whole-organism, tissue, cell line or condition) giving gene name, STRING protein identifier and abundance in parts per million, with a header of dataset metadata, source publication and consistency score." ;
+    schema1:url <https://pax-db.org/downloads/latest/datasets/> .
+
+kgr:paxdb.uniprot-links a schema1:MappingProduct ;
+    rdfs:label "PaxDb UniProt Links" ;
+    dcterms:description "Tab-delimited mapping of PaxDb (STRING) protein identifiers to UniProt accessions (v6.1)." ;
+    schema1:url <https://pax-db.org/downloads/latest/paxdb-uniprot-links-v6.1.zip> .
+
 kgr:phewascat.associations a schema1:Product ;
     rdfs:label "PheWAS Association Data" ;
     dcterms:description "PheWAS association results for SNPs from GWAS Catalog analyzed against EMR-derived phenotypes" ;
@@ -58461,6 +58769,11 @@ kgr:spatialkg.graph a schema1:GraphProduct ;
     dcterms:description "The SAWGraph Spatial KG as an RDF (Turtle) graph. It contains all Level 13 grid cells from the S2 grid together with administrative regions of levels 1 to 3 (states, counties, and county subdivisions) and the spatial relationships between them for the 48 contiguous U.S. states. S2 grid cells and state/county geometries are taken from KnowWhereGraph, and county subdivisions are sourced from the US Census Bureau. The graph is served through the SAWGraph Spatial KG SPARQL and Triple Pattern Fragments endpoints." ;
     schema1:url <https://github.com/SAWGraph/geospatial-kg> .
 
+kgr:suppkg.source-data a schema1:ProcessProduct ;
+    rdfs:label "SuppKG Source Data Repository" ;
+    dcterms:description "SuppKG directory in the SemRep_DS repository, holding the SuppKG graph files and a README describing their node and edge structure." ;
+    schema1:url <https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG> .
+
 kgr:therasabdab.sequences-structures a schema1:Product ;
     rdfs:label "Thera-SAbDab Sequences and Structures Table" ;
     dcterms:description "CSV table of all Thera-SAbDab therapeutics with format, isotype, clinical trial stage and status, heavy and light chain variable domain sequences, matching SAbDab structures at 100%, 99% and 95-98% sequence identity, INN proposal and recommendation years, targets, companies and conditions." ;
@@ -58875,10 +59188,20 @@ kgr:sugi-atlas.portal a schema1:GraphicalInterface ;
     dcterms:description "Sugi Atlas web site with search and one static reference page per human gene, drug and disease (for example /atlas/gene/TP53/). Each page also has a Markdown version at index.md and embeds a schema.org JSON-LD record." ;
     schema1:url <https://sugi.bio/atlas/> .
 
-kgr:suppkg.source-data a schema1:ProcessProduct ;
-    rdfs:label "SuppKG Source Data Repository" ;
-    dcterms:description "Source data directory used for SuppKG in the SemRep_DS repository." ;
-    schema1:url <https://github.com/zhang-informatics/SemRep_DS/tree/main/SuppKG> .
+kgr:suppkg.graph.gpickle a schema1:GraphProduct ;
+    rdfs:label "SuppKG NetworkX gpickle" ;
+    dcterms:description "Original (2021) SuppKG as a bzip2-compressed NetworkX gpickle (NetworkX 2.5, Python 3.8, pickle protocol 5) with 56,635 UMLS concept nodes and 595,222 directed edges over 31 predicates; each edge carries the source sentences, PubMed IDs and PubMedBERT confidence scores." ;
+    schema1:url <https://raw.githubusercontent.com/zhang-informatics/SemRep_DS/main/SuppKG/supp_kg.gpickle.bz2> .
+
+kgr:suppkg.graph.json a schema1:GraphProduct ;
+    rdfs:label "SuppKG Node-Link JSON" ;
+    dcterms:description "Original (2021) SuppKG as NetworkX node-link JSON in a bzip2-compressed tar archive, loadable with networkx.readwrite.json_graph.node_link_graph(); same content as the gpickle release." ;
+    schema1:url <https://raw.githubusercontent.com/zhang-informatics/SemRep_DS/main/SuppKG/supp_kg.json.tar.bz2> .
+
+kgr:suppkg.v2.edgelist a schema1:GraphProduct ;
+    rdfs:label "SuppKG v2 Edge List" ;
+    dcterms:description "SuppKG v2, rebuilt from additional PubMed abstracts published after the 2021 pull, as a NetworkX edge list in a bzip2-compressed tar archive (nx.read_edgelist gives a MultiDiGraph with 57,944 nodes and 1,321,374 edges). PubMed IDs, sentences and confidence scores are omitted in v2." ;
+    schema1:url <https://raw.githubusercontent.com/zhang-informatics/SemRep_DS/main/SuppKG/suppkg_v2.edgelist.tar.bz2> .
 
 kgr:tfacts.catalogues a schema1:Product ;
     rdfs:label "TFactS Catalogues (version 2, Wayback Machine archive)" ;
@@ -58934,6 +59257,41 @@ kgr:genecards.disease.associations a schema1:Product ;
     rdfs:label "GeneCards Disease Associations" ;
     dcterms:description "Disease association data integrated from OMIM, MalaCards, ClinVar, Orphanet, DisGeNET and other disease databases" ;
     schema1:url <https://www.genecards.org/> .
+
+kgr:geneorganizer.gene-bodypart.confident-all a schema1:Product ;
+    rdfs:label "Gene ORGANizer gene-body part associations, confident (typical and non-typical)" ;
+    dcterms:description "Excel (.xls) workbook of confident gene-body part associations, including both typical and non-typical manifestations, version 12. Four worksheets give binary gene by body part matrices for organs, systems, regions and germ layers; rows are keyed by gene symbol and NCBI Entrez Gene ID." ;
+    schema1:url <https://geneorganizer.huji.ac.il/assets/Uploads/GeneORGANizer-Confident-all-v12.xls> .
+
+kgr:geneorganizer.gene-bodypart.confident-typical a schema1:Product ;
+    rdfs:label "Gene ORGANizer gene-body part associations, confident (typical)" ;
+    dcterms:description "Excel (.xls) workbook of confident gene-body part associations restricted to typical manifestations, version 12. Four worksheets give binary gene by body part matrices for organs, systems, regions and germ layers; rows are keyed by gene symbol and NCBI Entrez Gene ID." ;
+    schema1:url <https://geneorganizer.huji.ac.il/assets/Uploads/GeneORGANizer-Confident-typical-v12.xls> .
+
+kgr:geneorganizer.gene-bodypart.tentative-typical a schema1:Product ;
+    rdfs:label "Gene ORGANizer gene-body part associations, tentative (typical)" ;
+    dcterms:description "Excel (.xls) workbook of tentative gene-body part associations (typical manifestations), a broader and less strictly curated set, version 12. Four worksheets give binary gene by body part matrices for organs, systems, regions and germ layers; rows are keyed by gene symbol and NCBI Entrez Gene ID." ;
+    schema1:url <https://geneorganizer.huji.ac.il/assets/Uploads/GeneORGANizer-Tentative-typical-v12.xls> .
+
+kgr:geneorganizer.gene-disease-phenotype.germlayers a schema1:Product ;
+    rdfs:label "Gene ORGANizer gene-disease-phenotype-germ layer associations" ;
+    dcterms:description "Gzip-compressed CSV of gene-disease-phenotype-germ layer associations (version 12-1), the cross tabulation behind the gene-body part tables. Columns give gene symbol, NCBI Entrez ID, germ layer, HPO phenotype term and ID, disease name and ID (OMIM, ORPHANET or UMLS CUIs via DisGeNET), curation type and source database." ;
+    schema1:url <https://geneorganizer.huji.ac.il/assets/Uploads/diseases-germlayers.v12-1.csv.gz> .
+
+kgr:geneorganizer.gene-disease-phenotype.organs a schema1:Product ;
+    rdfs:label "Gene ORGANizer gene-disease-phenotype-organ associations" ;
+    dcterms:description "Gzip-compressed CSV of gene-disease-phenotype-organ associations (version 12-1), the cross tabulation behind the gene-body part tables. Columns give gene symbol, NCBI Entrez ID, organ, HPO phenotype term and ID, disease name and ID (OMIM, ORPHANET or UMLS CUIs via DisGeNET), curation type and source database." ;
+    schema1:url <https://geneorganizer.huji.ac.il/assets/Uploads/diseases-organs.v12-1.csv.gz> .
+
+kgr:geneorganizer.gene-disease-phenotype.regions a schema1:Product ;
+    rdfs:label "Gene ORGANizer gene-disease-phenotype-region associations" ;
+    dcterms:description "Gzip-compressed CSV of gene-disease-phenotype-region associations (version 12-1), the cross tabulation behind the gene-body part tables. Columns give gene symbol, NCBI Entrez ID, region, HPO phenotype term and ID, disease name and ID (OMIM, ORPHANET or UMLS CUIs via DisGeNET), curation type and source database." ;
+    schema1:url <https://geneorganizer.huji.ac.il/assets/Uploads/diseases-regions.v12-1.csv.gz> .
+
+kgr:geneorganizer.gene-disease-phenotype.systems a schema1:Product ;
+    rdfs:label "Gene ORGANizer gene-disease-phenotype-system associations" ;
+    dcterms:description "Gzip-compressed CSV of gene-disease-phenotype-system associations (version 12-1), the cross tabulation behind the gene-body part tables. Columns give gene symbol, NCBI Entrez ID, system, HPO phenotype term and ID, disease name and ID (OMIM, ORPHANET or UMLS CUIs via DisGeNET), curation type and source database." ;
+    schema1:url <https://geneorganizer.huji.ac.il/assets/Uploads/diseases-systems.v12-1.csv.gz> .
 
 kgr:genepio.owl a schema1:OntologyProduct ;
     rdfs:label "genepio.owl" ;
@@ -59100,6 +59458,11 @@ kgr:aopwiki-rdf.ttl a schema1:GraphProduct ;
     rdfs:label "AOP-Wiki RDF Turtle Dataset" ;
     dcterms:description "The AOP-Wiki RDF dataset in RDF/Turtle, covering AOPs, key events, key event relationships, biological events, stressors and chemicals converted from the AOP-Wiki XML export, together with the gene mappings (HGNC approved symbols resolved to Ensembl, NCBI Gene, UniProt and Protein Ontology identifiers via BridgeDb) and the chemical and protein cross-reference enrichments. Distributed as Turtle files in the data/ directory of the conversion repository (AOPWikiRDF.ttl, AOPWikiRDF-Genes.ttl, AOPWikiRDF-Enriched.ttl); all of them are loaded together into the SPARQL endpoint and are meant to be used as one dataset. Regenerated weekly." ;
     schema1:url <https://github.com/marvinm2/AOPWikiRDF/tree/master/data> .
+
+kgr:bitterdb.downloads.receptors a schema1:Product ;
+    rdfs:label "BitterDB 2024 Bitter Taste Receptors" ;
+    dcterms:description "BitterDB 2024 receptor table with one row per bitter taste receptor (TAS2R) across species, giving sequence, organism, UniProt accession, gene and protein names, number of known ligands, and links to GeneCards, GPCRdb, the Human Protein Atlas, the IUPHAR/BPS Guide to Pharmacology and AlphaFold models." ;
+    schema1:url <https://bitterdb.agri.huji.ac.il/downloads/2024/?file=ReceptorSearchA_2024.csv> .
 
 kgr:cdcdb.csv a schema1:Product ;
     rdfs:label "CDCDB CSV Tables" ;
@@ -59686,6 +60049,11 @@ kgr:tagger.full-dictionary a schema1:Product ;
     rdfs:label "Tagger Full Dictionary" ;
     dcterms:description "Combined full dictionary (entities and names TSV files) used for the weekly text mining of the biomedical literature behind the JensenLab databases (STRING, DISEASES, TISSUES, COMPARTMENTS, ORGANISMS). Built from the STRING alias file, STITCH chemicals, and taxonomy and ontology resources." ;
     schema1:url <https://download.jensenlab.org/full_dictionary.tar.gz> .
+
+kgr:unii.data a schema1:MappingProduct ;
+    rdfs:label "UNII Data Download" ;
+    dcterms:description "Zipped tab-delimited UNII records file with one row per UNII, giving the display name, molecular formula, InChIKey, SMILES, ingredient type and ISO 11238 substance type, plus cross-references to CAS registry numbers, EC numbers, NCI Thesaurus, RxNorm, PubChem, EMA SMS IDs, EPA CompTox (DSSTox), Catalogue of Life, ITIS, NCBI Taxonomy, USDA PLANTS, Plants of the World Online, GRIN, the Kew Medicinal Plant Names Services, INN and USAN codes, and DailyMed. Also includes the Legacy UNIIs file." ;
+    schema1:url <https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip> .
 
 kgr:xpo.obo a schema1:OntologyProduct ;
     rdfs:label "xpo.obo" ;

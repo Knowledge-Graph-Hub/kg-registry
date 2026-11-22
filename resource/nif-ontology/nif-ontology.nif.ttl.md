@@ -18,6 +18,7 @@ original_source:
   source: nif_dysfunction
 - relation_type: prov:hadPrimarySource
   source: nif_grossanatomy
+product_file_size: 1077
 product_url: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/master/ttl/nif.ttl
 layout: product_detail
 ---

@@ -340,7 +340,7 @@ geneorganizer	Gene ORGANizer	DataSource	https://geneorganizer.huji.ac.il/	resour
 genereviews	GeneReviews	DataSource	https://www.ncbi.nlm.nih.gov/books/NBK1116/	resource/genereviews/genereviews.md
 geneshot	Geneshot	DataSource	https://maayanlab.cloud/geneshot/	resource/geneshot/geneshot.md
 geno	Genotype Ontology	Ontology	https://github.com/monarch-initiative/GENO-ontology/	resource/geno/geno.md
-genomernai	GenomeRNAi	DataSource	http://www.genomernai.org/	resource/genomernai/genomernai.md
+genomernai	GenomeRNAi	DataSource	https://genomernai.dkfz.de/	resource/genomernai/genomernai.md
 genomickb	GenomicKB	KnowledgeGraph	https://gkb.dcmb.med.umich.edu/	resource/genomickb/genomickb.md
 genophenoenvo-kg	GenoPhenoEnvo Knowledge Graph	KnowledgeGraph	https://github.com/genophenoenvo/knowledge-graph	resource/genophenoenvo-kg/genophenoenvo-kg.md
 geo	Geographical Entity Ontology	Ontology	https://github.com/ufbmi/geographical-entity-ontology/wiki	resource/geo/geo.md
@@ -948,5 +948,6 @@ yoda	The YODA Project	DataSource	https://yoda.yale.edu/	resource/yoda/yoda.md
 ypo	Yeast phenotypes	Ontology	http://www.yeastgenome.org/	resource/ypo/ypo.md
 zea	Maize gross anatomy	Ontology	http://www.maizemap.org/	resource/zea/zea.md
 zeco	Zebrafish Experimental Conditions Ontology	Ontology	https://github.com/ybradford/zebrafish-experimental-conditions-ontology	resource/zeco/zeco.md
+zinc	Zinc	DataSource		resource/zinc/zinc.md
 zirc	Zebrafish International Resource Center	DataSource	https://zebrafish.org/	resource/zirc/zirc.md
 zwd	Zasha Weinberg Data	DataSource	https://bitbucket.org/zashaw/zashaweinbergdata/src/master/	resource/zwd/zwd.md
