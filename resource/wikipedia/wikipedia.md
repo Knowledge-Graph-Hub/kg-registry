@@ -18,7 +18,7 @@ domains:
 - general
 homepage_url: https://www.wikipedia.org/
 id: wikipedia
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-11-24T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by-sa/4.0/
@@ -48,9 +48,9 @@ products:
     source: wikipedia
   product_url: https://en.wikipedia.org/w/api.php
 - category: ProgrammingInterface
-  description: Public Wikimedia REST API for machine-readable Wikipedia content and
-    metadata. This entry uses the English Wikipedia REST base path as a canonical
-    example.
+  description: Public Wikimedia REST API for machine-readable Wikipedia content and metadata.
+    This entry uses the English Wikipedia REST base path as a canonical example; the base path
+    redirects to an interactive API sandbox.
   format: http
   id: wikipedia.rest
   is_public: true
@@ -60,16 +60,15 @@ products:
     source: wikipedia
   product_url: https://en.wikipedia.org/api/rest_v1/
 - category: Product
-  description: English Wikipedia current-content XML export directory from the Wikimedia
-    dump service. This dump contains the latest revision of each exported page, split
-    across multiple `.xml.bz2` files.
+  description: English Wikipedia current-content XML dump (latest revision of each page), as
+    a single multistream bzip2 file. Listed size is for the dump dated 2026-11-07.
   format: xml
   id: wikipedia.dumps.enwiki.current
-  name: English Wikipedia Current Content XML Dumps
+  name: English Wikipedia Current Content XML Dump
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wikipedia
-  product_file_size: 26437250146
+  product_file_size: 27019419473
   product_url: https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream.xml.bz2
 - category: Product
   description: English Wikipedia full revision-history XML export directory from the
@@ -82,6 +81,65 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wikipedia
   product_url: https://dumps.wikimedia.org/enwiki/latest/
+- category: ProgrammingInterface
+  description: MediaWiki REST API for retrieving and searching pages, revisions, and files.
+    The product URL is an example page endpoint on English Wikipedia.
+  format: http
+  id: wikipedia.rest.core
+  is_public: true
+  name: Wikipedia MediaWiki Core REST API
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  product_url: https://en.wikipedia.org/w/rest.php/v1/page/Earth/bare
+- category: ProgrammingInterface
+  description: Server-sent event stream of recent changes across Wikimedia projects, including
+    Wikipedia.
+  format: http
+  id: wikipedia.eventstreams
+  is_public: true
+  name: Wikimedia EventStreams Recent Changes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  product_url: https://stream.wikimedia.org/v2/stream/recentchange
+- category: Product
+  description: Compressed XML exports of the unparsed current content of English Wikipedia pages,
+    published monthly by the Wikimedia Foundation and compatible with the legacy XML dump format.
+  format: xml
+  id: wikipedia.content-current
+  latest_version: '2026-11-01'
+  name: MediaWiki Content Current File Exports (English Wikipedia)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  product_url: https://dumps.wikimedia.org/other/mediawiki_content_current/enwiki/
+- category: Product
+  description: Compressed XML exports of the unparsed content of every revision of English Wikipedia
+    pages, published monthly by the Wikimedia Foundation and compatible with the legacy XML
+    dump format.
+  format: xml
+  id: wikipedia.content-history
+  latest_version: '2026-11-01'
+  name: MediaWiki Content History File Exports (English Wikipedia)
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  product_url: https://dumps.wikimedia.org/other/mediawiki_content_history/enwiki/
+- category: Product
+  description: Pre-parsed English and French Wikipedia articles in Parquet with a consistent
+    schema, including parsed references, tables, and images. Extracted with the Wikimedia Enterprise
+    Snapshot API and hosted on Hugging Face (44.42 GiB).
+  format: parquet
+  id: wikipedia.structured
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: Wikimedia Structured Wikipedia
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wikipedia
+  product_url: https://huggingface.co/datasets/wikimedia/structured-wikipedia
 - category: GraphProduct
   description: Databus collection for the latest core DBpedia release used by the
     main SPARQL endpoint and linked data interface.
@@ -653,3 +711,9 @@ web by the Wikimedia movement. In addition to its browser interface, Wikimedia
 provides public API access and regular bulk dumps of Wikipedia content. This page
 tracks English Wikipedia dump products rather than the full multilingual Wikimedia
 dump catalog.
+
+## Licensing
+
+Text is licensed under CC BY-SA 4.0, and most of it is also available under the GFDL. Images and
+other media may carry different licenses. See the
+[Wikimedia dump license page](https://dumps.wikimedia.org/legal.html).
