@@ -1,8 +1,7 @@
 ---
 category: Product
-description: Chemical-gene interaction models and toxicological pathways derived from
-  the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals and 55,400
-  genes
+description: Causal activity models of chemical-gene interactions derived from the
+  Comparative Toxicogenomics Database (CTD).
 format: http
 id: cam-kp.ctd-interactions
 name: CTD Chemical-Gene Models

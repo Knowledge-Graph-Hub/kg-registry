@@ -12,6 +12,8 @@ original_source:
   source: cam-kp
 - relation_type: prov:hadPrimarySource
   source: go
+- relation_type: prov:hadPrimarySource
+  source: go-cam
 product_url: https://github.com/geneontology/noctua-models
 layout: product_detail
 ---
