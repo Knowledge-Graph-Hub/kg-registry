@@ -1,9 +1,13 @@
 ---
 category: GraphProduct
-description: The full PrimeKG dataset containing disease relationships.
+description: The full PrimeKG edge list (kg.csv), with 4,050,249 undirected relationships.
+  The node count is taken from the released node table.
+edge_count: 4050249
 format: csv
 id: primekg.graph
+latest_version: '2.1'
 name: PrimeKG Full Dataset
+node_count: 129375
 original_source:
 - relation_type: prov:hadPrimarySource
   source: primekg
@@ -35,11 +39,7 @@ original_source:
   source: uberon
 - relation_type: prov:hadPrimarySource
   source: umls
+product_file_size: 981751236
 product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
-warnings:
-- File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-  accessing file
-- File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
-  to URL
 layout: product_detail
 ---
