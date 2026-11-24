@@ -1,16 +1,69 @@
 ---
 activity_status: active
 category: Ontology
+contacts:
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: mark.gerstein@yale.edu
+    label: Mark Gerstein
 creation_date: '2025-11-11T00:00:00Z'
-description: The Pseudogene Ontology (PGO) is an ontology for classifying and annotating pseudogenes based on their evolutionary origins, functional characteristics, and genomic features. Pseudogenes are genomic loci that resemble functional genes but have lost their coding capacity through various mechanisms including frameshift mutations, premature stop codons, or loss of regulatory elements. PGO provides a structured vocabulary for describing different types of pseudogenes (processed, duplicated, unitary) and their relationships to functional genes.
+description: The Pseudogene Ontology (PGO) is a small ontology for classifying and annotating
+  pseudogenes, created as part of the Pseudofam project by the Gerstein Lab at Yale. Its terms
+  cover classified type (unitary, duplicated, processed, semi-processed, and duplicated processed
+  pseudogenes), biological feature, subcellular origin of the parent gene, and evidence code.
+  It is available from BioPortal under the acronym PSEUDO.
 domains:
   - genomics
 homepage_url: https://bioportal.bioontology.org/ontologies/pseudo
 id: "pgo"
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-11-24T00:00:00Z'
 layout: resource_detail
 name: Pseudogene Ontology
 products:
+  - category: GraphicalInterface
+    description: BioPortal page for the Pseudogene ontology (acronym PSEUDO).
+    format: http
+    id: pgo.bioportal
+    name: Pseudogene Ontology on BioPortal
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: pgo
+    product_url: https://bioportal.bioontology.org/ontologies/pseudo
+    warnings:
+      - BioPortal returns HTTP 403 to automated clients, so this URL was not confirmed by an
+        automated check on 2026-11-24.
+  - category: GraphProduct
+    compression: targz
+    description: KGX TSV transform of Pseudogene (PSEUDO), produced by KG-Bioportal from the
+      BioPortal submission. The archive contains PSEUDO_nodes.tsv and PSEUDO_edges.tsv.
+    edge_count: 19
+    format: kgx
+    id: pgo.kg-bioportal
+    latest_version: '0.1'
+    name: PSEUDO KGX graph (KG-Bioportal)
+    node_count: 36
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: pgo
+    product_file_size: 1059
+    product_url: https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/pseudo.tar.gz
+  - category: Product
+    description: Project page for a knowledge base of human pseudogenes in OWL that extends
+      the Sequence Ontology and uses PGO identifiers, with links to an OWL file and a SPARQL
+      endpoint.
+    format: http
+    id: pgo.knowledgebase
+    name: Human Pseudogene Knowledge Base
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: pgo
+      - relation_type: prov:hadPrimarySource
+        source: so
+    product_url: http://homes.gersteinlab.org/proj/ontology/
+    warnings:
+      - The page was live on 2026-11-24, but the OWL and SPARQL links it gives (bioinformatics.med.yale.edu)
+        both return the same unrelated web page.
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
     dump_format: neo4j
@@ -247,17 +300,33 @@ publications:
       - Carriero N
       - Cheung KH
       - Gerstein MB
-    doi: "10.1093/nar/gkn758"
-    id: "https://pubmed.ncbi.nlm.nih.gov/18957444"
+    doi: 10.1093/nar/gkn758
+    id: https://pubmed.ncbi.nlm.nih.gov/18957444
     journal: Nucleic Acids Res
     preferred: true
     title: 'Pseudofam: the pseudogene families database'
-    year: "2009"
+    year: '2009'
+  - authors:
+      - Matthew E. Holford
+      - Ekta Khurana
+      - Kei-Hoi Cheung
+      - Mark Gerstein
+    doi: 10.1093/bioinformatics/btq173
+    id: doi:10.1093/bioinformatics/btq173
+    journal: Bioinformatics
+    title: Using semantic web rules to reason on an ontology of pseudogenes
+    year: '2010'
+rrid: SCR_010453
 synonyms:
   - PGO
-  - pseudo
+  - PSEUDO
+  - Pseudogene
 ---
 
-# PGO
+# Pseudogene Ontology
 
-Pseudogene Ontology
+PGO is a small pseudogene ontology from the Gerstein Lab at Yale, created as part of Pseudofam. UBKG
+takes it from BioPortal, where its acronym is PSEUDO. A later knowledge base of human pseudogenes
+(Holford et al. 2010) extends the Sequence Ontology and reuses PGO identifiers.
+
+This is not the Pistoia Alliance Pharma General Ontology, which is `pistoia-pgo`.
