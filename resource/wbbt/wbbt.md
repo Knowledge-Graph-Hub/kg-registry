@@ -17,10 +17,12 @@ description: A structured controlled vocabulary of the anatomy of <i>Caenorhabdi
   elegans</i>.
 domains:
 - anatomy and development
+- organisms
+- model organisms
 homepage_url: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 id: wbbt
 infores_id: wbbt
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-11-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -32,22 +34,55 @@ products:
   description: C. elegans Gross Anatomy Ontology in OWL format
   format: owl
   id: wbbt.owl
+  latest_version: '2025-08-19'
   name: wbbt.owl
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wbbt
-  product_file_size: 325464
+  product_file_size: 9373027
   product_url: http://purl.obolibrary.org/obo/wbbt.owl
 - category: OntologyProduct
   description: C. elegans Gross Anatomy Ontology in OBO format
   format: obo
   id: wbbt.obo
+  latest_version: '2025-08-19'
   name: wbbt.obo
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wbbt
-  product_file_size: 163163
+  product_file_size: 1612962
   product_url: http://purl.obolibrary.org/obo/wbbt.obo
+- category: OntologyProduct
+  description: OWL base module of the C. elegans Gross Anatomy Ontology, containing only axioms
+    that belong to the ontology itself
+  format: owl
+  id: wbbt.wbbt-base.owl
+  name: wbbt-base.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  product_file_size: 8623659
+  product_url: http://purl.obolibrary.org/obo/wbbt/wbbt-base.owl
+- category: OntologyProduct
+  description: OWL simple release of the C. elegans Gross Anatomy Ontology
+  format: owl
+  id: wbbt.wbbt-simple.owl
+  name: wbbt-simple.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  product_file_size: 8603809
+  product_url: http://purl.obolibrary.org/obo/wbbt/wbbt-simple.owl
+- category: OntologyProduct
+  description: OBO Graphs JSON full release of the C. elegans Gross Anatomy Ontology
+  format: json
+  id: wbbt.wbbt-full.json
+  name: wbbt-full.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wbbt
+  product_file_size: 7372032
+  product_url: http://purl.obolibrary.org/obo/wbbt/wbbt-full.json
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx
@@ -394,6 +429,9 @@ publications:
   title: Building a cell and anatomy ontology of Caenorhabditis elegans
   year: '2003'
 repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+rrid: SCR_006835
+synonyms:
+- WBbt
 taxon:
 - NCBITaxon:6237
 ---
