@@ -598,8 +598,8 @@ products:
     source: pharmgkb
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
+    URL has not been confirmed by an automated check.
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,

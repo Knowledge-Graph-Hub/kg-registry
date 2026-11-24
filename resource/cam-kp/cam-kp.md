@@ -1,6 +1,8 @@
 ---
 activity_status: inactive
 category: KnowledgeGraph
+collection:
+  - translator
 contacts:
   - category: Individual
     contact_details:
@@ -15,7 +17,13 @@ contacts:
     id: renci
     label: RENCI (Renaissance Computing Institute)
 creation_date: '2025-12-18T00:00:00Z'
-description: CAM-KP (Causal Activity Models Knowledge Provider) is a web service knowledge graph that integrates causal biological and chemical models from Gene Ontology, Reactome, and Comparative Toxicogenomics Database (CTD) into a unified, semantically rich platform. It provides access to structured biomedical knowledge through SPARQL and TRAPI-compliant REST APIs, supporting hypothesis generation, drug discovery, and environmental health research.
+description: CAM-KP (Causal Activity Models Knowledge Provider) is a knowledge provider of the
+  NCATS Biomedical Data Translator, developed at RENCI. Causal Activity Models (CAMs) are small
+  OWL knowledge graphs that model interactions between instances of ontology concepts. The CAM
+  database combines CAMs, including Gene Ontology CAMs (GO-CAMs) and models derived from Reactome
+  and the Comparative Toxicogenomics Database (CTD), with a large merged bio-ontology. The knowledge
+  graph is served through the RENCI Automat TRAPI service; the original SPARQL service and API
+  are no longer maintained.
 domains:
   - biomedical
   - pathways
@@ -29,27 +37,34 @@ license:
 name: CAM-KP (Causal Activity Models Knowledge Provider)
 products:
   - category: ProgrammingInterface
-    description: SPARQL endpoint for complex semantic queries on the RDF triplestore containing causal activity models, ontologies, and integrated biomedical knowledge
+    description: SPARQL endpoint for complex semantic queries on the RDF triplestore containing
+      causal activity models, ontologies, and integrated biomedical knowledge
     format: http
     id: cam-kp.sparql
     is_public: true
     name: CAM-KP SPARQL Endpoint
-    product_url: https://stars-app.renci.org/cam/sparql
     original_source:
-      - source: cam-kp
-        relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cam-kp
+    product_url: https://stars-app.renci.org/cam/sparql
     warnings:
-      - 'Endpoint was unreachable by automated checks on 2026-05-28; may be retired or intermittently unavailable.'
+      - The endpoint returned HTTP 404 (with a self-signed certificate) when checked on 2026-11-24,
+        and was unreachable on 2026-05-28. No replacement endpoint was found.
   - category: ProgrammingInterface
-    description: TRAPI-compliant REST API for programmatic access to causal knowledge graphs supporting Translator ecosystem integration and federated querying
+    description: TRAPI 1.5 API for the CAM-KP graph, served by RENCI Automat (build of 2024-07-22,
+      Biolink 4.2.1; 119,917 nodes and 2,219,632 edges). The product URL is the OpenAPI document;
+      it also lists Cypher and metadata routes.
     format: http
     id: cam-kp.api
+    infores_id: automat-cam-kp
     is_public: true
-    name: CAM-KP REST API
-    product_url: https://automat.renci.org/cam-kp
+    name: CAM-KP TRAPI API (Automat)
     original_source:
-      - source: cam-kp
-        relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cam-kp
+      - relation_type: prov:hadPrimarySource
+        source: automat
+    product_url: https://automat.renci.org/cam-kp/openapi.json
   - category: GraphicalInterface
     description: Interactive knowledge provider interface within RENCI's Automat platform for discovering and integrating CAM-KP with other biomedical data sources
     format: http
@@ -71,28 +86,34 @@ products:
       - source: reactome
         relation_type: prov:hadPrimarySource
   - category: Product
-    description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by Gene Ontology biocurators linking genes, proteins, and biological processes. Distributed as the canonical noctua-models repository, where each model is stored as a Turtle (TTL) file.
-    id: cam-kp.go-cams
+    description: Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by
+      Gene Ontology biocurators linking genes, proteins, and biological processes. Distributed
+      as the canonical noctua-models repository, where each model is stored as a Turtle (TTL)
+      file.
     format: ttl
+    id: cam-kp.go-cams
     name: Gene Ontology CAMs
-    product_url: https://github.com/geneontology/noctua-models
     original_source:
-      - source: cam-kp
-        relation_type: prov:hadPrimarySource
-      - source: go
-        relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cam-kp
+      - relation_type: prov:hadPrimarySource
+        source: go
+      - relation_type: prov:hadPrimarySource
+        source: go-cam
+    product_url: https://github.com/geneontology/noctua-models
   - category: Product
-    description: Chemical-gene interaction models and toxicological pathways derived from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals and 55,400 genes
-    id: cam-kp.ctd-interactions
+    description: Causal activity models of chemical-gene interactions derived from the Comparative
+      Toxicogenomics Database (CTD).
     format: http
+    id: cam-kp.ctd-interactions
     name: CTD Chemical-Gene Models
     original_source:
-      - source: cam-kp
-        relation_type: prov:hadPrimarySource
-      - source: ctd
-        relation_type: prov:hadPrimarySource
-      - source: doid
-        relation_type: prov:hadPrimarySource
+      - relation_type: prov:hadPrimarySource
+        source: cam-kp
+      - relation_type: prov:hadPrimarySource
+        source: ctd
+      - relation_type: prov:hadPrimarySource
+        source: doid
   - category: DocumentationProduct
     description: Comprehensive API documentation, SPARQL endpoint documentation, and developer guides for querying and integrating CAM-KP
     format: http
@@ -105,6 +126,15 @@ products:
         relation_type: prov:hadPrimarySource
     warnings:
       - Repository was archived by the owner in 2024; documentation may be historical.
+  - category: ProcessProduct
+    description: Data loading pipeline that builds the CAM database.
+    format: mixed
+    id: cam-kp.pipeline
+    name: cam-pipeline
+    original_source:
+      - relation_type: prov:hadPrimarySource
+        source: cam-kp
+    product_url: https://github.com/ExposuresProvider/cam-pipeline
   - category: GraphProduct
     description: 'CAM-KP Automat: per-source KGX knowledge graph download (Biolink 4.2.1).'
     format: kgx-jsonl
@@ -304,302 +334,76 @@ products:
       source: strider
     product_url: https://aragorn.transltr.io/aragorn/docs
 publications:
-- authors:
-  - Karamarie Fecho
-  - Chris Bizon
-  - Frederick Miller
-  - Shepherd Schurman
-  - Charles Schmitt
-  - William Xue
-  - Kenneth Morton
-  - Patrick Wang
-  - Alexander Tropsha
-  doi: 10.2196/26714
-  id: doi:10.2196/26714
-  journal: JMIR Medical Informatics
-  preferred: true
-  title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for Real-World Environmental Health Observations
-  year: '2021'
-- authors:
-  - Allan Peter Davis
-  - Thomas C Wiegers
-  - Robin J Johnson
-  - Daniela Sciaky
-  - Jolene Wiegers
-  - Carolyn J Mattingly
-  doi: 10.1093/nar/gkac833
-  id: doi:10.1093/nar/gkac833
-  journal: Nucleic Acids Research
-  title: 'Comparative Toxicogenomics Database (CTD): update 2023'
-  year: '2023'
-- authors:
-  - Davis AP
-  - Murphy CG
-  - Saraceni-Richards CA
-  - Rosenstein MC
-  - Wiegers TC
-  - Mattingly CJ
-  doi: 10.1093/nar/gkn580
-  id: doi:10.1093/nar/gkn580
-  journal: Nucleic Acids Research
-  title: 'The Comparative Toxicogenomics Database: a knowledgebase and discovery tool for chemical-gene-disease networks'
-  year: '2009'
+  - authors:
+      - Karamarie Fecho
+      - James P. Balhoff
+      - Jon-Michael Beasley
+      - Chris Bizon
+      - Stephen W. Edwards
+      - Ashok Krishnamurthy
+      - Meisha Mandal
+      - Evan Morris
+      - Alexander Tropsha
+      - Gaurav Vaidya
+      - Max Wang
+      - Hong Yi
+      - David B. Peden
+    doi: 10.1016/j.compbiomed.2026.111994
+    id: doi:10.1016/j.compbiomed.2026.111994
+    journal: Computers in Biology and Medicine
+    preferred: true
+    title: Integrated query of three open-source bioinformatics tools to reveal clinical and
+      molecular insights into environmental determinants of disease
+    year: '2026'
+  - authors:
+      - Karamarie Fecho
+      - Chris Bizon
+      - Frederick Miller
+      - Shepherd Schurman
+      - Charles Schmitt
+      - William Xue
+      - Kenneth Morton
+      - Patrick Wang
+      - Alexander Tropsha
+    doi: 10.2196/26714
+    id: doi:10.2196/26714
+    journal: JMIR Medical Informatics
+    title: A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for Real-World
+      Environmental Health Observations
+    year: '2021'
 repository: https://github.com/ExposuresProvider/cam-kp-api
 taxon:
   - NCBITaxon:1
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-11-24T00:00:00Z'
+warnings:
+  - The cam-kp-api repository was archived in 2024, and the original services at stars-app.renci.org
+    now return HTTP 404 (checked 2026-11-24). The graph is still served by Automat from a build
+    dated 2024-07-22.
 ---
 
 # CAM-KP (Causal Activity Models Knowledge Provider)
 
-## Overview
-
-CAM-KP (Causal Activity Models Knowledge Provider) is a web service knowledge graph that provides access to integrated causal biological and chemical models. As part of the NCATS Biomedical Data Translator initiative, CAM-KP serves as a critical infrastructure component for connecting siloed biomedical datasets through standardized semantic representations.
-
-The knowledge graph integrates multiple types of causal models—including manually curated Gene Ontology Causal Activity Models (GO-CAMs), automatically derived Reactome pathway models, and chemical-gene interactions from the Comparative Toxicogenomics Database (CTD)—into a unified, OWL-based semantic platform accessible via both SPARQL and TRAPI-compliant REST APIs.
-
-## Data Content and Scale
-
-### Model Types and Coverage
-
-CAM-KP combines three primary sources of causal models:
-
-**Gene Ontology Causal Activity Models (GO-CAMs)**
-- Manually annotated by Gene Ontology expert biocurators
-- Over 750,000 experimental gene annotations from 150,000+ distinct scientific publications
-- Link genes, gene products, and biological processes in causal networks
-- Structured using Gene Ontology controlled vocabularies
-
-**Reactome Pathway CAMs**
-- Complete set of normal human Reactome pathways converted to GO-CAM representation
-- Reactions translated to gene product activities
-- Causal relations inferred between molecular activities
-- Enables pathway reasoning through GO-CAM framework
-
-**Comparative Toxicogenomics Database (CTD) Interactions**
-- 3.8+ million direct chemical-gene interactions
-- 17,700+ chemicals covered
-- 55,400 genes represented
-- 7,200 diseases linked to chemical exposures
-- 214,000+ documented exposures
-
-### Knowledge Representation
-
-- **RDF Triplestore**: Triple format knowledge graph with semantic richness
-- **OWL 2 Ontology Layer**: Enables formal semantic reasoning over implicit knowledge
-- **Merged Bio-Ontology**: Integrated vocabulary from 39+ OBO Library ontologies
-- **Precomputed Inferences**: OWL-based reasoning results stored for efficient query response
-
-## Data Access and Formats
-
-### Query Interfaces
-
-**SPARQL Endpoint**
-- Direct semantic queries: https://stars-app.renci.org/cam/sparql
-- Full W3C SPARQL support
-- Complex graph pattern matching over RDF triples
-- Suitable for advanced semantic queries
-
-**TRAPI-Compliant REST API**
-- RESTful web service: https://cam-kp-api-dev.renci.org/1.2.0/query
-- JSON request/response format
-- Standardized Translator Reasoner API (TRAPI) compliance
-- Enables federated querying across Translator ecosystem
-
-**Automat Integration**
-- Discovery and integration interface: https://automat.renci.org/#/cam-kp
-- Part of broader RENCI knowledge provider integration platform
-- Simplified access for researchers unfamiliar with APIs
-
-### Data Formats
-
-**Core Semantic Standards:**
-- **RDF (Resource Description Framework)** - Triple-based knowledge representation
-- **OWL 2 (Web Ontology Language)** - Semantic expressiveness and reasoning
-- **SPARQL** - Graph query language
-- **JSON** - API response format with JSON-LD context
-- **TRAPI** - Translator Reasoner API standard
-
-**Data Organization:**
-- **Biolink Model** - Universal schema for biomedical knowledge graphs with standardized entity types and relationships
-- **OBO Format** - Integration with 39+ Open Biomedical Ontologies
-- **CURIE Representation** - Compact URIs for cross-database entity identification
-
-## Data Sources and Integration
-
-### Primary Contributors
-
-**Gene Ontology Consortium**
-- Gene Ontology Causal Activity Models (GO-CAMs)
-- Expert biocurator annotations
-- Controlled vocabularies and structured annotations
-
-**Reactome Database**
-- Entire set of human biochemical pathway models
-- Converted to GO-CAM representation via Pathways2GO tool
-- Enables systems-level biological reasoning
-
-**Comparative Toxicogenomics Database (CTD)**
-- Manually curated chemical-gene interactions
-- Chemical-disease associations
-- Gene-disease relationships
-- Cross-species data integration
-
-**OBO Foundry Ontologies**
-- Basic Formal Ontology (BFO) for foundational concepts
-- Relation Ontology for relationship definitions
-- Domain-specific ontologies for specialized knowledge
-- Total of 39+ integrated OBO ontologies
-
-### Data Integration Pipeline
-
-The cam-pipeline ETL system processes raw data through:
-1. Data extraction from source databases
-2. Standardization to Darwin Core terms where applicable
-3. RDF/OWL conversion
-4. Ontology alignment and semantic harmonization
-5. OWL 2 inference and reasoning
-6. Triplestore loading and indexing
-
-## Technical Architecture
-
-### System Components
-
-**Data Ingestion**
-- cam-pipeline: ETL framework for automated data loading
-- Pathways2GO: Tool for converting Reactome pathways to GO-CAM format
-- Bulk loaders for Gene Ontology and CTD data
-
-**Knowledge Representation Layer**
-- RDF triplestore backend
-- OWL 2 ontology with precomputed reasoning
-- Integrated vocabulary from 39+ OBO ontologies
-- Support for semantic web standards
-
-**Query Infrastructure**
-- SPARQL endpoint for direct semantic queries
-- TRAPI-compliant REST API for standardized access
-- JSON-LD context management for CURIE expansion
-- Support for federated query composition
-
-**Integration**
-- NCATS Translator ecosystem participation
-- Biolink Model compliance
-- OpenAPI/Swagger documentation
-- Automat platform integration
-
-### Technologies Used
-
-- **Semantic Web**: RDF, OWL, SPARQL
-- **Knowledge Representation**: OBO ontologies, Gene Ontology, Biolink Model
-- **API Standards**: TRAPI (Translator Reasoner API), OpenAPI
-- **Infrastructure**: RENCI Stars platform hosting
-- **Version Control**: GitHub repositories
-
-## Use Cases and Applications
-
-### Research Applications
-
-**Mechanistic Hypothesis Generation**
-- Propose molecular pathways connecting chemicals to disease
-- Identify target pathways for drug discovery
-- Support environmental health research with mechanistic understanding
-
-**Drug Discovery and Repurposing**
-- Identify potential therapeutic targets
-- Discover new applications for existing drugs
-- Generate biomedical hypotheses through integrated reasoning
-
-**Chemical Safety Assessment**
-- Understand toxicological mechanisms of action
-- Predict adverse outcomes from chemical exposures
-- Support regulatory decision-making
-
-**Translational Research**
-- Bridge molecular discoveries to clinical applications
-- Generate testable hypotheses for experimental validation
-- Support precision medicine research
-
-**Environmental Health Research**
-- Link environmental exposures to health outcomes
-- Identify vulnerable populations and biomarkers
-- Support exposure science studies
-
-**Systems Biology**
-- Model complex biological processes in causal networks
-- Connect molecular, cellular, and organism-level effects
-- Support hypothesis-driven research
-
-### Integration with Other Resources
-
-CAM-KP operates as part of the NCATS Data Translator ecosystem, integrating with:
-- **ICEES** (Integrated Clinical and Environmental Exposures Service) for clinical-environmental data
-- **Gene Ontology** for curated biological annotations
-- **Reactome** for pathway knowledge
-- **CTD** for chemical-gene-disease associations
-- Other NCATS Translator Knowledge Providers for federated queries
-
-## Organizational Structure
-
-### Leadership
-
-**Jim Balhoff** (RENCI, UNC Chapel Hill)
-- Assistant Director of Analytics & Data Science
-- Expertise in bio-ontologies, semantic web, data integration, bioinformatics
-- ORCID: 0000-0001-7695-6090
-
-**Stephen Edwards** (RTI International)
-- Director at US Environmental Protection Agency
-- Expertise in data mining, knowledgebase design, ontology-based modeling
-
-### Host Institution
-
-**RENCI (Renaissance Computing Institute)**
-- Part of University of North Carolina at Chapel Hill
-- Provides infrastructure, hosting, and technical development
-- Participates in NCATS Biomedical Data Translator program
-
-### Collaborating Organizations
-
-- **Gene Ontology Consortium** - GO-CAM curation and maintenance
-- **RTI International** - Development and environmental expertise
-- **NCATS (National Center for Advancing Translational Sciences)** - Funding and program oversight
-
-## Funding and Support
-
-**Primary Funder**: National Center for Advancing Translational Sciences (NCATS), National Institutes of Health (NIH)
-
-**Program**: NCATS Biomedical Data Translator Initiative
-- Launched in 2016 as multiyear, iterative program
-- Supports nationwide biomedical research data integration
-- Consortium funding: approximately $13.5 million in FY 2020
-- NCATS FY 2024 budget: $928,323,000 overall
-
-**Status**: Repository archived May 23, 2024 (read-only); service continues to operate with active maintenance and support
-
-## Citation and Usage
-
-CAM-KP data and services are freely accessible through public endpoints with no licensing restrictions. Data from integrated sources (Gene Ontology, Reactome, CTD) follow their respective open licenses (typically CC-BY or CC0).
-
-### Recommended Citation
-
-For CAM-KP:
-"CAM-KP (Causal Activity Models Knowledge Provider). Available at: https://automat.renci.org/#/cam-kp"
-
-For the foundational work:
-"Balhoff JP, Bizon C, Carlson J, et al. A Biomedical Knowledge Graph System to Propose Mechanistic Hypotheses for Real-World Environmental Health Observations. JMIR Medical Informatics. 2021;9(7):e26714."
-
-### Additional Resources
-
-- **Main Access**: https://automat.renci.org/#/cam-kp
-- **SPARQL Endpoint**: https://stars-app.renci.org/cam/sparql
-- **REST API**: https://cam-kp-api-dev.renci.org/1.2.0/query
-- **Documentation**: https://github.com/ExposuresProvider/cam-kp-api/wiki
-- **GitHub Repository**: https://github.com/ExposuresProvider/cam-kp-api
-- **Data Pipeline**: https://github.com/ExposuresProvider/cam-pipeline
-- **Contact**: Jim Balhoff (balhoff@renci.org)
-
-CAM-KP continues to serve as a critical infrastructure component for the NCATS Biomedical Data Translator, enabling researchers to generate mechanistic hypotheses, support drug discovery efforts, and advance environmental health research through integrated access to curated biomedical knowledge.
+CAM-KP is a knowledge provider of the NCATS Biomedical Data Translator program, developed at RENCI.
+Causal Activity Models (CAMs) are small knowledge graphs built in OWL. Each one describes instances
+of ontology concepts in a particular context, and models the interactions among them as an
+interlinked representation of a biological or environmental process. The CAM database combines many
+CAMs with a large merged bio-ontology that holds the vocabulary they use.
+
+## Content
+
+The build currently served by Automat is dated 2024-07-22 (source version 2024-03-21, Biolink 4.2.1)
+and has 119,917 nodes and 2,219,632 edges. Its metadata names three primary knowledge sources:
+`infores:go-cam`, `infores:aop-cam`, and `infores:ctd`.
+
+## Access
+
+- TRAPI API: <https://automat.renci.org/cam-kp/openapi.json>
+- KGX download: see the `automat.camkp` product of Automat
+- Pipeline: <https://github.com/ExposuresProvider/cam-pipeline>
+- Archived API code: <https://github.com/ExposuresProvider/cam-kp-api>
+
+The SPARQL endpoint and API formerly at `stars-app.renci.org` now return HTTP 404, and the
+`cam-kp-api` repository was archived by its owner in 2024.
 
 ## Automated Evaluation
 

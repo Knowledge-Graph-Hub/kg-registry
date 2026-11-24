@@ -1406,6 +1406,28 @@ products:
     source: rnacentral
   product_file_size: 681668343
   product_url: http://purl.obolibrary.org/obo/go/noctua/neo.obo
+- category: GraphicalInterface
+  description: Human non-coding RNA gene pages in the GeneCards web interface.
+  format: http
+  id: genecarna.portal
+  name: GeneCaRNA in GeneCards
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genecarna
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  product_url: https://www.genecards.org/
+  warnings:
+  - genecards.org returns HTTP 403 to automated clients, so this URL was not confirmed
+    by an automated check on 2026-11-24.
 rrid: SCR_023115
 ---
 # RNAcentral

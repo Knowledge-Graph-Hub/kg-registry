@@ -25,6 +25,7 @@ confirmed:
   OBI_BCGO: bcgo          # Beta Cell Genomics Ontology (BioPortal's BCGO is unrelated)
   OBOREL: ro              # Relations Ontology (BioPortal's RO is unrelated)
   PLANTSO: pso            # Plant Stress Ontology (BioPortal's PSO is unrelated)
+  PSEUDO: pgo             # "Pseudogene" vs. "Pseudogene Ontology" (PGO)
   PTO: to                 # Plant Trait Ontology
   PTRANS: trans           # Pathogen Transmission Ontology (BioPortal's TRANS is unrelated)
   VANDF: ndfrt            # Veterans Health Administration National Drug File

@@ -1,19 +1,76 @@
 ---
-activity_status: inactive
+activity_status: active
 category: DataSource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: dphansti
+  label: Douglas H. Phanstiel
 creation_date: '2025-11-05T00:00:00Z'
-description: CoralKinome is a comprehensive resource for coral kinase sequences and
-  annotations, providing phylogenetic and functional information about protein kinases
-  in coral species to support coral biology research and conservation efforts.
+description: Coral is an interactive web application for visualizing quantitative and qualitative
+  data in the context of the human kinome. It encodes data in node color, node size, and branch
+  color, shows the kinome as the traditional tree or as radial or dynamic force networks, and
+  exports vector graphics. Its annotation table gives kinase group, family, and subfamily assignments
+  with UniProt, Ensembl, Entrez, and HGNC identifiers.
 domains:
-- genomics
-- systems biology
-homepage_url: https://www.coralkinome.org/
+- proteomics
+- chemistry and biochemistry
+- enzymes
+- pathways
+- signal transduction
+funding:
+- National Human Genome Research Institute (R00HG008662)
+- National Institute of General Medical Sciences (5T32GM007092, T32GM067553)
+- National Institute of Diabetes and Digestive and Kidney Diseases (U24DK116204)
+- National Cancer Institute (R01CA177993)
+homepage_url: http://phanstiel-lab.med.unc.edu/CORAL/
 id: coralkinome
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-11-24T00:00:00Z'
 layout: resource_detail
-name: CoralKinome
+license:
+  id: https://opensource.org/licenses/MIT
+  label: MIT License
+name: Coral
 products:
+- category: GraphicalInterface
+  description: Interactive Shiny web application for visualizing kinase data on the human kinome
+    tree or as networks, with vector graphics export.
+  format: http
+  id: coralkinome.portal
+  name: Coral Web Application
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  product_url: http://phanstiel-lab.med.unc.edu/CORAL/
+- category: Product
+  description: Table of human kinases with Coral, UniProt, Ensembl, Entrez, and HGNC identifiers,
+    kinase group, family, and subfamily, and drawing coordinates for the kinome tree.
+  format: tsv
+  id: coralkinome.kinase-table
+  name: Coral Kinase Annotation Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_file_size: 853276
+  product_url: https://raw.githubusercontent.com/dphansti/CORAL/master/Data/coral_dataframe.tsv
+- category: ProcessProduct
+  description: R/Shiny source code and data files for Coral.
+  format: r
+  id: coralkinome.code
+  name: Coral Source Code
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  product_url: https://github.com/dphansti/CORAL
 - category: GraphicalInterface
   description: Interactive Shiny web interface for exploring and visualizing human
     kinase-substrate interactions
@@ -45,76 +102,36 @@ products:
     source: phosphositeplus
   - relation_type: prov:wasDerivedFrom
     source: uniprot
+publications:
+- authors:
+  - Kathleen S. Metz
+  - Erika M. Deoudes
+  - Matthew E. Berginski
+  - Ivan Jimenez-Ruiz
+  - Bulent Arman Aksoy
+  - Jeff Hammerbacher
+  - Shawn M. Gomez
+  - Douglas H. Phanstiel
+  doi: 10.1016/j.cels.2018.07.001
+  id: doi:10.1016/j.cels.2018.07.001
+  journal: Cell Systems
+  preferred: true
+  title: 'Coral: Clear and Customizable Visualization of Human Kinome Data'
+  year: '2018'
+repository: https://github.com/dphansti/CORAL
 synonyms:
+- CORAL
 - CoralKinome
-- Coral Kinome Database
+taxon:
+- NCBITaxon:9606
 ---
-# CoralKinome
 
-## Overview
+# Coral
 
-CoralKinome is a specialized database and resource dedicated to protein kinases in coral species. Protein kinases play crucial roles in cellular signaling, stress responses, and symbiotic relationships in corals, making them important targets for understanding coral biology, bleaching responses, and conservation strategies.
+Coral is a web application for visualizing data on the human kinome, from the Phanstiel Lab at the
+University of North Carolina. KiNet (KinAce) uses it as a source of kinase group membership.
 
-## Key Features
-
-- **Coral-Specific Kinase Sequences**: Curated collection of kinase genes from coral genomes
-- **Phylogenetic Analysis**: Evolutionary relationships of coral kinases
-- **Functional Annotations**: Predicted and experimentally validated kinase functions
-- **Comparative Genomics**: Cross-species comparisons of kinase repertoires
-- **Symbiosis-Related Kinases**: Focus on kinases involved in coral-algae symbiosis
-
-## Content Coverage
-
-### Coral Species
-- Scleractinian (reef-building) corals
-- Soft corals and sea anemones (cnidarians)
-- Multiple coral species with sequenced genomes
-
-### Kinase Information
-- Sequence data
-- Domain architecture
-- Phylogenetic classification
-- Expression patterns
-- Functional predictions
-
-## Applications
-
-- **Coral Biology**: Understanding coral physiology and development
-- **Climate Change Research**: Identifying stress response pathways
-- **Bleaching Studies**: Kinases involved in thermal stress and bleaching
-- **Symbiosis Research**: Signaling in coral-dinoflagellate relationships
-- **Conservation**: Molecular markers for coral health assessment
-- **Drug Discovery**: Kinases as potential targets for coral disease treatment
-
-## Integration
-
-CoralKinome data is integrated into broader kinase resources including:
-- KinAce (kinase-substrate interaction portal)
-- Kinase family databases
-- Coral genomic resources
-- Marine biology databases
-
-## Importance
-
-Corals are critical ecosystem engineers facing threats from:
-- Ocean warming and acidification
-- Coral bleaching events
-- Disease outbreaks
-- Pollution
-
-Understanding coral kinomes contributes to:
-- Identifying resilience mechanisms
-- Predicting stress responses
-- Developing conservation strategies
-- Understanding symbiotic breakdown
-
-## Related Resources
-
-- **ReefGenomics**: Coral and symbiont genomic resources
-- **KinBase**: Kinase classification and evolution
-- **CoralTraits**: Coral trait database
-- **NCBI Coral Genomes**: Genomic sequences
-
-## Community
-
-CoralKinome supports the coral research community by providing specialized kinase information relevant to cnidarian biology and marine ecosystem health.
+This page was first created from a mention of "CORAL" in the KiNet documentation and wrongly described
+a database of kinases from coral animals. The KiNet paper (doi:10.1038/s41540-024-00442-5) names
+Coral, with KinHub, as a portal for phylogenetic classification of kinases. The identifier
+`coralkinome` is kept so that existing references still resolve.

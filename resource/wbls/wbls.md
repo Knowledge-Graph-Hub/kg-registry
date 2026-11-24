@@ -17,10 +17,12 @@ description: A structured controlled vocabulary of the development of <i>Caenorh
   elegans</i>.
 domains:
 - anatomy and development
+- organisms
+- model organisms
 homepage_url: https://github.com/obophenotype/c-elegans-development-ontology
 id: wbls
 infores_id: wbls
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-11-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -32,22 +34,55 @@ products:
   description: C. elegans development ontology in OWL format
   format: owl
   id: wbls.owl
+  latest_version: '2026-04-16'
   name: wbls.owl
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wbls
-  product_file_size: 76039
+  product_file_size: 1788096
   product_url: http://purl.obolibrary.org/obo/wbls.owl
 - category: OntologyProduct
   description: C. elegans development ontology in OBO format
   format: obo
   id: wbls.obo
+  latest_version: '2026-04-16'
   name: wbls.obo
   original_source:
   - relation_type: prov:hadPrimarySource
     source: wbls
-  product_file_size: 30116
+  product_file_size: 437412
   product_url: http://purl.obolibrary.org/obo/wbls.obo
+- category: OntologyProduct
+  description: OWL base module of the C. elegans development ontology, containing only axioms
+    that belong to the ontology itself
+  format: owl
+  id: wbls.wbls-base.owl
+  name: wbls-base.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  product_file_size: 1568535
+  product_url: http://purl.obolibrary.org/obo/wbls/wbls-base.owl
+- category: OntologyProduct
+  description: OWL simple release of the C. elegans development ontology
+  format: owl
+  id: wbls.wbls-simple.owl
+  name: wbls-simple.owl
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  product_file_size: 1498920
+  product_url: http://purl.obolibrary.org/obo/wbls/wbls-simple.owl
+- category: OntologyProduct
+  description: OBO Graphs JSON full release of the C. elegans development ontology
+  format: json
+  id: wbls.wbls-full.json
+  name: wbls-full.json
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: wbls
+  product_file_size: 1432187
+  product_url: http://purl.obolibrary.org/obo/wbls/wbls-full.json
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -608,6 +643,9 @@ publications:
   title: 'WormBase: a modern Model Organism Information Resource'
   year: '2020'
 repository: https://github.com/obophenotype/c-elegans-development-ontology
+synonyms:
+- WBls
+- C. elegans life stage ontology
 taxon:
 - NCBITaxon:6237
 ---

@@ -1,6 +1,17 @@
 ---
 activity_status: active
 category: Aggregator
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.lifemapsc.com/
+  label: LifeMap Sciences
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.weizmann.ac.il/
+  label: Weizmann Institute of Science
 creation_date: '2025-09-09T00:00:00Z'
 description: GeneCards is a comprehensive, integrative database that aggregates gene-centric
   information from over 200 web sources. It provides searchable access to genomic,
@@ -19,7 +30,7 @@ domains:
 - pathways
 homepage_url: https://www.genecards.org/
 id: genecards
-last_modified_date: '2026-06-27T00:00:00Z'
+last_modified_date: '2026-11-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://www.lifemapsc.com/genecards-suite-terms-of-use/
@@ -698,11 +709,11 @@ products:
     source: gtex
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
-  description: Protein interaction data aggregated from IntAct, STRING, BioGRID and
-    other interaction databases
+  description: Protein interaction data aggregated from IntAct, STRING, BioGRID and other interaction
+    databases
   format: http
   id: genecards.protein.interactions
   name: GeneCards Protein Interactions
@@ -717,8 +728,8 @@ products:
     source: string
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
   format: http
@@ -731,11 +742,11 @@ products:
     source: genecards
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
-  description: Disease association data integrated from OMIM, MalaCards, ClinVar,
-    Orphanet, DisGeNET and other disease databases
+  description: Disease association data integrated from OMIM, MalaCards, ClinVar, Orphanet,
+    DisGeNET and other disease databases
   format: http
   id: genecards.disease.associations
   name: GeneCards Disease Associations
@@ -754,11 +765,10 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
-  description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
-    databases
+  description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant databases
   format: http
   id: genecards.variant.data
   name: GeneCards Variant Data
@@ -773,11 +783,10 @@ products:
     source: gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
-  description: Pharmacogenomics data from PharmGKB, DrugBank and other pharmacogenomics
-    sources
+  description: Pharmacogenomics data from PharmGKB, DrugBank and other pharmacogenomics sources
   format: http
   id: genecards.pharmacogenomics
   name: GeneCards Pharmacogenomics Data
@@ -790,11 +799,11 @@ products:
     source: pharmgkb
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
-  description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl,
-    NCBI Gene, UniProt and other genomic databases
+  description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl, NCBI Gene,
+    UniProt and other genomic databases
   format: http
   id: genecards.gene.annotations
   name: GeneCards Gene Annotations
@@ -815,11 +824,10 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
-  description: Model organism data from FlyBase, SGD, ZFIN and other model organism
-    databases
+  description: Model organism data from FlyBase, SGD, ZFIN and other model organism databases
   format: http
   id: genecards.model.organisms
   name: GeneCards Model Organism Data
@@ -834,8 +842,8 @@ products:
     source: zfin
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
   description: Gene ontology annotations from the Gene Ontology Consortium
   format: http
@@ -848,8 +856,8 @@ products:
     source: go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
   description: Protein structure data from PDB Europe and other structural databases
   format: http
@@ -862,8 +870,8 @@ products:
     source: pdbe
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
   description: Literature references from PubMed automatically associated with genes
   format: http
@@ -876,11 +884,11 @@ products:
     source: pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
-  description: Pathway information integrated from Reactome, WikiPathways and other
-    pathway databases
+  description: Pathway information integrated from Reactome, WikiPathways and other pathway
+    databases
   format: http
   id: genecards.pathway.data
   name: GeneCards Pathway Data
@@ -893,8 +901,8 @@ products:
     source: wikipathways
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this URL
+    has not been confirmed by an automated check.
 - category: Product
   description: BitterDB 2024 receptor table with one row per bitter taste receptor
     (TAS2R) across species, giving sequence, organism, UniProt accession, gene and
@@ -920,9 +928,131 @@ products:
     source: gtopdb
   - relation_type: prov:wasInfluencedBy
     source: alphafold
-repository: null
+- category: GraphicalInterface
+  description: Human non-coding RNA gene pages in the GeneCards web interface.
+  format: http
+  id: genecarna.portal
+  name: GeneCaRNA in GeneCards
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genecarna
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  product_url: https://www.genecards.org/
+  warnings:
+  - genecards.org returns HTTP 403 to automated clients, so this URL was not confirmed
+    by an automated check on 2026-11-24.
+- category: GraphicalInterface
+  description: GeneHancer enhancers and gene associations, shown on GeneCards gene
+    pages.
+  format: http
+  id: genehancer.portal
+  name: GeneHancer in GeneCards
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genehancer
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: vista
+  product_url: https://www.genecards.org/
+  warnings:
+  - genecards.org returns HTTP 403 to automated clients, so this URL was not confirmed
+    by an automated check on 2026-11-24.
+- category: GraphicalInterface
+  description: Web interface for searching SuperPaths, with their constituent pathways,
+    pathway networks, and genes.
+  format: http
+  id: pathcards.portal
+  name: PathCards Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pathcards
+  product_url: https://pathcards.genecards.org/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: genecards
+publications:
+- authors:
+  - Gil Stelzer
+  - Naomi Rosen
+  - Inbar Plaschkes
+  - Shahar Zimmerman
+  - Michal Twik
+  - Simon Fishilevich
+  - Tsippi Iny Stein
+  - Ron Nudel
+  - Iris Lieder
+  - Yaron Mazor
+  - Sergey Kaplan
+  - Dvir Dahary
+  - David Warshawsky
+  - Yaron Guan‐Golan
+  - Asher Kohn
+  - Noa Rappaport
+  - Marilyn Safran
+  - Doron Lancet
+  doi: 10.1002/cpbi.5
+  id: doi:10.1002/cpbi.5
+  journal: Current Protocols in Bioinformatics
+  preferred: true
+  title: 'The GeneCards Suite: From Gene Data Mining to Disease Genome Sequence Analyses'
+  year: '2016'
+- authors:
+  - M. Safran
+  - I. Dalah
+  - J. Alexander
+  - N. Rosen
+  - T. Iny Stein
+  - M. Shmoish
+  - N. Nativ
+  - I. Bahir
+  - T. Doniger
+  - H. Krug
+  - A. Sirota-Madi
+  - T. Olender
+  - Y. Golan
+  - G. Stelzer
+  - A. Harel
+  - D. Lancet
+  doi: 10.1093/database/baq020
+  id: doi:10.1093/database/baq020
+  journal: Database
+  title: 'GeneCards Version 3: the human gene integrator'
+  year: '2010'
+- authors:
+  - M Rebhan
+  doi: 10.1016/S0168-9525(97)01103-7
+  id: doi:10.1016/S0168-9525(97)01103-7
+  journal: Trends in Genetics
+  title: 'GeneCards: integrating information about genes, proteins and diseases'
+  year: '1997'
+rrid: SCR_002773
+synonyms:
+- GeneCards Suite
+- 'GeneCards: The Human Gene Database'
 taxon:
 - NCBITaxon:9606
+warnings:
+- The terms of use prohibit automated scraping of GeneCards data for any purpose and prohibit
+  use of GeneCards data for training AI models without written permission from LifeMap Sciences
+  (read 2026-11-24).
+- genecards.org returns HTTP 403 to automated clients, so product URLs, versions, and statistics
+  on this page were not rechecked in the 2026-11-24 update.
 ---
 # GeneCards
 
@@ -1024,10 +1154,10 @@ GeneCards integrates information from major categories including:
 
 The GeneCards Suite includes related databases and tools:
 
-- **MalaCards**: Integrated database of human diseases
-- **GeneHancer**: Genome-wide enhancer-to-gene associations
-- **GeneCarNa**: Non-coding RNA human genes database
-- **PathCards**: Human biological pathways database
+- **MalaCards** (`malacards`): Integrated database of human diseases
+- **GeneHancer** (`genehancer`): Genome-wide enhancer-to-gene associations
+- **GeneCaRNA** (`genecarna`): Non-coding RNA human genes database
+- **PathCards** (`pathcards`): Human biological pathways database
 - **GeneAnalytics**: Gene set analysis tool
 - **GeneALaCart**: Bulk gene annotation downloads
 - **VarElect**: Gene prioritization based on disease phenotypes
@@ -1048,3 +1178,7 @@ GeneCards supports:
 ## Access
 
 GeneCards is freely available for academic non-profit institutions. Commercial users require a license. The database is regularly updated with new data sources and improved integration methods.
+
+The [terms of use](https://www.lifemapsc.com/genecards-suite-terms-of-use/) limit academic users to
+internal use, and prohibit automated scraping. Using GeneCards data to train AI models
+requires written permission from LifeMap Sciences.

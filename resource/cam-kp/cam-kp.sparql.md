@@ -11,7 +11,7 @@ original_source:
   source: cam-kp
 product_url: https://stars-app.renci.org/cam/sparql
 warnings:
-- Endpoint was unreachable by automated checks on 2026-05-28; may be retired or intermittently
-  unavailable.
+- The endpoint returned HTTP 404 (with a self-signed certificate) when checked on
+  2026-11-24, and was unreachable on 2026-05-28. No replacement endpoint was found.
 layout: product_detail
 ---
