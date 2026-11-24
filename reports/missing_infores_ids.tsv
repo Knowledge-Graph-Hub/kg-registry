@@ -164,7 +164,7 @@ compartments	COMPARTMENTS	DataSource	https://compartments.jensenlab.org/	resourc
 compath	ComPath	DataSource	https://compath.scai.fraunhofer.de/	resource/compath/compath.md
 comptox-dashboard	CompTox Chemicals Dashboard	Aggregator	https://comptox.epa.gov/dashboard	resource/comptox-dashboard/comptox-dashboard.md
 connections-hypothesis-kp	Connections Hypothesis KP	KnowledgeGraph	https://github.com/di2ag/chp_api	resource/connections-hypothesis-kp/connections-hypothesis-kp.md
-coralkinome	CoralKinome	DataSource	https://www.coralkinome.org/	resource/coralkinome/coralkinome.md
+coralkinome	Coral	DataSource	http://phanstiel-lab.med.unc.edu/CORAL/	resource/coralkinome/coralkinome.md
 corum	CORUM	DataSource	https://mips.helmholtz-muenchen.de/corum/	resource/corum/corum.md
 courage	COURAGE Knowledge Graph	KnowledgeGraph	https://cultural-opposition.eu/	resource/courage/courage.md
 cpathkg	C-Path Knowledge Graph	KnowledgeGraph	https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration	resource/cpathkg/cpathkg.md
@@ -335,6 +335,8 @@ gencode	GENCODE	DataSource	https://www.gencodegenes.org/	resource/gencode/gencod
 gene-expression-atlas-okn	Gene Expression Atlas	KnowledgeGraph	https://www.ebi.ac.uk/gxa/home	resource/gene-expression-atlas-okn/gene-expression-atlas-okn.md
 gene-expression-omnibus	Gene Expression Omnibus (GEO)	Aggregator	https://www.ncbi.nlm.nih.gov/geo/	resource/gene-expression-omnibus/gene-expression-omnibus.md
 genecards	GeneCards	Aggregator	https://www.genecards.org/	resource/genecards/genecards.md
+genecarna	GeneCaRNA	Aggregator	https://www.genecards.org/	resource/genecarna/genecarna.md
+genehancer	GeneHancer	Aggregator	https://www.genecards.org/	resource/genehancer/genehancer.md
 genemania	GeneMANIA	DataSource	https://genemania.org/	resource/genemania/genemania.md
 geneorganizer	Gene ORGANizer	DataSource	https://geneorganizer.huji.ac.il/	resource/geneorganizer/geneorganizer.md
 genereviews	GeneReviews	DataSource	https://www.ncbi.nlm.nih.gov/books/NBK1116/	resource/genereviews/genereviews.md
@@ -538,6 +540,7 @@ mirgenedb	MirGeneDB	DataSource	https://mirgenedb.org/	resource/mirgenedb/mirgene
 mirnao	microRNA Ontology	Ontology	http://code.google.com/p/mirna-ontology/	resource/mirnao/mirnao.md
 miro	Mosquito insecticide resistance	Ontology	http://purl.obolibrary.org/obo/miro.owl	resource/miro/miro.md
 mirtarbase	miRTarBase	DataSource	https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/index.php	resource/mirtarbase/mirtarbase.md
+mirtex	miRTex	DataSource	https://proteininformationresource.org/mirtex/	resource/mirtex/mirtex.md
 mixs	MIxS	DataModel	https://w3id.org/mixs	resource/mixs/mixs.md
 mlpcn-profiling	MLPCN Profiling Data	DataSource	https://www.broadinstitute.org/chembio-therapeutics/mlpcnprofiling	resource/mlpcn-profiling/mlpcn-profiling.md
 mmo	Measurement method ontology	Ontology	https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000	resource/mmo/mmo.md
@@ -669,6 +672,7 @@ openstreetmap	OpenStreetMap	DataSource	https://www.openstreetmap.org/	resource/o
 opera	OPERA (OPEn structure-activity/property Relationship App)	DataSource	https://github.com/NIEHS/OPERA	resource/opera/opera.md
 opl	Ontology for Parasite LifeCycle	Ontology	https://github.com/OPL-ontology/OPL	resource/opl/opl.md
 opmi	Ontology of Precision Medicine and Investigation	Ontology	https://github.com/OPMI/opmi	resource/opmi/opmi.md
+optimuskg	OptimusKG	KnowledgeGraph	https://optimuskg.ai	resource/optimuskg/optimuskg.md
 orcid	ORCID	DataSource	https://orcid.org/	resource/orcid/orcid.md
 oreganno	ORegAnno	DataSource	https://genome.ucsc.edu/cgi-bin/hgTrackUi?org=Human&g=oreganno	resource/oreganno/oreganno.md
 oregano	OREGANO	KnowledgeGraph	https://gitub.u-bordeaux.fr/erias/oregano	resource/oregano/oregano.md
@@ -689,6 +693,7 @@ panorama-public	Panorama Public	DataSource	https://panoramaweb.org/public.url	re
 pao	Plant Anatomy Ontology	Ontology	http://www.plantontology.org	resource/pao/pao.md
 papyrus	Papyrus	DataSource	https://github.com/OlivierBeq/Papyrus-scripts	resource/papyrus/papyrus.md
 pathbank	PathBank	DataSource	https://pathbank.org/	resource/pathbank/pathbank.md
+pathcards	PathCards	Aggregator	https://pathcards.genecards.org/	resource/pathcards/pathcards.md
 pavs-kg	PAVS Knowledge Graph	KnowledgeGraph	https://pavs.phenomebrowser.net/	resource/pavs-kg/pavs-kg.md
 paxdb	PaxDb	DataSource	https://pax-db.org/	resource/paxdb/paxdb.md
 pazar	PAZAR	DataSource	http://www.pazar.info/	resource/pazar/pazar.md
@@ -739,6 +744,7 @@ predict	PREDICT	DataSource	https://www.embopress.org/doi/abs/10.1038/msb.2011.26
 prefer	Precision Fermentation Ontology	Ontology	https://github.com/Multiomics-Analytics-Group/prefer_ontology	resource/prefer/prefer.md
 pride	PRIDE Archive	DataSource	https://www.ebi.ac.uk/pride/	resource/pride/pride.md
 pride-cv	PRIDE Controlled Vocabulary	Ontology	https://github.com/PRIDE-Utilities/pride-ontology	resource/pride-cv/pride-cv.md
+primekg-plus	PrimeKG-Plus	KnowledgeGraph	https://github.com/DSDD-UCPH/PrimeKG-Plus	resource/primekg-plus/primekg-plus.md
 prism	PRISM	DataSource	https://depmap.org/repurposing/	resource/prism/prism.md
 proco	Process Chemistry Ontology	Ontology	https://github.com/proco-ontology/PROCO	resource/proco/proco.md
 prodo	Prodo Laboratories	DataSource	https://prodolabs.com/	resource/prodo/prodo.md
@@ -783,6 +789,7 @@ refseq	RefSeq	DataSource	https://www.ncbi.nlm.nih.gov/refseq/	resource/refseq/re
 reliefweb	ReliefWeb	DataSource	https://reliefweb.int/	resource/reliefweb/reliefweb.md
 remap	ReMap	DataSource	https://remap.univ-amu.fr/	resource/remap/remap.md
 reprotox-kg	ReproTox-KG	KnowledgeGraph	https://maayanlab.cloud/reprotox-kg	resource/reprotox-kg/reprotox-kg.md
+repurposedrugs	RepurposeDrugs	DataSource	https://repurposedrugs.org/	resource/repurposedrugs/repurposedrugs.md
 resid	Protein covalent bond	Ontology	http://www.ebi.ac.uk/RESID/	resource/resid/resid.md
 revel	REVEL	DataSource	https://sites.google.com/site/revelgenomics/	resource/revel/revel.md
 rex	Physico-chemical process	Ontology	http://purl.obolibrary.org/obo/rex.owl	resource/rex/rex.md

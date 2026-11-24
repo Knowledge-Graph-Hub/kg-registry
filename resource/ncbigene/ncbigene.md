@@ -787,8 +787,8 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
-    URL has not been confirmed by an automated check.
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so
+    this URL has not been confirmed by an automated check.
 - category: MappingProduct
   compression: zip
   description: A single delimited text file format containing a list of mappings between
@@ -2332,9 +2332,9 @@ products:
   warnings:
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 502 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 502 error
     when accessing file'
 - category: ProgrammingInterface
   description: REST API for searching identifiers and special keywords, mapping between
@@ -3078,9 +3078,9 @@ products:
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
@@ -4456,9 +4456,9 @@ products:
   warnings:
   - Site did not respond (connection timed out) when checked on 2026-10-19; the last
     Internet Archive snapshot is from 2022-08-17.
-  - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-11-22: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-11-24: Timeout connecting
     to URL'
 - category: GraphicalInterface
   description: Interactive web interface for exploring the neighborhood of related

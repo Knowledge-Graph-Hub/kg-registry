@@ -11,7 +11,7 @@ original_source:
   source: imo-knowledge-graph
 product_url: https://developer.imohealth.com/
 warnings:
-- File was not able to be retrieved when checked on 2026-11-12_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-11-22_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-11-12_ HTTP 406 error when
   accessing file

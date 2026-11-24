@@ -855,8 +855,8 @@ products:
     source: pharmgkb
   product_url: https://www.genecards.org/
   warnings:
-  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
-    URL has not been confirmed by an automated check.
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so
+    this URL has not been confirmed by an automated check.
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
     and integrating information from diverse biomedical resources including DRKG,
@@ -4374,9 +4374,9 @@ products:
     source: sep-l1000
   product_url: https://maayanlab.cloud/drugmonizome/metadata-api/libraries
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Web portal for browsing and searching predicted and known drug-side

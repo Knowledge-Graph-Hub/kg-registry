@@ -132,9 +132,9 @@ products:
     source: cameo
   warnings:
   - ICEWS was discontinued on 11 April 2023; no further event data will be added.
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 202 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 202 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 202 error
     when accessing file'
 - category: Product
   description: ICEWS event aggregations, time series (typically monthly) built from
@@ -152,9 +152,9 @@ products:
   - relation_type: prov:used
     source: cameo
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 202 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 202 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 202 error
     when accessing file'
 - category: DocumentationProduct
   description: ICEWS Expanded CAMEO Annotation Guidelines, the document describing

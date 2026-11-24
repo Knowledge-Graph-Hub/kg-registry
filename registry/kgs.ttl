@@ -1256,6 +1256,7 @@ kgr:automat a schema1:Aggregator ;
         kgr:automat.tmkp,
         kgr:automat.ubergraph,
         kgr:automat.viralproteome,
+        kgr:cam-kp.api,
         kgr:ohd-carolina.trapi ;
     schema1:name "Automat" ;
     doap:repository <https://github.com/RENCI-AUTOMAT/automat-server> ;
@@ -1580,6 +1581,9 @@ kgr:bgee a schema1:DataSource ;
         kgr:kg-monarch.graph.neo4j.edges,
         kgr:kg-monarch.graph.neo4j.nodes,
         kgr:kg-monarch.graph.rdf,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:rdf-portal.sparql.sib,
         kgr:spoke-okn.graph,
@@ -2239,7 +2243,9 @@ kgr:biolink a schema1:DataModel ;
         kgr:microbiomekg.api,
         kgr:omnicorp.api,
         kgr:omnicorp.cooccurrence,
-        kgr:openpredict.api ;
+        kgr:openpredict.api,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes ;
     schema1:name "Biolink-Model" ;
     doap:repository <https://github.com/biolink/biolink-model/> ;
     skos:inScheme "general" ;
@@ -3019,13 +3025,12 @@ kgr:cadd a schema1:DataSource ;
 kgr:cam-kp a schema1:KnowledgeGraph ;
     rdfs:label "CAM-KP (Causal Activity Models Knowledge Provider)" ;
     dcterms:created "2025-12-18T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "CAM-KP (Causal Activity Models Knowledge Provider) is a web service knowledge graph that integrates causal biological and chemical models from Gene Ontology, Reactome, and Comparative Toxicogenomics Database (CTD) into a unified, semantically rich platform. It provides access to structured biomedical knowledge through SPARQL and TRAPI-compliant REST APIs, supporting hypothesis generation, drug discovery, and environmental health research." ;
+    dcterms:description "CAM-KP (Causal Activity Models Knowledge Provider) is a knowledge provider of the NCATS Biomedical Data Translator, developed at RENCI. Causal Activity Models (CAMs) are small OWL knowledge graphs that model interactions between instances of ontology concepts. The CAM database combines CAMs, including Gene Ontology CAMs (GO-CAMs) and models derived from Reactome and the Comparative Toxicogenomics Database (CTD), with a large merged bio-ontology. The knowledge graph is served through the RENCI Automat TRAPI service; the original SPARQL service and API are no longer maintained." ;
     dcterms:identifier "cam-kp" ;
-    dcterms:isReferencedBy <doi:10.1093/nar/gkac833>,
-        <doi:10.1093/nar/gkn580>,
+    dcterms:isReferencedBy <doi:10.1016/j.compbiomed.2026.111994>,
         <doi:10.2196/26714> ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:1> ;
     schema1:hasPart kgr:aragorn.api,
         kgr:aragorn.api.itrb,
@@ -3037,6 +3042,7 @@ kgr:cam-kp a schema1:KnowledgeGraph ;
         kgr:cam-kp.ctd-interactions,
         kgr:cam-kp.documentation,
         kgr:cam-kp.go-cams,
+        kgr:cam-kp.pipeline,
         kgr:cam-kp.reactome-cams,
         kgr:cam-kp.sparql,
         kgr:cqs.code ;
@@ -5559,19 +5565,29 @@ kgr:connections-hypothesis-kp a schema1:KnowledgeGraph ;
     foaf:homepage <https://github.com/di2ag/chp_api> .
 
 kgr:coralkinome a schema1:DataSource ;
-    rdfs:label "CoralKinome" ;
+    rdfs:label "Coral" ;
     dcterms:created "2025-11-05T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "CoralKinome is a comprehensive resource for coral kinase sequences and annotations, providing phylogenetic and functional information about protein kinases in coral species to support coral biology research and conservation efforts." ;
+    dcterms:description "Coral is an interactive web application for visualizing quantitative and qualitative data in the context of the human kinome. It encodes data in node color, node size, and branch color, shows the kinome as the traditional tree or as radial or dynamic force networks, and exports vector graphics. Its annotation table gives kinase group, family, and subfamily assignments with UniProt, Ensembl, Entrez, and HGNC identifiers." ;
     dcterms:identifier "coralkinome" ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:kinace.portal ;
-    schema1:name "CoralKinome" ;
-    skos:altLabel "Coral Kinome Database",
+    dcterms:isReferencedBy <doi:10.1016/j.cels.2018.07.001> ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:coralkinome.code,
+        kgr:coralkinome.kinase-table,
+        kgr:coralkinome.portal,
+        kgr:kinace.portal ;
+    schema1:name "Coral" ;
+    doap:repository <https://github.com/dphansti/CORAL> ;
+    skos:altLabel "CORAL",
         "CoralKinome" ;
-    skos:inScheme "genomics",
-        "systems biology" ;
-    adms:status "Inactive" ;
-    foaf:homepage <https://www.coralkinome.org/> .
+    skos:inScheme "chemistry and biochemistry",
+        "enzymes",
+        "pathways",
+        "proteomics",
+        "signal transduction" ;
+    adms:status "Active" ;
+    foaf:homepage <http://phanstiel-lab.med.unc.edu/CORAL/> .
 
 kgr:cord-19 a schema1:DataSource ;
     rdfs:label "COVID-19 Open Research Dataset" ;
@@ -6028,6 +6044,8 @@ kgr:ctd a schema1:DataSource ;
         kgr:molepro.graph.nodes,
         kgr:molepro.trapi,
         kgr:mydisease.api,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:oregano.graph,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
@@ -6044,6 +6062,7 @@ kgr:ctd a schema1:DataSource ;
         kgr:pharos.portal,
         kgr:pharos.tcrd.download,
         kgr:pheknowlator.graph,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:psygenet.genedisease,
         kgr:service-kp.trapi,
@@ -7284,6 +7303,8 @@ kgr:disgenet a schema1:DataSource ;
         kgr:harmonizome.downloads,
         kgr:harmonizome.kg-neo4j,
         kgr:indra.cogex.code,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
         kgr:pharmebinet.neo4j,
@@ -7293,6 +7314,7 @@ kgr:disgenet a schema1:DataSource ;
         kgr:pharos.portal,
         kgr:pharos.tcrd.download,
         kgr:pheknowlator.graph,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:psygenet.genedisease,
         kgr:rtx-kg2.graph.edges,
@@ -7505,6 +7527,8 @@ kgr:doid a schema1:Ontology ;
         kgr:medkg.site,
         kgr:mondo.sssom,
         kgr:mydisease.api,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:pharmacotherapydb.diseases,
         kgr:pharmacotherapydb.indications,
         kgr:pharmebinet.graphml,
@@ -7775,6 +7799,8 @@ kgr:drugbank a schema1:DataSource ;
         kgr:np-kg.graph.tsv,
         kgr:openpredict.api,
         kgr:openpredict.predictions,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:oregano.graph,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
@@ -7793,6 +7819,8 @@ kgr:drugbank a schema1:DataSource ;
         kgr:pharmkg.graph,
         kgr:predict.method,
         kgr:predict.supporting-information,
+        kgr:primekg-plus.bundle,
+        kgr:primekg.drug-features,
         kgr:primekg.graph,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf,
@@ -7868,6 +7896,8 @@ kgr:drugcentral a schema1:DataSource ;
         kgr:obo-db-ingest.drugcentral.owl,
         kgr:obo-db-ingest.drugcentral.sssom.tsv,
         kgr:obo-db-ingest.drugcentral.tsv,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
         kgr:pharmebinet.neo4j,
@@ -7876,6 +7906,7 @@ kgr:drugcentral a schema1:DataSource ;
         kgr:pharos.api,
         kgr:pharos.portal,
         kgr:pharos.tcrd.download,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf,
@@ -8913,6 +8944,7 @@ kgr:ena a schema1:DataSource ;
         kgr:genecards.web.interface,
         kgr:omicsdi.api,
         kgr:omicsdi.portal,
+        kgr:pir.idmapping,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
@@ -8946,6 +8978,7 @@ kgr:encode a schema1:DataSource ;
         kgr:encode.portal,
         kgr:enrichr.libraries,
         kgr:genecards.web.interface,
+        kgr:genehancer.portal,
         kgr:genomickb.graph,
         kgr:gtrd.chip-seq_peaks,
         kgr:gtrd.downloads,
@@ -9078,6 +9111,7 @@ kgr:ensembl a schema1:DataSource ;
         kgr:cadd.snvs.grch37,
         kgr:cadd.snvs.grch38,
         kgr:cellmodelpassports.gene_identifiers,
+        kgr:coralkinome.kinase-table,
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
         kgr:distild.database,
@@ -9096,6 +9130,8 @@ kgr:ensembl a schema1:DataSource ;
         kgr:gencode.mouse.gtf,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
+        kgr:genecarna.portal,
+        kgr:genehancer.portal,
         kgr:genomickb.graph,
         kgr:gpmdb.api,
         kgr:gtrd.target_genes,
@@ -9124,6 +9160,7 @@ kgr:ensembl a schema1:DataSource ;
         kgr:pharos.tcrd.download,
         kgr:pheknowlator.graph,
         kgr:phosphoelm.dataset,
+        kgr:pir.idmapping,
         kgr:plant-reactome.mappings,
         kgr:rdf-portal.sparql.ebi,
         kgr:revel.all-chromosomes,
@@ -10195,6 +10232,7 @@ kgr:fantom5 a schema1:DataSource ;
         kgr:fantom5.sstar,
         kgr:fantom5.zenbu,
         kgr:genecards.web.interface,
+        kgr:genehancer.portal,
         kgr:genomickb.graph,
         kgr:lsdb-archive.fantom5 ;
     schema1:name "FANTOM5" ;
@@ -11419,8 +11457,11 @@ kgr:genecards a schema1:Aggregator ;
     dcterms:created "2025-09-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "GeneCards is a comprehensive, integrative database that aggregates gene-centric information from over 200 web sources. It provides searchable access to genomic, transcriptomic, proteomic, genetic, clinical and functional information for all annotated and predicted human genes. GeneCards automatically integrates data on gene function, pathways, diseases, variants, expression patterns, protein interactions, and more. The database includes over 443,000 gene entries with rich annotations from sources including HGNC, OMIM, Ensembl, UniProt, NCBI Gene, GTEx, PubMed, and many other major biomedical databases. GeneCards serves as a central hub for human gene information, making it accessible to researchers worldwide." ;
     dcterms:identifier "genecards" ;
+    dcterms:isReferencedBy <doi:10.1002/cpbi.5>,
+        <doi:10.1016/S0168-9525(97)01103-7>,
+        <doi:10.1093/database/baq020> ;
     dcterms:license <https://www.lifemapsc.com/genecards-suite-terms-of-use/> ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
     schema1:hasPart kgr:bitterdb.downloads.receptors,
         kgr:genecards.clinical.trials,
@@ -11436,16 +11477,55 @@ kgr:genecards a schema1:Aggregator ;
         kgr:genecards.protein.structures,
         kgr:genecards.variant.data,
         kgr:genecards.web.interface,
+        kgr:genecarna.portal,
+        kgr:genehancer.portal,
+        kgr:pathcards.portal,
         kgr:rnacentral.api,
         kgr:rnacentral.ftp,
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db ;
+    schema1:identifier "RRID:SCR_002773" ;
     schema1:name "GeneCards" ;
+    skos:altLabel "GeneCards Suite",
+        "GeneCards: The Human Gene Database" ;
     skos:inScheme "biomedical",
         "clinical",
         "genomics",
         "pathways",
         "proteomics" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.genecards.org/> .
+
+kgr:genecarna a schema1:Aggregator ;
+    rdfs:label "GeneCaRNA" ;
+    dcterms:created "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "GeneCaRNA is a gene-centric database of human non-coding RNA genes in the GeneCards Suite. It integrates RNAcentral with the non-coding RNA entries of HGNC, Ensembl, and NCBI Gene. The 2021 publication describes 219,587 gene pages." ;
+    dcterms:identifier "genecarna" ;
+    dcterms:isReferencedBy <doi:10.1016/j.jmb.2021.166913> ;
+    dcterms:license <https://www.lifemapsc.com/genecards-suite-terms-of-use/> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:genecarna.portal ;
+    schema1:name "GeneCaRNA" ;
+    skos:inScheme "genomics",
+        "non-coding RNA" ;
+    adms:status "Active" ;
+    foaf:homepage <https://www.genecards.org/> .
+
+kgr:genehancer a schema1:Aggregator ;
+    rdfs:label "GeneHancer" ;
+    dcterms:created "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "GeneHancer is a database of human enhancers and their inferred target genes, within the GeneCards Suite. The 2017 publication describes 285,000 candidate enhancers integrated from ENCODE, the Ensembl regulatory build, FANTOM, and the VISTA Enhancer Browser, linked to genes by expression correlation, expression quantitative trait loci, capture Hi-C, and genomic distance." ;
+    dcterms:identifier "genehancer" ;
+    dcterms:isReferencedBy <doi:10.1093/database/bax028> ;
+    dcterms:license <https://www.lifemapsc.com/genecards-suite-terms-of-use/> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:genehancer.portal ;
+    schema1:identifier "RRID:SCR_023953" ;
+    schema1:name "GeneHancer" ;
+    skos:inScheme "gene regulation",
+        "genomics" ;
     adms:status "Active" ;
     foaf:homepage <https://www.genecards.org/> .
 
@@ -12394,6 +12474,8 @@ kgr:go a schema1:Ontology ;
         kgr:oma.mapping.go,
         kgr:openpredict.api,
         kgr:openpredict.predictions,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:oregano.graph,
         kgr:orkg.dump,
         kgr:pavs-kg.api,
@@ -12413,8 +12495,10 @@ kgr:go a schema1:Ontology ;
         kgr:pheknowlator.graph,
         kgr:phenio.json,
         kgr:phenio.model,
+        kgr:pir.idmapping,
         kgr:planp.obo,
         kgr:planp.owl,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:prokn.go.goterm.is_a.goterm.edges,
         kgr:prokn.go.protein.acts_upstream_of.goterm.edges,
@@ -12500,7 +12584,8 @@ kgr:go-cam a schema1:DataModel ;
     dcterms:isReferencedBy <doi:10.1038/s41588-019-0500-1> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:go-cam.api,
+    schema1:hasPart kgr:cam-kp.go-cams,
+        kgr:go-cam.api,
         kgr:go-cam.browser,
         kgr:go-cam.linkml-schema,
         kgr:go-cam.minerva,
@@ -13459,12 +13544,14 @@ kgr:hgnc a schema1:DataSource ;
         kgr:cfde-ddkg.hgnchpo,
         kgr:cfde-ddkg.hgncuniprot,
         kgr:clinicalkg.graph,
+        kgr:coralkinome.kinase-table,
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
         kgr:gencode.human.gtf,
         kgr:gencode.human.metadata.hgnc,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
+        kgr:genecarna.portal,
         kgr:genereviews.genes,
         kgr:genereviews.genes-diseases,
         kgr:genereviews.genes-uniprot,
@@ -13504,6 +13591,8 @@ kgr:hgnc a schema1:DataSource ;
         kgr:obo-db-ingest.hgnc.sssom.tsv,
         kgr:obo-db-ingest.hgnc.tsv,
         kgr:omim.mim2gene,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:pharmebinet.graphml,
         kgr:pharmebinet.json,
         kgr:pharmebinet.neo4j,
@@ -13522,6 +13611,7 @@ kgr:hgnc a schema1:DataSource ;
         kgr:rnacentral.portal,
         kgr:rnacentral.public-db,
         kgr:scibite.hgnc,
+        kgr:scibite.hgnc.archive,
         kgr:sldb.data,
         kgr:sri-reference-kg.graph,
         kgr:string.cog.links,
@@ -13916,6 +14006,8 @@ kgr:hp a schema1:Ontology ;
         kgr:oard-kg.tpf,
         kgr:openpredict.api,
         kgr:openpredict.predictions,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:oregano.graph,
         kgr:orphanet.scientific_knowledge_files,
         kgr:pavs-kg.api,
@@ -13930,6 +14022,7 @@ kgr:hp a schema1:Ontology ;
         kgr:pheknowlator.graph,
         kgr:phenio.json,
         kgr:phenio.model,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:prokn.hgnchpo.gene.associated_with.diseaseorphenotype.edges,
         kgr:reprotox-kg.graph.drugshot-hpo,
@@ -15803,7 +15896,10 @@ kgr:iproclass a schema1:DataSource ;
         <https://www.ncbi.nlm.nih.gov/pubmed/15022647> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:iproclass.pir-docs,
-        kgr:iproclass.portal ;
+        kgr:iproclass.portal,
+        kgr:pir.downloads,
+        kgr:pir.ftp,
+        kgr:pir.idmapping.web ;
     schema1:identifier "iproclass" ;
     schema1:name "iProClass" ;
     skos:altLabel "Integrated Protein Classification",
@@ -16447,7 +16543,7 @@ kgr:kg-monarch a schema1:KnowledgeGraph ;
     dcterms:description "The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components." ;
     dcterms:identifier "kg-monarch" ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-11-22T13:14:01+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-24T20:19:35+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:cpathkg.code,
         kgr:epigraphdb.graph,
         kgr:genecards.web.interface,
@@ -18872,6 +18968,23 @@ kgr:mirtarbase a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/index.php> .
 
+kgr:mirtex a schema1:DataSource ;
+    rdfs:label "miRTex" ;
+    dcterms:created "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "miRTex is a text mining system for microRNA relations in the literature, extracting microRNA-target relations along with microRNA-gene and gene-microRNA regulation relations. Results for Medline abstracts were made available for query and download through the Protein Information Resource." ;
+    dcterms:identifier "mirtex" ;
+    dcterms:isReferencedBy <doi:10.1371/journal.pcbi.1004391> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:mirtex.portal ;
+    schema1:name "miRTex" ;
+    skos:inScheme "gene regulation",
+        "genomics",
+        "literature",
+        "natural language processing",
+        "non-coding RNA" ;
+    adms:status "unknown" ;
+    foaf:homepage <https://proteininformationresource.org/mirtex/> .
+
 kgr:mixs a schema1:DataModel ;
     rdfs:label "MIxS" ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
@@ -19154,6 +19267,8 @@ kgr:mondo a schema1:Ontology ;
         kgr:np-kg.graph.tsv,
         kgr:oard-kg.sparql,
         kgr:oard-kg.tpf,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:orphanet.scientific_knowledge_files,
         kgr:oxo.api,
         kgr:oxo.portal,
@@ -19169,6 +19284,7 @@ kgr:mondo a schema1:Ontology ;
         kgr:pheknowlator.graph,
         kgr:phenio.json,
         kgr:phenio.model,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:raras.encyclopedia,
         kgr:raras.portal,
@@ -20084,6 +20200,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:biobtree.graph.human-subgraph,
         kgr:biogrid.identifiers,
         kgr:cellmodelpassports.gene_identifiers,
+        kgr:coralkinome.kinase-table,
         kgr:ctd.chem_gene_ixns,
         kgr:ctd.genes,
         kgr:ctd.genes_diseases,
@@ -20098,6 +20215,7 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:gendr.data,
         kgr:genecards.gene.annotations,
         kgr:genecards.web.interface,
+        kgr:genecarna.portal,
         kgr:geneorganizer.gene-bodypart.confident-all,
         kgr:geneorganizer.gene-bodypart.confident-typical,
         kgr:geneorganizer.gene-bodypart.tentative-typical,
@@ -20164,6 +20282,8 @@ kgr:ncbigene a schema1:DataSource ;
         kgr:pheknowlator.graph,
         kgr:phenio.json,
         kgr:phenio.model,
+        kgr:pir.idmapping,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:pubchem.substances.asn,
         kgr:pubchem.substances.sdf,
@@ -20281,6 +20401,7 @@ kgr:ncbitaxon a schema1:Ontology ;
         kgr:pco.owl,
         kgr:phenio.json,
         kgr:phenio.model,
+        kgr:pir.idmapping,
         kgr:rtx-kg2.graph.edges,
         kgr:rtx-kg2.graph.nodes,
         kgr:rtx-kg2.neo4j,
@@ -21362,7 +21483,10 @@ kgr:nsides a schema1:DataSource ;
         kgr:nsides.kidsides.code,
         kgr:nsides.onsides,
         kgr:nsides.onsides.code,
-        kgr:nsides.pdsportal ;
+        kgr:nsides.pdsportal,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
+        kgr:primekg-plus.bundle ;
     schema1:identifier "nsides" ;
     schema1:name "nSIDES" ;
     doap:repository <https://github.com/tatonetti-lab> ;
@@ -22556,6 +22680,7 @@ kgr:omim a schema1:DataSource ;
         kgr:pharos.api,
         kgr:pharos.portal,
         kgr:pharos.tcrd.download,
+        kgr:pir.idmapping,
         kgr:predict.method,
         kgr:predict.supporting-information,
         kgr:primekg.graph,
@@ -23217,8 +23342,11 @@ kgr:opentargets a schema1:KnowledgeGraph ;
         kgr:opentargets.api.graphql,
         kgr:opentargets.api.rest,
         kgr:opentargets.platform,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:oxo.api,
         kgr:oxo.portal,
+        kgr:primekg-plus.bundle,
         kgr:spoke.graph,
         kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
@@ -23293,6 +23421,33 @@ kgr:opmi a schema1:Ontology ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/OPMI/opmi> .
 
+kgr:optimuskg a schema1:KnowledgeGraph ;
+    rdfs:label "OptimusKG" ;
+    dcterms:created "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "OptimusKG is a multimodal biomedical labeled property graph from the Zitnik Lab at Harvard Medical School, built from structured and semi-structured resources with type-specific metadata across molecular, anatomical, clinical, and environmental domains. It supersedes PrimeKG. Dataset version 3.2 has 192,813 nodes of 10 types and 21,834,669 edges." ;
+    dcterms:hasVersion "3.2" ;
+    dcterms:identifier "optimuskg" ;
+    dcterms:isReferencedBy <doi:10.1038/s41597-026-08302-z> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:optimuskg.client,
+        kgr:optimuskg.code,
+        kgr:optimuskg.dataverse,
+        kgr:optimuskg.docs,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.lcc.edges,
+        kgr:optimuskg.lcc.nodes,
+        kgr:optimuskg.nodes ;
+    schema1:name "OptimusKG" ;
+    doap:repository <https://github.com/mims-harvard/OptimusKG> ;
+    skos:inScheme "biomedical",
+        "pathways",
+        "precision medicine",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://optimuskg.ai> .
+
 kgr:orcid a schema1:DataSource ;
     rdfs:label "ORCID" ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
@@ -23331,6 +23486,8 @@ kgr:ordo a schema1:DataSource ;
         kgr:medgen.mgsat,
         kgr:medgen.names,
         kgr:medgen.ordo-history,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:ordo.kg-bioportal,
         kgr:ordo.owl,
         kgr:ordo.sparql,
@@ -23527,6 +23684,7 @@ kgr:orphanet a schema1:DataSource ;
         kgr:orphanet.scientific_knowledge_files,
         kgr:panelapp.api,
         kgr:panelapp.portal,
+        kgr:primekg.disease-features,
         kgr:raras.encyclopedia,
         kgr:raras.portal,
         kgr:sri-reference-kg.graph ;
@@ -23964,6 +24122,24 @@ kgr:pathbank a schema1:DataSource ;
     adms:status "Active" ;
     foaf:homepage <https://pathbank.org/> .
 
+kgr:pathcards a schema1:Aggregator ;
+    rdfs:label "PathCards" ;
+    dcterms:created "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "PathCards is a database of human biological pathways in the GeneCards Suite. It consolidates pathways from multiple sources into SuperPaths by clustering on gene content. Version 5.26 reports 1,686 SuperPath entries from 11 sources; the 2015 publication describes 1,073 SuperPaths from 3,215 pathways in 12 sources." ;
+    dcterms:hasVersion "5.26" ;
+    dcterms:identifier "pathcards" ;
+    dcterms:isReferencedBy <doi:10.1093/database/bav006> ;
+    dcterms:license <https://www.lifemapsc.com/genecards-suite-terms-of-use/> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:pathcards.portal ;
+    schema1:name "PathCards" ;
+    skos:inScheme "biomedical",
+        "pathways",
+        "systems biology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://pathcards.genecards.org/> .
+
 kgr:pathophenodb a schema1:DataSource ;
     rdfs:label "PathoPhenoDB" ;
     dcterms:created "2025-05-28T00:00:00+00:00"^^xsd:dateTime ;
@@ -24352,6 +24528,7 @@ kgr:pdb a schema1:DataSource ;
         kgr:pharos.api,
         kgr:pharos.portal,
         kgr:pharos.tcrd.download,
+        kgr:pir.idmapping,
         kgr:preppi.download,
         kgr:rdf-portal.sparql.pdb,
         kgr:sabdab.api,
@@ -24617,6 +24794,7 @@ kgr:pfam a schema1:DataSource ;
         kgr:pfam.a.seedalignment,
         kgr:pfam.api,
         kgr:pfam.site,
+        kgr:pir.idmapping,
         kgr:spoke-okn.graph,
         kgr:spoke.graph,
         kgr:string.cog.links,
@@ -24686,15 +24864,21 @@ kgr:pgdso a schema1:Ontology ;
 kgr:pgo a schema1:Ontology ;
     rdfs:label "Pseudogene Ontology" ;
     dcterms:created "2025-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "The Pseudogene Ontology (PGO) is an ontology for classifying and annotating pseudogenes based on their evolutionary origins, functional characteristics, and genomic features. Pseudogenes are genomic loci that resemble functional genes but have lost their coding capacity through various mechanisms including frameshift mutations, premature stop codons, or loss of regulatory elements. PGO provides a structured vocabulary for describing different types of pseudogenes (processed, duplicated, unitary) and their relationships to functional genes." ;
+    dcterms:description "The Pseudogene Ontology (PGO) is a small ontology for classifying and annotating pseudogenes, created as part of the Pseudofam project by the Gerstein Lab at Yale. Its terms cover classified type (unitary, duplicated, processed, semi-processed, and duplicated processed pseudogenes), biological feature, subcellular origin of the parent gene, and evidence code. It is available from BioPortal under the acronym PSEUDO." ;
     dcterms:identifier "pgo" ;
-    dcterms:isReferencedBy <https://pubmed.ncbi.nlm.nih.gov/18957444> ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:ubkg.csv,
+    dcterms:isReferencedBy <doi:10.1093/bioinformatics/btq173>,
+        <https://pubmed.ncbi.nlm.nih.gov/18957444> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:pgo.bioportal,
+        kgr:pgo.kg-bioportal,
+        kgr:pgo.knowledgebase,
+        kgr:ubkg.csv,
         kgr:ubkg.neo4j ;
+    schema1:identifier "RRID:SCR_010453" ;
     schema1:name "Pseudogene Ontology" ;
     skos:altLabel "PGO",
-        "pseudo" ;
+        "PSEUDO",
+        "Pseudogene" ;
     skos:inScheme "genomics" ;
     adms:status "Active" ;
     foaf:homepage <https://bioportal.bioontology.org/ontologies/pseudo> .
@@ -25335,18 +25519,27 @@ kgr:pir a schema1:DataSource ;
     dcterms:created "2026-05-20T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "Protein Information Resource (PIR) is an integrated public bioinformatics resource that supports genomic, proteomic, and systems biology research through protein databases, annotation resources, search tools, and downloadable reference datasets." ;
     dcterms:identifier "pir" ;
-    dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/12520019> ;
+    dcterms:isReferencedBy <doi:10.1093/bioinformatics/btt484>,
+        <doi:10.1371/journal.pone.0018910>,
+        <https://www.ncbi.nlm.nih.gov/pubmed/12520019> ;
     dcterms:license <https://proteininformationresource.org/pirwww/about/linkpir.shtml> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:mygene.api,
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:mirtex.portal,
+        kgr:mygene.api,
         kgr:ncbi-protein.web,
         kgr:pir.downloads,
+        kgr:pir.ftp,
+        kgr:pir.idmapping,
+        kgr:pir.idmapping.web,
+        kgr:pir.peptide-match,
         kgr:pir.portal,
+        kgr:pir.reference-proteomes,
         kgr:prokn.pir.compound.skos_exact_match.compound.edges,
         kgr:prokn.pir.gene.skos_exact_match.impc_gene.edges,
         kgr:prokn.pir.gene.skos_exact_match.impchumangene.edges,
         kgr:prokn.pir.impchumangene.orthologous_to.protein.edges,
         kgr:prokn.pir.impcmousegene.has_gene_product.protein.edges ;
+    schema1:identifier "RRID:SCR_002837" ;
     schema1:name "Protein Information Resource" ;
     skos:altLabel "PIR",
         "Protein Information Resource" ;
@@ -25403,6 +25596,9 @@ kgr:pirsf a schema1:DataSource ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkh097> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
+        kgr:pir.downloads,
+        kgr:pir.ftp,
+        kgr:pir.idmapping,
         kgr:pirsf.downloads,
         kgr:pirsf.site ;
     schema1:name "PIRSF" ;
@@ -25583,6 +25779,7 @@ kgr:pmc a schema1:DataSource ;
         kgr:pmc.oai-pmh,
         kgr:pmc.open-access-subset,
         kgr:pmc.portal,
+        kgr:primekg-plus.bundle,
         kgr:rdbridge.graph,
         kgr:stitch.api,
         kgr:stitch.downloads,
@@ -25799,6 +25996,7 @@ kgr:pr a schema1:Ontology ;
         kgr:pheknowlator.graph,
         kgr:phenio.json,
         kgr:phenio.model,
+        kgr:pir.downloads,
         kgr:pr.obo,
         kgr:pr.owl,
         kgr:rna-kg.kg.edges,
@@ -25951,10 +26149,18 @@ kgr:primekg a schema1:KnowledgeGraph ;
     dcterms:created "2025-03-09T00:00:00+00:00"^^xsd:dateTime ;
     dcterms:description "PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality biomedical resources to describe 17,080 diseases with over 4 million relationships across ten major biological scales." ;
     dcterms:identifier "primekg" ;
-    dcterms:license <https://opensource.org/licenses/MIT> ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:isReferencedBy <doi:10.1038/s41597-023-01960-3> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:9606> ;
-    schema1:hasPart kgr:primekg.graph ;
+    schema1:hasPart kgr:primekg-plus.bundle,
+        kgr:primekg.code,
+        kgr:primekg.dataverse,
+        kgr:primekg.disease-features,
+        kgr:primekg.drug-features,
+        kgr:primekg.edges,
+        kgr:primekg.graph,
+        kgr:primekg.nodes ;
     schema1:identifier "primekg" ;
     schema1:name "PrimeKG" ;
     doap:repository <https://github.com/mims-harvard/PrimeKG> ;
@@ -25964,6 +26170,30 @@ kgr:primekg a schema1:KnowledgeGraph ;
         "systems biology" ;
     adms:status "Active" ;
     foaf:homepage <https://zitniklab.hms.harvard.edu/projects/PrimeKG> .
+
+kgr:primekg-plus a schema1:KnowledgeGraph ;
+    rdfs:label "PrimeKG-Plus" ;
+    dcterms:created "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "PrimeKG-Plus is an updated, PrimeKG-compatible precision medicine knowledge graph. It rebuilds the 20 original PrimeKG sources from releases available as of December 2025, adds Open Targets, RepurposeDrugs, and nSIDES, and includes a version with expert-validated literature relations for Canavan disease, Batten disease, Niemann-Pick disease type C, and Tay-Sachs disease." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:identifier "primekg-plus" ;
+    dcterms:isReferencedBy <doi:10.64898/2026.07.14.738415> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:about <NCBITaxon:9606> ;
+    schema1:hasPart kgr:primekg-plus.bundle,
+        kgr:primekg-plus.code,
+        kgr:primekg-plus.zenodo ;
+    schema1:name "PrimeKG-Plus" ;
+    doap:repository <https://github.com/DSDD-UCPH/PrimeKG-Plus> ;
+    skos:altLabel "PrimeKG Plus" ;
+    skos:inScheme "biomedical",
+        "drug discovery",
+        "drug repositioning",
+        "precision medicine",
+        "rare disease" ;
+    adms:status "Active" ;
+    foaf:homepage <https://github.com/DSDD-UCPH/PrimeKG-Plus> .
 
 kgr:prism a schema1:DataSource ;
     rdfs:label "PRISM" ;
@@ -26742,6 +26972,7 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:medkg.site,
         kgr:metabokg.graph,
         kgr:micromap.api,
+        kgr:mirtex.portal,
         kgr:multiomics-kp.graph,
         kgr:myaura.graph,
         kgr:ncbi.ftp,
@@ -26762,6 +26993,8 @@ kgr:pubmed a schema1:Aggregator ;
         kgr:pharos.portal,
         kgr:pharos.tcrd.download,
         kgr:phosphoelm.dataset,
+        kgr:pir.idmapping,
+        kgr:primekg-plus.bundle,
         kgr:psygenet.corpus,
         kgr:psygenet.genedisease,
         kgr:pubmed-knowledge-graph.website,
@@ -27246,6 +27479,8 @@ kgr:reactome a schema1:DataSource ;
         kgr:obo-db-ingest.reactome.owl,
         kgr:obo-db-ingest.reactome.tsv,
         kgr:obo-db-ingest.rhea.sssom.tsv,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:oregano.graph,
         kgr:pathwaycommons.biopax,
         kgr:pathwaycommons.downloads,
@@ -27265,6 +27500,7 @@ kgr:reactome a schema1:DataSource ;
         kgr:plant-reactome.mappings,
         kgr:plant-reactome.png,
         kgr:plant-reactome.svg,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:prokn.reactome.pathway.event_of.pathway.edges,
         kgr:prokn.reactome.protein.participates_in.pathway.edges,
@@ -27492,6 +27728,7 @@ kgr:refseq a schema1:DataSource ;
         kgr:pharmebinet.neo4j,
         kgr:pharmebinet.neo4j.dump,
         kgr:pharmebinet.tsv,
+        kgr:pir.idmapping,
         kgr:string.cog.links,
         kgr:string.cog.links.detailed,
         kgr:string.database,
@@ -27682,6 +27919,25 @@ kgr:reprotox-kg a schema1:KnowledgeGraph ;
         "toxicology" ;
     adms:status "Active" ;
     foaf:homepage <https://maayanlab.cloud/reprotox-kg> .
+
+kgr:repurposedrugs a schema1:DataSource ;
+    rdfs:label "RepurposeDrugs" ;
+    dcterms:created "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:description "RepurposeDrugs is a web portal that combines a database of drug indications with a machine learning predictor of new drug-indication associations for approved and investigational single drugs and drug combinations. The published version covers 4,314 compounds and 161 drug combinations linked to 1,756 indications, for 28,148 drug-disease pairs." ;
+    dcterms:identifier "repurposedrugs" ;
+    dcterms:isReferencedBy <doi:10.1093/bib/bbae328> ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:primekg-plus.bundle,
+        kgr:repurposedrugs.portal ;
+    schema1:name "RepurposeDrugs" ;
+    skos:altLabel "RepoDrug" ;
+    skos:inScheme "clinical",
+        "clinical trials",
+        "drug discovery",
+        "drug repositioning",
+        "pharmacology" ;
+    adms:status "Active" ;
+    foaf:homepage <https://repurposedrugs.org/> .
 
 kgr:resid a schema1:Ontology ;
     rdfs:label "Protein covalent bond" ;
@@ -27982,6 +28238,7 @@ kgr:rnacentral a schema1:Aggregator ;
     schema1:hasPart kgr:biobtree.api,
         kgr:biobtree.graph.human-subgraph,
         kgr:genecards.web.interface,
+        kgr:genecarna.portal,
         kgr:genomickb.graph,
         kgr:goa.ftp,
         kgr:mechreponet.kg,
@@ -28536,16 +28793,20 @@ kgr:scdo a schema1:Ontology ;
 kgr:scibite a schema1:Resource ;
     rdfs:label "SciBite" ;
     dcterms:created "2025-03-10T00:00:00+00:00"^^xsd:dateTime ;
-    dcterms:description "Data produced by SciBite" ;
+    dcterms:description "SciBite, part of Elsevier, provides ontology-driven semantic technology for scientific text, including ontology management, named entity recognition, data enrichment, and search. It also publishes a public OWL version of HGNC." ;
     dcterms:identifier "scibite" ;
-    dcterms:modified "2026-06-27T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:scibite.hgnc ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    schema1:hasPart kgr:scibite.hgnc,
+        kgr:scibite.hgnc.archive ;
     schema1:identifier "RRID:SCR_003952",
         "scibite" ;
     schema1:name "SciBite" ;
-    skos:inScheme "biological systems" ;
+    doap:repository <https://github.com/elsevier-health/scibite-ontology> ;
+    skos:inScheme "biological systems",
+        "literature",
+        "natural language processing" ;
     adms:status "Active" ;
-    foaf:homepage <https://scibite.com/> .
+    foaf:homepage <https://www.elsevier.com/products/scibite> .
 
 kgr:sckan a schema1:DataSource ;
     rdfs:label "SCKAN" ;
@@ -29055,6 +29316,7 @@ kgr:sider a schema1:DataSource ;
         kgr:pharmebinet.neo4j.dump,
         kgr:pharmebinet.tsv,
         kgr:pharmkg.graph,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:sep-l1000.portal,
         kgr:sep-l1000.sider,
@@ -29679,6 +29941,7 @@ kgr:so a schema1:Ontology ;
         kgr:np-kg.graph.tsv,
         kgr:pcl.obo,
         kgr:pcl.owl,
+        kgr:pgo.knowledgebase,
         kgr:pheknowlator.graph,
         kgr:phenio.json,
         kgr:phenio.model,
@@ -30211,6 +30474,7 @@ kgr:string a schema1:DataSource ;
         kgr:pharos.portal,
         kgr:pharos.tcrd.download,
         kgr:pheknowlator.graph,
+        kgr:primekg-plus.bundle,
         kgr:skm.ckn.v1.annotations,
         kgr:skm.ckn.v1.graph,
         kgr:skm.ckn.v2.annotations,
@@ -31888,6 +32152,8 @@ kgr:uberon a schema1:Ontology ;
         kgr:np-kg.graph.networkx,
         kgr:np-kg.graph.tsv,
         kgr:ons.owl,
+        kgr:optimuskg.edges,
+        kgr:optimuskg.nodes,
         kgr:oxo.api,
         kgr:oxo.portal,
         kgr:pcl.obo,
@@ -31904,6 +32170,7 @@ kgr:uberon a schema1:Ontology ;
         kgr:plana.owl,
         kgr:poro.obo,
         kgr:poro.owl,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:rna-kg.kg.edges,
         kgr:rna-kg.kg.neo4j,
@@ -32112,6 +32379,7 @@ kgr:umls a schema1:Aggregator ;
         kgr:ndfrt.umls,
         kgr:oregano.graph,
         kgr:petagraph.graph,
+        kgr:primekg-plus.bundle,
         kgr:primekg.graph,
         kgr:rdkg.tpf,
         kgr:rtx-kg2.graph.edges,
@@ -32311,6 +32579,7 @@ kgr:uniprot a schema1:DataSource ;
         kgr:cfde-ddkg.hgncuniprot,
         kgr:chembl.map_to_uniprot,
         kgr:clinicalkg.graph,
+        kgr:coralkinome.kinase-table,
         kgr:date.archive,
         kgr:dbnsfp.academic,
         kgr:dbnsfp.commercial,
@@ -32403,6 +32672,9 @@ kgr:uniprot a schema1:DataSource ;
         kgr:pharos.tcrd.download,
         kgr:pheknowlator.graph,
         kgr:phosphoelm.dataset,
+        kgr:pir.idmapping,
+        kgr:pir.peptide-match,
+        kgr:pir.reference-proteomes,
         kgr:pistoia-pgo.core_concepts_csv,
         kgr:pistoia-pgo.core_concepts_xlsx,
         kgr:pombase.genes-products,
@@ -32470,7 +32742,9 @@ kgr:uniref a schema1:DataSource ;
     dcterms:isReferencedBy <https://doi.org/10.1093/bioinformatics/btm098> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    schema1:hasPart kgr:uniref.api,
+    schema1:hasPart kgr:pir.idmapping,
+        kgr:pir.reference-proteomes,
+        kgr:uniref.api,
         kgr:uniref.portal,
         kgr:uniref.uniref100.fasta,
         kgr:uniref.uniref100.xml,
@@ -32831,6 +33105,7 @@ kgr:vista a schema1:DataSource ;
     dcterms:isReferencedBy <https://doi.org/10.1093/nar/gkl822> ;
     dcterms:modified "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:genecards.web.interface,
+        kgr:genehancer.portal,
         kgr:vista.data,
         kgr:vista.site ;
     schema1:identifier "RRID:SCR_007973" ;
@@ -32941,17 +33216,24 @@ kgr:wbbt a schema1:Ontology ;
     dcterms:identifier "wbbt" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/18629098> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:6237> ;
     schema1:hasPart kgr:phenio.json,
         kgr:phenio.model,
         kgr:sri-reference-kg.graph,
         kgr:wbbt.obo,
-        kgr:wbbt.owl ;
-    schema1:identifier "wbbt" ;
+        kgr:wbbt.owl,
+        kgr:wbbt.wbbt-base.owl,
+        kgr:wbbt.wbbt-full.json,
+        kgr:wbbt.wbbt-simple.owl ;
+    schema1:identifier "RRID:SCR_006835",
+        "wbbt" ;
     schema1:name "C. elegans Gross Anatomy Ontology" ;
     doap:repository <https://github.com/obophenotype/c-elegans-gross-anatomy-ontology> ;
-    skos:inScheme "anatomy and development" ;
+    skos:altLabel "WBbt" ;
+    skos:inScheme "anatomy and development",
+        "model organisms",
+        "organisms" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/obophenotype/c-elegans-gross-anatomy-ontology> .
 
@@ -32962,7 +33244,7 @@ kgr:wbls a schema1:Ontology ;
     dcterms:identifier "wbls" ;
     dcterms:isReferencedBy <https://www.ncbi.nlm.nih.gov/pubmed/31642470> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
     schema1:about <NCBITaxon:6237> ;
     schema1:hasPart kgr:efo.obo,
         kgr:efo.owl,
@@ -32970,11 +33252,18 @@ kgr:wbls a schema1:Ontology ;
         kgr:phenio.model,
         kgr:sri-reference-kg.graph,
         kgr:wbls.obo,
-        kgr:wbls.owl ;
+        kgr:wbls.owl,
+        kgr:wbls.wbls-base.owl,
+        kgr:wbls.wbls-full.json,
+        kgr:wbls.wbls-simple.owl ;
     schema1:identifier "wbls" ;
     schema1:name "C. elegans development ontology" ;
     doap:repository <https://github.com/obophenotype/c-elegans-development-ontology> ;
-    skos:inScheme "anatomy and development" ;
+    skos:altLabel "C. elegans life stage ontology",
+        "WBls" ;
+    skos:inScheme "anatomy and development",
+        "model organisms",
+        "organisms" ;
     adms:status "Active" ;
     foaf:homepage <https://github.com/obophenotype/c-elegans-development-ontology> .
 
@@ -33225,7 +33514,7 @@ kgr:wikipedia a schema1:DataSource ;
     dcterms:description "Wikipedia is a free, collaboratively edited multilingual encyclopedia published by the Wikimedia movement. Its article content is widely reused as an open reference source and serves as a primary upstream source for derivative resources such as DBpedia. Wikipedia content is accessible through the web portal, public APIs, and Wikimedia dump infrastructure." ;
     dcterms:identifier "wikipedia" ;
     dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
-    dcterms:modified "2026-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:modified "2026-11-24T00:00:00+00:00"^^xsd:dateTime ;
     schema1:hasPart kgr:dbpedia.latest-core,
         kgr:dbpedia.wikipedia-kg-dump,
         kgr:drugmechdb.graph,
@@ -33237,10 +33526,15 @@ kgr:wikipedia a schema1:DataSource ;
         kgr:genecards.web.interface,
         kgr:mygene.api,
         kgr:wikipedia.api,
+        kgr:wikipedia.content-current,
+        kgr:wikipedia.content-history,
         kgr:wikipedia.dumps.enwiki.current,
         kgr:wikipedia.dumps.enwiki.history,
+        kgr:wikipedia.eventstreams,
         kgr:wikipedia.portal,
-        kgr:wikipedia.rest ;
+        kgr:wikipedia.rest,
+        kgr:wikipedia.rest.core,
+        kgr:wikipedia.structured ;
     schema1:identifier "RRID:SCR_004897" ;
     schema1:name "Wikipedia" ;
     skos:altLabel "English Wikipedia" ;
@@ -35594,11 +35888,6 @@ kgr:cadd.website a schema1:GraphicalInterface ;
     dcterms:description "CADD website with single-variant and range lookup of scores, news, release notes and links to related resources." ;
     schema1:url <https://cadd.gs.washington.edu/> .
 
-kgr:cam-kp.api a schema1:ProgrammingInterface ;
-    rdfs:label "CAM-KP REST API" ;
-    dcterms:description "TRAPI-compliant REST API for programmatic access to causal knowledge graphs supporting Translator ecosystem integration and federated querying" ;
-    schema1:url <https://automat.renci.org/cam-kp> .
-
 kgr:cam-kp.automat a schema1:GraphicalInterface ;
     rdfs:label "CAM-KP on Automat" ;
     dcterms:description "Interactive knowledge provider interface within RENCI's Automat platform for discovering and integrating CAM-KP with other biomedical data sources" ;
@@ -35608,6 +35897,11 @@ kgr:cam-kp.documentation a schema1:DocumentationProduct ;
     rdfs:label "CAM-KP Documentation" ;
     dcterms:description "Comprehensive API documentation, SPARQL endpoint documentation, and developer guides for querying and integrating CAM-KP" ;
     schema1:url <https://github.com/ExposuresProvider/cam-kp-api/wiki> .
+
+kgr:cam-kp.pipeline a schema1:ProcessProduct ;
+    rdfs:label "cam-pipeline" ;
+    dcterms:description "Data loading pipeline that builds the CAM database." ;
+    schema1:url <https://github.com/ExposuresProvider/cam-pipeline> .
 
 kgr:cam-kp.sparql a schema1:ProgrammingInterface ;
     rdfs:label "CAM-KP SPARQL Endpoint" ;
@@ -37086,6 +37380,16 @@ kgr:connections-hypothesis-kp.code a schema1:ProcessProduct ;
     rdfs:label "Connections Hypothesis KP Source Code" ;
     dcterms:description "Source code for the Connections Hypothesis Provider API implementation." ;
     schema1:url <https://github.com/di2ag/chp_api/tree/production> .
+
+kgr:coralkinome.code a schema1:ProcessProduct ;
+    rdfs:label "Coral Source Code" ;
+    dcterms:description "R/Shiny source code and data files for Coral." ;
+    schema1:url <https://github.com/dphansti/CORAL> .
+
+kgr:coralkinome.portal a schema1:GraphicalInterface ;
+    rdfs:label "Coral Web Application" ;
+    dcterms:description "Interactive Shiny web application for visualizing kinase data on the human kinome tree or as networks, with vector graphics export." ;
+    schema1:url <http://phanstiel-lab.med.unc.edu/CORAL/> .
 
 kgr:cord-19.corpus a schema1:Product ;
     rdfs:label "CORD-19 corpus" ;
@@ -46826,6 +47130,36 @@ kgr:opmi.owl a schema1:OntologyProduct ;
     dcterms:description "Ontology of Precision Medicine and Investigation in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/opmi.owl> .
 
+kgr:optimuskg.client a schema1:ProgrammingInterface ;
+    rdfs:label "OptimusKG Python Client" ;
+    dcterms:description "Python package for downloading OptimusKG files and loading the graph as Polars data frames or a NetworkX graph." ;
+    schema1:url <https://pypi.org/project/optimuskg/> .
+
+kgr:optimuskg.code a schema1:ProcessProduct ;
+    rdfs:label "OptimusKG Pipeline" ;
+    dcterms:description "Kedro pipeline that builds OptimusKG, with an agent skill and an MCP Bundle for querying the graph." ;
+    schema1:url <https://github.com/mims-harvard/OptimusKG> .
+
+kgr:optimuskg.dataverse a schema1:Product ;
+    rdfs:label "OptimusKG on Harvard Dataverse" ;
+    dcterms:description "Harvard Dataverse dataset with the full graph and separate Parquet files for each node and edge type." ;
+    schema1:url <https://doi.org/10.7910/DVN/IYNGEV> .
+
+kgr:optimuskg.docs a schema1:DocumentationProduct ;
+    rdfs:label "OptimusKG Documentation" ;
+    dcterms:description "Documentation for the OptimusKG data, client, and graph schema." ;
+    schema1:url <https://optimuskg.ai/docs> .
+
+kgr:optimuskg.lcc.edges a schema1:GraphProduct ;
+    rdfs:label "OptimusKG Largest Connected Component Edges" ;
+    dcterms:description "Edges of the largest connected component of OptimusKG." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/14220897> .
+
+kgr:optimuskg.lcc.nodes a schema1:GraphProduct ;
+    rdfs:label "OptimusKG Largest Connected Component Nodes" ;
+    dcterms:description "Nodes of the largest connected component of OptimusKG." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/14220921> .
+
 kgr:orcid.api a schema1:ProgrammingInterface ;
     rdfs:label "ORCID Public API" ;
     dcterms:description "Public API documentation and access information for ORCID record retrieval." ;
@@ -47634,6 +47968,16 @@ kgr:pgdso.owl a schema1:OntologyProduct ;
     dcterms:description "Canonical OWL edition of the Plant Growth and Development Stage ontology distributed via OBO PURL." ;
     schema1:url <http://purl.obolibrary.org/obo/pgdso.owl> .
 
+kgr:pgo.bioportal a schema1:GraphicalInterface ;
+    rdfs:label "Pseudogene Ontology on BioPortal" ;
+    dcterms:description "BioPortal page for the Pseudogene ontology (acronym PSEUDO)." ;
+    schema1:url <https://bioportal.bioontology.org/ontologies/pseudo> .
+
+kgr:pgo.kg-bioportal a schema1:GraphProduct ;
+    rdfs:label "PSEUDO KGX graph (KG-Bioportal)" ;
+    dcterms:description "KGX TSV transform of Pseudogene (PSEUDO), produced by KG-Bioportal from the BioPortal submission. The archive contains PSEUDO_nodes.tsv and PSEUDO_edges.tsv." ;
+    schema1:url <https://github.com/ncbo/kg-bioportal/releases/download/data-2026.07/pseudo.tar.gz> .
+
 kgr:pgxmine.code a schema1:ProcessProduct ;
     rdfs:label "PGxMine Code" ;
     dcterms:description "Python codebase for extracting pharmacogenomic associations using text mining" ;
@@ -47938,11 +48282,6 @@ kgr:physiome-model-repository.portal a schema1:GraphicalInterface ;
     rdfs:label "Physiome Model Repository Portal" ;
     dcterms:description "Web portal for searching, browsing and downloading physiology models, with model views, curation status and links to simulation in OpenCOR." ;
     schema1:url <https://models.physiomeproject.org/> .
-
-kgr:pir.downloads a schema1:Product ;
-    rdfs:label "PIR Downloads" ;
-    dcterms:description "PIR download center exposing FTP-accessible releases for iProClass, PIRSF, PRO, and related PIR-maintained datasets." ;
-    schema1:url <https://proteininformationresource.org/pirwww/download/> .
 
 kgr:pir.portal a schema1:GraphicalInterface ;
     rdfs:label "PIR Portal" ;
@@ -48362,6 +48701,36 @@ kgr:pride.portal a schema1:GraphicalInterface ;
     rdfs:label "PRIDE Archive Web Portal" ;
     dcterms:description "PRIDE Archive web portal for searching, browsing and downloading public proteomics datasets by accession, keyword, organism, instrument and other metadata." ;
     schema1:url <https://www.ebi.ac.uk/pride/archive/> .
+
+kgr:primekg-plus.code a schema1:ProcessProduct ;
+    rdfs:label "PrimeKG-Plus Code" ;
+    dcterms:description "Scripts and notebooks for preparing sources, building the graph, and integrating literature-derived relations." ;
+    schema1:url <https://github.com/DSDD-UCPH/PrimeKG-Plus> .
+
+kgr:primekg-plus.zenodo a schema1:Product ;
+    rdfs:label "PrimeKG-Plus on Zenodo" ;
+    dcterms:description "Zenodo record for the PrimeKG-Plus release." ;
+    schema1:url <https://zenodo.org/records/20796545> .
+
+kgr:primekg.code a schema1:ProcessProduct ;
+    rdfs:label "PrimeKG Code" ;
+    dcterms:description "Scripts and notebooks for building PrimeKG, with updates in July and December 2023 for newer source releases and fuller OMIM coverage." ;
+    schema1:url <https://github.com/mims-harvard/PrimeKG> .
+
+kgr:primekg.dataverse a schema1:Product ;
+    rdfs:label "PrimeKG on Harvard Dataverse" ;
+    dcterms:description "Harvard Dataverse dataset holding all PrimeKG release files, including raw, grouped, and giant-component versions of the graph." ;
+    schema1:url <https://doi.org/10.7910/DVN/IXA7BM> .
+
+kgr:primekg.edges a schema1:GraphProduct ;
+    rdfs:label "PrimeKG Edges" ;
+    dcterms:description "PrimeKG edge table. Version 2.1 on Harvard Dataverse." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/6180616> .
+
+kgr:primekg.nodes a schema1:GraphProduct ;
+    rdfs:label "PrimeKG Nodes" ;
+    dcterms:description "PrimeKG node table. Version 2.1 on Harvard Dataverse." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/6180617> .
 
 kgr:prism.api a schema1:ProgrammingInterface ;
     rdfs:label "DepMap API (PRISM data)" ;
@@ -49029,6 +49398,11 @@ kgr:reprotox-kg.schema a schema1:Product ;
     rdfs:label "ReproTox-KG Schema" ;
     dcterms:description "Knowledge graph schema definition used by ReproTox-KG." ;
     schema1:url <https://github.com/MaayanLab/Reprotox-KG/blob/main/schema.json> .
+
+kgr:repurposedrugs.portal a schema1:GraphicalInterface ;
+    rdfs:label "RepurposeDrugs Web Portal" ;
+    dcterms:description "Interactive portal for browsing drug indications, treatment status, and clinical trials, and for predicting approval likelihood of drug-indication pairs." ;
+    schema1:url <https://repurposedrugs.org/> .
 
 kgr:resid.owl a schema1:OntologyProduct ;
     rdfs:label "Protein covalent bond OWL edition" ;
@@ -52011,6 +52385,21 @@ kgr:wbbt.owl a schema1:OntologyProduct ;
     dcterms:description "C. elegans Gross Anatomy Ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/wbbt.owl> .
 
+kgr:wbbt.wbbt-base.owl a schema1:OntologyProduct ;
+    rdfs:label "wbbt-base.owl" ;
+    dcterms:description "OWL base module of the C. elegans Gross Anatomy Ontology, containing only axioms that belong to the ontology itself" ;
+    schema1:url <http://purl.obolibrary.org/obo/wbbt/wbbt-base.owl> .
+
+kgr:wbbt.wbbt-full.json a schema1:OntologyProduct ;
+    rdfs:label "wbbt-full.json" ;
+    dcterms:description "OBO Graphs JSON full release of the C. elegans Gross Anatomy Ontology" ;
+    schema1:url <http://purl.obolibrary.org/obo/wbbt/wbbt-full.json> .
+
+kgr:wbbt.wbbt-simple.owl a schema1:OntologyProduct ;
+    rdfs:label "wbbt-simple.owl" ;
+    dcterms:description "OWL simple release of the C. elegans Gross Anatomy Ontology" ;
+    schema1:url <http://purl.obolibrary.org/obo/wbbt/wbbt-simple.owl> .
+
 kgr:wbls.obo a schema1:OntologyProduct ;
     rdfs:label "wbls.obo" ;
     dcterms:description "C. elegans development ontology in OBO format" ;
@@ -52020,6 +52409,21 @@ kgr:wbls.owl a schema1:OntologyProduct ;
     rdfs:label "wbls.owl" ;
     dcterms:description "C. elegans development ontology in OWL format" ;
     schema1:url <http://purl.obolibrary.org/obo/wbls.owl> .
+
+kgr:wbls.wbls-base.owl a schema1:OntologyProduct ;
+    rdfs:label "wbls-base.owl" ;
+    dcterms:description "OWL base module of the C. elegans development ontology, containing only axioms that belong to the ontology itself" ;
+    schema1:url <http://purl.obolibrary.org/obo/wbls/wbls-base.owl> .
+
+kgr:wbls.wbls-full.json a schema1:OntologyProduct ;
+    rdfs:label "wbls-full.json" ;
+    dcterms:description "OBO Graphs JSON full release of the C. elegans development ontology" ;
+    schema1:url <http://purl.obolibrary.org/obo/wbls/wbls-full.json> .
+
+kgr:wbls.wbls-simple.owl a schema1:OntologyProduct ;
+    rdfs:label "wbls-simple.owl" ;
+    dcterms:description "OWL simple release of the C. elegans development ontology" ;
+    schema1:url <http://purl.obolibrary.org/obo/wbls/wbls-simple.owl> .
 
 kgr:wbphenotype.obo a schema1:OntologyProduct ;
     rdfs:label "wbphenotype.obo" ;
@@ -52298,15 +52702,30 @@ kgr:wikipedia.api a schema1:ProgrammingInterface ;
     dcterms:description "Public MediaWiki Action API for querying and editing Wikipedia content. The exact modules vary by wiki; this entry uses the English Wikipedia endpoint as a canonical example." ;
     schema1:url <https://en.wikipedia.org/w/api.php> .
 
+kgr:wikipedia.content-current a schema1:Product ;
+    rdfs:label "MediaWiki Content Current File Exports (English Wikipedia)" ;
+    dcterms:description "Compressed XML exports of the unparsed current content of English Wikipedia pages, published monthly by the Wikimedia Foundation and compatible with the legacy XML dump format." ;
+    schema1:url <https://dumps.wikimedia.org/other/mediawiki_content_current/enwiki/> .
+
+kgr:wikipedia.content-history a schema1:Product ;
+    rdfs:label "MediaWiki Content History File Exports (English Wikipedia)" ;
+    dcterms:description "Compressed XML exports of the unparsed content of every revision of English Wikipedia pages, published monthly by the Wikimedia Foundation and compatible with the legacy XML dump format." ;
+    schema1:url <https://dumps.wikimedia.org/other/mediawiki_content_history/enwiki/> .
+
 kgr:wikipedia.dumps.enwiki.current a schema1:Product ;
-    rdfs:label "English Wikipedia Current Content XML Dumps" ;
-    dcterms:description "English Wikipedia current-content XML export directory from the Wikimedia dump service. This dump contains the latest revision of each exported page, split across multiple `.xml.bz2` files." ;
+    rdfs:label "English Wikipedia Current Content XML Dump" ;
+    dcterms:description "English Wikipedia current-content XML dump (latest revision of each page), as a single multistream bzip2 file. Listed size is for the dump dated 2026-11-07." ;
     schema1:url <https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream.xml.bz2> .
 
 kgr:wikipedia.dumps.enwiki.history a schema1:Product ;
     rdfs:label "English Wikipedia Full Revision History XML Dumps" ;
     dcterms:description "English Wikipedia full revision-history XML export directory from the Wikimedia dump service. This dump contains complete page revision histories, split across multiple `.xml.bz2` files." ;
     schema1:url <https://dumps.wikimedia.org/enwiki/latest/> .
+
+kgr:wikipedia.eventstreams a schema1:ProgrammingInterface ;
+    rdfs:label "Wikimedia EventStreams Recent Changes" ;
+    dcterms:description "Server-sent event stream of recent changes across Wikimedia projects, including Wikipedia." ;
+    schema1:url <https://stream.wikimedia.org/v2/stream/recentchange> .
 
 kgr:wikipedia.portal a schema1:GraphicalInterface ;
     rdfs:label "Wikipedia Web Portal" ;
@@ -52315,8 +52734,18 @@ kgr:wikipedia.portal a schema1:GraphicalInterface ;
 
 kgr:wikipedia.rest a schema1:ProgrammingInterface ;
     rdfs:label "Wikipedia Wikimedia REST API" ;
-    dcterms:description "Public Wikimedia REST API for machine-readable Wikipedia content and metadata. This entry uses the English Wikipedia REST base path as a canonical example." ;
+    dcterms:description "Public Wikimedia REST API for machine-readable Wikipedia content and metadata. This entry uses the English Wikipedia REST base path as a canonical example; the base path redirects to an interactive API sandbox." ;
     schema1:url <https://en.wikipedia.org/api/rest_v1/> .
+
+kgr:wikipedia.rest.core a schema1:ProgrammingInterface ;
+    rdfs:label "Wikipedia MediaWiki Core REST API" ;
+    dcterms:description "MediaWiki REST API for retrieving and searching pages, revisions, and files. The product URL is an example page endpoint on English Wikipedia." ;
+    schema1:url <https://en.wikipedia.org/w/rest.php/v1/page/Earth/bare> .
+
+kgr:wikipedia.structured a schema1:Product ;
+    rdfs:label "Wikimedia Structured Wikipedia" ;
+    dcterms:description "Pre-parsed English and French Wikipedia articles in Parquet with a consistent schema, including parsed references, tables, and images. Extracted with the Wikimedia Enterprise Snapshot API and hosted on Hugging Face (44.42 GiB)." ;
+    schema1:url <https://huggingface.co/datasets/wikimedia/structured-wikipedia> .
 
 kgr:wikispecies.api a schema1:ProgrammingInterface ;
     rdfs:label "Wikispecies MediaWiki Action API" ;
@@ -53065,10 +53494,11 @@ kgr:cadd.gnomad-indels.grch38 a schema1:Product ;
     dcterms:description "CADD v1.7 scores for small insertions and deletions observed in gnomAD v4.0 genomes, on GRCh38, tab-separated and bgzip-compressed with a tabix index." ;
     schema1:url <https://krishna.gs.washington.edu/download/CADD/v1.7/GRCh38/gnomad.genomes.r4.0.indel.tsv.gz> .
 
-kgr:cam-kp.go-cams a schema1:Product ;
-    rdfs:label "Gene Ontology CAMs" ;
-    dcterms:description "Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by Gene Ontology biocurators linking genes, proteins, and biological processes. Distributed as the canonical noctua-models repository, where each model is stored as a Turtle (TTL) file." ;
-    schema1:url <https://github.com/geneontology/noctua-models> .
+kgr:cam-kp.api a schema1:ProgrammingInterface ;
+    rdfs:label "CAM-KP TRAPI API (Automat)" ;
+    dcterms:description "TRAPI 1.5 API for the CAM-KP graph, served by RENCI Automat (build of 2024-07-22, Biolink 4.2.1; 119,917 nodes and 2,219,632 edges). The product URL is the OpenAPI document; it also lists Cypher and metadata routes." ;
+    schema1:identifier "automat-cam-kp" ;
+    schema1:url <https://automat.renci.org/cam-kp/openapi.json> .
 
 kgr:cam-kp.reactome-cams a schema1:Product ;
     rdfs:label "Reactome Pathway CAMs" ;
@@ -55959,6 +56389,11 @@ kgr:pangolin.software a schema1:ProcessProduct ;
     dcterms:description "Pangolin source code and trained models, a Python (PyTorch) tool that annotates variants in a VCF or CSV file with splice gain and loss scores, using a gene annotation database (GENCODE-based databases are provided) for masking. A Google Colab notebook is also provided." ;
     schema1:url <https://github.com/tkzeng/Pangolin> .
 
+kgr:pathcards.portal a schema1:GraphicalInterface ;
+    rdfs:label "PathCards Web Interface" ;
+    dcterms:description "Web interface for searching SuperPaths, with their constituent pathways, pathway networks, and genes." ;
+    schema1:url <https://pathcards.genecards.org/> .
+
 kgr:patric.api a schema1:ProgrammingInterface ;
     rdfs:label "BV-BRC API" ;
     dcterms:description "BV-BRC REST Data API for querying and retrieving public data, including data inherited from PATRIC" ;
@@ -56009,6 +56444,11 @@ kgr:peptideatlas.human.ensembl-mapping a schema1:MappingProduct ;
     dcterms:description "Mapping of Human 2026-01 PeptideAtlas peptides to Ensembl proteins." ;
     schema1:url <https://peptideatlas.org/builds/human/202601/APD_ensembl_hits.tsv> .
 
+kgr:pgo.knowledgebase a schema1:Product ;
+    rdfs:label "Human Pseudogene Knowledge Base" ;
+    dcterms:description "Project page for a knowledge base of human pseudogenes in OWL that extends the Sequence Ontology and uses PGO identifiers, with links to an OWL file and a SPARQL endpoint." ;
+    schema1:url <http://homes.gersteinlab.org/proj/ontology/> .
+
 kgr:pharmacotherapydb.diseases a schema1:Product ;
     rdfs:label "PharmacotherapyDB Diseases TSV" ;
     dcterms:description "Disease table for the PharmacotherapyDB catalog using Disease Ontology identifiers" ;
@@ -56049,6 +56489,16 @@ kgr:physiome-model-repository.workspaces a schema1:Product ;
     dcterms:description "Listing of version-controlled model workspaces. Each workspace is a Git repository holding model files (CellML, FieldML, SED-ML, documentation) that can be cloned with git clone using the workspace URI." ;
     schema1:url <https://models.physiomeproject.org/workspace> .
 
+kgr:pir.idmapping.web a schema1:GraphicalInterface ;
+    rdfs:label "PIR ID Mapping Service" ;
+    dcterms:description "Web form for mapping a batch of identifiers between UniProtKB and other databases through iProClass." ;
+    schema1:url <https://proteininformationresource.org/pirwww/search/idmapping.shtml> .
+
+kgr:pir.peptide-match a schema1:GraphicalInterface ;
+    rdfs:label "Peptide Match" ;
+    dcterms:description "Web application and RESTful service for finding all occurrences of a query peptide in UniProtKB sequences, including isoforms." ;
+    schema1:url <https://proteininformationresource.org/peptidematch/> .
+
 kgr:plant-reactome.biopax a schema1:Product ;
     rdfs:label "Plant Reactome BioPAX3 Data" ;
     dcterms:description "BioPAX3 format pathway data downloads organized by plant species" ;
@@ -56073,6 +56523,16 @@ kgr:pombase.to-uniprot a schema1:MappingProduct ;
     rdfs:label "PomBase to UniProt map" ;
     dcterms:description "Tab-delimited file with the PomBase systematic identifier for each protein-coding gene mapped to the corresponding UniProt accession number" ;
     schema1:url <https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv> .
+
+kgr:primekg.disease-features a schema1:Product ;
+    rdfs:label "PrimeKG Disease Features" ;
+    dcterms:description "Text descriptions of diseases, including clinical descriptors from sources such as Mayo Clinic and Orphanet. Version 2.1 on Harvard Dataverse." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/6180618> .
+
+kgr:primekg.drug-features a schema1:Product ;
+    rdfs:label "PrimeKG Drug Features" ;
+    dcterms:description "Text descriptions of drugs, including descriptors from DrugBank. Version 2.1 on Harvard Dataverse." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/6180619> .
 
 kgr:prism.datasets a schema1:Product ;
     rdfs:label "PRISM Drug Sensitivity Dataset Downloads" ;
@@ -56749,10 +57209,15 @@ kgr:scales.graph a schema1:GraphProduct ;
     dcterms:description "SCALES knowledge graph of U.S. federal court records, derived from PACER data and served via the SCALES SPARQL and Triple Pattern Fragments endpoints." ;
     schema1:url <https://scales-okn.org/> .
 
-kgr:scibite.hgnc a schema1:Product ;
+kgr:scibite.hgnc a schema1:OntologyProduct ;
     rdfs:label "SciBite HGNC" ;
     dcterms:description "This HGNC OWL file is generated from the data at https://www.genenames.org/. It contains all genes in HGNC organised in a shallow hierarchy, classified by their locus type and gene group. Gene groups are also derived from HGNC. The ontology contains approved gene symbol, approved gene name, previous names and symbols and mappings to external databases." ;
-    schema1:url <https://raw.githubusercontent.com/elsevier-health/scibite-ontology/main/hgnc_2026-04-01.owl.zip> .
+    schema1:url <https://raw.githubusercontent.com/elsevier-health/scibite-ontology/main/hgnc_2026-11-02.owl.zip> .
+
+kgr:scibite.hgnc.archive a schema1:Product ;
+    rdfs:label "SciBite HGNC Archive" ;
+    dcterms:description "Previous releases of the SciBite HGNC OWL file, as zip archives." ;
+    schema1:url <https://github.com/elsevier-health/scibite-ontology/tree/main/archive> .
 
 kgr:semopenalex.graph a schema1:GraphProduct ;
     rdfs:label "SemOpenAlex RDF Graph" ;
@@ -57226,7 +57691,12 @@ kgr:brain-cell-kg.repository a schema1:ProcessProduct ;
 
 kgr:cam-kp.ctd-interactions a schema1:Product ;
     rdfs:label "CTD Chemical-Gene Models" ;
-    dcterms:description "Chemical-gene interaction models and toxicological pathways derived from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals and 55,400 genes" .
+    dcterms:description "Causal activity models of chemical-gene interactions derived from the Comparative Toxicogenomics Database (CTD)." .
+
+kgr:cam-kp.go-cams a schema1:Product ;
+    rdfs:label "Gene Ontology CAMs" ;
+    dcterms:description "Gene Ontology Causal Activity Model (GO-CAM) annotations manually curated by Gene Ontology biocurators linking genes, proteins, and biological processes. Distributed as the canonical noctua-models repository, where each model is stored as a Turtle (TTL) file." ;
+    schema1:url <https://github.com/geneontology/noctua-models> .
 
 kgr:cancer-registry-kg.cdi a schema1:Product ;
     rdfs:label "Concentrated Disadvantage Index Integration" ;
@@ -57653,6 +58123,11 @@ kgr:mirdb.predicted-targets-v6 a schema1:Product ;
     dcterms:description "miRDB version 6.0 (June 2019) predicted miRNA targets for human, mouse, rat, dog and chicken, generated with MirTarget V4 using miRNA sequences from miRBase 22, as a gzipped tab-delimited text file." ;
     schema1:url <https://mirdb.org/download/miRDB_v6.0_prediction_result.txt.gz> .
 
+kgr:mirtex.portal a schema1:GraphicalInterface ;
+    rdfs:label "miRTex Web Interface" ;
+    dcterms:description "Web interface for querying and downloading microRNA relations mined from Medline abstracts." ;
+    schema1:url <https://proteininformationresource.org/mirtex/> .
+
 kgr:monarchinitiative a schema1:Aggregator,
         "Organization" ;
     rdfs:label "Monarch Initiative" ;
@@ -57871,6 +58346,16 @@ kgr:phosphogrid.portal a schema1:GraphicalInterface ;
     rdfs:label "PhosphoGRID Web Portal" ;
     dcterms:description "Legacy PhosphoGRID web portal for searching experimentally verified in vivo yeast phosphorylation sites by ORF, gene name, or external identifier." ;
     schema1:url <https://phosphogrid.org/> .
+
+kgr:pir.ftp a schema1:Product ;
+    rdfs:label "PIR FTP Server" ;
+    dcterms:description "Anonymous FTP directory of PIR databases, including iproclass, pirsf, idmapping, rps (Reference Proteomes), iprolink, and ontology." ;
+    schema1:url <ftp://ftp.proteininformationresource.org/databases/> .
+
+kgr:pir.reference-proteomes a schema1:Product ;
+    rdfs:label "PIR Reference Proteomes" ;
+    dcterms:description "Algorithmically determined Reference Proteomes (formerly Representative Proteomes), each chosen from a group of similar proteomes by co-membership in UniRef50 clusters. Group files (TXT) and sequence files (FASTA) are available at 75%, 55%, 35%, and 15% co-membership cutoffs, with browsing and BLAST search. The page lists release 2024_04 (2024-07-24)." ;
+    schema1:url <https://proteininformationresource.org/rps/> .
 
 kgr:plana.obo a schema1:OntologyProduct ;
     rdfs:label "plana.obo" ;
@@ -58699,6 +59184,11 @@ kgr:phosphoelm.dataset a schema1:Product ;
     dcterms:description "Phospho.ELM version 9.0 dataset request page for phosphorylation instances with accessions, sequences, residue positions, phosphorylated residues, PubMed identifiers, upstream kinases, evidence source class, species, and entry dates." ;
     schema1:url <http://phospho.elm.eu.org/dataset.html> .
 
+kgr:pir.downloads a schema1:Product ;
+    rdfs:label "PIR Downloads" ;
+    dcterms:description "PIR download center linking to the anonymous FTP server, which holds releases of iProClass, PIRSF, and PRO along with ID mapping, Reference Proteome, and other PIR-maintained files. The FTP ontology/pro_obo directory is historical (last changed in 2020)." ;
+    schema1:url <https://proteininformationresource.org/pirwww/download/> .
+
 kgr:predict.method a schema1:ProcessProduct ;
     rdfs:label "PREDICT Drug-Indication Inference Method" ;
     dcterms:description "PREDICT computational method for large-scale prediction of drug indications using drug-drug and disease-disease similarity measures and known drug-disease associations." ;
@@ -58858,6 +59348,11 @@ kgr:cm4ai_talent_kg.graph a schema1:GraphProduct ;
     rdfs:label "CM4AI Talent Knowledge Graph" ;
     dcterms:description "The CM4AI Talent Knowledge Graph connecting Bridge2AI and CM4AI researchers, projects, publications, datasets, and bio-entities." ;
     schema1:url <https://cm4aikg.vercel.app/> .
+
+kgr:coralkinome.kinase-table a schema1:Product ;
+    rdfs:label "Coral Kinase Annotation Table" ;
+    dcterms:description "Table of human kinases with Coral, UniProt, Ensembl, Entrez, and HGNC identifiers, kinase group, family, and subfamily, and drawing coordinates for the kinome tree." ;
+    schema1:url <https://raw.githubusercontent.com/dphansti/CORAL/master/Data/coral_dataframe.tsv> .
 
 kgr:disprot.downloads a schema1:Product ;
     rdfs:label "DisProt Downloads" ;
@@ -59256,6 +59751,16 @@ kgr:comptox-dashboard.downloads a schema1:Product ;
 kgr:genecards.disease.associations a schema1:Product ;
     rdfs:label "GeneCards Disease Associations" ;
     dcterms:description "Disease association data integrated from OMIM, MalaCards, ClinVar, Orphanet, DisGeNET and other disease databases" ;
+    schema1:url <https://www.genecards.org/> .
+
+kgr:genecarna.portal a schema1:GraphicalInterface ;
+    rdfs:label "GeneCaRNA in GeneCards" ;
+    dcterms:description "Human non-coding RNA gene pages in the GeneCards web interface." ;
+    schema1:url <https://www.genecards.org/> .
+
+kgr:genehancer.portal a schema1:GraphicalInterface ;
+    rdfs:label "GeneHancer in GeneCards" ;
+    dcterms:description "GeneHancer enhancers and gene associations, shown on GeneCards gene pages." ;
     schema1:url <https://www.genecards.org/> .
 
 kgr:geneorganizer.gene-bodypart.confident-all a schema1:Product ;
@@ -60490,6 +60995,11 @@ kgr:multiomics-kp.graph a schema1:GraphProduct ;
     dcterms:description "Live TRAPI/BioThings metadata endpoint for the Multiomics BigGIM-DrugResponse KP, exposing the multiomics knowledge graph served by the Multiomics Provider (built from GTEx, TCGA, and drug-response data, with additional clinical-trials, drug-approval and knowledge-resource inputs)." ;
     schema1:url <https://biothings.transltr.io/biggim_drugresponse_kp/metadata> .
 
+kgr:pir.idmapping a schema1:MappingProduct ;
+    rdfs:label "PIR ID Mapping Table" ;
+    dcterms:description "Tab-delimited table mapping UniProtKB accessions to identifiers in other databases, including Entrez Gene, RefSeq, PDB, Pfam, GO, PIRSF, UniRef, UniParc, NCBI Taxonomy, OMIM, Ensembl, PubMed, and EMBL/GenBank/DDBJ. The file is dated 2024-05-29." ;
+    schema1:url <ftp://ftp.proteininformationresource.org/databases/idmapping/idmapping.tb.gz> .
+
 kgr:agro.owl a schema1:OntologyProduct ;
     rdfs:label "AgrO" ;
     dcterms:description "Contains all AgrO terms and links to other relevant ontologies." ;
@@ -60537,7 +61047,7 @@ kgr:pharmdb.graph a schema1:GraphProduct ;
 
 kgr:primekg.graph a schema1:GraphProduct ;
     rdfs:label "PrimeKG Full Dataset" ;
-    dcterms:description "The full PrimeKG dataset containing disease relationships." ;
+    dcterms:description "The full PrimeKG edge list (kg.csv), with 4,050,249 undirected relationships. The node count is taken from the released node table." ;
     schema1:url <https://dataverse.harvard.edu/api/access/datafile/6180620> .
 
 kgr:drugmechdb.graph a schema1:GraphProduct ;
@@ -60624,6 +61134,16 @@ kgr:metabokg.graph a schema1:GraphProduct ;
     rdfs:label "MetaboKG RDF Graph" ;
     dcterms:description "RDF knowledge graph materialized by the MetaBoKG workflow from public metabolomics repository outputs, GNPS molecular-networking jobs, annotation evidence, sample metadata, and environmental and taxonomic context. The repository documents generated per-job Turtle files under mapping/kg and loading into Virtuoso named graphs." ;
     schema1:url <https://github.com/HolobiomicsLab/MetaBoKG> .
+
+kgr:optimuskg.edges a schema1:GraphProduct ;
+    rdfs:label "OptimusKG Edges" ;
+    dcterms:description "All OptimusKG edges in one Parquet file. Counts were read from the file." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/14220909> .
+
+kgr:optimuskg.nodes a schema1:GraphProduct ;
+    rdfs:label "OptimusKG Nodes" ;
+    dcterms:description "All OptimusKG nodes in one Parquet file. Counts were read from the file." ;
+    schema1:url <https://dataverse.harvard.edu/api/access/datafile/14220908> .
 
 kgr:enrichr-kg.graph a schema1:GraphProduct ;
     rdfs:label "Enrichr-KG Neo4j Database" ;
@@ -60772,6 +61292,11 @@ kgr:knowwheregraph.graph a schema1:GraphProduct ;
     rdfs:label "KnowWhereGraph RDF Knowledge Graph" ;
     dcterms:description "KnowWhereGraph knowledge graph with 29+ billion RDF triples integrating 30+ environmental and geospatial data layers accessible through SPARQL endpoint" ;
     schema1:url <https://knowwheregraph.org/> .
+
+kgr:primekg-plus.bundle a schema1:GraphProduct ;
+    rdfs:label "PrimeKG-Plus Release Bundle" ;
+    dcterms:description "Zenodo archive with the PrimeKG-Plus graph (primekg_plus.csv; 129,317 nodes and 7,683,206 directed edges), the literature-augmented PrimeKG-Plus-RD graph (primekg_plus_rd.csv; 129,353 nodes and 7,683,756 directed edges), a copy of the original PrimeKG, supplementary tables, curation inputs, and rebuild scripts. Counts on this product are for primekg_plus.csv." ;
+    schema1:url <https://zenodo.org/records/20796545/files/zenodo_bundle.tar.gz> .
 
 kgr:alzkb.browser a schema1:GraphicalInterface ;
     rdfs:label "AlzKB Graph Database Browser" ;

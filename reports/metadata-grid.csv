@@ -173,6 +173,7 @@ compath,active,PASS
 complexportal,active,PASS
 comptox-dashboard,active,PASS
 connections-hypothesis-kp,active,PASS
+coralkinome,active,PASS
 corum,active,PASS
 cosmic,active,PASS
 cpathkg,active,PASS
@@ -371,6 +372,8 @@ gene-expression-omnibus,active,PASS
 gene2phenotype,active,PASS
 genebass,active,PASS
 genecards,active,PASS
+genecarna,active,PASS
+genehancer,active,PASS
 genemania,active,PASS
 geneorganizer,active,PASS
 genepio,active,PASS
@@ -738,6 +741,7 @@ opentargets,active,PASS
 opera,active,PASS
 opl,active,PASS
 opmi,active,PASS
+optimuskg,active,PASS
 orcid,active,PASS
 ordo,active,PASS
 oregano,active,PASS
@@ -760,6 +764,7 @@ panorama-public,active,PASS
 panther,active,PASS
 papyrus,active,PASS
 pathbank,active,PASS
+pathcards,active,PASS
 pathophenodb,active,PASS
 pathwaycommons,active,PASS
 pathwhiz,active,PASS
@@ -816,6 +821,7 @@ preppi,active,PASS
 pride,active,PASS
 pride-cv,active,PASS
 primekg,active,PASS
+primekg-plus,active,PASS
 prism,active,PASS
 probe-miner,active,PASS
 proco,active,PASS
@@ -862,6 +868,7 @@ remap,active,PASS
 repodb,active,PASS
 repohub,active,PASS
 reprotox-kg,active,PASS
+repurposedrugs,active,PASS
 retriever,active,PASS
 revel,active,PASS
 rfam,active,PASS
@@ -1081,7 +1088,6 @@ ceph,inactive,PASS
 chembank,inactive,PASS
 chemid,inactive,PASS
 cmf,inactive,PASS
-coralkinome,inactive,PASS
 cord-19,inactive,PASS
 courage,orphaned,PASS
 date,inactive,PASS
@@ -1148,6 +1154,7 @@ micro,inactive,PASS
 mirgate,unresponsive,PASS
 mirnao,inactive,PASS
 miro,inactive,PASS
+mirtex,unknown,PASS
 mlpcn-profiling,orphaned,PASS
 mo,inactive,PASS
 modencode,orphaned,PASS

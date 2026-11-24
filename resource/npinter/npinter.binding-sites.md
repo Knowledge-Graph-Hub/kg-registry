@@ -11,7 +11,7 @@ original_source:
   source: npinter
 product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/bindingsite_NPInterv5.txt.gz
 warnings:
-- File was not able to be retrieved when checked on 2026-11-12_ Error connecting to
+- File was not able to be retrieved when checked on 2026-11-22_ Error connecting to
   URL_ ('Connection aborted.', RemoteDisconnected('Remote end closed connection without
   response'))
 layout: product_detail

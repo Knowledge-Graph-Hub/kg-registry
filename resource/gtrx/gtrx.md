@@ -73,9 +73,9 @@ products:
   warnings:
   - The historical source website reported in the BioThings metadata, https://gtrx.rbsapp.net/about.html,
     returned HTTP 404 during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 502 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 502 error
     when accessing file'
 - category: ProgrammingInterface
   description: TRAPI endpoint for the Service Provider team, served by BioThings Explorer,

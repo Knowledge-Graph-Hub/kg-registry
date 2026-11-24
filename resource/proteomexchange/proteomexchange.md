@@ -143,9 +143,9 @@ products:
   warnings:
   - Feed was not able to be retrieved when checked on 2026-10-04. The URL listed on
     the ProteomeXchange subscription page returned HTTP 404.
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: ProteomeXchange data submission and dissemination guidelines for partner

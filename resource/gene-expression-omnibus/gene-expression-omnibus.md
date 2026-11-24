@@ -1903,10 +1903,10 @@ products:
     source: gene-expression-omnibus
   product_url: http://bigdata.ibp.ac.cn/npinter5/download/file/dna_interactions.npinter5.txt.gz
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-12: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-11-22: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
-  - 'File was not able to be retrieved when checked on 2026-11-22: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-11-24: Error connecting
     to URL: (''Connection aborted.'', RemoteDisconnected(''Remote end closed connection
     without response''))'
 rrid: SCR_005012

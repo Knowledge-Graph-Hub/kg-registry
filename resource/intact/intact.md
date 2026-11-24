@@ -866,8 +866,8 @@ products:
     source: string
   product_url: https://www.genecards.org/
   warnings:
-  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
-    URL has not been confirmed by an automated check.
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so
+    this URL has not been confirmed by an automated check.
 - category: Product
   description: Historical consolidated protein interaction index in PSI-MITAB 2.5
     format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
@@ -2334,11 +2334,11 @@ products:
     on 2026-06-02.
   - The historical AgBase HPI downloads URL redirected and then returned HTTP 403
     during curation on 2026-06-02.
-  - 'File was not able to be retrieved when checked on 2026-11-12: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-11-22: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
-  - 'File was not able to be retrieved when checked on 2026-11-22: Error connecting
+  - 'File was not able to be retrieved when checked on 2026-11-24: Error connecting
     to URL: HTTPSConnectionPool(host=''hpidb.igbb.msstate.edu'', port=443): Max retries
     exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host=''hpidb.igbb.msstate.edu'',
     port=443): Failed to establish a new connection: [Errno 111] Connection refused"))'
@@ -3596,9 +3596,9 @@ products:
     offline. The kghub.io and kg-hub.berkeleybop.io hosts return HTTP 404 for all
     kg-covid-19 artifacts (current and dated) and the kg-hub-public-data S3 objects
     return HTTP 403. No replacement public download URL is available.'
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: Robokop KG (Automat)

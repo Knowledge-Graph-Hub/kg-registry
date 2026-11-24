@@ -309,8 +309,8 @@ products:
     source: pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
-    URL has not been confirmed by an automated check.
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so
+    this URL has not been confirmed by an automated check.
 - category: Product
   description: Co-occurrence database generated from public PubMed abstracts with
     entity normalization for Biolink-relevant biomedical concepts
@@ -1098,13 +1098,13 @@ products:
   - relation_type: prov:wasDerivedFrom
     source: uniprot
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 500 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-06-27: HTTP 500 error
     when accessing file. The dbSNO 3.0 download page (download.php) renders its page
     shell but the server errors before emitting download links; the rest of the site
     (index.php, statistics.php) is live (200).'
-  - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 500 error
     when accessing file'
 - category: Product
   description: Phospho.ELM version 9.0 dataset request page for phosphorylation instances
@@ -2879,9 +2879,9 @@ products:
   warnings:
   - Site did not respond (connection timed out) when checked on 2026-10-19; the last
     Internet Archive snapshot is from 2022-08-17.
-  - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2026-11-22: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2026-11-24: Timeout connecting
     to URL'
 - category: GraphicalInterface
   description: REDfly search interface for querying CRMs, CRM segments, predicted

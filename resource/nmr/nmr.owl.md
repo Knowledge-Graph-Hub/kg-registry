@@ -12,7 +12,7 @@ product_url: http://purl.obolibrary.org/obo/nmr.owl
 warnings:
 - File was not able to be retrieved when checked on 2026-11-12_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2026-10-21_ Timeout connecting
+- File was not able to be retrieved when checked on 2026-11-22_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2026-11-12_ HTTP 503 error when
   accessing file

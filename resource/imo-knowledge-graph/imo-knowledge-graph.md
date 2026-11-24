@@ -187,11 +187,11 @@ products:
     source: imo-knowledge-graph
   product_url: https://developer.imohealth.com/
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-11-22: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 406 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-11-22: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2026-11-24: Timeout connecting
     to URL'
 - category: DocumentationProduct
   description: Product page describing the IMO Health Knowledge Graph, its clinical

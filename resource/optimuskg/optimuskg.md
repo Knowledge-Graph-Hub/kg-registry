@@ -15,10 +15,11 @@ contacts:
   label: Lucas Vittor
   orcid: 0009-0002-6978-0482
 creation_date: '2026-11-24T00:00:00Z'
-description: OptimusKG is a multimodal biomedical labeled property graph from the Zitnik Lab
-  at Harvard Medical School, built from structured and semi-structured resources with type-specific
-  metadata across molecular, anatomical, clinical, and environmental domains. It supersedes
-  PrimeKG. Dataset version 3.2 has 192,813 nodes of 10 types and 21,834,669 edges.
+description: OptimusKG is a multimodal biomedical labeled property graph from the
+  Zitnik Lab at Harvard Medical School, built from structured and semi-structured
+  resources with type-specific metadata across molecular, anatomical, clinical, and
+  environmental domains. It supersedes PrimeKG. Dataset version 3.2 has 192,813 nodes
+  of 10 types and 21,834,669 edges.
 domains:
 - biomedical
 - precision medicine
@@ -38,7 +39,8 @@ license:
 name: OptimusKG
 products:
 - category: GraphProduct
-  description: All OptimusKG nodes in one Parquet file. Counts were read from the file.
+  description: All OptimusKG nodes in one Parquet file. Counts were read from the
+    file.
   format: parquet
   id: optimuskg.nodes
   latest_version: '3.2'
@@ -82,7 +84,8 @@ products:
   product_file_size: 116094167
   product_url: https://dataverse.harvard.edu/api/access/datafile/14220908
 - category: GraphProduct
-  description: All OptimusKG edges in one Parquet file. Counts were read from the file.
+  description: All OptimusKG edges in one Parquet file. Counts were read from the
+    file.
   edge_count: 21834669
   format: parquet
   id: optimuskg.edges
@@ -148,8 +151,8 @@ products:
   product_file_size: 179502680
   product_url: https://dataverse.harvard.edu/api/access/datafile/14220897
 - category: Product
-  description: Harvard Dataverse dataset with the full graph and separate Parquet files for
-    each node and edge type.
+  description: Harvard Dataverse dataset with the full graph and separate Parquet
+    files for each node and edge type.
   format: parquet
   id: optimuskg.dataverse
   latest_version: '3.2'
@@ -158,9 +161,12 @@ products:
   - relation_type: prov:hadPrimarySource
     source: optimuskg
   product_url: https://doi.org/10.7910/DVN/IYNGEV
+  warnings:
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 202 error
+    when accessing file'
 - category: ProgrammingInterface
-  description: Python package for downloading OptimusKG files and loading the graph as Polars
-    data frames or a NetworkX graph.
+  description: Python package for downloading OptimusKG files and loading the graph
+    as Polars data frames or a NetworkX graph.
   format: python
   id: optimuskg.client
   is_public: true
@@ -173,8 +179,8 @@ products:
     source: optimuskg
   product_url: https://pypi.org/project/optimuskg/
 - category: ProcessProduct
-  description: Kedro pipeline that builds OptimusKG, with an agent skill and an MCP Bundle for
-    querying the graph.
+  description: Kedro pipeline that builds OptimusKG, with an agent skill and an MCP
+    Bundle for querying the graph.
   format: python
   id: optimuskg.code
   license: *id001
@@ -213,7 +219,6 @@ taxon:
 - NCBITaxon:9606
 version: '3.2'
 ---
-
 # OptimusKG
 
 OptimusKG is a biomedical property graph from the Zitnik Lab at Harvard Medical School. It is built with

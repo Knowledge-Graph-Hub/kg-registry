@@ -34,13 +34,13 @@ products:
     source: dc_cl
   product_url: http://purl.obolibrary.org/obo/dc_cl.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2026-11-10: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2026-11-12: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2026-11-12: HTTP 503 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2026-11-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2026-11-24: HTTP 404 error
     when accessing file'
 publications: []
 taxon:
