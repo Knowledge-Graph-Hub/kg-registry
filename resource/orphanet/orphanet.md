@@ -306,8 +306,8 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
+    URL has not been confirmed by an automated check.
 - category: Product
   description: History file tracking changes to Orphanet term mappings to CUIs
   format: txt
@@ -2101,6 +2101,20 @@ products:
     source: ncbigene
   product_file_size: 3743605
   product_url: https://geneorganizer.huji.ac.il/assets/Uploads/diseases-germlayers.v12-1.csv.gz
+- category: Product
+  description: Text descriptions of diseases, including clinical descriptors from
+    sources such as Mayo Clinic and Orphanet. Version 2.1 on Harvard Dataverse.
+  format: tsv
+  id: primekg.disease-features
+  latest_version: '2.1'
+  name: PrimeKG Disease Features
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: primekg
+  - relation_type: prov:hadPrimarySource
+    source: orphanet
+  product_file_size: 113534270
+  product_url: https://dataverse.harvard.edu/api/access/datafile/6180618
 publications:
 - authors:
   - Pavan S

@@ -130,7 +130,7 @@ products:
     source: obo-db-ingest
   product_file_size: 207059
   product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
-- category: Product
+- category: OntologyProduct
   compression: zip
   description: This HGNC OWL file is generated from the data at https://www.genenames.org/.
     It contains all genes in HGNC organised in a shallow hierarchy, classified by
@@ -139,6 +139,7 @@ products:
     and mappings to external databases.
   format: owl
   id: scibite.hgnc
+  latest_version: '2026-11-02'
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
@@ -148,8 +149,8 @@ products:
     source: hgnc
   - relation_type: prov:hadPrimarySource
     source: scibite
-  product_file_size: 8114434
-  product_url: https://raw.githubusercontent.com/elsevier-health/scibite-ontology/main/hgnc_2026-04-01.owl.zip
+  product_file_size: 8087124
+  product_url: https://raw.githubusercontent.com/elsevier-health/scibite-ontology/main/hgnc_2026-11-02.owl.zip
   repository: https://github.com/elsevier-health/scibite-ontology
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -1118,8 +1119,8 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
+    URL has not been confirmed by an automated check.
 - category: GraphicalInterface
   description: Interactive Shiny web interface for exploring and visualizing human
     kinase-substrate interactions
@@ -5417,6 +5418,152 @@ products:
   secondary_source:
   - relation_type: prov:wasDerivedFrom
     source: ensembl
+- category: GraphicalInterface
+  description: Human non-coding RNA gene pages in the GeneCards web interface.
+  format: http
+  id: genecarna.portal
+  name: GeneCaRNA in GeneCards
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genecarna
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  product_url: https://www.genecards.org/
+  warnings:
+  - genecards.org returns HTTP 403 to automated clients, so this URL was not confirmed
+    by an automated check on 2026-11-24.
+- category: GraphProduct
+  description: All OptimusKG nodes in one Parquet file. Counts were read from the
+    file.
+  format: parquet
+  id: optimuskg.nodes
+  latest_version: '3.2'
+  name: OptimusKG Nodes
+  node_count: 192813
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: optimuskg
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biolink
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: nsides
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 116094167
+  product_url: https://dataverse.harvard.edu/api/access/datafile/14220908
+- category: GraphProduct
+  description: All OptimusKG edges in one Parquet file. Counts were read from the
+    file.
+  edge_count: 21834669
+  format: parquet
+  id: optimuskg.edges
+  latest_version: '3.2'
+  name: OptimusKG Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: optimuskg
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biolink
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: nsides
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 179606962
+  product_url: https://dataverse.harvard.edu/api/access/datafile/14220909
+- category: Product
+  description: Previous releases of the SciBite HGNC OWL file, as zip archives.
+  format: http
+  id: scibite.hgnc.archive
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: SciBite HGNC Archive
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: scibite
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_url: https://github.com/elsevier-health/scibite-ontology/tree/main/archive
+- category: Product
+  description: Table of human kinases with Coral, UniProt, Ensembl, Entrez, and HGNC
+    identifiers, kinase group, family, and subfamily, and drawing coordinates for
+    the kinome tree.
+  format: tsv
+  id: coralkinome.kinase-table
+  name: Coral Kinase Annotation Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_file_size: 853276
+  product_url: https://raw.githubusercontent.com/dphansti/CORAL/master/Data/coral_dataframe.tsv
 publications:
 - authors:
   - Seal RL

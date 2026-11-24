@@ -2068,9 +2068,8 @@ products:
   product_file_size: 4640682152
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
 - category: Product
-  description: Chemical-gene interaction models and toxicological pathways derived
-    from the Comparative Toxicogenomics Database (CTD) covering 17,700+ chemicals
-    and 55,400 genes
+  description: Causal activity models of chemical-gene interactions derived from the
+    Comparative Toxicogenomics Database (CTD).
   format: http
   id: cam-kp.ctd-interactions
   name: CTD Chemical-Gene Models
@@ -4335,10 +4334,14 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wipo-tkp
 - category: GraphProduct
-  description: The full PrimeKG dataset containing disease relationships.
+  description: The full PrimeKG edge list (kg.csv), with 4,050,249 undirected relationships.
+    The node count is taken from the released node table.
+  edge_count: 4050249
   format: csv
   id: primekg.graph
+  latest_version: '2.1'
   name: PrimeKG Full Dataset
+  node_count: 129375
   original_source:
   - relation_type: prov:hadPrimarySource
     source: primekg
@@ -4370,12 +4373,8 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: umls
+  product_file_size: 981751236
   product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
-    to URL
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx
@@ -5447,6 +5446,155 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pubtator
   product_url: https://pharos.nih.gov/graphql
+- category: GraphProduct
+  description: All OptimusKG nodes in one Parquet file. Counts were read from the
+    file.
+  format: parquet
+  id: optimuskg.nodes
+  latest_version: '3.2'
+  name: OptimusKG Nodes
+  node_count: 192813
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: optimuskg
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biolink
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: nsides
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 116094167
+  product_url: https://dataverse.harvard.edu/api/access/datafile/14220908
+- category: GraphProduct
+  description: All OptimusKG edges in one Parquet file. Counts were read from the
+    file.
+  edge_count: 21834669
+  format: parquet
+  id: optimuskg.edges
+  latest_version: '3.2'
+  name: OptimusKG Edges
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: optimuskg
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: biolink
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: doid
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: nsides
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: ordo
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  product_file_size: 179606962
+  product_url: https://dataverse.harvard.edu/api/access/datafile/14220909
+- category: GraphProduct
+  compression: targz
+  description: Zenodo archive with the PrimeKG-Plus graph (primekg_plus.csv; 129,317
+    nodes and 7,683,206 directed edges), the literature-augmented PrimeKG-Plus-RD
+    graph (primekg_plus_rd.csv; 129,353 nodes and 7,683,756 directed edges), a copy
+    of the original PrimeKG, supplementary tables, curation inputs, and rebuild scripts.
+    Counts on this product are for primekg_plus.csv.
+  edge_count: 7683206
+  format: mixed
+  id: primekg-plus.bundle
+  latest_version: '1.0'
+  name: PrimeKG-Plus Release Bundle
+  node_count: 129317
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: primekg-plus
+  - relation_type: prov:hadPrimarySource
+    source: primekg
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: nsides
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: repurposedrugs
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 596295144
+  product_url: https://zenodo.org/records/20796545/files/zenodo_bundle.tar.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: pmc
 publications:
 - authors:
   - Davis AP

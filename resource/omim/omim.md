@@ -259,8 +259,8 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
+    URL has not been confirmed by an automated check.
 - category: Product
   description: Disease association data integrated from OMIM, MalaCards, ClinVar,
     Orphanet, DisGeNET and other disease databases
@@ -282,8 +282,8 @@ products:
     source: orphanet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
+    URL has not been confirmed by an automated check.
 - category: GraphProduct
   description: Core UniBioMap graph edges file.
   format: csv
@@ -2960,10 +2960,14 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wipo-tkp
 - category: GraphProduct
-  description: The full PrimeKG dataset containing disease relationships.
+  description: The full PrimeKG edge list (kg.csv), with 4,050,249 undirected relationships.
+    The node count is taken from the released node table.
+  edge_count: 4050249
   format: csv
   id: primekg.graph
+  latest_version: '2.1'
   name: PrimeKG Full Dataset
+  node_count: 129375
   original_source:
   - relation_type: prov:hadPrimarySource
     source: primekg
@@ -2995,12 +2999,8 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: umls
+  product_file_size: 981751236
   product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
-    to URL
 - category: GraphProduct
   description: Knowledge graph connecting rare diseases with genes, drugs, pathways,
     and medical images
@@ -5173,6 +5173,46 @@ products:
     source: ncbigene
   product_file_size: 3743605
   product_url: https://geneorganizer.huji.ac.il/assets/Uploads/diseases-germlayers.v12-1.csv.gz
+- category: MappingProduct
+  compression: gzip
+  description: Tab-delimited table mapping UniProtKB accessions to identifiers in
+    other databases, including Entrez Gene, RefSeq, PDB, Pfam, GO, PIRSF, UniRef,
+    UniParc, NCBI Taxonomy, OMIM, Ensembl, PubMed, and EMBL/GenBank/DDBJ. The file
+    is dated 2024-05-29.
+  format: tsv
+  id: pir.idmapping
+  name: PIR ID Mapping Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pirsf
+  - relation_type: prov:hadPrimarySource
+    source: uniref
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  product_file_size: 12465900679
+  product_url: ftp://ftp.proteininformationresource.org/databases/idmapping/idmapping.tb.gz
 publications:
 - authors:
   - Joanna S Amberger

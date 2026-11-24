@@ -1066,8 +1066,8 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
+    URL has not been confirmed by an automated check.
 - category: Product
   description: UniProt IDs for all targets in TTD
   format: txt
@@ -7093,6 +7093,98 @@ products:
     source: uniprot
   product_file_size: 85554748
   product_url: https://pax-db.org/downloads/latest/paxdb-uniprot-crossreferences.txt
+- category: MappingProduct
+  compression: gzip
+  description: Tab-delimited table mapping UniProtKB accessions to identifiers in
+    other databases, including Entrez Gene, RefSeq, PDB, Pfam, GO, PIRSF, UniRef,
+    UniParc, NCBI Taxonomy, OMIM, Ensembl, PubMed, and EMBL/GenBank/DDBJ. The file
+    is dated 2024-05-29.
+  format: tsv
+  id: pir.idmapping
+  name: PIR ID Mapping Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pirsf
+  - relation_type: prov:hadPrimarySource
+    source: uniref
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  product_file_size: 12465900679
+  product_url: ftp://ftp.proteininformationresource.org/databases/idmapping/idmapping.tb.gz
+- category: Product
+  description: Algorithmically determined Reference Proteomes (formerly Representative
+    Proteomes), each chosen from a group of similar proteomes by co-membership in
+    UniRef50 clusters. Group files (TXT) and sequence files (FASTA) are available
+    at 75%, 55%, 35%, and 15% co-membership cutoffs, with browsing and BLAST search.
+    The page lists release 2024_04 (2024-07-24).
+  format: mixed
+  id: pir.reference-proteomes
+  latest_version: '2024_04'
+  name: PIR Reference Proteomes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uniref
+  product_url: https://proteininformationresource.org/rps/
+- category: GraphicalInterface
+  description: Web application and RESTful service for finding all occurrences of
+    a query peptide in UniProtKB sequences, including isoforms.
+  format: http
+  id: pir.peptide-match
+  name: Peptide Match
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://proteininformationresource.org/peptidematch/
+  warnings:
+  - The service returned HTTP 503 when checked on 2026-11-24.
+- category: Product
+  description: Table of human kinases with Coral, UniProt, Ensembl, Entrez, and HGNC
+    identifiers, kinase group, family, and subfamily, and drawing coordinates for
+    the kinome tree.
+  format: tsv
+  id: coralkinome.kinase-table
+  name: Coral Kinase Annotation Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_file_size: 853276
+  product_url: https://raw.githubusercontent.com/dphansti/CORAL/master/Data/coral_dataframe.tsv
 publications:
 - authors:
   - Alex Bateman

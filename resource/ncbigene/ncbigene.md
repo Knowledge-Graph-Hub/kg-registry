@@ -787,8 +787,8 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
+    URL has not been confirmed by an automated check.
 - category: MappingProduct
   compression: zip
   description: A single delimited text file format containing a list of mappings between
@@ -3120,10 +3120,14 @@ products:
   - relation_type: prov:hadPrimarySource
     source: wipo-tkp
 - category: GraphProduct
-  description: The full PrimeKG dataset containing disease relationships.
+  description: The full PrimeKG edge list (kg.csv), with 4,050,249 undirected relationships.
+    The node count is taken from the released node table.
+  edge_count: 4050249
   format: csv
   id: primekg.graph
+  latest_version: '2.1'
   name: PrimeKG Full Dataset
+  node_count: 129375
   original_source:
   - relation_type: prov:hadPrimarySource
     source: primekg
@@ -3155,12 +3159,8 @@ products:
     source: uberon
   - relation_type: prov:hadPrimarySource
     source: umls
+  product_file_size: 981751236
   product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
-  warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2026-02-04_ Timeout connecting
-    to URL
 - category: GraphProduct
   description: KGX distribution of the SRI-Reference KG
   format: kgx
@@ -5518,6 +5518,147 @@ products:
   - The full all-screens file is available only by e-mail request, and the static
     frequent-hitter and archived-screen zip downloads linked from the download page
     returned HTTP 404 (file missing on the server) when checked on 2026-11-22.
+- category: GraphicalInterface
+  description: Human non-coding RNA gene pages in the GeneCards web interface.
+  format: http
+  id: genecarna.portal
+  name: GeneCaRNA in GeneCards
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genecarna
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  product_url: https://www.genecards.org/
+  warnings:
+  - genecards.org returns HTTP 403 to automated clients, so this URL was not confirmed
+    by an automated check on 2026-11-24.
+- category: GraphProduct
+  compression: targz
+  description: Zenodo archive with the PrimeKG-Plus graph (primekg_plus.csv; 129,317
+    nodes and 7,683,206 directed edges), the literature-augmented PrimeKG-Plus-RD
+    graph (primekg_plus_rd.csv; 129,353 nodes and 7,683,756 directed edges), a copy
+    of the original PrimeKG, supplementary tables, curation inputs, and rebuild scripts.
+    Counts on this product are for primekg_plus.csv.
+  edge_count: 7683206
+  format: mixed
+  id: primekg-plus.bundle
+  latest_version: '1.0'
+  name: PrimeKG-Plus Release Bundle
+  node_count: 129317
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: primekg-plus
+  - relation_type: prov:hadPrimarySource
+    source: primekg
+  - relation_type: prov:hadPrimarySource
+    source: bgee
+  - relation_type: prov:hadPrimarySource
+    source: ctd
+  - relation_type: prov:hadPrimarySource
+    source: disgenet
+  - relation_type: prov:hadPrimarySource
+    source: drugbank
+  - relation_type: prov:hadPrimarySource
+    source: drugcentral
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: hp
+  - relation_type: prov:hadPrimarySource
+    source: mondo
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: nsides
+  - relation_type: prov:hadPrimarySource
+    source: opentargets
+  - relation_type: prov:hadPrimarySource
+    source: reactome
+  - relation_type: prov:hadPrimarySource
+    source: repurposedrugs
+  - relation_type: prov:hadPrimarySource
+    source: sider
+  - relation_type: prov:hadPrimarySource
+    source: string
+  - relation_type: prov:hadPrimarySource
+    source: uberon
+  - relation_type: prov:hadPrimarySource
+    source: umls
+  product_file_size: 596295144
+  product_url: https://zenodo.org/records/20796545/files/zenodo_bundle.tar.gz
+  secondary_source:
+  - relation_type: prov:wasDerivedFrom
+    source: pubmed
+  - relation_type: prov:wasDerivedFrom
+    source: pmc
+- category: Product
+  description: Table of human kinases with Coral, UniProt, Ensembl, Entrez, and HGNC
+    identifiers, kinase group, family, and subfamily, and drawing coordinates for
+    the kinome tree.
+  format: tsv
+  id: coralkinome.kinase-table
+  name: Coral Kinase Annotation Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_file_size: 853276
+  product_url: https://raw.githubusercontent.com/dphansti/CORAL/master/Data/coral_dataframe.tsv
+- category: MappingProduct
+  compression: gzip
+  description: Tab-delimited table mapping UniProtKB accessions to identifiers in
+    other databases, including Entrez Gene, RefSeq, PDB, Pfam, GO, PIRSF, UniRef,
+    UniParc, NCBI Taxonomy, OMIM, Ensembl, PubMed, and EMBL/GenBank/DDBJ. The file
+    is dated 2024-05-29.
+  format: tsv
+  id: pir.idmapping
+  name: PIR ID Mapping Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pirsf
+  - relation_type: prov:hadPrimarySource
+    source: uniref
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  product_file_size: 12465900679
+  product_url: ftp://ftp.proteininformationresource.org/databases/idmapping/idmapping.tb.gz
 publications:
 - authors:
   - Donna Maglott

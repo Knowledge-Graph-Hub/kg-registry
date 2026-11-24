@@ -972,8 +972,8 @@ products:
     source: uniprot
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2026-03-30_ HTTP 403 error when
-    accessing file
+  - The site returns HTTP 403 to automated clients (2026-03-30 and 2026-11-24), so this
+    URL has not been confirmed by an automated check.
 - category: GraphProduct
   compression: gzip
   description: protein network data (full network, scored links between proteins)
@@ -4163,6 +4163,111 @@ products:
   - relation_type: prov:hadPrimarySource
     source: ensembl
   product_url: https://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/variation_plugins/
+- category: GraphicalInterface
+  description: Human non-coding RNA gene pages in the GeneCards web interface.
+  format: http
+  id: genecarna.portal
+  name: GeneCaRNA in GeneCards
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genecarna
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: rnacentral
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  product_url: https://www.genecards.org/
+  warnings:
+  - genecards.org returns HTTP 403 to automated clients, so this URL was not confirmed
+    by an automated check on 2026-11-24.
+- category: GraphicalInterface
+  description: GeneHancer enhancers and gene associations, shown on GeneCards gene
+    pages.
+  format: http
+  id: genehancer.portal
+  name: GeneHancer in GeneCards
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: genehancer
+  - relation_type: prov:hadPrimarySource
+    source: encode
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: fantom5
+  - relation_type: prov:hadPrimarySource
+    source: genecards
+  - relation_type: prov:hadPrimarySource
+    source: vista
+  product_url: https://www.genecards.org/
+  warnings:
+  - genecards.org returns HTTP 403 to automated clients, so this URL was not confirmed
+    by an automated check on 2026-11-24.
+- category: Product
+  description: Table of human kinases with Coral, UniProt, Ensembl, Entrez, and HGNC
+    identifiers, kinase group, family, and subfamily, and drawing coordinates for
+    the kinome tree.
+  format: tsv
+  id: coralkinome.kinase-table
+  name: Coral Kinase Annotation Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: coralkinome
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: hgnc
+  product_file_size: 853276
+  product_url: https://raw.githubusercontent.com/dphansti/CORAL/master/Data/coral_dataframe.tsv
+- category: MappingProduct
+  compression: gzip
+  description: Tab-delimited table mapping UniProtKB accessions to identifiers in
+    other databases, including Entrez Gene, RefSeq, PDB, Pfam, GO, PIRSF, UniRef,
+    UniParc, NCBI Taxonomy, OMIM, Ensembl, PubMed, and EMBL/GenBank/DDBJ. The file
+    is dated 2024-05-29.
+  format: tsv
+  id: pir.idmapping
+  name: PIR ID Mapping Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pirsf
+  - relation_type: prov:hadPrimarySource
+    source: uniref
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  product_file_size: 12465900679
+  product_url: ftp://ftp.proteininformationresource.org/databases/idmapping/idmapping.tb.gz
 publications:
 - authors:
   - Dyer SC
