@@ -4,8 +4,10 @@ category: DataSource
 contacts:
 - category: Organization
   contact_details:
+  - contact_type: email
+    value: pirmail@georgetown.edu
   - contact_type: url
-    value: https://proteininformationresource.org/
+    value: https://proteininformationresource.org/pirwww/support/contact.shtml
   label: Protein Information Resource
 creation_date: '2026-05-20T00:00:00Z'
 description: Protein Information Resource (PIR) is an integrated public bioinformatics
@@ -18,7 +20,7 @@ domains:
 - systems biology
 homepage_url: https://proteininformationresource.org/
 id: pir
-last_modified_date: '2026-06-18T00:00:00Z'
+last_modified_date: '2026-11-24T00:00:00Z'
 layout: resource_detail
 license:
   id: https://proteininformationresource.org/pirwww/about/linkpir.shtml
@@ -36,15 +38,118 @@ products:
     source: pir
   product_url: https://proteininformationresource.org/
 - category: Product
-  description: PIR download center exposing FTP-accessible releases for iProClass,
-    PIRSF, PRO, and related PIR-maintained datasets.
+  description: PIR download center linking to the anonymous FTP server, which holds releases
+    of iProClass, PIRSF, and PRO along with ID mapping, Reference Proteome, and other PIR-maintained
+    files. The FTP ontology/pro_obo directory is historical (last changed in 2020).
   format: http
   id: pir.downloads
   name: PIR Downloads
   original_source:
   - relation_type: prov:hadPrimarySource
     source: pir
+  - relation_type: prov:hadPrimarySource
+    source: iproclass
+  - relation_type: prov:hadPrimarySource
+    source: pirsf
+  - relation_type: prov:hadPrimarySource
+    source: pr
   product_url: https://proteininformationresource.org/pirwww/download/
+- category: Product
+  description: Anonymous FTP directory of PIR databases, including iproclass, pirsf, idmapping,
+    rps (Reference Proteomes), iprolink, and ontology.
+  format: mixed
+  id: pir.ftp
+  name: PIR FTP Server
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: iproclass
+  - relation_type: prov:hadPrimarySource
+    source: pirsf
+  product_url: ftp://ftp.proteininformationresource.org/databases/
+- category: MappingProduct
+  compression: gzip
+  description: Tab-delimited table mapping UniProtKB accessions to identifiers in other databases,
+    including Entrez Gene, RefSeq, PDB, Pfam, GO, PIRSF, UniRef, UniParc, NCBI Taxonomy, OMIM,
+    Ensembl, PubMed, and EMBL/GenBank/DDBJ. The file is dated 2024-05-29.
+  format: tsv
+  id: pir.idmapping
+  name: PIR ID Mapping Table
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: ncbigene
+  - relation_type: prov:hadPrimarySource
+    source: refseq
+  - relation_type: prov:hadPrimarySource
+    source: pdb
+  - relation_type: prov:hadPrimarySource
+    source: pfam
+  - relation_type: prov:hadPrimarySource
+    source: go
+  - relation_type: prov:hadPrimarySource
+    source: pirsf
+  - relation_type: prov:hadPrimarySource
+    source: uniref
+  - relation_type: prov:hadPrimarySource
+    source: ncbitaxon
+  - relation_type: prov:hadPrimarySource
+    source: omim
+  - relation_type: prov:hadPrimarySource
+    source: ensembl
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  - relation_type: prov:hadPrimarySource
+    source: ena
+  product_file_size: 12465900679
+  product_url: ftp://ftp.proteininformationresource.org/databases/idmapping/idmapping.tb.gz
+- category: GraphicalInterface
+  description: Web form for mapping a batch of identifiers between UniProtKB and other databases
+    through iProClass.
+  format: http
+  id: pir.idmapping.web
+  name: PIR ID Mapping Service
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: iproclass
+  product_url: https://proteininformationresource.org/pirwww/search/idmapping.shtml
+- category: Product
+  description: Algorithmically determined Reference Proteomes (formerly Representative Proteomes),
+    each chosen from a group of similar proteomes by co-membership in UniRef50 clusters. Group
+    files (TXT) and sequence files (FASTA) are available at 75%, 55%, 35%, and 15% co-membership
+    cutoffs, with browsing and BLAST search. The page lists release 2024_04 (2024-07-24).
+  format: mixed
+  id: pir.reference-proteomes
+  latest_version: '2024_04'
+  name: PIR Reference Proteomes
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  - relation_type: prov:hadPrimarySource
+    source: uniref
+  product_url: https://proteininformationresource.org/rps/
+- category: GraphicalInterface
+  description: Web application and RESTful service for finding all occurrences of a query peptide
+    in UniProtKB sequences, including isoforms.
+  format: http
+  id: pir.peptide-match
+  name: Peptide Match
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: pir
+  - relation_type: prov:hadPrimarySource
+    source: uniprot
+  product_url: https://proteininformationresource.org/peptidematch/
+  warnings:
+  - The service returned HTTP 503 when checked on 2026-11-24.
 - category: GraphProduct
   description: PIR compound exact match edges
   format: csv
@@ -189,6 +294,23 @@ products:
   - relation_type: prov:hadPrimarySource
     source: pdb
   product_url: https://www.ncbi.nlm.nih.gov/protein/
+- category: GraphicalInterface
+  description: Web interface for querying and downloading microRNA relations mined
+    from Medline abstracts.
+  format: http
+  id: mirtex.portal
+  name: miRTex Web Interface
+  original_source:
+  - relation_type: prov:hadPrimarySource
+    source: mirtex
+  - relation_type: prov:hadPrimarySource
+    source: pubmed
+  product_url: https://proteininformationresource.org/mirtex/
+  secondary_source:
+  - relation_type: prov:wasInfluencedBy
+    source: pir
+  warnings:
+  - The site returned HTTP 503 when checked on 2026-11-24.
 publications:
 - authors:
   - Wu CH
@@ -210,6 +332,33 @@ publications:
   preferred: true
   title: The Protein Information Resource
   year: '2003'
+- authors:
+  - Chuming Chen
+  - Darren A. Natale
+  - Robert D. Finn
+  - Hongzhan Huang
+  - Jian Zhang
+  - Cathy H. Wu
+  - Raja Mazumder
+  doi: 10.1371/journal.pone.0018910
+  id: doi:10.1371/journal.pone.0018910
+  journal: PLoS ONE
+  title: 'Representative Proteomes: A Stable, Scalable and Unbiased Proteome Set for Sequence
+    Analysis and Functional Annotation'
+  year: '2011'
+- authors:
+  - Chuming Chen
+  - Zhiwen Li
+  - Hongzhan Huang
+  - Baris E. Suzek
+  - Cathy H. Wu
+  - UniProt Consortium
+  doi: 10.1093/bioinformatics/btt484
+  id: doi:10.1093/bioinformatics/btt484
+  journal: Bioinformatics
+  title: A fast Peptide Match service for UniProt Knowledgebase
+  year: '2013'
+rrid: SCR_002837
 synonyms:
 - PIR
 - Protein Information Resource
@@ -224,3 +373,9 @@ downloads, and supporting documentation for protein annotation workflows.
 
 The ProKN products on this page are derived graph views built from PIR-linked protein mappings
 and cross-resource integration, including alignments to IMPC-derived gene and orthology data.
+
+PIR was established in 1984 by the National Biomedical Research Foundation, following the Atlas of
+Protein Sequence and Structure compiled under Margaret Dayhoff (1965-1978). It is now run from the
+University of Delaware and Georgetown University Medical Center. PIR also hosts or links to
+iPTMnet, the Protein Ontology (PRO), and the RLIMS-P and miRTex text mining systems, which have
+their own entries here.
